@@ -1077,4 +1077,86 @@ En esta sección, se definen los términos utilizados a lo largo del proyecto pa
 - **History (Historial):** Registro de todas las citas previas entre productores agropecuarios y asesores.
 - **Review (Reseña):** Evaluación y comentarios dejados por los productores agropecuarios sobre la calidad del asesoramiento recibido por los asesores.
 - **Enclosure (Recinto):** Área o espacio dentro de una granja donde se crían animales o se cultivan plantas.
-- **Chatbot:** Herramienta automatizada que interactúa con los usuarios para responder preguntas frecuentes o guiar en el uso de la plataforma..
+- **Chatbot:** Herramienta automatizada que interactúa con los usuarios para responder preguntas frecuentes o guiar en el uso de la plataforma.
+
+# Capítulo III: Requirements Specification
+## 3.1 To-Be Scenario Mapping
+
+**Segmento: Productores agrícolas**
+
+<table>
+  <thead>
+    <tr>
+      <td>Phases</td>
+      <td>Enfrentamiento de problemas</td>
+      <td>Búsqueda de soluciones</td>
+      <td>Consulta con asesor</td>
+      <td>Toma de decisiones</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Doing</td>
+      <td>Los productores agrícolas se encuentran con problemas en su granja que no saben cómo resolver.</td>
+      <td>Abren la aplicación, buscan asesores especializados para resolver el tipo de problema que enfrentan.</td>
+      <td>Seleccionan un asesor, agendan una consulta, y se comunican con él para discutir los detalles del problema y recibir recomendaciones específicas.</td>
+      <td>Utilizan la información y recomendaciones obtenidas para tomar decisiones informadas sobre cómo manejar el problema en su granja.</td>
+    </tr>
+    <tr>
+      <td>Thinking</td>
+      <td>"Tengo un problema serio, pero al menos sé que puedo encontrar a alguien que me ayude a solucionarlo de manera eficiente."</td>
+      <td>"Es bueno saber que hay expertos que entienden exactamente lo que necesito. Ahora puedo elegir al que mejor se ajuste a mis necesidades."</td>
+      <td>"Este asesor realmente entiende mi problema y me está dando consejos útiles que puedo aplicar de inmediato."</td>
+      <td>"Con el respaldo del asesor, puedo tomar decisiones que realmente mejorarán mi granja, y sé que puedo volver a consultar si tengo más dudas."</td>
+    </tr>
+    <tr>
+      <td>Feeling</td>
+      <td>Un poco de preocupación pero también esperanza, sabiendo que puede obtener ayuda rápidamente gracias a la aplicación.</td>
+      <td>Alivio al ver una lista clara de asesores disponibles con sus calificaciones y especializaciones.</td>
+      <td>Comprendido y apoyado, al recibir orientación personalizada que se adapta a su situación particular.</td>
+      <td>Confiado de que está tomando la mejor acción posible basada en el asesoramiento recibido.</td>
+    </tr>
+  </tbody>
+</table>
+
+**Segmento: Asesores experimentados**
+
+<table>
+  <thead>
+    <tr>
+      <td>Phases</td>
+      <td>Promoción de servicios</td>
+      <td>Contacto con productores agrícolas</td>
+      <td>Realización de asesorías</td>
+      <td>Seguimiento</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Doing</td>
+      <td>Los asesor crean publicaciones con los servicios que ofrecen para llamar la atención de los productores agrícolas.</td>
+      <td>Reciben notificaciones de solicitudes de asesoría de productores agrícolas y revisan los detalles para saber la fecha y hora de la asesoría.</td>
+      <td>Realizan las sesiones de asesoría acordadas, y proporcionan recomendaciones y soluciones personalizadas durante la consulta.</td>
+      <td>Realiza un seguimiento con los productores agrícolas a través de la aplicación, revisa los resultados obtenidos y ajusta recomendaciones si es necesario.</td>
+    </tr>
+    <tr>
+      <td>Thinking</td>
+      <td>"La aplicación me permite mostrar mis habilidades y experiencia de manera efectiva, lo que puede atraer a más productores agrícolas que necesitan asesoría."</td>
+      <td>"La aplicación simplifica la gestión de solicitudes y el contacto inicial, permitiéndome organizar rápidamente las consultas y centrarme en la asesoría efectiva."</td>
+      <td>"La aplicación me ofrece una opción sencilla para unirme a una videoconferencia y poder realizar la asesoría, lo que me permite despreocuparme de otras coordinaciones."</td>
+      <td> "El seguimiento es fácil al poder contactar al productor agrícola por la aplicación."</td>
+    </tr>
+    <tr>
+      <td>Feeling</td>
+      <td>Motivación al poder mostrar sus servicios de una manera efectiva y llamativa para recibir mayores ofertas de trabajo.</td>
+      <td>Alivio al poder gestionar todas las solicitudes de asesoría de manera sencilla.</td>
+      <td>Satisfecho al tener una plataforma que facilita un enlace para unirse a la videoconferencia donde se hará la asesoría sin mayores complicaciones.</td>
+      <td>Alivio al tener una herramienta que facilita el seguimiento y permite mantener una comunicación continua con los productores agrícolas.</td>
+    </tr>
+  </tbody>
+</table>
+
+## 3.2 User Stories
+## 3.3 Product Backlog
+## 3.4 Impact Mapping
+
