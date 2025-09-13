@@ -35,6 +35,10 @@
     <td>Elias Sanchez, Harold Miguel</td>
     <td>U202212684</td>
   </tr>
+   <tr>
+    <td>Chinchihualpa Saldarriaga, Luis Sebastian</td>
+    <td>U202212112</td>
+  </tr>
   <tr>
     <td>Nombre</td>
     <td>Codigo</td>
