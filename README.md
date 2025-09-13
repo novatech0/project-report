@@ -432,7 +432,7 @@ AgroTech debe contar con una interfaz intuitiva y atractiva visualmente. Su dese
     <td>Mis clientes iniciales serán agricultores del Perú que buscan hacer más rentables y eficientes sus operaciones.</td>
   </tr>
   <tr>
-    <td>AgroTech enfrentará los retos del sector al conectar expertos con productores inexpertos, proporcionando conocimientos prácticos y soluciones adaptadas a distintas áreas de producción.</td>
+    <td>AgroTech enfrentará los retos del sector al conectar expertos con productores, proporcionando conocimientos prácticos y soluciones adaptadas a distintas áreas de producción.</td>
     <td>El mayor valor que nuestros clientes buscan es incrementar la rentabilidad de sus granjas, cuidando al mismo tiempo el bienestar de cultivos y animales, con un enfoque sostenible.</td>
   </tr>
   <tr>
@@ -1264,15 +1264,15 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
     <tr>
       <td>US01</td>
       <td>Visualización del catálogo de asesores</td>
-      <td>Como granjero con poca experiencia, quiero explorar el catálogo de asesores para conocer quiénes me pueden apoyar con asesorías.</td>
+      <td>Como productor agropecuario, quiero explorar el catálogo de asesores para conocer quiénes me pueden apoyar con asesorías.</td>
       <td>
         <p><strong>Escenario 1: Explorar catálogo de asesores</strong></p>
-        <p><strong>Given</strong> el granjero con poca experiencia quiere explorar el catálogo de asesores.</p>
+        <p><strong>Given</strong> el productor agropecuario quiere explorar el catálogo de asesores.</p>
         <p><strong>And</strong> se encuentra en la plataforma.</p>
         <p><strong>When</strong> seleccione el botón relacionado con el "Catálogo de asesores".</p>
         <p><strong>Then</strong> el sistema le mostrará una lista de todos los asesores disponibles en la plataforma.</p>
         <p><strong>Escenario 2: Filtrar búsqueda de asesores</strong></p>
-        <p><strong>Given</strong> el granjero con poca experiencia quiere personalizar su búsqueda.</p>
+        <p><strong>Given</strong> el productor agropecuario quiere personalizar su búsqueda.</p>
         <p><strong>And</strong> se encuentra en el apartado de "Asesores".</p>
         <p><strong>When</strong> seleccione el botón de filtros.</p>
         <p><strong>Then</strong> el sistema le permitirá filtrar el catálogo de asesores por nombre o reputación.</p>
@@ -1282,15 +1282,15 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
     <tr>
       <td>US02</td>
       <td>Visualización de información de un asesor</td>
-      <td>Como granjero con poca experiencia, quiero ver la información de un asesor para tomar una decisión informada antes de separar una cita.</td>
+      <td>Como productor agropecuario, quiero ver la información de un asesor para tomar una decisión informada antes de separar una cita.</td>
       <td>
         <p><strong>Escenario 1: Ver información de un asesor</strong></p>
-        <p><strong>Given</strong> el granjero con poca experiencia quiere ver información de un asesor.</p>
+        <p><strong>Given</strong> el productor agropecuario quiere ver información de un asesor.</p>
         <p><strong>And</strong> se encuentra en el apartado del "Catálogo de Asesores".</p>
         <p><strong>When</strong> seleccione al cuadro de un asesor.</p>
         <p><strong>Then</strong> el sistema le mostrará la información del asesor como nombre, experiencia, calificación y reseñas.</p>
         <p><strong>Escenario 2: Fallar al visualizar la información del asesor</strong></p>
-        <p><strong>Given</strong> el granjero con poca experiencia quiere ver información relevante del asesor.</p>
+        <p><strong>Given</strong> el productor agropecuario quiere ver información relevante del asesor.</p>
         <p><strong>And</strong> se encuentra en el apartado de "Asesores".</p>
         <p><strong>When</strong> seleccione al cuadro de un asesor en la interfaz.</p>
         <p><strong>And</strong> se encuentre con un error al cargar la información.</p>
@@ -1301,15 +1301,15 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
     <tr>
       <td>US03</td>
       <td>Visualización de horarios de asesores</td>
-      <td>Como granjero con poca experiencia, quiero ver los horarios disponibles de los asesores para seleccionar un horario que se ajuste a mi agenda.</td>
+      <td>Como productor agropecuario, quiero ver los horarios disponibles de los asesores para seleccionar un horario que se ajuste a mi agenda.</td>
       <td>
         <p><strong>Escenario 1: Visualizar horarios disponibles</strong></p>
-        <p><strong>Given</strong> el granjero con poca experiencia desea visualizar los horarios disponibles de un asesor elegido.</p>
+        <p><strong>Given</strong> el productor agropecuario desea visualizar los horarios disponibles de un asesor elegido.</p>
         <p><strong>And</strong> se encuentra viendo la información del perfil de un asesor.</p>
         <p><strong>When</strong> haga clic en el botón "Reservar Cita" en la interfaz.</p>
         <p><strong>Then</strong> el sistema le mostrará una interfaz con los horarios disponibles del asesor.</p>
         <p><strong>Escenario 2: Fallar al intentar visualizar horarios</strong></p>
-        <p><strong>Given</strong> el granjero con poca experiencia desea visualizar los horarios disponibles del asesor elegido.</p>
+        <p><strong>Given</strong> el productor agropecuario desea visualizar los horarios disponibles del asesor elegido.</p>
         <p><strong>And</strong> se encuentra viendo la información del perfil de un asesor.</p>
         <p><strong>When</strong> haga clic en el botón "Reservar Cita" en la interfaz.</p>
         <p><strong>And</strong> el asesor no tenga horarios disponibles.</p>
@@ -1320,17 +1320,17 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
     <tr>
       <td>US04</td>
       <td>Programación de citas con asesores</td>
-      <td>Como granjero con poca experiencia, quiero programar una cita con un asesor para recibir orientación personalizada en el sector agropecuario.</td>
+      <td>Como productor agropecuario, quiero programar una cita con un asesor para recibir orientación personalizada en el sector agropecuario.</td>
       <td>
         <p><strong>Escenario 1: Programar cita</strong></p>
-        <p><strong>Given</strong> el granjero con poca experiencia desea programar una cita.</p>
+        <p><strong>Given</strong> el productor agropecuario desea programar una cita.</p>
         <p><strong>And</strong> se encuentra en el apartado de "Horarios Disponibles" del perfil de un asesor.</p>
         <p><strong>When</strong> seleccione un horario disponible.</p>
         <p><strong>And</strong> complete los campos solicitados.</p>
         <p><strong>And</strong> haga clic en el botón "Reservar Cita".</p>
         <p><strong>Then</strong> el sistema le mostrará un mensaje de confirmación.</p>
         <p><strong>Escenario 2: Fallar al programar cita</strong></p>
-        <p><strong>Given</strong> el granjero con poca experiencia desea programar una cita.</p>
+        <p><strong>Given</strong> el productor agropecuario desea programar una cita.</p>
         <p><strong>And</strong> se encuentra en el apartado de "Horarios Disponibles" del perfil de un asesor.</p>
         <p><strong>When</strong> seleccione un horario disponible.</p>
         <p><strong>And</strong> se encuentra un error técnico o de conexión que impide completar la programación.</p>
@@ -1341,16 +1341,16 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
     <tr>
       <td>US05</td>
       <td>Calificación del asesor luego de una cita</td>
-      <td>Como granjero con poca experiencia, quiero calificar al asesor luego de la consulta para ayudar a otros granjeros a tomar una decisión informada antes de separar una cita.</td>
+      <td>Como productor agropecuario, quiero calificar al asesor luego de la consulta para ayudar a otros productores agropecuarios a tomar una decisión informada antes de separar una cita.</td>
       <td>
         <p><strong>Escenario 1: Calificar al asesor</strong></p>
-        <p><strong>Given</strong> el granjero con poca experiencia desea hacer un feedback referente al servicio del asesor.</p>
+        <p><strong>Given</strong> el productor agropecuario desea hacer un feedback referente al servicio del asesor.</p>
         <p><strong>And</strong> se encuentra en la vista de historial de asesorías.</p>
         <p><strong>And</strong> selecciona una asesoría sin reseña.</p>
         <p><strong>When</strong> haga clic en el botón "Calificar" en la interfaz.</p>
         <p><strong>Then</strong> el sistema le permitirá asignarle un número de estrellas y comentar el servicio del asesor.</p>
         <p><strong>Escenario 2: Omitir Calificación</strong></p>
-        <p><strong>Given</strong> el granjero con poca experiencia no desea dar feedback al asesor referente al servicio.</p>
+        <p><strong>Given</strong> el productor agropecuario no desea dar feedback al asesor referente al servicio.</p>
         <p><strong>And</strong> se encuentra en la vista de historial de asesorías.</p>
         <p><strong>And</strong> selecciona una asesoría sin reseña.</p>
         <p><strong>When</strong> haga clic en el botón "Regresar" en la interfaz.</p>
@@ -1381,13 +1381,13 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
     <tr>
       <td>US07</td>
       <td>Gestión de publicaciones de asesores</td>
-      <td>Como asesor, quiero hacer publicaciones referentes a mis trabajos para tener una mayor visibilidad con los granjeros inexpertos.</td>
+      <td>Como asesor, quiero hacer publicaciones referentes a mis trabajos para tener una mayor visibilidad con los productores agropecuarios.</td>
       <td>
         <p><strong>Escenario 1: Crear una nueva publicación</strong></p>
         <p><strong>Given</strong> que el asesor está en el apartado de "Mis publicaciones".</p>
         <p><strong>When</strong> hace clic en "Crear Publicación".</p>
         <p><strong>And</strong> completa el formulario y presiona "Publicar".</p>
-        <p><strong>Then</strong> el sistema confirma la acción y la publicación se vuelve visible para los granjeros.</p>
+        <p><strong>Then</strong> el sistema confirma la acción y la publicación se vuelve visible para los productores agropecuarios.</p>
         <p><strong>Escenario 2: Editar una publicación existente</strong></p>
         <p><strong>Given</strong> que el asesor tiene una publicación</p>
         <p><strong>And</strong> está en el apartado "Mis publicaciones".</p>
@@ -1406,14 +1406,14 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
     <tr>
       <td>US08</td>
       <td>Visualización de publicaciones de los asesores</td>
-      <td>Como granjero con poca experiencia, quiero poder ver las publicaciones de los asesores para obtener información útil y solicitar asesoramiento en base a esas publicaciones.</td>
+      <td>Como productor agropecuario, quiero poder ver las publicaciones de los asesores para obtener información útil y solicitar asesoramiento en base a esas publicaciones.</td>
       <td>
         <p><strong>Escenario 1: Visualizar publicaciones de asesores</strong></p>
-        <p><strong>Given</strong> el granjero con poca experiencia desea ver las publicaciones de los asesores.</p>
+        <p><strong>Given</strong> el productor agropecuario desea ver las publicaciones de los asesores.</p>
         <p><strong>When</strong> haga clic en el botón de publicaciones.</p>
         <p><strong>Then</strong> el sistema le mostrará una lista de las publicaciones de los asesores.</p>
         <p><strong>Escenario 2: Fallo al cargar publicaciones de asesores</strong></p>
-        <p><strong>Given</strong> el granjero con poca experiencia desea ver las publicaciones de los asesores.</p>
+        <p><strong>Given</strong> el productor agropecuario desea ver las publicaciones de los asesores.</p>
         <p><strong>When</strong> haga clic en el botón de publicaciones.</p>
         <p><strong>And</strong> ocurre un error en la conexión con el servidor.</p>
         <p><strong>Then</strong> el sistema mostrará un mensaje de error indicando que no se pudieron cargar las publicaciones.</p>
@@ -1614,7 +1614,7 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
     <tr>
       <td>US22</td>
       <td>Gestión de recintos</td>
-      <td>Como granjero con poca experiencia, quiero registrar, editar y eliminar recintos de mis animales, para mantener un control organizado y actualizado sobre los espacios donde se encuentran.</td>
+      <td>Como productor agropecuario, quiero registrar, editar y eliminar recintos de mis animales, para mantener un control organizado y actualizado sobre los espacios donde se encuentran.</td>
       <td>
         <p><strong>Escenario 1: Registrar un recinto</strong></p>
         <p><strong>Given</strong> el usuario accede a la sección de recintos.</p>
@@ -1634,7 +1634,7 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
     <tr>
       <td>US23</td>
       <td>Gestión de animales</td>
-      <td>Como granjero con poca experiencia, quiero registrar, editar y eliminar animales, asignándoles a recintos específicos, para llevar un registro claro y ordenado de cada uno de ellos.</td>
+      <td>Como productor agropecuario, quiero registrar, editar y eliminar animales, asignándoles a recintos específicos, para llevar un registro claro y ordenado de cada uno de ellos.</td>
       <td>
         <p><strong>Escenario 1: Registrar un animal en un recinto</strong></p>
         <p><strong>Given</strong> el usuario accede a la sección de recintos.</p>
@@ -1793,19 +1793,19 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
 |11|US16|Visualización de la sección 'Características' de la Landing Page|Como potencial usuario quiero acceder a una página sobre las características para conocer las principales funcionalidades de la plataforma.|2|
 |12|US17|Visualización de la sección 'Contacto' de la Landing Page|Como potencial usuario quiero acceder a una página de contacto para poder contactar con la empresa en caso tenga algún problema, duda o sugerencia.|2|
 |13|US18|Navegación dentro de la plataforma|Como usuario, quiero acceder fácilmente a las funcionalidades principales de la aplicación para explorar la aplicación de forma intuitiva según el dispositivo.|3|
-|14|US01|Visualización del catálogo de asesores|Como granjero con poca experiencia, quiero explorar el catálogo de asesores para conocer quiénes me pueden apoyar con asesorías.|2|
-|15|US02|Visualización de información de un asesor|Como granjero con poca experiencia, quiero ver la información de un asesor para tomar una decisión informada antes de separar una cita.|2|
+|14|US01|Visualización del catálogo de asesores|Como productor agropecuario, quiero explorar el catálogo de asesores para conocer quiénes me pueden apoyar con asesorías.|2|
+|15|US02|Visualización de información de un asesor|Como productor agropecuario, quiero ver la información de un asesor para tomar una decisión informada antes de separar una cita.|2|
 |16|US06|Separación de horarios de disponibilidad para asesorías|Como asesor, quiero poder separar los horarios en los que estoy disponible para que los usuarios interesados puedan agendar una asesoría en un momento conveniente.|5|
-|17|US03|Visualización de horarios de asesores|Como granjero con poca experiencia, quiero ver los horarios disponibles de los asesores para seleccionar un horario que se ajuste a mi agenda.|3|
-|18|US04|Programación de citas con asesores|Como granjero con poca experiencia, quiero programar una cita con un asesor para recibir orientación personalizada en el sector agropecuario.|5|
-|19|US05|Calificación del asesor luego de una cita|Como granjero con poca experiencia, quiero calificar al asesor luego de la consulta para ayudar a otros granjeros a tomar una decisión informada antes de separar una cita.|3|
+|17|US03|Visualización de horarios de asesores|Como productor agropecuario, quiero ver los horarios disponibles de los asesores para seleccionar un horario que se ajuste a mi agenda.|3|
+|18|US04|Programación de citas con asesores|Como productor agropecuario, quiero programar una cita con un asesor para recibir orientación personalizada en el sector agropecuario.|5|
+|19|US05|Calificación del asesor luego de una cita|Como productor agropecuario, quiero calificar al asesor luego de la consulta para ayudar a otros productores agropecuarios a tomar una decisión informada antes de separar una cita.|3|
 |20|US19|Visualización de historial de citas|Como usuario, quiero ver un historial de mis citas anteriores para tener un registro de las reuniones y sus detalles.|3|
 |21|US20|Cancelación de citas|Como usuario, quiero poder cancelar mis citas existentes para ajustarlas a mis nuevas disponibilidades o necesidades.|2|
 |22|US21|Búsqueda y filtrado de citas|Como usuario, quiero buscar y filtrar mis citas programadas para encontrar fácilmente una cita específica o consultar citas en una fecha determinada.|3|
-|23|US22|Gestión de recintos|Como granjero con poca experiencia, quiero registrar, editar y eliminar recintos de mis animales, para mantener un control organizado y actualizado sobre los espacios donde se encuentran.|5|
-|24|US23|Gestión de animales|Como granjero con poca experiencia, quiero registrar, editar y eliminar animales, asignándoles a recintos específicos, para llevar un registro claro y ordenado de cada uno de ellos.|5|
-|25|US07|Gestión de publicaciones de asesores|Como asesor, quiero hacer publicaciones referentes a mis trabajos para tener una mayor visibilidad con los granjeros inexpertos.|5|
-|26|US08|Visualización de publicaciones de los asesores|Como granjero con poca experiencia, quiero poder ver las publicaciones de los asesores para obtener información útil y solicitar asesoramiento en base a esas publicaciones.|2|
+|23|US22|Gestión de recintos|Como productor agropecuario, quiero registrar, editar y eliminar recintos de mis animales, para mantener un control organizado y actualizado sobre los espacios donde se encuentran.|5|
+|24|US23|Gestión de animales|Como productor agropecuario, quiero registrar, editar y eliminar animales, asignándoles a recintos específicos, para llevar un registro claro y ordenado de cada uno de ellos.|5|
+|25|US07|Gestión de publicaciones de asesores|Como asesor, quiero hacer publicaciones referentes a mis trabajos para tener una mayor visibilidad con los productores agropecuarios.|5|
+|26|US08|Visualización de publicaciones de los asesores|Como productor agropecuario, quiero poder ver las publicaciones de los asesores para obtener información útil y solicitar asesoramiento en base a esas publicaciones.|2|
 |27|US09|Registro de un usuario nuevo|Como usuario, quiero registrarme para acceder a las funciones de usuario.|3|
 |28|US10|Inicio de sesión|Como usuario quiero acceder a mi cuenta registrada para acceder a las funciones de usuario.|2|
 |29|US11|Visualización de notificaciones del usuario|Como usuario de la aplicación, quiero recibir notificaciones referentes al estado de las asesorías u otra información relevante para mantenerme informado.|2|
