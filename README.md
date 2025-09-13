@@ -1157,6 +1157,668 @@ En esta sección, se definen los términos utilizados a lo largo del proyecto pa
 </table>
 
 ## 3.2 User Stories
+
+Se identificaron las siguientes épicas que se componen de las historias de usuario.
+
+<table>
+  <tr>
+    <th><b>Epic ID</b></th>
+    <th><b>Epic</b></th>
+    <th><b>User Story ID</b></th>
+    <th><b>User Stories</b></th>
+  </tr>
+  <tr>
+    <td rowspan="10">1</td>
+    <td rowspan="10">Sistema de búsqueda y programación de citas</td>
+    <td>US01</td>
+    <td>Visualización del catálogo de asesores</td>
+  </tr>
+  <tr><td>US02</td><td>Visualización de información de un asesor</td></tr>
+  <tr><td>US03</td><td>Visualización de horarios de asesores</td></tr>
+  <tr><td>US04</td><td>Programación de citas con asesores</td></tr>
+  <tr><td>US05</td><td>Calificación del asesor luego de una cita</td></tr>
+  <tr><td>US06</td><td>Separación de horarios de disponibilidad para asesorías</td></tr>
+  <tr><td>US18</td><td>Navegación dentro de la plataforma</td></tr>
+  <tr><td>US19</td><td>Visualización de historial de citas</td></tr>
+  <tr><td>US20</td><td>Cancelación de citas</td></tr>
+  <tr><td>US21</td><td>Búsqueda y filtrado de citas</td></tr>
+  <tr>
+    <td rowspan="2">2</td>
+    <td rowspan="2">Publicaciones de asesores</td>
+    <td>US07</td>
+    <td>Gestión de publicaciones de asesores</td>
+  </tr>
+  <tr><td>US08</td><td>Visualización de publicaciones de los asesores</td></tr>
+  <tr>
+    <td rowspan="4">3</td>
+    <td rowspan="4">Sistema de gestión de usuarios</td>
+    <td>US09</td>
+    <td>Registro de un usuario nuevo</td>
+  </tr>
+  <tr><td>US10</td><td>Inicio de sesión</td></tr>
+  <tr><td>US11</td><td>Visualización de notificaciones del usuario</td></tr>
+  <tr><td>US12</td><td>Modificar perfil de usuario</td></tr>
+  <tr>
+    <td rowspan="5">4</td>
+    <td rowspan="5">Landing Page</td>
+    <td>US13</td>
+    <td>Visualización de la sección de inicio de la Landing Page</td>
+  </tr>
+  <tr><td>US14</td><td>Visualización de la sección 'Acerca de' de la Landing Page</td></tr>
+  <tr><td>US15</td><td>Visualización de la sección 'Sobre Nosotros' de la Landing Page</td></tr>
+  <tr><td>US16</td><td>Visualización de la sección 'Características' de la Landing Page</td></tr>
+  <tr><td>US17</td><td>Visualización de la sección 'Contacto' de la Landing Page</td></tr>
+  <tr>
+    <td rowspan="2">5</td>
+    <td rowspan="2">Gestión de granja</td>
+    <td>US22</td>
+    <td>Gestión de recintos</td>
+  </tr>
+  <tr><td>US23</td><td>Gestión de animales</td></tr>
+  <tr>
+    <td rowspan="7">6</td>
+    <td rowspan="7">Funcionalidades de Web API (Backend)</td>
+    <td>TS01</td>
+    <td>Uso de una API para videollamadas</td>
+  </tr>
+  <tr><td>TS02</td><td>Uso de una API para alojar imágenes</td></tr>
+  <tr><td>TS03</td><td>Uso de nuestra API para gestionar perfiles</td></tr>
+  <tr><td>TS04</td><td>Uso de nuestra API para gestionar asesorías</td></tr>
+  <tr><td>TS05</td><td>Uso de nuestra API para gestionar publicaciones</td></tr>
+  <tr><td>TS06</td><td>Uso de nuestra API para gestionar recintos de animales</td></tr>
+  <tr><td>TS07</td><td>Uso de nuestra API para gestionar autenticación</td></tr>
+</table>
+
+<style>
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: avoid;
+  }
+  .custom-table th, .custom-table td {
+    border: 1px solid #ccc;
+    padding: 4px;
+    vertical-align: top;
+    text-align: left;
+  }
+  .custom-table thead {
+    background-color: #f2f2f2;
+    display: table-header-group;
+  }
+  .custom-table td p {
+    margin: 2px 0;
+  }
+</style>
+
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th>Epic / Story ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>Relacionado con (Epic ID)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US01</td>
+      <td>Visualización del catálogo de asesores</td>
+      <td>Como granjero con poca experiencia, quiero explorar el catálogo de asesores para conocer quiénes me pueden apoyar con asesorías.</td>
+      <td>
+        <p><strong>Escenario 1: Explorar catálogo de asesores</strong></p>
+        <p><strong>Given</strong> el granjero con poca experiencia quiere explorar el catálogo de asesores.</p>
+        <p><strong>And</strong> se encuentra en la plataforma.</p>
+        <p><strong>When</strong> seleccione el botón relacionado con el "Catálogo de asesores".</p>
+        <p><strong>Then</strong> el sistema le mostrará una lista de todos los asesores disponibles en la plataforma.</p>
+        <p><strong>Escenario 2: Filtrar búsqueda de asesores</strong></p>
+        <p><strong>Given</strong> el granjero con poca experiencia quiere personalizar su búsqueda.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Asesores".</p>
+        <p><strong>When</strong> seleccione el botón de filtros.</p>
+        <p><strong>Then</strong> el sistema le permitirá filtrar el catálogo de asesores por nombre o reputación.</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US02</td>
+      <td>Visualización de información de un asesor</td>
+      <td>Como granjero con poca experiencia, quiero ver la información de un asesor para tomar una decisión informada antes de separar una cita.</td>
+      <td>
+        <p><strong>Escenario 1: Ver información de un asesor</strong></p>
+        <p><strong>Given</strong> el granjero con poca experiencia quiere ver información de un asesor.</p>
+        <p><strong>And</strong> se encuentra en el apartado del "Catálogo de Asesores".</p>
+        <p><strong>When</strong> seleccione al cuadro de un asesor.</p>
+        <p><strong>Then</strong> el sistema le mostrará la información del asesor como nombre, experiencia, calificación y reseñas.</p>
+        <p><strong>Escenario 2: Fallar al visualizar la información del asesor</strong></p>
+        <p><strong>Given</strong> el granjero con poca experiencia quiere ver información relevante del asesor.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Asesores".</p>
+        <p><strong>When</strong> seleccione al cuadro de un asesor en la interfaz.</p>
+        <p><strong>And</strong> se encuentre con un error al cargar la información.</p>
+        <p><strong>Then</strong> el sistema le mostrará un mensaje de error de carga en la interfaz.</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US03</td>
+      <td>Visualización de horarios de asesores</td>
+      <td>Como granjero con poca experiencia, quiero ver los horarios disponibles de los asesores para seleccionar un horario que se ajuste a mi agenda.</td>
+      <td>
+        <p><strong>Escenario 1: Visualizar horarios disponibles</strong></p>
+        <p><strong>Given</strong> el granjero con poca experiencia desea visualizar los horarios disponibles de un asesor elegido.</p>
+        <p><strong>And</strong> se encuentra viendo la información del perfil de un asesor.</p>
+        <p><strong>When</strong> haga clic en el botón "Reservar Cita" en la interfaz.</p>
+        <p><strong>Then</strong> el sistema le mostrará una interfaz con los horarios disponibles del asesor.</p>
+        <p><strong>Escenario 2: Fallar al intentar visualizar horarios</strong></p>
+        <p><strong>Given</strong> el granjero con poca experiencia desea visualizar los horarios disponibles del asesor elegido.</p>
+        <p><strong>And</strong> se encuentra viendo la información del perfil de un asesor.</p>
+        <p><strong>When</strong> haga clic en el botón "Reservar Cita" en la interfaz.</p>
+        <p><strong>And</strong> el asesor no tenga horarios disponibles.</p>
+        <p><strong>Then</strong> el sistema le mostrará un mensaje de error "El asesor no tiene horarios disponibles" en la interfaz.</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US04</td>
+      <td>Programación de citas con asesores</td>
+      <td>Como granjero con poca experiencia, quiero programar una cita con un asesor para recibir orientación personalizada en el sector agropecuario.</td>
+      <td>
+        <p><strong>Escenario 1: Programar cita</strong></p>
+        <p><strong>Given</strong> el granjero con poca experiencia desea programar una cita.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Horarios Disponibles" del perfil de un asesor.</p>
+        <p><strong>When</strong> seleccione un horario disponible.</p>
+        <p><strong>And</strong> complete los campos solicitados.</p>
+        <p><strong>And</strong> haga clic en el botón "Reservar Cita".</p>
+        <p><strong>Then</strong> el sistema le mostrará un mensaje de confirmación.</p>
+        <p><strong>Escenario 2: Fallar al programar cita</strong></p>
+        <p><strong>Given</strong> el granjero con poca experiencia desea programar una cita.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Horarios Disponibles" del perfil de un asesor.</p>
+        <p><strong>When</strong> seleccione un horario disponible.</p>
+        <p><strong>And</strong> se encuentra un error técnico o de conexión que impide completar la programación.</p>
+        <p><strong>Then</strong> el sistema le mostrará un mensaje de error.</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US05</td>
+      <td>Calificación del asesor luego de una cita</td>
+      <td>Como granjero con poca experiencia, quiero calificar al asesor luego de la consulta para ayudar a otros granjeros a tomar una decisión informada antes de separar una cita.</td>
+      <td>
+        <p><strong>Escenario 1: Calificar al asesor</strong></p>
+        <p><strong>Given</strong> el granjero con poca experiencia desea hacer un feedback referente al servicio del asesor.</p>
+        <p><strong>And</strong> se encuentra en la vista de historial de asesorías.</p>
+        <p><strong>And</strong> selecciona una asesoría sin reseña.</p>
+        <p><strong>When</strong> haga clic en el botón "Calificar" en la interfaz.</p>
+        <p><strong>Then</strong> el sistema le permitirá asignarle un número de estrellas y comentar el servicio del asesor.</p>
+        <p><strong>Escenario 2: Omitir Calificación</strong></p>
+        <p><strong>Given</strong> el granjero con poca experiencia no desea dar feedback al asesor referente al servicio.</p>
+        <p><strong>And</strong> se encuentra en la vista de historial de asesorías.</p>
+        <p><strong>And</strong> selecciona una asesoría sin reseña.</p>
+        <p><strong>When</strong> haga clic en el botón "Regresar" en la interfaz.</p>
+        <p><strong>Then</strong> el sistema le permitirá omitir la reseña.</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US06</td>
+      <td>Separación de horarios de disponibilidad para asesorías</td>
+      <td>Como asesor, quiero poder separar los horarios en los que estoy disponible para que los usuarios interesados puedan agendar una asesoría en un momento conveniente.</td>
+      <td>
+        <p><strong>Escenario 1: Registrar disponibilidad para asesorías</strong></p>
+        <p><strong>Given</strong> el asesor desea registrar su horario de disponibilidad para una asesoría.</p>
+        <p><strong>And</strong> está visualizando la sección de "Horarios disponibles" en su dispositivo.</p>
+        <p><strong>When</strong> haga clic en el botón para registrar un nuevo horario.</p>
+        <p><strong>And</strong> complete los datos del nuevo horario.</p>
+        <p><strong>Then</strong> el sistema actualizará y guardará los horarios y horas seleccionadas como disponibles.</p>
+        <p><strong>Escenario 2: Eliminar horario de disponibilidad para asesorías</strong></p>
+        <p><strong>Given</strong> el asesor desea eliminar un horario de disponibilidad para asesorías.</p>
+        <p><strong>And</strong> está visualizando la página de "Horario disponible" en su dispositivo.</p>
+        <p><strong>When</strong> haga clic en el botón "Eliminar" relacionado al horario que desea eliminar.</p>
+        <p><strong>And</strong> confirme la eliminación del horario.</p>
+        <p><strong>Then</strong> el sistema eliminará el horario de disponibilidad seleccionado.</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US07</td>
+      <td>Gestión de publicaciones de asesores</td>
+      <td>Como asesor, quiero hacer publicaciones referentes a mis trabajos para tener una mayor visibilidad con los granjeros inexpertos.</td>
+      <td>
+        <p><strong>Escenario 1: Crear una nueva publicación</strong></p>
+        <p><strong>Given</strong> que el asesor está en el apartado de "Mis publicaciones".</p>
+        <p><strong>When</strong> hace clic en "Crear Publicación".</p>
+        <p><strong>And</strong> completa el formulario y presiona "Publicar".</p>
+        <p><strong>Then</strong> el sistema confirma la acción y la publicación se vuelve visible para los granjeros.</p>
+        <p><strong>Escenario 2: Editar una publicación existente</strong></p>
+        <p><strong>Given</strong> que el asesor tiene una publicación</p>
+        <p><strong>And</strong> está en el apartado "Mis publicaciones".</p>
+        <p><strong>When</strong> selecciona "Editar"</p>
+        <p><strong>And</strong> modifica el contenido y guarda los cambios.</p>
+        <p><strong>Then</strong> el sistema confirma la acción y actualiza la publicación.</p>
+        <p><strong>Escenario 3: Eliminar una publicación existente</strong></p>
+        <p><strong>Given</strong> que el asesor tiene una publicación</p>
+        <p><strong>And</strong> está en el apartado "Mis publicaciones".</p>
+        <p><strong>When</strong> selecciona "Eliminar"</p>
+        <p><strong>And</strong> confirma la acción.</p>
+        <p><strong>Then</strong> el sistema confirma la eliminación y la publicación desaparece de la lista.</p>
+      </td>
+      <td>E02</td>
+    </tr>
+    <tr>
+      <td>US08</td>
+      <td>Visualización de publicaciones de los asesores</td>
+      <td>Como granjero con poca experiencia, quiero poder ver las publicaciones de los asesores para obtener información útil y solicitar asesoramiento en base a esas publicaciones.</td>
+      <td>
+        <p><strong>Escenario 1: Visualizar publicaciones de asesores</strong></p>
+        <p><strong>Given</strong> el granjero con poca experiencia desea ver las publicaciones de los asesores.</p>
+        <p><strong>When</strong> haga clic en el botón de publicaciones.</p>
+        <p><strong>Then</strong> el sistema le mostrará una lista de las publicaciones de los asesores.</p>
+        <p><strong>Escenario 2: Fallo al cargar publicaciones de asesores</strong></p>
+        <p><strong>Given</strong> el granjero con poca experiencia desea ver las publicaciones de los asesores.</p>
+        <p><strong>When</strong> haga clic en el botón de publicaciones.</p>
+        <p><strong>And</strong> ocurre un error en la conexión con el servidor.</p>
+        <p><strong>Then</strong> el sistema mostrará un mensaje de error indicando que no se pudieron cargar las publicaciones.</p>
+      </td>
+      <td>E02</td>
+    </tr>
+    <tr>
+      <td>US09</td>
+      <td>Registro de un usuario nuevo</td>
+      <td>Como usuario, quiero registrarme para acceder a las funciones de usuario.</td>
+      <td>
+        <p><strong>Escenario 1: Registro de cuenta por formulario</strong></p>
+        <p><strong>Given</strong> el usuario desea registrarse en la plataforma.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Registrarse".</p>
+        <p><strong>When</strong> complete el formulario de registro con su información personal de forma correcta.</p>
+        <p><strong>And</strong> seleccione su rol en la aplicación entre "Granjero" o "Asesor".</p>
+        <p><strong>Then</strong> la cuenta se creará exitosamente.</p>
+        <p><strong>Escenario 2: Registro incorrecto de cuenta</strong></p>
+        <p><strong>Given</strong> el usuario se encuentra en el apartado de "Registrarse".</p>
+        <p><strong>When</strong> ingrese los datos solicitados de manera errónea.</p>
+        <p><strong>Then</strong> la cuenta no se creará.</p>
+        <p><strong>And</strong> recibirá un mensaje indicando el error en los datos ingresados.</p>
+      </td>
+      <td>E03</td>
+    </tr>
+    <tr>
+      <td>US10</td>
+      <td>Inicio de sesión</td>
+      <td>Como usuario quiero acceder a mi cuenta registrada para acceder a las funciones de usuario.</td>
+      <td>
+        <p><strong>Escenario 1: Inicio de sesión exitoso</strong></p>
+        <p><strong>Given</strong> el usuario desea acceder a su cuenta registrada.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Iniciar Sesión".</p>
+        <p><strong>When</strong> introduzca sus credenciales correctamente.</p>
+        <p><strong>Then</strong> será redireccionado a su vista de usuario.</p>
+        <p><strong>Escenario 2: Inicio de sesión fallido</strong></p>
+        <p><strong>Given</strong> el usuario desea acceder a su cuenta registrada.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Iniciar Sesión".</p>
+        <p><strong>When</strong> introduzca sus credenciales incorrectamente.</p>
+        <p><strong>Then</strong> no se le permitirá acceso a su cuenta.</p>
+        <p><strong>And</strong> recibirá un mensaje indicando el error.</p>
+      </td>
+      <td>E03</td>
+    </tr>
+    <tr>
+      <td>US11</td>
+      <td>Visualización de notificaciones del usuario</td>
+      <td>Como usuario de la aplicación, quiero recibir notificaciones referentes al estado de las asesorías u otra información relevante para mantenerme informado.</td>
+      <td>
+        <p><strong>Escenario 1: Recibir notificaciones de asesorías programadas</strong></p>
+        <p><strong>Given</strong> el usuario está registrado en la plataforma.</p>
+        <p><strong>When</strong> se aproxime la fecha de una asesoría.</p>
+        <p><strong>Then</strong> el sistema le enviará una notificación indicando la proximidad de la asesoría.</p>
+        <p><strong>Escenario 2: Recibir notificaciones de información relevante</strong></p>
+        <p><strong>Given</strong> el usuario está registrado en la plataforma.</p>
+        <p><strong>When</strong> se genere información relevante para el usuario, como cambios en la política de privacidad, actualizaciones importantes, o nuevas funcionalidades.</p>
+        <p><strong>Then</strong> el sistema le enviará una notificación indicando la relevancia de dicha información.</p>
+      </td>
+      <td>E03</td>
+    </tr>
+    <tr>
+      <td>US12</td>
+      <td>Modificar perfil de usuario</td>
+      <td>Como usuario, quiero poder modificar mi perfil para actualizar los datos que desee.</td>
+      <td>
+        <p><strong>Escenario 1: Modificación de datos de perfil exitosa</strong></p>
+        <p><strong>Given</strong> el usuario desea modificar los datos de su perfil.</p>
+        <p><strong>When</strong> ingrese a la sección de Perfil del menú.</p>
+        <p><strong>And</strong> llene los campos sobre los que desea modificar.</p>
+        <p><strong>Then</strong> se verificará los datos ingresados.</p>
+        <p><strong>And</strong> el sistema actualizará los datos del perfil.</p>
+        <p><strong>Escenario 2: Modificación de datos de perfil fallida</strong></p>
+        <p><strong>Given</strong> el usuario desea modificar los datos de su perfil.</p>
+        <p><strong>When</strong> ingrese a la sección de Perfil del menú.</p>
+        <p><strong>And</strong> llene los campos sobre los que desea modificar.</p>
+        <p><strong>Then</strong> se verificará los datos ingresados.</p>
+        <p><strong>And</strong> el sistema mostrará un mensaje de error indicando el dato erróneo.</p>
+      </td>
+      <td>E03</td>
+    </tr>
+    <tr>
+      <td>US13</td>
+      <td>Visualización de la sección de inicio de la Landing Page</td>
+      <td>Como potencial usuario quiero acceder a una página de inicio para conocer la idea principal de la plataforma y ver un diseño agradable.</td>
+      <td>
+        <p><strong>Escenario 1: Visualización de página de inicio</strong></p>
+        <p><strong>Given</strong> el usuario desea conocer sobre la plataforma.</p>
+        <p><strong>When</strong> ingresa al Landing Page.</p>
+        <p><strong>Then</strong> se mostrará la página inicial sencilla que da a entender la idea principal.</p>
+      </td>
+      <td>E04</td>
+    </tr>
+    <tr>
+      <td>US14</td>
+      <td>Visualización de la sección 'Acerca de' de la Landing Page</td>
+      <td>Como potencial usuario quiero acceder a una página sobre el problema que resuelve para conocer el propósito de la plataforma.</td>
+      <td>
+        <p><strong>Escenario 1: Visualización de la sección</strong></p>
+        <p><strong>Given</strong> el usuario desea conocer sobre el problema que resuelve la plataforma.</p>
+        <p><strong>When</strong> ingresa al Landing Page.</p>
+        <p><strong>And</strong> ingresa a la sección 'Acerca De'.</p>
+        <p><strong>Then</strong> se mostrará la página Acerca De, en la que se detalla la problemática que resolverá la aplicación.</p>
+      </td>
+      <td>E04</td>
+    </tr>
+    <tr>
+      <td>US15</td>
+      <td>Visualización de la sección 'Sobre Nosotros' de la Landing Page</td>
+      <td>Como potencial usuario quiero acceder a una página sobre la startup para conocer el propósito de la empresa detrás de la plataforma.</td>
+      <td>
+        <p><strong>Escenario 1: Visualización de la sección</strong></p>
+        <p><strong>Given</strong> el usuario desea conocer sobre la empresa detrás de la plataforma.</p>
+        <p><strong>When</strong> ingresa al Landing Page.</p>
+        <p><strong>And</strong> ingresa a la sección 'Sobre Nosotros'.</p>
+        <p><strong>Then</strong> se mostrará la página Sobre Nosotros, en la que detalla información sobre la startup, su misión y visión.</p>
+      </td>
+      <td>E04</td>
+    </tr>
+    <tr>
+      <td>US16</td>
+      <td>Visualización de la sección 'Características' de la Landing Page</td>
+      <td>Como potencial usuario quiero acceder a una página sobre las características para conocer las principales funcionalidades de la plataforma.</td>
+      <td>
+        <p><strong>Escenario 1: Visualización de la sección</strong></p>
+        <p><strong>Given</strong> el usuario desea conocer sobre las características de la plataforma.</p>
+        <p><strong>When</strong> ingresa al Landing Page.</p>
+        <p><strong>And</strong> ingresa a la sección 'Características'.</p>
+        <p><strong>Then</strong> se mostrará la página Características en la que detalla información sobre las funcionalidades principales que ofrece la plataforma.</p>
+      </td>
+      <td>E04</td>
+    </tr>
+    <tr>
+      <td>US17</td>
+      <td>Visualización de la sección 'Contacto' de la Landing Page</td>
+      <td>Como potencial usuario quiero acceder a una página de contacto para poder contactar con la empresa en caso tenga algún problema, duda o sugerencia.</td>
+      <td>
+        <p><strong>Escenario 1: Visualización de la sección</strong></p>
+        <p><strong>Given</strong> el usuario desea contactar con el área de soporte de la empresa.</p>
+        <p><strong>When</strong> ingresa al Landing Page.</p>
+        <p><strong>And</strong> ingresa a la sección 'Contacto'.</p>
+        <p><strong>Then</strong> se mostrará la página Contacto, en la que se muestra los medios de contacto que puede usar el usuario para hacer consultas.</p>
+      </td>
+      <td>E04</td>
+    </tr>
+    <tr>
+      <td>US18</td>
+      <td>Navegación dentro de la plataforma</td>
+      <td>Como usuario, quiero acceder fácilmente a las funcionalidades principales de la aplicación para explorar la aplicación de forma intuitiva según el dispositivo.</td>
+      <td>
+        <p><strong>Escenario 1: Navegación en aplicación móvil</strong></p>
+        <p><strong>Given</strong> el usuario ha ingresado a la aplicación desde un dispositivo móvil.</p>
+        <p><strong>When</strong> inicie sesión correctamente.</p>
+        <p><strong>Then</strong> el sistema lo redirigirá a la pantalla de inicio, donde podrá visualizar y acceder a las funcionalidades principales de la aplicación.</p>
+        <p><strong>Escenario 2: Navegación en página web</strong></p>
+        <p><strong>Given</strong> el usuario ha ingresado a la aplicación desde un navegador web.</p>
+        <p><strong>When</strong> inicie sesión correctamente.</p>
+        <p><strong>Then</strong> el sistema mostrará la barra de navegación en la interfaz principal, permitiendo acceder fácilmente a las diferentes secciones de la aplicación.</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US19</td>
+      <td>Visualización de historial de citas</td>
+      <td>Como usuario, quiero ver un historial de mis citas anteriores para tener un registro de las reuniones y sus detalles.</td>
+      <td>
+        <p><strong>Escenario 1: Acceso al historial de citas</strong></p>
+        <p><strong>Given</strong> el usuario está en la sección de perfil de su cuenta.</p>
+        <p><strong>When</strong> selecciona la opción para ver el historial de citas.</p>
+        <p><strong>Then</strong> podrá ver una lista de todas las citas anteriores, incluyendo fechas, horas y detalles de las reuniones</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US20</td>
+      <td>Cancelación de citas</td>
+      <td>Como usuario, quiero poder cancelar mis citas existentes para ajustarlas a mis nuevas disponibilidades o necesidades.</td>
+      <td>
+        <p><strong>Escenario 1: Cancelación de una cita</strong></p>
+        <p><strong>Given</strong> el usuario tiene una cita programada y desea cancelarla.</p>
+        <p><strong>When</strong> selecciona la cita del listado de citas.</p>
+        <p><strong>And</strong> selecciona la opción para cancelar la cita.</p>
+        <p><strong>Then</strong> el sistema cancelará la cita y notificará al usuario y al asesor sobre el cambio.</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US21</td>
+      <td>Búsqueda y filtrado de citas</td>
+      <td>Como usuario, quiero buscar y filtrar mis citas programadas para encontrar fácilmente una cita específica o consultar citas en una fecha determinada.</td>
+      <td>
+        <p><strong>Escenario 1: Búsqueda de citas</strong></p>
+        <p><strong>Given</strong> el usuario está en la sección de citas de la aplicación.</p>
+        <p><strong>When</strong> se elija la fecha a filtrar para la cita</p>
+        <p><strong>Then</strong> el sistema mostrará una lista de citas que coincidan con la fecha elegida.</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US22</td>
+      <td>Gestión de recintos</td>
+      <td>Como granjero con poca experiencia, quiero registrar, editar y eliminar recintos de mis animales, para mantener un control organizado y actualizado sobre los espacios donde se encuentran.</td>
+      <td>
+        <p><strong>Escenario 1: Registrar un recinto</strong></p>
+        <p><strong>Given</strong> el usuario accede a la sección de recintos.</p>
+        <p><strong>When</strong> complete el formulario con los datos del nuevo recinto.</p>
+        <p><strong>Then</strong> el sistema guardará el recinto y lo mostrará en la lista.</p>
+        <p><strong>Escenario 2: Editar un recinto existente</strong></p>
+        <p><strong>Given</strong> el usuario visualiza un recinto en la lista.</p>
+        <p><strong>When</strong> seleccione la opción de editar y modifique los datos.</p>
+        <p><strong>Then</strong> el sistema actualizará la información del recinto.</p>
+        <p><strong>Escenario 3: Eliminar un recinto</strong></p>
+        <p><strong>Given</strong> el usuario visualiza un recinto en la lista.</p>
+        <p><strong>When</strong> seleccione la opción de eliminar.</p>
+        <p><strong>Then</strong> el sistema pedirá confirmación y, al aceptarla, eliminará el recinto.</p>
+      </td>
+      <td>E05</td>
+    </tr>
+    <tr>
+      <td>US23</td>
+      <td>Gestión de animales</td>
+      <td>Como granjero con poca experiencia, quiero registrar, editar y eliminar animales, asignándoles a recintos específicos, para llevar un registro claro y ordenado de cada uno de ellos.</td>
+      <td>
+        <p><strong>Escenario 1: Registrar un animal en un recinto</strong></p>
+        <p><strong>Given</strong> el usuario accede a la sección de recintos.</p>
+        <p><strong>When</strong> complete el formulario con los datos del animal y seleccione un recinto.</p>
+        <p><strong>Then</strong> el sistema guardará el animal y lo asociará al recinto elegido.</p>
+        <p><strong>Escenario 2: Editar información de un animal</strong></p>
+        <p><strong>Given</strong> el usuario visualiza un animal en la lista.</p>
+        <p><strong>When</strong> seleccione la opción de editar y realice los cambios.</p>
+        <p><strong>Then</strong> el sistema actualizará la información del animal.</p>
+        <p><strong>Escenario 3: Eliminar un animal</strong></p>
+        <p><strong>Given</strong> el usuario visualiza un animal en la lista.</p>
+        <p><strong>When</strong> seleccione la opción de eliminar.</p>
+        <p><strong>Then</strong> el sistema pedirá confirmación y, al aceptarla, eliminará al animal del registro.</p>
+      </td>
+      <td>E05</td>
+    </tr>
+    <tr>
+      <td>TS01</td>
+      <td>Uso de una API para videollamadas</td>
+      <td>Como desarrollador quiero integrar la creación de videollamadas utilizando la API de Jitsi Meet para facilitar las asesorías en la aplicación.</td>
+      <td>
+        <p><strong>Escenario 1: Creación de videollamada</strong></p>
+        <p><strong>Given</strong> el usuario tiene una asesoría pendiente.</p>
+        <p><strong>When</strong> seleccione la opción de ingresar a la asesoría.</p>
+        <p><strong>Then</strong> el sistema lo redireccionará a un enlace con la videollamada de Jitsi Meet para que el usuario acceda a la asesoría.</p>
+      </td>
+      <td>E06</td>
+    </tr>
+    <tr>
+      <td>TS02</td>
+      <td>Uso de una API para alojar imágenes</td>
+      <td>Como desarrollador quiero integrar la API de almacenamiento de Firebase para que los usuarios puedan subir y visualizar sus imágenes de foto de perfil y publicaciones.</td>
+      <td>
+        <p><strong>Escenario 1: Subir imagen en la aplicación</strong></p>
+        <p><strong>Given</strong> el usuario desea subir una imagen en nuestra plataforma.</p>
+        <p><strong>When</strong> se reciba la imagen en el formato compatible.</p>
+        <p><strong>Then</strong> el sistema sube la imagen usando la API del almacenamiento de Firebase para generar el enlace de visualización.</p>
+      </td>
+      <td>E06</td>
+    </tr>
+      <tr>
+      <td>TS03</td>
+      <td>Uso de nuestra API para gestionar perfiles</td>
+      <td>Como desarrollador quiero integrar un API para gestionar la información de los perfiles de los usuarios en la base de datos, de manera que pueda realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) a través de solicitudes HTTP.</td>
+      <td>
+        <p><strong>Escenario 1: Integrar un API para manejar las solicitudes HTTP de los perfiles de usuario</strong></p>
+        <p><strong>Given</strong> la aplicación tiene acceso a la documentación de la API y las credenciales necesarias para realizar la integración.</p>
+        <p><strong>When</strong> se envía una solicitud de tipo GET, POST o PUT con los datos solicitados del usuario a la API.</p>
+        <p><strong>Then</strong> la API responde con un código de estado correspondiente (200 OK o 201 Created).</p>
+        <p><strong>And</strong> se realiza la operación solicitada.</p>
+        <p><strong>Escenario 2: Manejar errores en la Integración de API para Solicitudes HTTP de perfiles de usuario</strong></p>
+        <p><strong>Given</strong> la aplicación tiene acceso a la documentación de la API y las credenciales necesarias para realizar la integración.</p>
+        <p><strong>When</strong> se envía una solicitud de tipo GET, POST o PUT con los datos solicitados del usuario a la API.</p>
+        <p><strong>And</strong> ocurre un error.</p>
+        <p><strong>Then</strong> la API responde con un código de estado correspondiente al error (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Internal Server Error).</p>
+        <p><strong>And</strong> el sistema proporciona un mensaje de error descriptivo que ayuda al desarrollador a identificar y corregir el problema.</p>
+      </td>
+      <td>E06</td>
+    </tr>
+    <tr>
+      <td>TS04</td>
+      <td>Uso de nuestra API para gestionar asesorías</td>
+      <td>Como desarrollador quiero integrar un API para gestionar la información de las asesorías en la base de datos, de manera que pueda realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) a través de solicitudes HTTP.</td>
+      <td>
+        <p><strong>Escenario 1: Integrar un API para manejar las solicitudes HTTP de las asesorías</strong></p>
+        <p><strong>Given</strong> la aplicación tiene acceso a la documentación de la API y las credenciales necesarias para realizar la integración.</p>
+        <p><strong>When</strong> se envía una solicitud de tipo GET, POST o PUT con los datos solicitados relacionados a las asesorías a la API.</p>
+        <p><strong>Then</strong> la API responde con un código de estado correspondiente (200 OK o 201 Created).</p>
+        <p><strong>And</strong> se realiza la operación solicitada.</p>
+        <p><strong>Escenario 2: Manejar errores en la Integración de API para Solicitudes HTTP de asesorías</strong></p>
+        <p><strong>Given</strong> la aplicación tiene acceso a la documentación de la API y las credenciales necesarias para realizar la integración.</p>
+        <p><strong>When</strong> se envía una solicitud de tipo GET, POST o PUT con los datos solicitados relacionados a las asesorías a la API.</p>
+        <p><strong>And</strong> ocurre un error.</p>
+        <p><strong>Then</strong> la API responde con un código de estado correspondiente al error (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Internal Server Error).</p>
+        <p><strong>And</strong> el sistema proporciona un mensaje de error descriptivo que ayuda al desarrollador a identificar y corregir el problema.</p>
+      </td>
+      <td>E06</td>
+    </tr>
+    <tr>
+      <td>TS05</td>
+      <td>Uso de nuestra API para gestionar publicaciones</td>
+      <td>Como desarrollador quiero integrar un API para gestionar la información de las publicaciones en la base de datos, de manera que pueda realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) a través de solicitudes HTTP.</td>
+      <td>
+        <p><strong>Escenario 1: Integrar un API para manejar las solicitudes HTTP de las publicaciones</strong></p>
+        <p><strong>Given</strong> la aplicación tiene acceso a la documentación de la API y las credenciales necesarias para realizar la integración.</p>
+        <p><strong>When</strong> se envía una solicitud de tipo GET, POST o PUT con los datos solicitados de las publicaciones a la API.</p>
+        <p><strong>Then</strong> la API responde con un código de estado correspondiente (200 OK o 201 Created).</p>
+        <p><strong>And</strong> se realiza la operación solicitada.</p>
+        <p><strong>Escenario 2: Manejar errores en la Integración de API para Solicitudes HTTP de publicaciones</strong></p>
+        <p><strong>Given</strong> la aplicación tiene acceso a la documentación de la API y las credenciales necesarias para realizar la integración.</p>
+        <p><strong>When</strong> se envía una solicitud de tipo GET, POST o PUT con los datos solicitados de las publicaciones a la API.</p>
+        <p><strong>And</strong> ocurre un error.</p>
+        <p><strong>Then</strong> la API responde con un código de estado correspondiente al error (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Internal Server Error).</p>
+        <p><strong>And</strong> el sistema proporciona un mensaje de error descriptivo que ayuda al desarrollador a identificar y corregir el problema.</p>
+      </td>
+      <td>E06</td>
+    </tr>
+    <tr>
+      <td>TS06</td>
+      <td>Uso de nuestra API para gestionar recintos de animales</td>
+      <td>Como desarrollador quiero integrar un API para gestionar la información de los recintos de animales en la base de datos, de manera que pueda realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) a través de solicitudes HTTP.</td>
+      <td>
+        <p><strong>Escenario 1: Integrar un API para manejar las solicitudes HTTP de los recintos</strong></p>
+        <p><strong>Given</strong> la aplicación tiene acceso a la documentación de la API y las credenciales necesarias para realizar la integración.</p>
+        <p><strong>When</strong> se envía una solicitud de tipo GET, POST o PUT con los datos solicitados relacionados a los recintos a la API.</p>
+        <p><strong>Then</strong> la API responde con un código de estado correspondiente (200 OK o 201 Created).</p>
+        <p><strong>And</strong> se realiza la operación solicitada.</p>
+        <p><strong>Escenario 2: Manejar errores en la Integración de API para Solicitudes HTTP de recintos</strong></p>
+        <p><strong>Given</strong> la aplicación tiene acceso a la documentación de la API y las credenciales necesarias para realizar la integración.</p>
+        <p><strong>When</strong> se envía una solicitud de tipo GET, POST o PUT con los datos solicitados relacionados a los recintos a la API.</p>
+        <p><strong>And</strong> ocurre un error.</p>
+        <p><strong>Then</strong> la API responde con un código de estado correspondiente al error (400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Internal Server Error).</p>
+        <p><strong>And</strong> el sistema proporciona un mensaje de error descriptivo que ayuda al desarrollador a identificar y corregir el problema.</p>
+      </td>
+      <td>E06</td>
+    </tr>
+    <tr>
+      <td>TS07</td>
+      <td>Uso de nuestra API para gestionar autenticación</td>
+      <td>Como desarrollador quiero integrar un API para gestionar la información de los usuarios en la base de datos, de manera que pueda realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) a través de solicitudes HTTP.</td>
+      <td>
+        <p><strong>Escenario 1: Registro de un nuevo usuario con verificación de seguridad (sign-up)</strong></p>
+        <p><strong>Given</strong> el usuario desea registrarse</p>
+        <p><strong>When</strong> el sistema recibe una solicitud POST con los datos del nuevo usuario a la API</p>
+        <p><strong>Then</strong> se registrará el nuevo usuario</p>
+        <p><strong>And</strong> brindará respuesta a la petición realizada</p>
+        <p><strong>Escenario 2: Inicio de sesión del usuario con verificación de seguridad exitoso (sign-in)</strong></p>
+        <p><strong>Given</strong> el usuario desea iniciar sesión de forma segura</p>
+        <p><strong>When</strong> el sistema recibe una solicitud POST con las credenciales de inicio de sesión del usuario (correo electrónico y contraseña) a la API</p>
+        <p><strong>Then</strong> se verificarán las credenciales</p>
+        <p><strong>And</strong> la API responde con un código de estado 200 y el token de autenticación válido</p>
+        <p><strong>Escenario 3: Inicio de sesión del usuario con verificación de seguridad fallido (sign-in)</strong></p>
+        <p><strong>Given</strong> el usuario desea iniciar sesión de forma segura</p>
+        <p><strong>When</strong> el sistema recibe una solicitud POST con las credenciales de inicio de sesión del usuario (correo electrónico y contraseña) a la API</p>
+        <p><strong>Then</strong> se verificarán las credenciales</p>
+        <p><strong>And</strong> la API responde con un código de estado 400 indicando que no se encontró un usuario con las credenciales ingresadas</p>
+      </td>
+      <td>E06</td>
+    </tr>
+  </tbody>
+</table>
+
 ## 3.3 Product Backlog
+|**# Orden**|**User Story Id**|**Título**|**Descripción**|**Story Points (1/2/3/5/8)**|
+| :- | :- | :- | :- | :- |
+|1|TS03|Uso de nuestra API para gestionar perfiles|Como desarrollador quiero integrar un API para gestionar la información de los perfiles de los usuarios en la base de datos, de manera que pueda realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) a través de solicitudes HTTP.|5|
+|2|TS04|Uso de nuestra API para gestionar asesorías|Como desarrollador quiero integrar un API para gestionar la información de las asesorías en la base de datos, de manera que pueda realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) a través de solicitudes HTTP.|5|
+|3|TS05|Uso de nuestra API para gestionar publicaciones|Como desarrollador quiero integrar un API para gestionar la información de las publicaciones en la base de datos, de manera que pueda realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) a través de solicitudes HTTP.|5|
+|4|TS06|Uso de nuestra API para gestionar recintos de animales|Como desarrollador quiero integrar un API para gestionar la información de los recintos de animales en la base de datos, de manera que pueda realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) a través de solicitudes HTTP.|5|
+|5|TS07|Uso de nuestra API para gestionar autenticación|Como desarrollador quiero integrar un API para gestionar la información de los usuarios en la base de datos, de manera que pueda realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) a través de solicitudes HTTP.|5|
+|6|TS01|Uso de una API para videollamadas|Como desarrollador quiero integrar la creación de videollamadas utilizando la API de Jitsi Meet para facilitar las asesorías en la aplicación.|3|
+|7|TS02|Uso de una API para alojar imágenes|Como desarrollador quiero integrar la API de almacenamiento de Firebase para que los usuarios puedan subir y visualizar sus imágenes de foto de perfil y publicaciones.|3|
+|8|US13|Visualización de la sección de inicio de la Landing Page|Como potencial usuario quiero acceder a una página de inicio para conocer la idea principal de la plataforma y ver un diseño agradable.|2|
+|9|US14|Visualización de la sección 'Acerca de' de la Landing Page|Como potencial usuario quiero acceder a una página sobre el problema que resuelve para conocer el propósito de la plataforma.|2|
+|10|US15|Visualización de la sección 'Sobre Nosotros' de la Landing Page|Como potencial usuario quiero acceder a una página sobre la startup para conocer el propósito de la empresa detrás de la plataforma.|2|
+|11|US16|Visualización de la sección 'Características' de la Landing Page|Como potencial usuario quiero acceder a una página sobre las características para conocer las principales funcionalidades de la plataforma.|2|
+|12|US17|Visualización de la sección 'Contacto' de la Landing Page|Como potencial usuario quiero acceder a una página de contacto para poder contactar con la empresa en caso tenga algún problema, duda o sugerencia.|2|
+|13|US18|Navegación dentro de la plataforma|Como usuario, quiero acceder fácilmente a las funcionalidades principales de la aplicación para explorar la aplicación de forma intuitiva según el dispositivo.|3|
+|14|US01|Visualización del catálogo de asesores|Como granjero con poca experiencia, quiero explorar el catálogo de asesores para conocer quiénes me pueden apoyar con asesorías.|2|
+|15|US02|Visualización de información de un asesor|Como granjero con poca experiencia, quiero ver la información de un asesor para tomar una decisión informada antes de separar una cita.|2|
+|16|US06|Separación de horarios de disponibilidad para asesorías|Como asesor, quiero poder separar los horarios en los que estoy disponible para que los usuarios interesados puedan agendar una asesoría en un momento conveniente.|5|
+|17|US03|Visualización de horarios de asesores|Como granjero con poca experiencia, quiero ver los horarios disponibles de los asesores para seleccionar un horario que se ajuste a mi agenda.|3|
+|18|US04|Programación de citas con asesores|Como granjero con poca experiencia, quiero programar una cita con un asesor para recibir orientación personalizada en el sector agropecuario.|5|
+|19|US05|Calificación del asesor luego de una cita|Como granjero con poca experiencia, quiero calificar al asesor luego de la consulta para ayudar a otros granjeros a tomar una decisión informada antes de separar una cita.|3|
+|20|US19|Visualización de historial de citas|Como usuario, quiero ver un historial de mis citas anteriores para tener un registro de las reuniones y sus detalles.|3|
+|21|US20|Cancelación de citas|Como usuario, quiero poder cancelar mis citas existentes para ajustarlas a mis nuevas disponibilidades o necesidades.|2|
+|22|US21|Búsqueda y filtrado de citas|Como usuario, quiero buscar y filtrar mis citas programadas para encontrar fácilmente una cita específica o consultar citas en una fecha determinada.|3|
+|23|US22|Gestión de recintos|Como granjero con poca experiencia, quiero registrar, editar y eliminar recintos de mis animales, para mantener un control organizado y actualizado sobre los espacios donde se encuentran.|5|
+|24|US23|Gestión de animales|Como granjero con poca experiencia, quiero registrar, editar y eliminar animales, asignándoles a recintos específicos, para llevar un registro claro y ordenado de cada uno de ellos.|5|
+|25|US07|Gestión de publicaciones de asesores|Como asesor, quiero hacer publicaciones referentes a mis trabajos para tener una mayor visibilidad con los granjeros inexpertos.|5|
+|26|US08|Visualización de publicaciones de los asesores|Como granjero con poca experiencia, quiero poder ver las publicaciones de los asesores para obtener información útil y solicitar asesoramiento en base a esas publicaciones.|2|
+|27|US09|Registro de un usuario nuevo|Como usuario, quiero registrarme para acceder a las funciones de usuario.|3|
+|28|US10|Inicio de sesión|Como usuario quiero acceder a mi cuenta registrada para acceder a las funciones de usuario.|2|
+|29|US11|Visualización de notificaciones del usuario|Como usuario de la aplicación, quiero recibir notificaciones referentes al estado de las asesorías u otra información relevante para mantenerme informado.|2|
+|30|US12|Modificar perfil de usuario|Como usuario, quiero poder modificar mi perfil para actualizar los datos que desee.|3|
+
 ## 3.4 Impact Mapping
+El Impact Mapping es una técnica estratégica que se utiliza para planificar y comunicar cómo un proyecto o producto contribuirá a alcanzar los objetivos de negocio. A través de esta herramienta, se identifican los Business Goals que se desean lograr, las Personas clave que influirán en estos objetivos, los Impacts que se espera de estas personas, y los Deliverables que se desarrollarán para generar esos impactos. Además, se detallan las User Stories que describen cómo los usuarios interactuarán con los entregables para lograr el impacto deseado. De esta manera, el Impact Mapping ayuda a alinear el desarrollo de productos con los objetivos estratégicos, asegurando que cada esfuerzo contribuya directamente al éxito del proyecto.
+
+**Segmento: Productores Agrícolas**
+
+<img alt="Impact Map para Productor Agrícola" src="img/impact-mapping-farmer.png">
+
+**Segmento: Asesores experimentados**
+
+<img alt="Impact Map para Asesor" src="img/impact-mapping-advisor.png">
 
