@@ -66,6 +66,7 @@
           <li>Paredes Puente, Sebastian Roberto</li>
           <li>Salinas Torres, Salvador Antonio</li>
           <li>Elias Sanchez, Harold Miguel</li>
+          <li>Chinchihualpa Saldarriaga, Luis Sebastian</li>
         </ul>
       </td>
       <td>
