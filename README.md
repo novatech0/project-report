@@ -2475,7 +2475,32 @@ Se seleccionaron las siguientes historias de usuario como las principales para i
 ### 4.3.2. Software Architecture Container Level Diagrams
 ### 4.3.3. Software Architecture Deployment Diagrams
 
+# Conclusiones
+## Conclusiones y Recomendaciones
+## Video About the Team
 
+# Bibliografía
+
+Aguilar, G., Bustamante, J., Bazán, V. y Falcón, N. (2011). Diagnóstico situacional de la crianza de cuyes en una zona de Cajamarca. _Revista de Investigaciones Veterinarias del Perú, 22(1)_, 09-14. http://www.scielo.org.pe/scielo.php?script=sci_arttext&pid=S1609-91172011000100002&lng=es&tlng=es
+
+Ames, A. (2022). EVIDENCIA para una Nueva Gestión Pública. _Escuela de Gestión Pública de la Universidad del Pacífico_. https://www.up.edu.pe/egp/programas-especializacion_copy(1)/SiteAssets/Lists/Observatorio/AllItems/Informe%20de%20Evidencia%20sector%20Agropecuario%20-%20EGP.pdf
+
+Android Developers. (2024). _Guía de estilo de Kotlin_. https://developer.android.com/kotlin/style-guide?hl=es-419
+
+Google. (s.f.). _Google HTML/CSS Style Guide_. https://google.github.io/styleguide/htmlcssguide.html
+
+Ministerio de Desarrollo Agrario y Riego. (2023). _Cadena productiva de cuyes_. https://cdn.www.gob.pe/uploads/document/file/4061856/Cadena%20productiva%20de%20cuy.pdf
+
+Luque, R. (2023). _Meta Tags | Las 7 más importantes en SEO_. SEOcrawl. https://seocrawl.com/meta-tags/
+
+Soodan, V., Jamwal, M., Rana, N. P., Sharma, D., & Chakraborty, S. (2023). Modelling the adoption of agro-advisory mobile applications: a theoretical extension and analysis using result demonstrability, trust, self-efficacy and mobile usage proficiency. _Journal Of Agribusiness In Developing And Emerging Economies, 14(4)_, 749-768. https://doi.org/10.1108/jadee-05-2022-0087
+
+W3Schools. (s.f.). _HTML Style Guide_. https://www.w3schools.com/html/html5_syntax.asp
+
+# Anexos
+## Videos de exposiciones
+
+Exposición TB1: [expo-tb1.mp4](link)
 
 <style>
   .custom-table {
