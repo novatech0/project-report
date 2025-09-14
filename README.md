@@ -36,8 +36,8 @@
     <td>U202212684</td>
   </tr>
   <tr>
-    <td>Nombre</td>
-    <td>Codigo</td>
+    <td>Chinchihualpa Saldarriaga, Luis Sebastian</td>
+    <td>U202212112</td>
   </tr>
 </table>
 
