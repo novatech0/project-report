@@ -990,7 +990,7 @@ El As-Is Scenario Mapping es una herramienta utilizada para analizar y documenta
 
 **Segmento: Productores agropecuarios**
 
-<table>
+<table class="custom-table">
   <thead>
     <tr>
       <td>Fases</td>
@@ -1027,7 +1027,7 @@ El As-Is Scenario Mapping es una herramienta utilizada para analizar y documenta
 
 **Segmento: Asesores experimentados**
 
-<table>
+<table class="custom-table">
   <thead>
     <tr>
       <td>Fases</td>
@@ -1084,10 +1084,10 @@ En esta sección, se definen los términos utilizados a lo largo del proyecto pa
 
 **Segmento: Productores agrícolas**
 
-<table>
+<table class="custom-table">
   <thead>
     <tr>
-      <td>Phases</td>
+      <td>Fases</td>
       <td>Enfrentamiento de problemas</td>
       <td>Búsqueda de soluciones</td>
       <td>Consulta con asesor</td>
@@ -1121,10 +1121,10 @@ En esta sección, se definen los términos utilizados a lo largo del proyecto pa
 
 **Segmento: Asesores experimentados**
 
-<table>
+<table class="custom-table">
   <thead>
     <tr>
-      <td>Phases</td>
+      <td>Fases</td>
       <td>Promoción de servicios</td>
       <td>Contacto con productores agrícolas</td>
       <td>Realización de asesorías</td>
@@ -1160,7 +1160,7 @@ En esta sección, se definen los términos utilizados a lo largo del proyecto pa
 
 Se identificaron las siguientes épicas que se componen de las historias de usuario.
 
-<table>
+<table class="custom-table">
   <tr>
     <th><b>Epic ID</b></th>
     <th><b>Epic</b></th>
@@ -1168,7 +1168,7 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
     <th><b>User Stories</b></th>
   </tr>
   <tr>
-    <td rowspan="10">1</td>
+    <td rowspan="10">E01</td>
     <td rowspan="10">Sistema de búsqueda y programación de citas</td>
     <td>US01</td>
     <td>Visualización del catálogo de asesores</td>
@@ -1183,14 +1183,14 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
   <tr><td>US20</td><td>Cancelación de citas</td></tr>
   <tr><td>US21</td><td>Búsqueda y filtrado de citas</td></tr>
   <tr>
-    <td rowspan="2">2</td>
+    <td rowspan="2">E02</td>
     <td rowspan="2">Publicaciones de asesores</td>
     <td>US07</td>
     <td>Gestión de publicaciones de asesores</td>
   </tr>
   <tr><td>US08</td><td>Visualización de publicaciones de los asesores</td></tr>
   <tr>
-    <td rowspan="4">3</td>
+    <td rowspan="4">E03</td>
     <td rowspan="4">Sistema de gestión de usuarios</td>
     <td>US09</td>
     <td>Registro de un usuario nuevo</td>
@@ -1199,7 +1199,7 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
   <tr><td>US11</td><td>Visualización de notificaciones del usuario</td></tr>
   <tr><td>US12</td><td>Modificar perfil de usuario</td></tr>
   <tr>
-    <td rowspan="5">4</td>
+    <td rowspan="5">E04</td>
     <td rowspan="5">Landing Page</td>
     <td>US13</td>
     <td>Visualización de la sección de inicio de la Landing Page</td>
@@ -1209,14 +1209,14 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
   <tr><td>US16</td><td>Visualización de la sección 'Características' de la Landing Page</td></tr>
   <tr><td>US17</td><td>Visualización de la sección 'Contacto' de la Landing Page</td></tr>
   <tr>
-    <td rowspan="2">5</td>
+    <td rowspan="2">E05</td>
     <td rowspan="2">Gestión de granja</td>
     <td>US22</td>
     <td>Gestión de recintos</td>
   </tr>
   <tr><td>US23</td><td>Gestión de animales</td></tr>
   <tr>
-    <td rowspan="7">6</td>
+    <td rowspan="7">E06</td>
     <td rowspan="7">Funcionalidades de Web API (Backend)</td>
     <td>TS01</td>
     <td>Uso de una API para videollamadas</td>
@@ -1228,27 +1228,6 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
   <tr><td>TS06</td><td>Uso de nuestra API para gestionar recintos de animales</td></tr>
   <tr><td>TS07</td><td>Uso de nuestra API para gestionar autenticación</td></tr>
 </table>
-
-<style>
-  .custom-table {
-    width: 100%;
-    border-collapse: collapse;
-    page-break-inside: avoid;
-  }
-  .custom-table th, .custom-table td {
-    border: 1px solid #ccc;
-    padding: 4px;
-    vertical-align: top;
-    text-align: left;
-  }
-  .custom-table thead {
-    background-color: #f2f2f2;
-    display: table-header-group;
-  }
-  .custom-table td p {
-    margin: 2px 0;
-  }
-</style>
 
 <table class="custom-table">
   <thead>
@@ -1822,3 +1801,699 @@ El Impact Mapping es una técnica estratégica que se utiliza para planificar y 
 
 <img alt="Impact Map para Asesor" src="img/impact-mapping-advisor.png">
 
+# Capítulo IV: Strategic-Level Software Design
+## 4.1 Strategic-Level Attribute-Driven Design
+### 4.1.1. Design Purpose
+
+El objetivo principal de la aplicación es proporcionar a los productores agrícolas una buena gestión de sus granjas con asesores especializados para que la rentabilidad sea mayor. Al mismo tiempo, ofrece un espacio donde los asesores expertos en granjas puedan difundir sus conocimientos y generar sus propias ganancias. La aplicación está diseñada con la visión de generar beneficios a ambos segmentos y hacer todo este proceso lo más seguro y eficiente.
+
+### 4.1.2. Attribute-Driven Design Inputs
+#### 4.1.2.1. Primary Functionality (Primary User Stories)
+
+Se seleccionaron las siguientes historias de usuario como las principales para iniciar con el desarrollo e implementación de la solución:
+
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th>Epic / Story ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>Relacionado con (Epic ID)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US01</td>
+      <td>Visualización del catálogo de asesores</td>
+      <td>Como productor agropecuario, quiero explorar el catálogo de asesores para conocer quiénes me pueden apoyar con asesorías.</td>
+      <td>
+        <p><strong>Escenario 1: Explorar catálogo de asesores</strong></p>
+        <p><strong>Given</strong> el productor agropecuario quiere explorar el catálogo de asesores.</p>
+        <p><strong>And</strong> se encuentra en la plataforma.</p>
+        <p><strong>When</strong> seleccione el botón relacionado con el "Catálogo de asesores".</p>
+        <p><strong>Then</strong> el sistema le mostrará una lista de todos los asesores disponibles en la plataforma.</p>
+        <p><strong>Escenario 2: Filtrar búsqueda de asesores</strong></p>
+        <p><strong>Given</strong> el productor agropecuario quiere personalizar su búsqueda.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Asesores".</p>
+        <p><strong>When</strong> seleccione el botón de filtros.</p>
+        <p><strong>Then</strong> el sistema le permitirá filtrar el catálogo de asesores por nombre o reputación.</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US02</td>
+      <td>Visualización de información de un asesor</td>
+      <td>Como productor agropecuario, quiero ver la información de un asesor para tomar una decisión informada antes de separar una cita.</td>
+      <td>
+        <p><strong>Escenario 1: Ver información de un asesor</strong></p>
+        <p><strong>Given</strong> el productor agropecuario quiere ver información de un asesor.</p>
+        <p><strong>And</strong> se encuentra en el apartado del "Catálogo de Asesores".</p>
+        <p><strong>When</strong> seleccione al cuadro de un asesor.</p>
+        <p><strong>Then</strong> el sistema le mostrará la información del asesor como nombre, experiencia, calificación y reseñas.</p>
+        <p><strong>Escenario 2: Fallar al visualizar la información del asesor</strong></p>
+        <p><strong>Given</strong> el productor agropecuario quiere ver información relevante del asesor.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Asesores".</p>
+        <p><strong>When</strong> seleccione al cuadro de un asesor en la interfaz.</p>
+        <p><strong>And</strong> se encuentre con un error al cargar la información.</p>
+        <p><strong>Then</strong> el sistema le mostrará un mensaje de error de carga en la interfaz.</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US04</td>
+      <td>Programación de citas con asesores</td>
+      <td>Como productor agropecuario, quiero programar una cita con un asesor para recibir orientación personalizada en el sector agropecuario.</td>
+      <td>
+        <p><strong>Escenario 1: Programar cita</strong></p>
+        <p><strong>Given</strong> el productor agropecuario desea programar una cita.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Horarios Disponibles" del perfil de un asesor.</p>
+        <p><strong>When</strong> seleccione un horario disponible.</p>
+        <p><strong>And</strong> complete los campos solicitados.</p>
+        <p><strong>And</strong> haga clic en el botón "Reservar Cita".</p>
+        <p><strong>Then</strong> el sistema le mostrará un mensaje de confirmación.</p>
+        <p><strong>Escenario 2: Fallar al programar cita</strong></p>
+        <p><strong>Given</strong> el productor agropecuario desea programar una cita.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Horarios Disponibles" del perfil de un asesor.</p>
+        <p><strong>When</strong> seleccione un horario disponible.</p>
+        <p><strong>And</strong> se encuentra un error técnico o de conexión que impide completar la programación.</p>
+        <p><strong>Then</strong> el sistema le mostrará un mensaje de error.</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US07</td>
+      <td>Gestión de publicaciones de asesores</td>
+      <td>Como asesor, quiero hacer publicaciones referentes a mis trabajos para tener una mayor visibilidad con los productores agropecuarios.</td>
+      <td>
+        <p><strong>Escenario 1: Crear una nueva publicación</strong></p>
+        <p><strong>Given</strong> que el asesor está en el apartado de "Mis publicaciones".</p>
+        <p><strong>When</strong> hace clic en "Crear Publicación".</p>
+        <p><strong>And</strong> completa el formulario y presiona "Publicar".</p>
+        <p><strong>Then</strong> el sistema confirma la acción y la publicación se vuelve visible para los productores agropecuarios.</p>
+        <p><strong>Escenario 2: Editar una publicación existente</strong></p>
+        <p><strong>Given</strong> que el asesor tiene una publicación</p>
+        <p><strong>And</strong> está en el apartado "Mis publicaciones".</p>
+        <p><strong>When</strong> selecciona "Editar"</p>
+        <p><strong>And</strong> modifica el contenido y guarda los cambios.</p>
+        <p><strong>Then</strong> el sistema confirma la acción y actualiza la publicación.</p>
+        <p><strong>Escenario 3: Eliminar una publicación existente</strong></p>
+        <p><strong>Given</strong> que el asesor tiene una publicación</p>
+        <p><strong>And</strong> está en el apartado "Mis publicaciones".</p>
+        <p><strong>When</strong> selecciona "Eliminar"</p>
+        <p><strong>And</strong> confirma la acción.</p>
+        <p><strong>Then</strong> el sistema confirma la eliminación y la publicación desaparece de la lista.</p>
+      </td>
+      <td>E02</td>
+    </tr>
+    <tr>
+      <td>US09</td>
+      <td>Registro de un usuario nuevo</td>
+      <td>Como usuario, quiero registrarme para acceder a las funciones de usuario.</td>
+      <td>
+        <p><strong>Escenario 1: Registro de cuenta por formulario</strong></p>
+        <p><strong>Given</strong> el usuario desea registrarse en la plataforma.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Registrarse".</p>
+        <p><strong>When</strong> complete el formulario de registro con su información personal de forma correcta.</p>
+        <p><strong>And</strong> seleccione su rol en la aplicación entre "Granjero" o "Asesor".</p>
+        <p><strong>Then</strong> la cuenta se creará exitosamente.</p>
+        <p><strong>Escenario 2: Registro incorrecto de cuenta</strong></p>
+        <p><strong>Given</strong> el usuario se encuentra en el apartado de "Registrarse".</p>
+        <p><strong>When</strong> ingrese los datos solicitados de manera errónea.</p>
+        <p><strong>Then</strong> la cuenta no se creará.</p>
+        <p><strong>And</strong> recibirá un mensaje indicando el error en los datos ingresados.</p>
+      </td>
+      <td>E03</td>
+    </tr>
+    <tr>
+      <td>US10</td>
+      <td>Inicio de sesión</td>
+      <td>Como usuario quiero acceder a mi cuenta registrada para acceder a las funciones de usuario.</td>
+      <td>
+        <p><strong>Escenario 1: Inicio de sesión exitoso</strong></p>
+        <p><strong>Given</strong> el usuario desea acceder a su cuenta registrada.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Iniciar Sesión".</p>
+        <p><strong>When</strong> introduzca sus credenciales correctamente.</p>
+        <p><strong>Then</strong> será redireccionado a su vista de usuario.</p>
+        <p><strong>Escenario 2: Inicio de sesión fallido</strong></p>
+        <p><strong>Given</strong> el usuario desea acceder a su cuenta registrada.</p>
+        <p><strong>And</strong> se encuentra en el apartado de "Iniciar Sesión".</p>
+        <p><strong>When</strong> introduzca sus credenciales incorrectamente.</p>
+        <p><strong>Then</strong> no se le permitirá acceso a su cuenta.</p>
+        <p><strong>And</strong> recibirá un mensaje indicando el error.</p>
+      </td>
+      <td>E03</td>
+    </tr>
+    <tr>
+      <td>US19</td>
+      <td>Visualización de historial de citas</td>
+      <td>Como usuario, quiero ver un historial de mis citas anteriores para tener un registro de las reuniones y sus detalles.</td>
+      <td>
+        <p><strong>Escenario 1: Acceso al historial de citas</strong></p>
+        <p><strong>Given</strong> el usuario está en la sección de perfil de su cuenta.</p>
+        <p><strong>When</strong> selecciona la opción para ver el historial de citas.</p>
+        <p><strong>Then</strong> podrá ver una lista de todas las citas anteriores, incluyendo fechas, horas y detalles de las reuniones</p>
+      </td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>US22</td>
+      <td>Gestión de recintos</td>
+      <td>Como productor agropecuario, quiero registrar, editar y eliminar recintos de mis animales, para mantener un control organizado y actualizado sobre los espacios donde se encuentran.</td>
+      <td>
+        <p><strong>Escenario 1: Registrar un recinto</strong></p>
+        <p><strong>Given</strong> el usuario accede a la sección de recintos.</p>
+        <p><strong>When</strong> complete el formulario con los datos del nuevo recinto.</p>
+        <p><strong>Then</strong> el sistema guardará el recinto y lo mostrará en la lista.</p>
+        <p><strong>Escenario 2: Editar un recinto existente</strong></p>
+        <p><strong>Given</strong> el usuario visualiza un recinto en la lista.</p>
+        <p><strong>When</strong> seleccione la opción de editar y modifique los datos.</p>
+        <p><strong>Then</strong> el sistema actualizará la información del recinto.</p>
+        <p><strong>Escenario 3: Eliminar un recinto</strong></p>
+        <p><strong>Given</strong> el usuario visualiza un recinto en la lista.</p>
+        <p><strong>When</strong> seleccione la opción de eliminar.</p>
+        <p><strong>Then</strong> el sistema pedirá confirmación y, al aceptarla, eliminará el recinto.</p>
+      </td>
+      <td>E05</td>
+    </tr>
+  </tbody>
+</table>
+
+#### 4.1.2.2. Quality attribute Scenarios
+
+| ID  | Atributo | Fuente | Estímulo | Artefacto | Entorno | Respuesta | Medida |
+| :-  | :- | :- | :- | :- | :- | :- | :-  |
+| QA1 | Seguridad | Usuario | Solicita acceso al sistema | Módulo de login | Operación normal | Verifica credenciales y autenticidad del usuario | Acceso permitido solo a usuarios autenticados (0% accesos no válidos) |
+| QA2 | Modificabilidad| Desarrollador | Requiere actualizar o agregar nuevas funcionalidades | Código fuente | Mantenimiento / Actualización | Permite realizar cambios sin afectar funcionalidades existentes | Tiempo promedio de implementación < 4h / cambios sin defectos colaterales |
+| QA3 | Disponibilidad | Usuario | Intenta reservar o cancelar citas en horarios de alta concurrencia | Servidor / API | Alta carga de usuarios concurrentes | Procesa las solicitudes sin caídas ni bloqueos | Uptime > 95% / tiempo de respuesta menos de 5s en carga máxima |
+| QA4 | Usabilidad | Usuario | Interactúa con la interfaz para navegar y acceder a funcionalidades | Interfaz gráfica| Uso regular del sistema | Proporciona navegación clara, botones visibles y mensajes comprensibles | < 85% de tareas completadas sin ayuda en pruebas de usabilidad |
+
+#### 4.1.2.3. Constraints
+
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th>Technical Story ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>Relacionado con (Epic ID)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CON01</td>
+      <td>Backend con Spring Boot y Java 21</td>
+      <td>El backend del sistema deberá ser desarrollado utilizando el framework Spring Boot y el lenguaje Java en su versión 21.</td>
+      <td>El código backend debe compilar y ejecutarse correctamente en Java 21 utilizando Spring Boot.</td>
+      <td>E01</td>
+    </tr>
+    <tr>
+      <td>CON02</td>
+      <td>Frontend con Angular 17 y TypeScript</td>
+      <td>El frontend será desarrollado en Angular 17 con TypeScript y deberá ser compatible con navegadores basados en Chromium (Chrome, Edge, Opera).</td>
+      <td>La aplicación debe ejecutarse sin errores en navegadores Chromium y mostrar interfaces completas en Angular 17.</td>
+      <td>E02</td>
+    </tr>
+    <tr>
+      <td>CON03</td>
+      <td>Base de datos MySQL</td>
+      <td>El sistema utilizará MySQL como sistema de gestión de base de datos para el almacenamiento de información.</td>
+      <td>La base de datos debe crearse en MySQL y permitir operaciones CRUD sin errores.</td>
+      <td>E06</td>
+    </tr>
+    <tr>
+      <td>CON04</td>
+      <td>Control de versiones con GitHub</td>
+      <td>El proyecto deberá gestionarse con GitHub para control de versiones y trabajo colaborativo.</td>
+      <td>Todo el código debe estar alojado en un repositorio GitHub con historial de commits verificable.</td>
+      <td>E06</td>
+    </tr>
+    <tr>
+      <td>CON05</td>
+      <td>Arquitectura basada en DDD</td>
+      <td>El sistema deberá seguir el enfoque de Domain Driven Design (DDD) para su estructura arquitectónica.</td>
+      <td>El código debe estar organizado en capas o módulos definidos por el dominio, cumpliendo principios DDD.</td>
+      <td>E06</td>
+    </tr>
+    <tr>
+      <td>CON06</td>
+      <td>Principios de seguridad</td>
+      <td>El sistema deberá implementar medidas de seguridad como cifrado de contraseñas, tokens de autenticación, configuración de CORS y HTTPS.</td>
+      <td>Contraseñas encriptadas, tokens generados correctamente, configuración de CORS habilitada y acceso solo por HTTPS.</td>
+      <td>E06</td>
+    </tr>
+    <tr>
+      <td>CON07</td>
+      <td>Autenticación y autorización seguras</td>
+      <td>Se deben establecer mecanismos robustos de autenticación y autorización para controlar el acceso a los recursos.</td>
+      <td>El acceso a recursos solo es permitido a usuarios autenticados y autorizados, verificable mediante pruebas de acceso.</td>
+      <td>E06</td>
+    </tr>
+  </tbody>
+</table>
+
+### 4.1.3. Architectural Drivers Backlog
+
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th>Driver ID</th>
+      <th>Título de Driver</th>
+      <th>Descripción</th>
+      <th>Importancia para Stakeholders</th>
+      <th>Impacto en Architecture Technical Complexity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Quality Attribute Drivers -->
+    <tr>
+      <td>QA1</td>
+      <td>Seguridad</td>
+      <td>El sistema debe verificar autenticidad, cifrado de contraseñas y protección contra accesos no autorizados.</td>
+      <td>High</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>QA2</td>
+      <td>Modificabilidad</td>
+      <td>El sistema debe facilitar cambios en funcionalidades sin afectar la estabilidad del software.</td>
+      <td>Low</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>QA3</td>
+      <td>Disponibilidad</td>
+      <td>El sistema debe estar disponible 24/7 para reservas y cancelaciones incluso bajo alta concurrencia.</td>
+      <td>High</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>QA4</td>
+      <td>Usabilidad</td>
+      <td>El sistema debe proporcionar una interfaz intuitiva y fácil de usar.</td>
+      <td>High</td>
+      <td>Medium</td>
+    </tr>
+    <!-- Constraints -->
+    <tr>
+      <td>CON01</td>
+      <td>Backend con Spring Boot y Java 21</td>
+      <td>El backend deberá desarrollarse con Spring Boot y Java versión 21.</td>
+      <td>Low</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>CON02</td>
+      <td>Frontend con Angular 17</td>
+      <td>El frontend deberá implementarse con Angular 17 y TypeScript.</td>
+      <td>Low</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>CON03</td>
+      <td>Base de datos MySQL</td>
+      <td>El sistema debe utilizar MySQL para el almacenamiento de información.</td>
+      <td>Low</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>CON04</td>
+      <td>Control de versiones con GitHub</td>
+      <td>El código fuente deberá gestionarse con GitHub para control de versiones.</td>
+      <td>Medium</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>CON05</td>
+      <td>Arquitectura basada en DDD</td>
+      <td>El sistema debe seguir principios de Domain Driven Design.</td>
+      <td>Low</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>CON06</td>
+      <td>Principios de seguridad</td>
+      <td>El sistema debe implementar cifrado, tokens, configuración de CORS y HTTPS.</td>
+      <td>High</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>CON07</td>
+      <td>Autenticación y autorización seguras</td>
+      <td>Se deben establecer mecanismos robustos de autenticación y autorización de usuarios.</td>
+      <td>High</td>
+      <td>High</td>
+    </tr>
+  </tbody>
+</table>
+
+### 4.1.4. Architectural Design Decisions
+
+<table class="custom-table">
+  <thead>
+    <tr>
+      <th rowspan="2">Driver ID</th>
+      <th rowspan="2">Título de Driver</th>
+      <th colspan="2">Patrón 1</th>
+      <th colspan="2">Patrón 2</th>
+    </tr>
+    <tr>
+      <th>Pro</th>
+      <th>Con</th>
+      <th>Pro</th>
+      <th>Con</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>QA1</b></td>
+      <td><b>Seguridad</b></td>
+      <td>
+        <b>JWT (JSON Web Token)</b><br>
+        Autenticación ligera y sin estado.
+      </td>
+      <td>
+        Riesgo si no se controla bien expiración y refresco de tokens.
+      </td>
+      <td>
+        <b>RBAC</b><br>
+        Control granular de accesos según roles.
+      </td>
+      <td>
+        Requiere diseño inicial cuidadoso de permisos.
+      </td>
+    </tr>
+    <tr>
+      <td><b>QA2</b></td>
+      <td><b>Modificabilidad</b></td>
+      <td>
+        <b>DDD</b><br>
+        Refleja el dominio y facilita la evolución del sistema.
+      </td>
+      <td>
+        Requiere curva de aprendizaje alta.
+      </td>
+      <td>
+        <b>CQRS</b><br>
+        Separa lectura y escritura, mejorando rendimiento.
+      </td>
+      <td>
+        Mayor complejidad en sincronización de datos.
+      </td>
+    </tr>
+    <tr>
+      <td><b>QA3</b></td>
+      <td><b>Disponibilidad</b></td>
+      <td>
+        <b>Manejo de Excepciones</b><br>
+        Garantiza respuesta controlada ante errores.
+      </td>
+      <td>
+        Puede ocultar problemas si no se registran correctamente.
+      </td>
+      <td>
+        <b>Persistencia Transaccional</b><br>
+        Asegura consistencia en operaciones críticas.
+      </td>
+      <td>
+        Sobrecarga en operaciones complejas.
+      </td>
+    </tr>
+    <tr>
+      <td><b>QA4</b></td>
+      <td><b>Usabilidad</b></td>
+      <td>
+        <b>Responsive Design</b><br>
+        Interfaz adaptable a dispositivos.
+      </td>
+      <td>
+        Mayor esfuerzo en pruebas multiplataforma.
+      </td>
+      <td>
+        <b>MVC</b><br>
+        Separación clara entre lógica, vista y datos.
+      </td>
+      <td>
+        Puede ser complejo en proyectos muy pequeños.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+### 4.1.5. Quality Attribute Scenario Refinements
+
+<table class="custom-table" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th colspan="4">Scenario Refinement for QA1 – Seguridad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2">Scenario</th>
+      <td>Verificación de credenciales y protección de accesos.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Business Goals</th>
+      <td>Garantizar que solo usuarios autenticados y autorizados puedan acceder a la plataforma, protegiendo datos sensibles de productores y asesores.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Relevant Quality Attributes</th>
+      <td>Seguridad</td>
+    </tr>
+    <tr>
+      <th rowspan="6">Scenario Components</th>
+      <th>Stimulus</th>
+      <td>Un usuario intenta iniciar sesión en la plataforma.</td>
+    </tr>
+    <tr>
+      <th>Stimulus Source</th>
+      <td>Usuario / Atacante</td>
+    </tr>
+    <tr>
+      <th>Environment</th>
+      <td>Operación normal de la aplicación</td>
+    </tr>
+    <tr>
+      <th>Artifact</th>
+      <td>Módulo de Login</td>
+    </tr>
+    <tr>
+      <th>Response</th>
+      <td>El sistema valida credenciales, genera un token JWT y restringe accesos no autorizados.</td>
+    </tr>
+    <tr>
+      <th>Response Measure</th>
+      <td>0% accesos no válidos / autenticación completada en menos de 2 segundos.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Questions</th>
+      <td>¿Cómo se garantiza que los datos de acceso estén cifrados y que los tokens no puedan ser reutilizados?</td>
+    </tr>
+    <tr>
+      <th colspan="2">Issues</th>
+      <td>Gestión de tokens caducados y protección frente a ataques de fuerza bruta.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="custom-table" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th colspan="4">Scenario Refinement for QA2 – Modificabilidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2">Scenario</th>
+      <td>Incorporación de un nuevo tipo de asesor en la plataforma.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Business Goals</th>
+      <td>Facilitar la evolución del sistema permitiendo la adición de nuevas categorías de asesores sin afectar la operatividad existente.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Relevant Quality Attributes</th>
+      <td>Modificabilidad</td>
+    </tr>
+    <tr>
+      <th rowspan="6">Scenario Components</th>
+      <th>Stimulus</th>
+      <td>El equipo de desarrollo necesita agregar la categoría de “asesores en agroexportación”.</td>
+    </tr>
+    <tr>
+      <th>Stimulus Source</th>
+      <td>Equipo de desarrollo / Administrador del sistema</td>
+    </tr>
+    <tr>
+      <th>Environment</th>
+      <td>Plataforma en operación normal con usuarios activos</td>
+    </tr>
+    <tr>
+      <th>Artifact</th>
+      <td>Módulo de gestión de asesores</td>
+    </tr>
+    <tr>
+      <th>Response</th>
+      <td>El sistema permite extender el catálogo de asesores mediante configuración y cambios mínimos en el código.</td>
+    </tr>
+    <tr>
+      <th>Response Measure</th>
+      <td>El tiempo de incorporación de la nueva categoría no debe superar las 8 horas de desarrollo, con impacto &lt; 5% en módulos existentes.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Questions</th>
+      <td>¿Cómo se estructurará el código para facilitar la extensión de nuevas categorías sin romper compatibilidad con las actuales?</td>
+    </tr>
+    <tr>
+      <th colspan="2">Issues</th>
+      <td>Posible acoplamiento fuerte en la lógica de negocio / necesidad de refactorización si no se definen interfaces claras.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="custom-table" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th colspan="4">Scenario Refinement for QA3 – Disponibilidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2">Scenario</th>
+      <td>Reserva de citas en horarios de alta concurrencia.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Business Goals</th>
+      <td>Asegurar que el sistema esté disponible para la reserva y cancelación de citas sin caídas incluso bajo carga alta de usuarios concurrentes.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Relevant Quality Attributes</th>
+      <td>Disponibilidad</td>
+    </tr>
+    <tr>
+      <th rowspan="6">Scenario Components</th>
+      <th>Stimulus</th>
+      <td>Un productor intenta reservar una cita durante un pico de concurrencia.</td>
+    </tr>
+    <tr>
+      <th>Stimulus Source</th>
+      <td>Productor agropecuario</td>
+    </tr>
+    <tr>
+      <th>Environment</th>
+      <td>Alta concurrencia de usuarios (horas pico de reservas)</td>
+    </tr>
+    <tr>
+      <th>Artifact</th>
+      <td>Endpoint de citas</td>
+    </tr>
+    <tr>
+      <th>Response</th>
+      <td>El sistema procesa la reserva sin caídas, registrando la cita en la base de datos.</td>
+    </tr>
+    <tr>
+      <th>Response Measure</th>
+      <td>Uptime &gt; 95% / tiempo de respuesta menor a 5 segundos bajo carga máxima.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Questions</th>
+      <td>¿Cómo se gestionará la concurrencia para evitar bloqueos en la programación de citas?</td>
+    </tr>
+    <tr>
+      <th colspan="2">Issues</th>
+      <td>Posible sobrecarga del servidor en horas pico / necesidad de balancear transacciones en la base de datos.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="custom-table" cellspacing="0" cellpadding="8">
+  <thead>
+    <tr>
+      <th colspan="4">Scenario Refinement for QA4 – Usabilidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2">Scenario</th>
+      <td>Navegación e interacción con la interfaz de asesorías.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Business Goals</th>
+      <td>Mejorar la experiencia de usuario para productores y asesores mediante una interfaz clara, intuitiva y accesible.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Relevant Quality Attributes</th>
+      <td>Usabilidad</td>
+    </tr>
+    <tr>
+      <th rowspan="6">Scenario Components</th>
+      <th>Stimulus</th>
+      <td>El productor navega el catálogo de asesores y desea filtrar por reputación.</td>
+    </tr>
+    <tr>
+      <th>Stimulus Source</th>
+      <td>Productor agropecuario</td>
+    </tr>
+    <tr>
+      <th>Environment</th>
+      <td>Uso regular de la aplicación</td>
+    </tr>
+    <tr>
+      <th>Artifact</th>
+      <td>Interfaz gráfica (frontend Angular)</td>
+    </tr>
+    <tr>
+      <th>Response</th>
+      <td>El sistema muestra resultados filtrados en menos de 3 segundos y proporciona mensajes claros en caso de error.</td>
+    </tr>
+    <tr>
+      <th>Response Measure</th>
+      <td>&gt; 85% de tareas completadas sin ayuda en pruebas de usabilidad.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Questions</th>
+      <td>¿Cómo se logrará que los filtros sean intuitivos y accesibles desde cualquier dispositivo?</td>
+    </tr>
+    <tr>
+      <th colspan="2">Issues</th>
+      <td>Posibles problemas de accesibilidad en dispositivos móviles con pantallas pequeñas.</td>
+    </tr>
+  </tbody>
+</table>
+
+## 4.2 Strategic-Level Domain-Driven Design
+### 4.2.1. EventStorming
+### 4.2.2. Candidate Context Discovery
+### 4.2.3. Domain Message Flows Modeling
+### 4.2.4. Bounded Context Canvases
+### 4.2.5. Context Mapping
+## 4.3 Software Architecture
+### 4.3.1. Software Architecture System Landscape Diagram
+### 4.3.1. Software Architecture Context Level Diagrams
+### 4.3.2. Software Architecture Container Level Diagrams
+### 4.3.3. Software Architecture Deployment Diagrams
+
+
+
+<style>
+  .custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    page-break-inside: avoid;
+  }
+  .custom-table th, .custom-table td {
+    border: 1px solid #ccc;
+    padding: 4px;
+    vertical-align: top;
+    text-align: left;
+  }
+  .custom-table thead {
+    background-color: #f2f2f2;
+    display: table-header-group;
+  }
+  .custom-table td p {
+    margin: 2px 0;
+  }
+</style>
