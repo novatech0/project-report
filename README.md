@@ -66,6 +66,7 @@
           <li>Paredes Puente, Sebastian Roberto</li>
           <li>Salinas Torres, Salvador Antonio</li>
           <li>Elias Sanchez, Harold Miguel</li>
+          <li>Chinchihualpa Saldarriaga, Luis Sebastian</li>
         </ul>
       </td>
       <td>
@@ -349,6 +350,17 @@ Ser referentes en innovación tecnológica para el sector agropecuario, promovie
       <p><b>Elias Sanchez, Harold Miguel</b></p>
       <p>
         Soy estudiante de ingeniería de software en octavo ciclo, con interés en ciberseguridad y pentesting. Tengo experiencia en C++ y Python a nivel intermedio, además de proyectos en desarrollo web y pruebas unitarias en C# con NUnit. Me caracterizo por mi capacidad de trabajo en equipo, aportando ideas y colaborando para lograr objetivos comunes. 
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="img/perfil_Luis.jpg" alt="Foto de perfil de Luis" width="400px">
+    </td>
+    <td valign="top">
+      <p><b>Chinchihualpa Saldarriaga, Luis Sebastian</b></p>
+      <p>
+        Soy estudiante del octavo ciclo de Ingeniería de Software en la UPC. Tengo experiencia en el desarrollo de aplicaciones web y móviles utilizando tecnologías como Java, Python, C++, Spring Boot, Angular y Vue. He trabajado con bases de datos relacionales y no relacionales, y también con microservicios y APIs REST. Me considero una persona responsable, adaptable y con interés en aprender continuamente nuevas tecnologías.
       </p>
     </td>
   </tr>
