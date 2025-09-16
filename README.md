@@ -2483,19 +2483,28 @@ Se seleccionaron las siguientes historias de usuario como las principales para i
 ### 4.2.5. Context Mapping
 ## 4.3 Software Architecture
 ### 4.3.1. Software Architecture System Landscape Diagram
+El diagrama muestra una vista de alto nivel del sistema de software dentro del entorno empresarial más amplio, incluyendo otros sistemas y actores relevantes.
+<p align="center">
+  <img alt="System_Landscape_Diagram" src="img/structurizr-landscape.png" width="600">
+</p>
+
 ### 4.3.2. Software Architecture Context Level Diagrams
 El diagrama presenta una perspectiva global del sistema de software y los actores o sistemas externos con los que se relaciona.
 <p align="center">
-  <img alt="Context_Diagram" src="img/structurizr-SystemContext.png" width="600">
+  <img alt="Context_Diagram" src="img/structurizr-context.png" width="600">
 </p>
 
 ### 4.3.3. Software Architecture Container Level Diagrams
 El diagrama ilustra cómo el sistema se divide en contenedores principales, incluyendo aplicaciones, servicios web, bases de datos y más.
 <p align="center">
-  <img alt="Context_Diagram" src="img/structurizr-Container.png" width="600">
+  <img alt="Context_Diagram" src="img/structurizr-container.png" width="600">
 </p>
 
 ### 4.3.4. Software Architecture Deployment Diagrams
+El diagrama muestra cómo los contenedores de software se despliegan en la infraestructura de hardware, incluyendo servidores, dispositivos y otros nodos.
+<p align="center">
+  <img alt="Deployment_Diagram" src="img/structurizr-deployment.png" width="600">
+</p>
 
 # Conclusiones
 ## Conclusiones y Recomendaciones
