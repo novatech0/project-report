@@ -765,9 +765,21 @@ Marcelo Neyra, un joven estudiante que asiste a su padre en la administración d
 
 **Resumen:** Tamara García es una potencial asesora con conocimientos en la gestión de una cultivo de mangos y está dispuesta a aconsejar a productores agropecuarios que necesiten apoyo. Su principal recurso es la experiencia que ha ganado gracias a su familia. Menciona que ya ha apoyado a otras personas anteriormente, pero han sido conocidos como familia y amigos. Igualmente, está interesada en poder ayudar a muchas más personas, brindando asesorías cada cierto tiempo cuando haya productores agropecuarios que necesiten.
 
+-----
 
-**Resumen:** 
-Agricultor de Yauli, Huancavelica, con 2 años de experiencia. Cultiva papa y habas, aprendió de forma informal. Usa YouTube, WhatsApp y Google Chrome. Busca mejorar su producción y vender mejor. Enfrenta retos como el clima y el manejo de plagas. Prefiere asesoría técnica por voz o videollamada, sencilla y práctica, con seguimiento por audio y recordatorios en una app fácil de usar.
+**Entrevista 3**
+
+**Entrevistador:** Luis Chinchihualpa
+
+**Entrevistado:** Alberto Mendoza
+
+**Enlace a entrevista:** [https://youtu.be/Xoqhu8TpxRc](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212112_upc_edu_pe/EQuoGdMxjztCkUZAWispNO8BOk_mJXNaR_dTLBaIGOr1oA?e=5NcZ02&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+<img alt="Entrevista con Alberto Mendoza" src="img/entrevista-asesor-3.png">
+
+
+**Resumen:** Alberto Mendoza, ingeniero agrónomo de 25 años residente en Huancayo, trabaja hace 8 años como asesor agropecuario especializado en cultivos andinos, ganadería lechera y gestión integral de granjas. Su enfoque es práctico, priorizando ejemplos claros que los productores puedan aplicar. Señala que lo más demandado es la asesoría técnica (plagas, fertilización, manejo de ganado), aunque la parte financiera está ganando relevancia. Entre los principales retos menciona la resistencia al cambio, la falta de datos fiables, problemas de conectividad y la necesidad de mostrar resultados inmediatos para retener clientes.
+
 
 ### 2.2.3. Análisis de entrevistas
 **Segmento: Productores agropecuarios**
