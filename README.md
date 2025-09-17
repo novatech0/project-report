@@ -734,6 +734,20 @@ Marcelo Neyra, un joven estudiante que asiste a su padre en la administración d
 
 **Resumen:** Anderson Gonza es un joven estudiante que suele ayudar a su padre en la gestión de una pequeña granja de cuyes. Comenta que necesita apoyo para conocer sobre ciertas técnicas para el cuidado de los animales y cultivos, así como sobre el clima, el cual influye bastante en la producción. Al comentarle sobre la idea de una app para recibir asesorías con expertos en este sector, mencionó que le sería muy útil a través de reuniones en línea o a través de un chat virtual. Asimismo, comenta que debería ser una aplicación fácil de usar y accesible para todos.
 
+----
+
+**Entrevista 3**
+
+**Entrevistador:** Harold Elias
+
+**Entrevistado:** Alejandro Barturen
+
+**Enlace a entrevista:** https://youtu.be/XHBSJjhrjr4
+
+<img alt="Entrevista con Alegrandro Barturen" src="img/entrevista-productor-3.png">
+
+**Resumen:** Alejandro Barturem, un joven que ayuda a su padre en la agricultura durante sus viajes al interior del país en época de vacaciones, experiencia que empezó desde muy pequeño, comentó que la propuesta de contar con asesores expertos en el ámbito agrícola le parecería muy beneficiosa, ya que considera que podría facilitar las labores y aportar nuevas ideas para mejorar el trabajo en el campo.
+
 -----
 
 **Segmento: Asesores experimentados**
