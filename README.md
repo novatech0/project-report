@@ -2557,6 +2557,63 @@ A continuación, se presentan los contextos candidatos identificados en el Event
 
 ### 4.2.3. Domain Message Flows Modeling
 
+A continuación se muestran los principales escenarios identificados:
+
+**Scenario: Autenticación de usuario**
+
+El usuario solicita iniciar sesión en la aplicación, enviando sus credenciales al Security Context. El sistema valida la información y, si es correcta, emite el evento de usuario autenticado, devolviendo el identificador, rol y token de acceso.
+
+<img src="img/DomainMessageFlow1.png" alt="Domain Message Flow 1">
+
+**Scenario: Creación de perfil de usuario**
+
+Tras autenticarse, el usuario envía al Profile Context el comando de crear perfil con sus datos personales y rol. El sistema procesa la información y genera el evento de perfil creado, confirmando que el perfil queda registrado con su identificador correspondiente.
+
+<img src="img/DomainMessageFlow2.png" alt="Domain Message Flow 2">
+
+**Scenario: Farmer agrega un animal a un enclosure**
+
+El farmer solicita registrar un nuevo animal en un enclosure dentro del Management Context, proporcionando los datos del animal y del espacio asignado. El sistema valida la información y genera el evento de animal registrado, confirmando que el animal queda asociado al enclosure.
+
+<img src="img/DomainMessageFlow3.png" alt="Domain Message Flow 3">
+
+**Scenario: Gestión extendida de animales y enclosures**
+
+El farmer solicita editar, mover o eliminar un animal ya registrado en el Management Context. El sistema procesa el cambio y emite el evento de información del animal actualizada, reflejando las modificaciones en el enclosure correspondiente.
+
+<img src="img/DomainMessageFlow4.png" alt="Domain Message Flow 4">
+
+**Scenario: Reservar asesoría**
+
+El farmer envía al Appointment Context el comando de reservar asesoría, indicando la fecha, hora y el advisor seleccionado. El sistema confirma la disponibilidad y genera el evento de asesoría reservada, vinculando el identificador de la cita con los usuarios involucrados.
+
+<img src="img/DomainMessageFlow5.png" alt="Domain Message Flow 5">
+
+**Scenario: Gestión de disponibilidad de un advisor**
+
+El advisor define su disponibilidad en el Appointment Context, registrando horarios y cupos para las asesorías. El sistema procesa esta información y genera el evento de disponibilidad registrada, quedando habilitada para que los farmers puedan agendar citas.
+
+<img src="img/DomainMessageFlow6.png" alt="Domain Message Flow 6">
+
+**Scenario: Registro y seguimiento de asesoría realizada**
+
+El advisor marca en el Appointment Context una asesoría como completada, indicando la cita correspondiente y, opcionalmente, feedback. El sistema registra esta acción y genera el evento de asesoría completada, dejando constancia en el historial.
+
+<img src="img/DomainMessageFlow7.png" alt="Domain Message Flow 7">
+
+**Scenario: Consulta de historial**
+
+El farmer o advisor solicita consultar su historial de interacciones en la aplicación. El sistema envía la consulta al Appointment Context o al Post Context, según corresponda, y responde con el evento de historial recuperado, mostrando asesorías previas o publicaciones.
+
+<img src="img/DomainMessageFlow8.png" alt="Domain Message Flow 8">
+
+**Scenario: Publicación de un advisor**
+
+El advisor envía al Appointment Context el comando de crear publicación con título, descripción e imagen. El sistema valida la información y genera el evento de publicación creada, confirmando la disponibilidad de la publicación en la aplicación.
+
+<img src="img/DomainMessageFlow9.png" alt="Domain Message Flow 9">
+
+
 ### 4.2.4. Bounded Context Canvases
 
 Se desarrollaron los siguientes Bounded Context Canvases para cada uno de los contextos identificados. Con estos canvases, se detallan los elementos clave de cada contexto, incluyendo su propósito, responsabilidades, entidades principales, servicios y relaciones con otros contextos.
