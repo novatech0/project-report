@@ -2476,7 +2476,57 @@ Se seleccionaron las siguientes historias de usuario como las principales para i
 </table>
 
 ## 4.2 Strategic-Level Domain-Driven Design
+
 ### 4.2.1. EventStorming
+
+El EventStorming es una técnica colaborativa para explorar y diseñar dominios complejos mediante la identificación de eventos de negocio, comandos, agregados y otros elementos clave. Esta facilita la comprensión compartida del dominio y ayuda a descubrir áreas de mejora y oportunidades de innovación.
+
+Durante las sesiones de EventStorming, todos los participantes utilizan notas adhesivas de diferentes colores para representar distintos tipos de elementos, como eventos de dominio (naranjas), comandos (azules), agregados (amarillos), políticas (morado), entre otros. Estas notas se organizan en un gran espacio físico o digital, permitiendo a los participantes visualizar y discutir el flujo de eventos y las interacciones dentro del sistema.
+
+Se realizó en el siguiente tablero de Miro: [EventStorming Board](https://miro.com/app/board/uXjVJI929A4=/?share_link_id=208938597156)
+
+Para llevar a cabo las sesiones de EventStorming, se siguieron los siguientes pasos:
+
+**Paso 1: Unstructured Exploration**
+
+<img src="img/eventstorming-step-1.png" alt="EventStorming Step 1">
+
+**Paso 2: Timelines**
+
+<img src="img/eventstorming-step-2.png" alt="EventStorming Step 2">
+
+**Paso 3: Pain points**
+
+<img src="img/eventstorming-step-3.png" alt="EventStorming Step 3">
+
+**Paso 4: Pivotal points**
+
+<img src="img/eventstorming-step-4.png" alt="EventStorming Step 4">
+
+**Paso 5: Commands**
+
+<img src="img/eventstorming-step-5.png" alt="EventStorming Step 5">
+
+**Paso 6: Policies**
+
+<img src="img/eventstorming-step-6.png" alt="EventStorming Step 6">
+
+**Paso 7: Read models**
+
+<img src="img/eventstorming-step-7.png" alt="EventStorming Step 7">
+
+**Paso 8: External systems**
+
+<img src="img/eventstorming-step-8.png" alt="EventStorming Step 8">
+
+**Paso 9: Aggregates**
+
+<img src="img/eventstorming-step-9.png" alt="EventStorming Step 9">
+
+**Paso 10: Bounded contexts**
+
+<img src="img/eventstorming-step-10.png" alt="EventStorming Step 10">
+
 ### 4.2.2. Candidate Context Discovery
 ### 4.2.3. Domain Message Flows Modeling
 ### 4.2.4. Bounded Context Canvases
