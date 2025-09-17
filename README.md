@@ -2528,6 +2528,21 @@ Para llevar a cabo las sesiones de EventStorming, se siguieron los siguientes pa
 <img src="img/eventstorming-step-10.png" alt="EventStorming Step 10">
 
 ### 4.2.2. Candidate Context Discovery
+
+A continuación, se presentan los contextos candidatos identificados en el EventStorming:
+
+1. **Security Context**: Maneja la autenticación y autorización de usuarios, asegurando que solo usuarios válidos puedan acceder a las funcionalidades del sistema.
+
+2. **Profile Context**: Gestiona la información y roles de los usuarios, incluyendo productores agropecuarios y asesores.
+
+3. **Appointment Context**: Se encarga de la programación, gestión y seguimiento de citas entre productores y asesores.
+
+4. **Management Context**: Administra la gestión de granja (recintos, animales) de los productores agropecuarios.
+
+5. **Post Context**: Permite a los asesores crear, editar y eliminar publicaciones para compartir información relevante con los productores.
+
+<img src="img/eventstorming-step-10.png" alt="EventStorming Step 10">
+
 ### 4.2.3. Domain Message Flows Modeling
 ### 4.2.4. Bounded Context Canvases
 ### 4.2.5. Context Mapping
