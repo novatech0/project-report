@@ -2544,8 +2544,37 @@ A continuación, se presentan los contextos candidatos identificados en el Event
 <img src="img/eventstorming-step-10.png" alt="EventStorming Step 10">
 
 ### 4.2.3. Domain Message Flows Modeling
+
 ### 4.2.4. Bounded Context Canvases
+
+Se desarrollaron los siguientes Bounded Context Canvases para cada uno de los contextos identificados. Con estos canvases, se detallan los elementos clave de cada contexto, incluyendo su propósito, responsabilidades, entidades principales, servicios y relaciones con otros contextos.
+
+**Security Context**
+
+<img src="img/bounded-context-1.png" alt="Bounded Context Canvas 1">
+
+**Profile Context**
+
+<img src="img/bounded-context-2.png" alt="Bounded Context Canvas 2">
+
+**Management Context**
+
+<img src="img/bounded-context-3.png" alt="Bounded Context Canvas 3">
+
+**Appointment Context**
+
+<img src="img/bounded-context-4.png" alt="Bounded Context Canvas 4">
+
+**Post Context**
+
+<img src="img/bounded-context-5.png" alt="Bounded Context Canvas 5">
+
 ### 4.2.5. Context Mapping
+
+Durante la fase de Context Mapping, se identificaron las relaciones entre los diferentes contextos delimitados (Bounded Contexts) y se definieron los patrones de integración adecuados para cada relación. A continuación, se presentan las relaciones y los patrones utilizados.
+
+<img src="img/context-mapping.png" alt="Context Mapping">
+
 ## 4.3 Software Architecture
 ### 4.3.1. Software Architecture System Landscape Diagram
 El diagrama muestra una vista de alto nivel del sistema de software dentro del entorno empresarial más amplio, incluyendo otros sistemas y actores relevantes.
