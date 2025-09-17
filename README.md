@@ -268,20 +268,20 @@
       <td style="border: 1px solid #000; padding: 8px;">Comunica oralmente sus ideas y/o resultados con objetividad a público de diferentes especialidades y niveles jerarquicos, en el marco del desarrollo de un proyecto en ingeniería.</td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>Delgado Corrales, Piero Gonzalo</strong></p>
-        <p><strong>TB1:</strong> Para esta entrega, hice algo</p>
+        <p><strong>TB1:</strong> Para esta entrega, en el video de exposición expuse de manera clara los requerimientos a través de las User Stories y Atributos de Calidad.</p>
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
-        <p><strong>TB1:</strong> Como equipo...</p>
+        <p><strong>TB1:</strong> Como grupo, logramos transmitir nuestras ideas con claridad y objetividad para explicar nuestra problemática y solución propuesta.</p>
       </td>
     </tr>
     <tr style="page-break-inside: avoid;">
       <td style="border: 1px solid #000; padding: 8px;">Comunica en forma escrita ideas y/o resultados con objetividad a públicos de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto en ingeniería.</td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>Delgado Corrales, Piero Gonzalo</strong></p>
-        <p><strong>TB1:</strong> Para esta entrega, hice algo</p>
+        <p><strong>TB1:</strong> Para esta entrega, participé en la elaboración del project report. Apoyé con el desarrollo de los cuatro capítulos donde se abordaron los aspectos clave del proyecto.</p>
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
-        <p><strong>TB1:</strong> Como equipo...</p>
+        <p><strong>TB1:</strong> Como grupo, elaboramos el project report de manera clara y organizada, lo que nos permitió comunicar de forma efectiva tanto los aspectos técnicos como los beneficios prácticos del proyecto.</p>
       </td>
     </tr>
   </tbody>
@@ -2614,6 +2614,11 @@ El diagrama muestra cómo los contenedores de software se despliegan en la infra
 
 # Conclusiones
 ## Conclusiones y Recomendaciones
+
+En primer lugar, hemos confirmado la necesidad de contar con una plataforma que conecte a los productores agropecuarios con asesores especializados en Perú, con el fin de mejorar la productividad y la rentabilidad del sector. Para delimitar la problemática, aplicamos el Lean UX Process, siguiendo etapas clave como la definición de Problem Statements, la formulación de Assumptions, la elaboración de Hypothesis Statements y el desarrollo del Lean UX Canvas. Asimismo, se llevó a cabo un proceso de investigación que incluyó entrevistas y técnicas de Needfinding como User Personas y Empathy Mapping. Gracias a ello, se obtuvo una visión clara y profunda de las necesidades de ambos segmentos objetivo. Además, el análisis competitivo mostró que la mayor fortaleza de AgroTech está en su apuesta por el asesoramiento personalizado, lo que ha servido de base para diseñar estrategias centradas en la experiencia del usuario y en el acompañamiento constante.
+
+En el plano técnico, el proyecto cuenta con un sustento sólido gracias a una especificación detallada de requerimientos, que incluye un Product Backlog priorizado y un diseño de software apoyado en Attribute-Driven Design (ADD) y Domain-Driven Design (DDD). Se han definido como atributos de calidad clave la seguridad, la disponibilidad y la usabilidad. Por otro lado, mediante el Event Storming se identificaron los Bounded Contexts que son Security, Profile, Appointment, Management y Post. Con estos elementos, el proyecto se encuentra en una posición sólida para avanzar hacia un desarrollo eficiente, escalable y centrado en el valor real para los usuarios.
+
 ## Video About the Team
 
 # Bibliografía
