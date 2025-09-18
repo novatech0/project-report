@@ -91,8 +91,9 @@
   <img alt="TB1 Collaboration Insights" src="img/collaboration-insights-tb1.png" width="600">
 </p>
 
-# Tabla de Contenido
+<div style="page-break-after: always;"></div>
 
+# Tabla de Contenido
 
 [Registro de Versiones](#registro-de-versiones)
 
@@ -144,7 +145,7 @@
     - [4.1.4. Architectural Design Decisions](#414-architectural-design-decisions)
     - [4.1.5. Quality Attribute Scenario Refinements](#415-quality-attribute-scenario-refinements)
   - [4.2. Strategic-Level Domain-Driven Design](#42-strategic-level-domain-driven-design)
-    - [4.2.1. EventStorming](#421-eventstorming)
+    - [4.2.1. Event Storming](#421-event-storming)
     - [4.2.2. Candidate Context Discovery](#422-candidate-context-discovery)
     - [4.2.3. Domain Message Flows Modeling](#423-domain-message-flows-modeling)
     - [4.2.4. Bounded Context Canvases](#424-bounded-context-canvases)
@@ -254,6 +255,8 @@
 [Bibliografía](#bibliografía)
 
 [Anexos](#anexos)
+
+<div style="page-break-after: always;"></div>
 
 # Student Outcome
 
@@ -903,6 +906,8 @@ Las entrevistas con asesores experimentados ofrecen valiosa información sobre s
 
 - Enfatizan la importancia de ofrecer soluciones prácticas y personalizadas, adaptadas a las necesidades específicas de cada granja.
 
+<div style="page-break-after: always;"></div>
+
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
 
@@ -910,11 +915,17 @@ El User Persona es una representación ficticia de un usuario ideal, creada a pa
 
 **Segmento: Productores agropecuarios**
 
-<img alt="Imagen de productor agropecuario" src="img/segmento_objetivo_productor.png" width="100%">
+<p align="center">
+  <img alt="Imagen de productor agropecuario" src="img/segmento_objetivo_productor.png" width="725">
+</p>
 
 **Segmento: Asesores experimentados**
 
-<img alt="Imagen de asesor experimentado" src="img/segmento_objetivo_asesor.png" width="100%">
+<p align="center">
+  <img alt="Imagen de asesor experimentado" src="img/segmento_objetivo_asesor.png" width="725">
+</p>
+
+<div style="page-break-after: always;"></div>
 
 ### 2.3.2. User Task Matrix
 
@@ -1032,17 +1043,25 @@ El User Journey Mapping es una técnica que ayuda a representar el proceso que s
 
 <img alt="User Journey Mapping para Asesor" src="img/user-journey-mapping-advisor.png">
 
+<div style="page-break-after: always;"></div>
+
 ### 2.3.4. Empathy Mapping
 
 El Empathy Mapping es una herramienta clave para entender a los usuarios, en este caso, tanto a los productores agropecuarios novatos como a los asesores expertos. Al crear un Empathy Map, se obtiene una visión completa de sus necesidades, motivaciones, frustraciones y comportamientos al analizar lo que piensan, sienten, dicen y hacen. Esto permite diseñar una solución que se ajuste mejor a sus expectativas y optimizar su experiencia con la aplicación.
 
 **Segmento: Productores agropecuarios**
 
-<img alt="Empathy Map para Productor Agropecuario" src="img/empathy-mapping-farmer.png">
+<p align="center">
+  <img alt="Empathy Map para Productor Agropecuario" src="img/empathy-mapping-farmer.png" width="850">
+</p>
 
 **Segmento: Asesores experimentados**
 
-<img alt="Empathy Map para Asesor" src="img/empathy-mapping-advisor.png">
+<p align="center">
+  <img alt="Empathy Map para Asesor" src="img/empathy-mapping-advisor.png" width="850">
+</p>
+
+<div style="page-break-after: always;"></div>
 
 ### 2.3.5. As-is Scenario Mapping
 
@@ -1139,6 +1158,8 @@ En esta sección, se definen los términos utilizados a lo largo del proyecto pa
 - **Enclosure (Recinto):** Área o espacio dentro de una granja donde se crían animales o se cultivan plantas.
 - **Chatbot:** Herramienta automatizada que interactúa con los usuarios para responder preguntas frecuentes o guiar en el uso de la plataforma.
 
+<div style="page-break-after: always;"></div>
+
 # Capítulo III: Requirements Specification
 ## 3.1 To-Be Scenario Mapping
 
@@ -1179,6 +1200,8 @@ En esta sección, se definen los términos utilizados a lo largo del proyecto pa
   </tbody>
 </table>
 
+<div style="page-break-after: always;"></div>
+
 **Segmento: Asesores experimentados**
 
 <table class="custom-table">
@@ -1215,6 +1238,8 @@ En esta sección, se definen los términos utilizados a lo largo del proyecto pa
     </tr>
   </tbody>
 </table>
+
+<div style="page-break-after: always;"></div>
 
 ## 3.2 User Stories
 
@@ -1857,9 +1882,13 @@ El Impact Mapping es una técnica estratégica que se utiliza para planificar y 
 
 <img alt="Impact Map para Productor Agrícola" src="img/impact-mapping-farmer.png">
 
+<div style="page-break-after: always;"></div>
+
 **Segmento: Asesores experimentados**
 
 <img alt="Impact Map para Asesor" src="img/impact-mapping-advisor.png">
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo IV: Strategic-Level Software Design
 ## 4.1 Strategic-Level Attribute-Driven Design
@@ -2523,61 +2552,92 @@ Se seleccionaron las siguientes historias de usuario como las principales para i
   </tbody>
 </table>
 
+<div style="page-break-after: always;"></div>
+
 ## 4.2 Strategic-Level Domain-Driven Design
+### 4.2.1. Event Storming
 
-### 4.2.1. EventStorming
+El Event Storming es una técnica colaborativa para explorar y diseñar dominios complejos mediante la identificación de eventos de negocio, comandos, agregados y otros elementos clave. Esta facilita la comprensión compartida del dominio y ayuda a descubrir áreas de mejora y oportunidades de innovación.
 
-El EventStorming es una técnica colaborativa para explorar y diseñar dominios complejos mediante la identificación de eventos de negocio, comandos, agregados y otros elementos clave. Esta facilita la comprensión compartida del dominio y ayuda a descubrir áreas de mejora y oportunidades de innovación.
+Durante las sesiones de Event Storming, todos los participantes utilizan notas adhesivas de diferentes colores para representar distintos tipos de elementos, como eventos de dominio (naranjas), comandos (azules), agregados (amarillos), políticas (morado), entre otros. Estas notas se organizan en un gran espacio físico o digital, permitiendo a los participantes visualizar y discutir el flujo de eventos y las interacciones dentro del sistema.
 
-Durante las sesiones de EventStorming, todos los participantes utilizan notas adhesivas de diferentes colores para representar distintos tipos de elementos, como eventos de dominio (naranjas), comandos (azules), agregados (amarillos), políticas (morado), entre otros. Estas notas se organizan en un gran espacio físico o digital, permitiendo a los participantes visualizar y discutir el flujo de eventos y las interacciones dentro del sistema.
+Se realizó en el siguiente tablero de Miro: [Event Storming Board](https://miro.com/app/board/uXjVJI929A4=/?share_link_id=208938597156)
 
-Se realizó en el siguiente tablero de Miro: [EventStorming Board](https://miro.com/app/board/uXjVJI929A4=/?share_link_id=208938597156)
-
-Para llevar a cabo las sesiones de EventStorming, se siguieron los siguientes pasos:
+Para llevar a cabo las sesiones de Event Storming, se siguieron los siguientes pasos:
 
 **Paso 1: Unstructured Exploration**
 
-<img src="img/eventstorming-step-1.png" alt="EventStorming Step 1">
+<p align="center">
+  <img src="img/eventstorming-step-1.png" alt="EventStorming Step 1" width="800">
+</p>
+
+<div style="page-break-after: always;"></div>
 
 **Paso 2: Timelines**
 
-<img src="img/eventstorming-step-2.png" alt="EventStorming Step 2">
+<p align="center">
+  <img src="img/eventstorming-step-2.png" alt="EventStorming Step 2" width="800">
+</p>
 
 **Paso 3: Pain points**
 
-<img src="img/eventstorming-step-3.png" alt="EventStorming Step 3">
+<p align="center">
+  <img src="img/eventstorming-step-3.png" alt="EventStorming Step 3" width="800">
+</p>
+
+<div style="page-break-after: always;"></div>
 
 **Paso 4: Pivotal points**
 
-<img src="img/eventstorming-step-4.png" alt="EventStorming Step 4">
+<p align="center">
+  <img src="img/eventstorming-step-4.png" alt="EventStorming Step 4" width="750">
+</p>
 
 **Paso 5: Commands**
 
-<img src="img/eventstorming-step-5.png" alt="EventStorming Step 5">
+<p align="center">
+  <img src="img/eventstorming-step-5.png" alt="EventStorming Step 5" width="750">
+</p>
+
+<div style="page-break-after: always;"></div>
 
 **Paso 6: Policies**
 
-<img src="img/eventstorming-step-6.png" alt="EventStorming Step 6">
+<p align="center">
+  <img src="img/eventstorming-step-6.png" alt="EventStorming Step 6" width="700">
+</p>
 
 **Paso 7: Read models**
 
-<img src="img/eventstorming-step-7.png" alt="EventStorming Step 7">
+<p align="center">
+  <img src="img/eventstorming-step-7.png" alt="EventStorming Step 7" width="700">
+</p>
+
+<div style="page-break-after: always;"></div>
 
 **Paso 8: External systems**
 
-<img src="img/eventstorming-step-8.png" alt="EventStorming Step 8">
+<p align="center">
+  <img src="img/eventstorming-step-8.png" alt="EventStorming Step 8" width="800">
+</p>
 
 **Paso 9: Aggregates**
 
-<img src="img/eventstorming-step-9.png" alt="EventStorming Step 9">
+<p align="center">
+  <img src="img/eventstorming-step-9.png" alt="EventStorming Step 9" width="800">
+</p>
 
 **Paso 10: Bounded contexts**
 
-<img src="img/eventstorming-step-10.png" alt="EventStorming Step 10">
+<p align="center">
+  <img src="img/eventstorming-step-10.png" alt="EventStorming Step 10">
+</p>
+
+<div style="page-break-after: always;"></div>
 
 ### 4.2.2. Candidate Context Discovery
 
-A continuación, se presentan los contextos candidatos identificados en el EventStorming:
+A continuación, se presentan los contextos candidatos identificados en el Event Storming:
 
 1. **Security Context**: Maneja la autenticación y autorización de usuarios, asegurando que solo usuarios válidos puedan acceder a las funcionalidades del sistema.
 
@@ -2589,7 +2649,9 @@ A continuación, se presentan los contextos candidatos identificados en el Event
 
 5. **Post Context**: Permite a los asesores crear, editar y eliminar publicaciones para compartir información relevante con los productores.
 
-<img src="img/eventstorming-step-10.png" alt="EventStorming Step 10">
+<p align="center">
+  <img src="img/eventstorming-step-10.png" alt="Event Storming Step 10">
+</p>
 
 ### 4.2.3. Domain Message Flows Modeling
 
@@ -2680,6 +2742,8 @@ Durante la fase de Context Mapping, se identificaron las relaciones entre los di
 
 <img src="img/context-mapping.png" alt="Context Mapping">
 
+<div style="page-break-after: always;"></div>
+
 ## 4.3 Software Architecture
 ### 4.3.1. Software Architecture System Landscape Diagram
 El diagrama muestra una vista de alto nivel del sistema de software dentro del entorno empresarial más amplio, incluyendo otros sistemas y actores relevantes.
@@ -2696,13 +2760,13 @@ El diagrama presenta una perspectiva global del sistema de software y los actore
 ### 4.3.3. Software Architecture Container Level Diagrams
 El diagrama ilustra cómo el sistema se divide en contenedores principales, incluyendo aplicaciones, servicios web, bases de datos y más.
 <p align="center">
-  <img alt="Context_Diagram" src="img/structurizr-container.png" width="600">
+  <img alt="Context_Diagram" src="img/structurizr-container.png" width="550">
 </p>
 
 ### 4.3.4. Software Architecture Deployment Diagrams
 El diagrama muestra cómo los contenedores de software se despliegan en la infraestructura de hardware, incluyendo servidores, dispositivos y otros nodos.
 <p align="center">
-  <img alt="Deployment_Diagram" src="img/structurizr-deployment.png" width="600">
+  <img alt="Deployment_Diagram" src="img/structurizr-deployment.png" width="550">
 </p>
 
 <div style="page-break-after: always;"></div>
@@ -2739,7 +2803,7 @@ W3Schools. (s.f.). _HTML Style Guide_. https://www.w3schools.com/html/html5_synt
 # Anexos
 ## Videos de exposiciones
 
-Exposición TB1: [upc-pre-202502-1asi0728-7281-novatech-expo-tb1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EalzL38iSBJHvn-fUHys0D8Bkti3c7HnFHB7TEL6QI2KcA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=QW77x2)
+Exposición TB1: [upc-pre-202502-1asi0728-7281-novatech-expo-tb1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EZK3VhD8-9VLiCwwk8LAr7wBf6XjCp8_8v6YKO6zG51Tjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3JJe4Z)
 
 <style>
   .custom-table {
