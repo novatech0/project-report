@@ -269,6 +269,8 @@
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>Delgado Corrales, Piero Gonzalo</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, en el video de exposición expuse de manera clara los requerimientos a través de las User Stories y Atributos de Calidad.</p>
+        <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
+        <p><strong>TB1:</strong> Para esta entrega, en el video de exposición presenté la problemática del sector agropecuario de manera objetiva, resaltando las cifras y limitaciones actuales como base para justificar el desarrollo de la solución.</p>
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, logramos transmitir nuestras ideas con claridad y objetividad para explicar nuestra problemática y solución propuesta.</p>
@@ -279,6 +281,8 @@
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>Delgado Corrales, Piero Gonzalo</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, participé en la elaboración del project report. Apoyé con el desarrollo de los cuatro capítulos donde se abordaron los aspectos clave del proyecto.</p>
+        <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
+        <p><strong>TB1:</strong> Para esta entrega, participé en la redacción del project report, elaborando los apartados de antecedentes, problemática y domain message flows, con descripciones claras y adecuadas al alcance del proyecto.</p>
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, elaboramos el project report de manera clara y organizada, lo que nos permitió comunicar de forma efectiva tanto los aspectos técnicos como los beneficios prácticos del proyecto.</p>
