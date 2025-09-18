@@ -85,7 +85,11 @@
 <div style="page-break-after: always;"></div>
 
 # Project Report Collaboration Insights
+## TB1
 
+<p align="center">
+  <img alt="TB1 Collaboration Insights" src="img/collaboration-insights-tb1.png" width="600">
+</p>
 
 # Tabla de Contenido
 
@@ -2701,6 +2705,8 @@ El diagrama muestra cómo los contenedores de software se despliegan en la infra
   <img alt="Deployment_Diagram" src="img/structurizr-deployment.png" width="600">
 </p>
 
+<div style="page-break-after: always;"></div>
+
 # Conclusiones
 ## Conclusiones y Recomendaciones
 
@@ -2708,7 +2714,7 @@ En primer lugar, hemos confirmado la necesidad de contar con una plataforma que 
 
 En el plano técnico, el proyecto cuenta con un sustento sólido gracias a una especificación detallada de requerimientos, que incluye un Product Backlog priorizado y un diseño de software apoyado en Attribute-Driven Design (ADD) y Domain-Driven Design (DDD). Se han definido como atributos de calidad clave la seguridad, la disponibilidad y la usabilidad. Por otro lado, mediante el Event Storming se identificaron los Bounded Contexts que son Security, Profile, Appointment, Management y Post. Con estos elementos, el proyecto se encuentra en una posición sólida para avanzar hacia un desarrollo eficiente, escalable y centrado en el valor real para los usuarios.
 
-## Video About the Team
+<div style="page-break-after: always;"></div>
 
 # Bibliografía
 
@@ -2728,10 +2734,12 @@ Soodan, V., Jamwal, M., Rana, N. P., Sharma, D., & Chakraborty, S. (2023). Model
 
 W3Schools. (s.f.). _HTML Style Guide_. https://www.w3schools.com/html/html5_syntax.asp
 
+<div style="page-break-after: always;"></div>
+
 # Anexos
 ## Videos de exposiciones
 
-Exposición TB1: [expo-tb1.mp4](link)
+Exposición TB1: [upc-pre-202502-1asi0728-7281-novatech-expo-tb1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EalzL38iSBJHvn-fUHys0D8Bkti3c7HnFHB7TEL6QI2KcA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=QW77x2)
 
 <style>
   .custom-table {
