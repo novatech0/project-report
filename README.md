@@ -275,6 +275,8 @@
         <p><strong>TB1:</strong> Para esta entrega, en el video de exposición presenté la problemática del sector agropecuario de manera objetiva, resaltando las cifras y limitaciones actuales como base para justificar el desarrollo de la solución.</p>
         <p><strong>Salinas Torres, Salvador Antonio</strong></p>
         <p><strong>TB1:</strong> En este primer entregable, logré comunicar de forma oral los descubrimientos de la investigación de mercado, destacando el análisis competitivo, las necesidades y expectativas de los usuarios finales.</p>
+        <p><strong>Elias Sanchez, Harold Miguel</strong></p>
+        <p><strong>TB1:</strong> Realicé una entrevista al primer segmento de usuarios para obtener información directa sobre sus necesidades y expectativas respecto a la solución propuesta. Compartí estos hallazgos con el grupo de manera clara para que sirvieran de   base en el diseño.</p>
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, logramos transmitir nuestras ideas con claridad y objetividad para explicar nuestra problemática y solución propuesta.</p>
@@ -289,6 +291,8 @@
         <p><strong>TB1:</strong> Para esta entrega, participé en la redacción del project report, elaborando los apartados de antecedentes, problemática y domain message flows, con descripciones claras y adecuadas al alcance del proyecto.</p>
         <p><strong>Salinas Torres, Salvador Antonio</strong></p>
         <p><strong>TB1:</strong> En este primer entregable, participé principalmente en la redacción de la sección de análisis de mercado, donde presenté los hallazgos clave de la investigación y su relevancia para el proyecto, el proceso del eventstorming y los resultados obtenidos.</p>
+        <p><strong>Elias Sanchez, Harold Miguel</strong></p>
+        <p><strong>TB1:</strong> Participé en la elaboración del informe desarrollando los diagramas C4 (contexto y contenedores) y sus descripciones correspondientes. Documenté cómo los actores, contenedores y servicios externos se integran en la arquitectura de AgroTech.</p>
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, elaboramos el project report de manera clara y organizada, lo que nos permitió comunicar de forma efectiva tanto los aspectos técnicos como los beneficios prácticos del proyecto.</p>
