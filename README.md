@@ -2785,14 +2785,116 @@ Para ello, el diseño se divide en:
 **Capa de Interfaces (Interface Layer):** Expone el sistema al exterior a través de controllers que reciben y procesan las solicitudes de los clientes. Esta capa utiliza el patrón Assembler para transformar los datos de entrada en commands o queries y en transformar los objetos de dominio en respuestas adecuadas para el cliente.
 
 ## 5.1. Bounded Context: Appointment
+Este bounded context gestiona la planificación y seguimiento de citas entre productores agrícolas y asesores especializados. Incluye funcionalidades como la disponibilidad de fechas, la separación de una asesoría, el envió de notificaciones y la gestión de reseñas posteriores a la atención.
+
 ### 5.1.1. Domain Layer
+
+- **Aggregates**:
+  - **Appointment**: representa una asesoría entre un productor agrícola y un asesor. Se utiliza AppointmentStatus para gestionar su estado en tiempo real.
+
+- **Entities**:
+  - **AvailableDate**: representa la fecha específica donde el asesor puede otorgar una asesoría. Tiene dos estados posibles: Disponible y No Disponible, gestionados mediante AvailableDateStatus.
+  - **Review**: representa la reseña realizada por un productor agrícola posterior a la asesoría, incluyendo una calificación del 1 al 5 y un comentario opcional.
+
+- **Value Objects**:
+  - **AppointmentStatus**: estados de la asesoría (PENDING, ONGOING, CANCELLED).
+  - **AvailableDateStatus**: estados de la fecha de disponibilidad (AVAILABLE, UNAVAILABLE).
+
+- **Commands**: operaciones que modifican el estado de las asesorías, fechas disponibles y reseñas.
+  - CreateAppointmentCommand, UpdateAppointmentCommand, DeleteAppointmentCommand.
+  - CreateAvailableDateCommand, UpdateAvailableDateCommand, DeleteAvailableDateCommand, UpdateAvailableDateStatusCommand.
+  - CreateReviewCommand, UpdateReviewCommand, DeleteReviewCommand.
+
+- **Queries**: operaciones que recuperan datos relacionados con las asesorías, fechas disponibles y reseñas.
+  - GetAllAppointmentsQuery, GetAppointmentByIdQuery, GetAppointmentsByAdvisorIdQuery.
+  - GetAllAvailableDatesQuery, GetAvailableDateByIdQuery.
+  - GetAllReviewsQuery, GetReviewByIdQuery.
+
+- **Events**:
+  - **AppointmentCreatedEvent**: evento que se emite cuando se crea una nueva asesoría y se envía una notificación al asesor.
+  - **AppointmentCancelledEvent**: evento que se emite cuando una asesoría es cancelada y se notifica al asesor o al productor agrícola.
+
+- **Exceptions**: excepciones para controlar los errores que pueden cometer los usuarios al utilizar el Appointment Context. Ejemplos: AppointmentNotFoundException, InvalidDateException, InvalidStatusException, ReviewAlreadyExistsException.
+
+- **Services**: Interfaces de los servicios para manejar los commands y queries.
+  - AppointmentCommandService, AppointmentQueryService.
+  - AvailableDateCommandService, AvailableDateQueryService.
+  - ReviewCommandService, ReviewQueryService.
+
 ### 5.1.2. Interface Layer
+
+- **Controllers**:
+  - **AppointmentsController**: gestiona las solicitudes relacionadas con las asesorías.
+  - **AvailableDatesController**: gestiona las solicitudes relacionadas con las fechas de disponibilidad.
+  - **ReviewsController**: gestiona las solicitudes relacionadas con las reseñas.
+
+- **Resources**:
+  - **Entrada**: CreateAppointmentResource, UpdateAppointmentResource, CreateAvailableDateResource, UpdateAvailableDateResource, CreateReviewResource, UpdateReviewResource.
+  - **Salida**: AppointmentResource, AvailableDateResource, ReviewResource.
+
+- **Assemblers**:
+  - **De recurso a comando**: CreateAppointmentCommandFromResourceAssembler, UpdateAppointmentCommandFromResourceAssembler, etc.
+  - **De entidad a recurso**: AppointmentResourceFromEntityAssembler, AvailableDateResourceFromEntityAssembler, ReviewResourceFromEntityAssembler.
+
+- **Exception Handlers**
+  - **AppointmentExceptionsHandler**: centraliza el manejo de errores en el contexto, proporcionando respuestas HTTP adecuadas.
+
 ### 5.1.3. Application Layer
+
+- **Command Services**
+  - **AppointmentCommandServiceImpl**: Implementa la lógica para manejar los comandos relacionados con las asesorías a partir de la interfaz AppointmentCommandService.
+  - **AvailableDateCommandServiceImpl**: Implementa la lógica para manejar los comandos relacionados con las fechas disponibles a partir de la interfaz AvailableDateCommandService.
+  - **ReviewCommandServiceImpl**: Implementa la lógica para manejar los comandos relacionados con las reseñas a partir de la interfaz ReviewCommandService.
+
+- **Query Services**
+  - **AppointmentQueryServiceImpl**: Implementa la lógica para manejar las consultas relacionadas con las asesorías a partir de la interfaz AppointmentQueryService.
+  - **AvailableDateQueryServiceImpl**: Implementa la lógica para manejar las consultas relacionadas con las fechas disponibles a partir de la interfaz AvailableDateQueryService.
+  - **ReviewQueryServiceImpl**: Implementa la lógica para manejar las consultas relacionadas con las reseñas a partir de la interfaz ReviewQueryService.
+
+- **Event Handlers**
+  - **AppointmentCreatedEventHandler**: maneja la logica del evento AppointmentCreatedEvent para enviar notificaciones al asesor cuando se crea una nueva asesoría.
+  - **AppointmentCancelledEventHandler**: maneja la logica del evento AppointmentCancelledEvent para enviar notificaciones al asesor cuando se cancela una asesoría.
+
+- **Outbound Services**:
+  - **ExternalNotificationsService**: envío de notificaciones con el servicio de Notification.
+  - **ExternalProfilesService**: consulta de información de perfiles con el servicio de Profile.
+
 ### 5.1.4. Infrastructure Layer
+- **Entities (JPA)**: 
+  - **AppointmentEntity**: Representa la tabla "appointment" en la base de datos.
+  - **AvailableDateEntity**: Representa la tabla "available_date" en la base de datos.
+  - **ReviewEntity**: Representa la tabla "review" en la base de datos.
+- **Repositories**: 
+  - **AppointmentRepository**: Interfaz para acceder a los datos de las asesorías.
+  - **AvailableDateRepository**: Interfaz para acceder a los datos de las fechas disponibles.
+  - **ReviewRepository**: Interfaz para acceder a los datos de las reseñas.
+- **Mappers**: 
+  - **AppointmentMapper**: Mapea entre la entidad AppointmentEntity y la clase de dominio Appointment.
+  - **AvailableDateMapper**: Mapea entre la entidad AvailableDateEntity y la clase de dominio AvailableDate.
+  - **ReviewMapper**: Mapea entre la entidad ReviewEntity y la clase de dominio Review.
+
 ### 5.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+En el diagrama de componentes del Bounded Context Appointment se muestra la interacción entre las capas. Primero, se inicia con las solicitudes HTTP recibidas en la Interface Layer que las direcciona hacia la Application Layer que coordina los casos de uso y delega las operaciones al Domain Layer o a la Infrastructure Layer. Asimismo, la Infrastructure Layer se encarga de la persistencia en la base de datos MySQL y de la integración con la plataforma externa Jitsi Meet para la gestión de videoconferencias.
+
+<p align="center">
+  <img alt="Appointment Component Diagram" src="img/c4-component-appointment.png" width="550">
+</p>
+
 ### 5.1.6. Bounded Context Software Architecture Code Level Diagrams
 ### 5.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+  <img alt="Appointment Domain Layer Class Diagram" src="img/class-diagram-appointment.png" width="600">
+</p>
+
 ### 5.1.6.2. Bounded Context Database Design Diagram
+
+Para el diseño de la base de datos se consideró las entidades principales del dominio que son appointment, available_date, y review, junto con las entidades de soporte user, advisor, y farmer que gestionan la información de los usuarios. Además, se considero que en appointment se almacena la url de la reunión generada en Jitsi Meet para la asesoría virtual.
+
+<p align="center">
+  <img alt="Appointment Database Design Diagram" src="img/database-appointment.png" width="600">
+</p>
 
 ## 5.2. Bounded Context: Management
 ### 5.2.1. Domain Layer
