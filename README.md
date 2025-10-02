@@ -202,10 +202,10 @@
     - [5.5.2. Interface Layer](#552-interface-layer)
     - [5.5.3. Application Layer](#553-application-layer)
     - [5.5.4. Infrastructure Layer](#554-infrastructure-layer)
-    - [5.5.5. Bounded Context Software Architecture Component Level Diagrams](#556-bounded-context-software-architecture-component-level-diagrams)
-    - [5.5.6. Bounded Context Software Architecture Code Level Diagrams](#557-bounded-context-software-architecture-code-level-diagrams)
-      - [5.5.6.1. Bounded Context Domain Layer Class Diagrams](#5571-bounded-context-domain-layer-class-diagrams)
-      - [5.5.6.2. Bounded Context Database Design Diagram](#5572-bounded-context-database-design-diagram)
+    - [5.5.5. Bounded Context Software Architecture Component Level Diagrams](#555-bounded-context-software-architecture-component-level-diagrams)
+    - [5.5.6. Bounded Context Software Architecture Code Level Diagrams](#556-bounded-context-software-architecture-code-level-diagrams)
+      - [5.5.6.1. Bounded Context Domain Layer Class Diagrams](#5561-bounded-context-domain-layer-class-diagrams)
+      - [5.5.6.2. Bounded Context Database Design Diagram](#5562-bounded-context-database-design-diagram)
 
 [Capítulo VI: Product Design](#Capítulo-VI-Product-Design)
   - [6.1. Style Guidelines](#61-style-guidelines)
@@ -2772,6 +2772,18 @@ El diagrama muestra cómo los contenedores de software se despliegan en la infra
 <div style="page-break-after: always;"></div>
 
 # Capítulo V: Tactical-Level Software Design
+En este capítulo se desarrolla el diseño de software a nivel táctico aplicando los principios de Domain-Driven Design (DDD) en conjunto con el patrón Command Query Responsibility Segregation (CQRS).
+
+Para ello, el diseño se divide en:
+
+**Capa de Dominio (Domain Layer):** Contiene el modelo de negocio que incluye las entities, aggregates, value objects, eventos y servicios de dominio. En esta capa se expresan las reglas del negocio, y se aplica parte del patrón CQRS mediante la separación de commands y queries para las operaciones de escritura y lectura respectivamente.
+
+**Capa de Aplicación (Application Layer):** Implementa los casos de uso del sistema mediante servicios de aplicación que manejan la lógica para procesar las operaciones de commands y queries. Además, maneja los eventos de dominio y coordina las interacciones entre la capa de dominio y otras capas.
+
+**Capa de Infraestructura (Infrastructure Layer):** Maneja la persistencia, integración y comunicación con servicios externos. Implementa los repositorios usando tecnologías como JPA/Hibernate, define las entidades de persistencia y utiliza mappers para transformar datos entre los objetos de dominio y las entidades de base de datos.
+
+**Capa de Interfaces (Interface Layer):** Expone el sistema al exterior a través de controllers que reciben y procesan las solicitudes de los clientes. Esta capa utiliza el patrón Assembler para transformar los datos de entrada en commands o queries y en transformar los objetos de dominio en respuestas adecuadas para el cliente.
+
 ## 5.1. Bounded Context: Appointment
 ### 5.1.1. Domain Layer
 ### 5.1.2. Interface Layer
