@@ -3113,7 +3113,9 @@ Implementa el acceso a servicios externos y persistencia.
 
 El diagrama de componentes del Bounded Context Security (Identity and Access Management) refleja la organización interna de este contexto en cuatro capas principales: Interface Layer, que expone los controladores y recursos del API REST hacia el exterior; Application Layer, donde se orquesta la lógica de los casos de uso mediante comandos, queries y servicios de aplicación; Domain Layer, que concentra las entidades y reglas de negocio del sistema relacionadas con usuarios y roles; e Infrastructure Layer, que implementa la persistencia, seguridad, hashing y generación de tokens; además, se muestra la conexión con la base de datos relacional, lo que evidencia cómo cada componente se integra para gestionar de manera coherente la identidad y el control de acceso en la aplicación.
 
-<img alt="SecurityBC Component Diagram" src="img/securityBCComponentDiagram.png" width="550">
+<p align="center">
+  <img alt="SecurityBC Component Diagram" src="img/securityBCComponentDiagram.png" width="550">
+</p>
 
 ### 5.5.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -3121,14 +3123,17 @@ El diagrama de componentes del Bounded Context Security (Identity and Access Man
 
 El diagrama muestra la estructura principal del dominio encargado de la autenticación, autorización y gestión de roles en el sistema, donde User actúa como Aggregate Root centralizando credenciales y asignación de roles, Role representa la entidad que modela los distintos perfiles del sistema, y Roles es un Value Object que define valores inmutables como ADMIN, FARMER, ADVISOR o USER; además, se incluyen los Domain Services (UserCommandService, UserQueryService, RoleCommandService, RoleQueryService) que encapsulan la lógica de negocio, y los objetos Command y Query que permiten ejecutar casos de uso como registrar usuarios, iniciar sesión o consultar información, reflejando así cómo los servicios interactúan con los agregados y entidades para mantener la separación de responsabilidades y una gestión clara de la identidad y el acceso.
 
-<img alt="SecurityBC Class Diagram" src="img/securityBCClassDiagram.png" width="550">
+<p align="center">
+  <img alt="SecurityBC Class Diagram" src="img/securityBCClassDiagram.png">
+</p>
 
 #### 5.5.6.2. Bounded Context Database Design Diagram
 
 El diagrama representa el modelo relacional que sustenta la persistencia de la información de identidad y acceso, compuesto por tres tablas principales: users, donde se almacenan las credenciales y datos básicos de cada usuario junto con los campos de auditoría; roles, que define los distintos perfiles disponibles en el sistema; y user_roles, una tabla intermedia generada por la relación muchos-a-muchos que asocia a cada usuario con uno o varios roles; este diseño asegura la integridad referencial mediante claves primarias y foráneas, y proporciona la base sólida para soportar las operaciones de autenticación, autorización y administración de roles dentro del contexto IAM.
 
+<p align="center">
 <img alt="SecurityBC Database Diagram" src="img/securityBCDatabaseDiagram.png" width="550">
-
+</p>
 
 # Capítulo VI: Product Design
 ## 6.1. Style Guidelines
