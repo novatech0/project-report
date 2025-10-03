@@ -2917,140 +2917,77 @@ Para el diseño de la base de datos se consideró las entidades principales del 
 #### 5.3.6.2. Bounded Context Database Design Diagram
 
 ## 5.4. Bounded Context: Profile
-Este bounded context gestiona la información de **perfiles de usuario** dentro de la plataforma (perfil general, roles especializados como *advisor* y *farmer*, y notificaciones asociadas a usuarios). Provee creación/edición/consulta/borrado de perfiles, gestión de advisors/farmers y la creación/consulta de notificaciones. Su integración con el contexto **IAM** se hace a través de un ACL (`ExternalUserService` / `IamContextFacade`) y expone una fachada (`ProfilesContextFacade`) para que otros bounded contexts lo consuman.
+Este bounded context se encarga de la gestión de perfiles de usuario dentro de la plataforma. Incluye información básica de cada persona, además de roles especializados como *advisor* (asesor) y *farmer* (productor). También permite manejar notificaciones asociadas a los usuarios. Se conecta con el contexto IAM para validar la existencia de usuarios y expone una fachada (`ProfilesContextFacade`) para que otros módulos puedan consultar perfiles.
 
 ### 5.4.1. Domain Layer
 
 **Aggregates**
-- **Profile**: aggregate raíz que agrupa datos personales y su relación con el `User` (id, firstName, lastName, city, country, birthDate, description, photo, occupation, experience, user). Tiene constructores desde comandos y un helper `getUserId()`.
+- **Profile**: representa el perfil de un usuario con datos personales como nombre, ciudad, país, fecha de nacimiento, descripción, foto, ocupación y experiencia.
 
-**Entities (de dominio)**
-- **Advisor**: entidad que representa a un asesor (usuario + rating).
-- **Farmer**: entidad que representa a un productor (usuario).
-- **Notification**: entidad que representa una notificación dirigida a un usuario (title, message, sendAt, user).
+**Entities**
+- **Advisor**: datos de un usuario en rol de asesor, con un campo de calificación.
+- **Farmer**: datos de un usuario en rol de productor.
+- **Notification**: mensajes enviados a un usuario con título, contenido y fecha.
 
-**Value Objects**
-- No hay objetos de valor complejos definidos explícitamente como clases separadas en el código actual (la mayoría de campos son primitivos/fechas). La regla de negocio que determina un *advisor* se materializa como `occupation IS NOT NULL AND <> ''` en la consulta JPA.
-
-**Commands (operaciones que modifican estado)**
+**Commands**
 - `CreateProfileCommand`, `UpdateProfileCommand`, `DeleteProfileCommand`.
-- Comandos relacionados: `CreateAdvisorCommand`, `CreateFarmerCommand`, `CreateNotificationCommand`, `DeleteNotificationCommand`.
+- Comandos para advisors, farmers y notificaciones.
 
-**Queries (operaciones de lectura)**
+**Queries**
 - `GetProfileByIdQuery`, `GetProfileByUserIdQuery`, `GetAllProfilesQuery`, `GetAllAdvisorProfilesQuery`.
-- Queries análogas para advisor/farmer/notification.
-
-**Events (observaciones arquitectónicas)**
-- En el código actual no se observan domain events explícitos publicados (por ejemplo `ProfileCreatedEvent`). Si otros contextos deben reaccionar a cambios, se recomienda añadir eventos y un broker.
 
 **Exceptions**
-- `ProfileNotFoundException`, `UserAlreadyUsedException`, `NotificationNotFoundException` y otras excepciones de dominio para controlar reglas como la unicidad (un usuario → un profile).
+- Manejo de errores como `ProfileNotFoundException` o `UserAlreadyUsedException`.
 
-**Domain Services / Interfaces de dominio**
-- Interfaces de servicio para commands/queries: `ProfileCommandService`, `ProfileQueryService`, `NotificationCommandService`, `NotificationQueryService`, `AdvisorCommandService`/`AdvisorQueryService`, `FarmerCommandService`/`FarmerQueryService`. Estas interfaces definen la API interna del contexto a nivel de dominio.
+**Services (interfaces)**
+- `ProfileCommandService`, `ProfileQueryService`, `NotificationCommandService`, `NotificationQueryService`, `AdvisorCommandService`, `FarmerCommandService`.
 
 ### 5.4.2. Interface Layer
-**Controllers (REST endpoints)**
-- **ProfilesController**: expone endpoints para CRUD de profiles y búsquedas:
-  - `GET /api/v1/profiles`
-  - `GET /api/v1/profiles/{id}`
-  - `GET /api/v1/profiles/{userId}/user`
-  - `GET /api/v1/profiles/advisors`
-  - `POST /api/v1/profiles`
-  - `PUT /api/v1/profiles/{id}`
-  - `DELETE /api/v1/profiles/{id}`
-  - Implementa seguridad (p. ej. `@PreAuthorize`) según el repositorio.
-- **NotificationsController**: endpoints para crear/consultar/borrar notificaciones (`/api/v1/notifications`).
 
-**Resources (DTOs / request/response)**
-- Entrada: `CreateProfileResource`, `UpdateProfileResource`, `CreateNotificationResource`, etc.
-- Salida: `ProfileResource`, `NotificationResource`.
-- Los controllers usan estos resources para recibir y devolver JSON.
+**Controllers**
+- **ProfilesController**: expone endpoints REST para crear, editar, eliminar y consultar perfiles.
+- **NotificationsController**: expone endpoints para manejar notificaciones.
 
-**Assemblers / Transformers**
-- Assemblers para convertir Resources ⇄ Commands/Domain:
-  - `CreateProfileCommandFromResourceAssembler`
-  - `UpdateProfileCommandFromResourceAssembler`
-  - `CreateNotificationCommandFromResourceAssembler`
-- Assemblers para convertir Domain → Resource:
-  - `ProfileResourceFromEntityAssembler`
-  - `NotificationResourceFromEntityAssembler`
-- Los controllers llaman a estos assemblers antes de invocar los servicios de aplicación.
+**Resources**
+- Objetos de entrada: `CreateProfileResource`, `UpdateProfileResource`, `CreateNotificationResource`.
+- Objetos de salida: `ProfileResource`, `NotificationResource`.
 
-**ACL / Facades (para integración con otros contexts)**
-- **ProfilesContextFacade**: fachada que expone operaciones útiles para otros contexts (p. ej. `fetchProfileByFarmerId`, `fetchProfileByAdvisorId`, `updateRating`, etc.). Otros bounded contexts (ej. `appointment`) consumen esta fachada en lugar de acceder directamente a la BD.
+**Assemblers**
+- Conversión entre Resources y Commands.
+- Conversión entre entidades de dominio y Resources.
 
-**Exception Handlers**
-- El manejo de excepciones usa excepciones de dominio lanzadas desde servicios/controllers. Recomendable centralizar en un `@ControllerAdvice` para respuestas HTTP consistentes si no existe ya.
+**Facades**
+- **ProfilesContextFacade**: permite que otros bounded contexts (como Appointment) consulten perfiles y advisors.
 
 ### 5.4.3. Application Layer
-**Command Services (implementaciones)**
-- **ProfileCommandServiceImpl**
-  - Valida existencia del `User` consultando `ExternalUserService` (ACL hacia IAM).
-  - Comprueba unicidad de profile por user (`findByUser_Id`) y persiste `ProfileEntity`.
-  - Implementa `create`, `update` y `delete` con las validaciones correspondientes.
+**Command Services**
+- **ProfileCommandServiceImpl**: implementa la lógica para crear, actualizar y eliminar perfiles.
+- **NotificationCommandServiceImpl**: maneja la creación y eliminación de notificaciones.
+- Servicios equivalentes para advisors y farmers.
 
-- **NotificationCommandServiceImpl**
-  - Crea notificaciones (valida user vía `ExternalUserService`) y persiste mediante `NotificationRepository`.
+**Query Services**
+- **ProfileQueryServiceImpl**: consultas de perfiles por id, por usuario o listados.
+- Servicios equivalentes para notificaciones, advisors y farmers.
 
-- **Farmer/Advisor Command Services**
-  - Manejan creación y borrado de farmer/advisor cuando aplica.
+**Outbound Services**
+- **ExternalUserService**: consulta al contexto IAM para validar la existencia de un usuario.
 
-**Query Services (implementaciones)**
-- **ProfileQueryServiceImpl**
-  - Implementa `handle(GetProfileByIdQuery)`, `handle(GetAllProfilesQuery)`, `handle(GetProfileByUserIdQuery)` y `handle(GetAllAdvisorProfilesQuery)` usando `ProfileRepository` y `ProfileMapper`.
-
-- **NotificationQueryServiceImpl**, **FarmerQueryServiceImpl**, **AdvisorQueryServiceImpl**
-  - Implementan consultas correspondientes delegando en repositorios y mappers.
-
-**Outbound / ACL services (integración con IAM y otros)**
-- **ExternalUserService**
-  - Encapsula la integración con IAM (`IamContextFacade`) para obtener `User` agregados; usado por command services para validar existencia de usuarios. Actúa como ACL entre `profile` e `iam`.
-
-- **ExternalNotificationsService** / **ProfilesContextFacade**
-  - Facades internas para exponer acciones y permitir que otros bounded contexts interactúen con `profile`.
-
-**Event Handlers**
-- Actualmente no hay publicación/consumo de eventos de dominio dentro de `profile`. Si se necesita desacoplar o notificar otros subsistemas (indexadores, analytics), implementar publicación de eventos (`ProfileCreated`, `ProfileUpdated`, etc.) y handlers correspondientes.
 
 ### 5.4.4. Infrastructure Layer
+
 **Entities (JPA)**
-- **ProfileEntity**
-  - Tabla `profile` con columnas: `id`, `first_name`, `last_name`, `city`, `country`, `birth_date`, `description`, `photo`, `occupation`, `experience` (default 0) y relación `@OneToOne` con `UserEntity` (`user_id`).
-  - Implementa método `update(UpdateProfileCommand)` para aplicar cambios.
+- **ProfileEntity**: tabla `profile` con los datos básicos del usuario.
+- **AdvisorEntity**: tabla `advisor` con id de usuario y calificación.
+- **FarmerEntity**: tabla `farmer` con id de usuario.
+- **NotificationEntity**: tabla `notification` con título, mensaje, fecha y usuario.
 
-- **AdvisorEntity**
-  - Tabla `advisor` con `id`, `user_id`, `rating` (decimal).
+**Repositories**
+- **ProfileRepository**: acceso a datos de perfiles, incluye métodos como `findByUser_Id` y `findAllAdvisorProfiles`.
+- Repositorios específicos para advisors, farmers y notificaciones.
 
-- **FarmerEntity**
-  - Tabla `farmer` con `id`, `user_id`.
-
-- **NotificationEntity**
-  - Tabla `notification` con `id`, `title`, `message`, `send_at`, `user_id` y relación `@ManyToOne` hacia `UserEntity`.
-
-**Repositories (Spring Data JPA)**
-- **ProfileRepository**
-  - `JpaRepository<ProfileEntity, Long>`
-  - Métodos relevantes:
-    - `Optional<ProfileEntity> findByUser_Id(Long userId)`
-    - `List<ProfileEntity> findAllAdvisorProfiles()` — JPQL que filtra por `occupation IS NOT NULL AND occupation <> ''` (regla que define advisor).
-  - Recomendación: además de la validación en servicio, mantener un constraint/índice unique en DB sobre `user_id` para garantizar unicidad.
-
-- **AdvisorRepository**, **FarmerRepository**, **NotificationRepository**
-  - Repositorios específicos con consultas útiles (`findByUser_Id`, etc.).
-
-**Mappers (Entity ⇄ Domain)**
-- **ProfileMapper**
-  - `toDomain(ProfileEntity)` y `toEntity(Profile)` (uso de `UserMapper` para mapear user si existe).
-
-- **AdvisorMapper**, **FarmerMapper**, **NotificationMapper**
-  - Mapean las entidades JPA a clases de dominio y viceversa.
-
-**Persistencia y consideraciones físicas**
-- El diseño actual asume que `UserEntity` está en el mismo esquema (se usa la entidad `UserEntity` en las relaciones). Si se extrae `profile` a un microservicio independiente, hay que decidir entre:
-  - Mantener una copia ligera del user (campos necesarios) en `profile` (replicación eventual), o
-  - Convertir la relación en FK simple por `user_id` y validar existencia/consistencia mediante ACL con IAM.
-- Recomendación adicional: crear índice/constraint `UNIQUE(user_id)` en `profile` para reforzar la regla de negocio a nivel de BD.
+**Mappers**
+- **ProfileMapper**, **AdvisorMapper**, **FarmerMapper**, **NotificationMapper**: convierten entre entidades JPA y objetos de dominio.
+  
 ### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
 <p align="center">
   <img alt="Profile Component Diagram" src="img/profile_ComponentLevelDiagrams.png" width="550">
