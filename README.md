@@ -3008,14 +3008,118 @@ Este bounded context se encarga de la gestión de perfiles de usuario dentro de 
 </p>
 
 ## 5.5. Bounded Context: Security
+
+Este bounded context gestiona la identidad y acceso (Identity and Access Management) de la aplicación, centralizando la creación de usuarios, autenticación, autorización y manejo de roles. A continuación se detallan las clases organizadas en cada capa de la arquitectura.
+
+---
+
 ### 5.5.1. Domain Layer
+
+En esta capa se definen las reglas de negocio centrales del contexto IAM.
+
+- **Aggregates**
+  - `User`: entidad raíz que representa a un usuario de la plataforma (atributos: id, username, passwordHash, roles).  
+    - Métodos relevantes: creación de usuarios, validación de credenciales.
+  
+- **Entities**
+  - `Role`: representa un rol del sistema (ej. ADMIN, ADVISOR, FARMER).  
+    - Relación: un `User` puede tener uno o varios `Role`.
+
+- **Value Objects**
+  - `Roles`: conjunto de roles predefinidos y estáticos usados en el sistema (enum o wrapper).  
+
+- **Commands**
+  - `SignUpCommand`, `SignInCommand`, `SeedRolesCommand`: encapsulan operaciones del dominio.
+
+- **Queries**
+  - `GetAllUsersQuery`, `GetUserByIdQuery`, `GetUserByUsernameQuery`.  
+  - `GetAllRolesQuery`, `GetRoleByNameQuery`.
+
+- **Domain Services**
+  - `UserCommandService`, `UserQueryService`: definen interfaces para manipular usuarios.  
+  - `RoleCommandService`, `RoleQueryService`: definen interfaces para roles.
+
+- **Exceptions**
+  - `InvalidPasswordException`, `InvalidRoleException`, `UsernameAlreadyExistsException`, `UserNotFoundInSignInException`.
+
+---
+
 ### 5.5.2. Interface Layer
+
+Capa que expone el API REST y maneja las interacciones externas.
+
+- **Controllers**
+  - `AuthenticationController`: gestiona login y registro de usuarios.  
+  - `UsersController`: CRUD de usuarios.  
+  - `RolesController`: CRUD de roles.
+
+- **Resources (DTOs)**
+  - `SignUpResource`, `SignInResource`, `UserResource`, `RoleResource`, `AuthenticatedUserResource`.
+
+- **Assemblers/Transformers**
+  - `SignUpCommandFromResourceAssembler`, `SignInCommandFromResourceAssembler`, `UserResourceFromEntityAssembler`, etc.
+
+- **Exceptions**
+  - `IamExceptionsHandler`: maneja errores de autenticación/autorización.
+
+- **ACL**
+  - `IamContextFacade`: punto de integración del bounded context IAM con otros contextos (ej. Profile, Appointment).
+
+---
 ### 5.5.3. Application Layer
+
+Aquí se orquesta el flujo de procesos del negocio mediante comandos y eventos.
+
+- **Command Handlers**
+  - `UserCommandServiceImpl`: implementa creación de usuarios y registro.  
+  - `RoleCommandServiceImpl`: maneja la creación y asignación de roles.
+
+- **Event Handlers**
+  - `ApplicationReadyEventHandler`: inicializa roles y usuarios al arrancar la aplicación.
+
+- **Query Handlers**
+  - `UserQueryServiceImpl`, `RoleQueryServiceImpl`: obtienen información de usuarios y roles.
+
+- **Outbound Services**
+  - `HashingService`: para hash de contraseñas.  
+  - `TokenService`: generación y validación de JWT.  
+  - `ExternalProfileRoleService`: integración con perfiles en otros contextos.
+
+---
+
 ### 5.5.4. Infrastructure Layer
+
+Implementa el acceso a servicios externos y persistencia.
+
+- **Persistence (JPA)**
+  - Entities: `UserEntity`, `RoleEntity`.  
+  - Repositories: `UserRepository`, `RoleRepository`.  
+  - Mappers: `UserMapper`, `RoleMapper`.
+
+- **Authorization/Security**
+  - `WebSecurityConfiguration`: configuración de Spring Security.  
+  - `BearerAuthorizationRequestFilter`: filtro para autorización JWT.  
+  - `UnauthorizedRequestHandlerEntryPoint`: manejo de accesos no autorizados.  
+  - `UserDetailsImpl`, `UserDetailsServiceImpl`: integración con Spring Security.  
+  - `UsernamePasswordAuthenticationTokenBuilder`: construcción de credenciales.
+
+- **Hashing**
+  - `BCryptHashingService`, `HashingServiceImpl`: encriptación de contraseñas.
+
+- **Tokens (JWT)**
+  - `BearerTokenService`, `TokenServiceImpl`: servicios para generar y validar tokens JWT.
+
 ### 5.5.5. Bounded Context Software Architecture Component Level Diagrams
+
+
 ### 5.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+
 #### 5.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+
 #### 5.5.6.2. Bounded Context Database Design Diagram
+
 
 # Capítulo VI: Product Design
 ## 6.1. Style Guidelines
