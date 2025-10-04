@@ -1493,7 +1493,7 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
         <p><strong>Given</strong> el usuario desea registrarse en la plataforma.</p>
         <p><strong>And</strong> se encuentra en el apartado de "Registrarse".</p>
         <p><strong>When</strong> complete el formulario de registro con su información personal de forma correcta.</p>
-        <p><strong>And</strong> seleccione su rol en la aplicación entre "Granjero" o "Asesor".</p>
+        <p><strong>And</strong> seleccione su rol en la aplicación entre "Productor Agropecuario" o "Asesor".</p>
         <p><strong>Then</strong> la cuenta se creará exitosamente.</p>
         <p><strong>Escenario 2: Registro incorrecto de cuenta</strong></p>
         <p><strong>Given</strong> el usuario se encuentra en el apartado de "Registrarse".</p>
@@ -2004,7 +2004,7 @@ Se seleccionaron las siguientes historias de usuario como las principales para i
         <p><strong>Given</strong> el usuario desea registrarse en la plataforma.</p>
         <p><strong>And</strong> se encuentra en el apartado de "Registrarse".</p>
         <p><strong>When</strong> complete el formulario de registro con su información personal de forma correcta.</p>
-        <p><strong>And</strong> seleccione su rol en la aplicación entre "Granjero" o "Asesor".</p>
+        <p><strong>And</strong> seleccione su rol en la aplicación entre "Productor Agropecuario" o "Asesor".</p>
         <p><strong>Then</strong> la cuenta se creará exitosamente.</p>
         <p><strong>Escenario 2: Registro incorrecto de cuenta</strong></p>
         <p><strong>Given</strong> el usuario se encuentra en el apartado de "Registrarse".</p>
@@ -3206,9 +3206,152 @@ El estilo de nuestro producto jugará un papel fundamental en brindar a nuestros
 
 ## 6.2. Information Architecture
 ### 6.2.1. Labeling Systems
+
+Hemos desarrollado un sistema de etiquetado claro y conciso para facilitar la navegación en la aplicación móvil. Las etiquetas utilizadas son:
+
+**Vista de Productor agropecuario:**
+
+<table>
+  <tbody>
+  <tr>
+      <th>Appointments - Citas</th>
+      <td>Se implementará un botón que permitirá visualizar la información de las citas registradas.</td>
+  </tr>
+  <tr>
+      <th>Advisors - Asesores</th>
+      <td>Se implementará un botón que permitirá a los usuarios buscar asesores.</td>
+  </tr>
+  <tr>
+      <th>Posts - Publicaciones</th>
+      <td>Se implementará un botón que permitirá a los usuarios ver publicaciones de asesores.</td>
+  </tr>
+  <tr>
+      <th>My Farm - Mi Granja</th>
+      <td>Se implementará un botón que permitirá al usuario llevar un registro y seguimiento de los recintos de animales en la granja.</td>
+  </tr>
+  <tr>
+      <th>Notifications - Notificaciones</th>
+      <td>Se implementará un botón que permitirá visualizar notificaciones de citas.</td>
+  </tr>
+  <tr>
+      <th>Profile - Perfil</th>
+      <td>Se implementará un botón que permitirá al usuario visualizar y editar su perfil.</td>
+  </tr>
+  <tr>
+      <th>Logout</th>
+      <td>Se implementará un botón que permitirá al usuario cerrar sesión.</td>
+  </tr>
+  </tbody>
+</table>
+
+**Vista de Asesor con experiencia:**
+
+<table>
+  <tbody>
+  <tr>
+      <th>Appointments - Citas</th>
+      <td>Se implementará un botón que permitirá visualizar la información de las citas registradas.</td>
+  </tr>
+  <tr>
+      <th>My Posts - Mis publicaciones</th>
+      <td>Se implementará un botón que permitirá al asesor gestionar sus publicacion.</td>
+  </tr>
+  <tr>
+      <th>Schedules - Horarios</th>
+      <td>Se implementará un botón que permitirá gestionar los horarios para sus citas.</td>
+  </tr>
+  <tr>
+      <th>Notifications - Notificaciones</th>
+      <td>Se implementará un botón que permitirá visualizar notificaciones de citas.</td>
+  </tr>
+  <tr>
+      <th>Profile - Perfil</th>
+      <td>Se implementará un botón que permitirá al usuario visualizar y editar su perfil.</td>
+  </tr>
+  <tr>
+      <th>Logout</th>
+      <td>Se implementará un botón que permitirá al usuario cerrar sesión.</td>
+  </tr>
+  </tbody>
+</table>
+
 ### 6.2.2. Searching Systems
+
+La aplicación AgroTech desarrollará un sistema de búsqueda intuitivo, diseñado para que los usuarios encuentren rápidamente la información que necesitan. Este sistema se basará en filtros inteligentes que simplificarán la búsqueda de asesores y citas, evitando así que los usuarios se vean abrumados por la cantidad de información disponible. Con esta mejora, nuestra aplicación garantizará una experiencia de usuario más fluida y satisfactoria al buscar información relevante.
+
+<table>
+  <tbody>
+  <tr>
+      <th>Nombre</th>
+      <td>Permite al usuario buscar según el nombre del asesor.</td>
+  </tr>
+  <tr>
+      <th>Experiencia</th>
+      <td>Permite al usuario buscar asesores con un nivel de experiencia específico.</td>
+  </tr>
+  <tr>
+      <th>Calificación</th>
+      <td>Permite al usuario buscar asesores según las calificaciones obtenidas.</td>
+  </tr> 
+  <tr>
+      <th>Palabras Clave</th>
+      <td>Proporciona un cuadro de búsqueda donde los usuarios pueden ingresar palabras clave específicas relacionadas con el tipo de asesoría que necesitan.</td>
+  </tr>
+  <tr>
+      <th>Fecha</th>
+      <td>Permite al usuario buscar citas acorde a la fecha.</td>
+  </tr>
+  </tbody>
+</table>
+
+
 ### 6.2.3. SEO Tags and Meta Tags
+
+Para mejorar la visibilidad y el rendimiento de AgroTech en motores de búsqueda y en las tiendas de aplicaciones, se han implementado las siguientes etiquetas SEO y metaetiquetas:
+
+<strong>Metaetiqueta de Descripción: </strong>Proporciona una breve descripción del contenido y propósito de la aplicación, ayudando a los usuarios a entender de qué se trata la aplicación y a mejorar la tasa de clics.
+
+````
+<meta name="description" content="AgroTech is a platform that provides farmers with the necessary information to improve their farming practices.">
+````
+
+<strong>Metaetiqueta de Autor: </strong>Especifica el autor de la aplicación, lo que ayuda a atribuir la propiedad intelectual y la fuente del contenido.
+
+````
+<meta name="author" content="AgroTech">
+````
+
+<strong>Metaetiqueta de Robots: </strong>Indica a los motores de búsqueda cómo deben indexar y rastrear la página, permitiendo que se indexe y que se sigan los enlaces en la aplicación.
+
+````
+<meta name="robots" content="index, follow">
+````
+
+<strong>Etiqueta de Título: </strong> Define el título de la aplicación que aparece en los resultados de búsqueda y en las pestañas del navegador.
+
+````
+<title>AgroTech</title>
+````
+
+<strong>Etiqueta de Idioma: </strong> Especifica el idioma principal del contenido de la aplicación para ayudar a los motores de búsqueda a entender y clasificar el contenido adecuadamente.
+
+````
+<html lang="es">
+````
+
 ### 6.2.4. Navigation Systems
+
+Tanto la interfaz web como móvil están diseñadas para una navegación eficiente. La navegación es intuitiva y permite a los usuarios acceder fácilmente a las diferentes secciones de la aplicación. A continuación, se describen los sistemas de navegación implementados:
+
+**Web:**
+
+- ***Menú Superior:*** Un menú de navegación horizontal en la parte superior de la página que incluye enlaces a las secciones principales de la aplicación, como "Citas", "Asesores", "Publicaciones", "Perfil", etc.
+
+**Móvil:**
+
+ - ***Menú de Navegación:*** Menús adaptados para dispositivos móviles, que pueden incluir menús desplegables, botones en la parte superior o inferior de la pantalla, y accesos directos en la barra lateral.
+
+
 ## 6.3. Landing Page UI Design
 ### 6.3.1. Landing Page Wireframe
 ### 6.3.2. Landing Page Mock-up
