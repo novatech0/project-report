@@ -2801,14 +2801,14 @@ Este bounded context gestiona la planificación y seguimiento de citas entre pro
   - **AvailableDateStatus**: estados de la fecha de disponibilidad (AVAILABLE, UNAVAILABLE).
 
 **Commands**: operaciones que modifican el estado de las asesorías, fechas disponibles y reseñas.
-  - CreateAppointmentCommand, UpdateAppointmentCommand, DeleteAppointmentCommand.
-  - CreateAvailableDateCommand, UpdateAvailableDateCommand, DeleteAvailableDateCommand, UpdateAvailableDateStatusCommand.
-  - CreateReviewCommand, UpdateReviewCommand, DeleteReviewCommand.
+  - Para **Appointment**: CreateAppointmentCommand, UpdateAppointmentCommand, DeleteAppointmentCommand.
+  - Para **AvailableDate**: CreateAvailableDateCommand, UpdateAvailableDateCommand, DeleteAvailableDateCommand, UpdateAvailableDateStatusCommand.
+  - Para **Review**: CreateReviewCommand, UpdateReviewCommand, DeleteReviewCommand.
 
 **Queries**: operaciones que recuperan datos relacionados con las asesorías, fechas disponibles y reseñas.
-  - GetAllAppointmentsQuery, GetAppointmentByIdQuery, GetAppointmentsByAdvisorIdQuery.
-  - GetAllAvailableDatesQuery, GetAvailableDateByIdQuery.
-  - GetAllReviewsQuery, GetReviewByIdQuery.
+  - Para **Appointment**: GetAllAppointmentsQuery, GetAppointmentByIdQuery, GetAppointmentsByAdvisorIdQuery.
+  - Para **AvailableDate**: GetAllAvailableDatesQuery, GetAvailableDateByIdQuery, GetAvailableDatesByAdvisorIdQuery, GetAvailableDatesByStatusQuery, GetAvailableDatesByAdvisorIdAndStatusQuery, GetAvailableDateByAdvisorIdAndDateQuery.
+  - Para **Review**: GetAllReviewsQuery, GetReviewByIdQuery.
 
 **Events**:
   - **AppointmentCreatedEvent**: evento que se emite cuando se crea una nueva asesoría y se envía una notificación al asesor.
@@ -2817,9 +2817,9 @@ Este bounded context gestiona la planificación y seguimiento de citas entre pro
 **Exceptions**: excepciones para controlar los errores que pueden cometer los usuarios al utilizar el Appointment Context. Ejemplos: AppointmentNotFoundException, InvalidDateException, InvalidStatusException, ReviewAlreadyExistsException.
 
 **Services**: Interfaces de los servicios para manejar los commands y queries.
-  - AppointmentCommandService, AppointmentQueryService.
-  - AvailableDateCommandService, AvailableDateQueryService.
-  - ReviewCommandService, ReviewQueryService.
+  - AppointmentCommandService y AppointmentQueryService.
+  - AvailableDateCommandService y AvailableDateQueryService.
+  - ReviewCommandService y ReviewQueryService.
 
 ### 5.1.2. Interface Layer
 
@@ -2828,30 +2828,30 @@ Este bounded context gestiona la planificación y seguimiento de citas entre pro
   - **AvailableDatesController**: gestiona las solicitudes relacionadas con las fechas de disponibilidad.
   - **ReviewsController**: gestiona las solicitudes relacionadas con las reseñas.
 
-**Resources**:
+**Resources**: Son los DTOs que representan los datos de entrada y salida en las APIs REST.
   - **Entrada**: CreateAppointmentResource, UpdateAppointmentResource, CreateAvailableDateResource, UpdateAvailableDateResource, CreateReviewResource, UpdateReviewResource.
   - **Salida**: AppointmentResource, AvailableDateResource, ReviewResource.
 
-**Assemblers**:
+**Assemblers**: Utilizan el patrón Assembler para transformar los datos entre los recursos, las entidades de dominio y los comandos.
   - **De recurso a comando**: CreateAppointmentCommandFromResourceAssembler, UpdateAppointmentCommandFromResourceAssembler, etc.
   - **De entidad a recurso**: AppointmentResourceFromEntityAssembler, AvailableDateResourceFromEntityAssembler, ReviewResourceFromEntityAssembler.
 
-**Exception Handlers**
+**Exception Handlers**:
   - **AppointmentExceptionsHandler**: centraliza el manejo de errores en el contexto, proporcionando respuestas HTTP adecuadas.
 
 ### 5.1.3. Application Layer
 
-**Command Services**
+**Command Services**:
   - **AppointmentCommandServiceImpl**: Implementa la lógica para manejar los comandos relacionados con las asesorías a partir de la interfaz AppointmentCommandService.
   - **AvailableDateCommandServiceImpl**: Implementa la lógica para manejar los comandos relacionados con las fechas disponibles a partir de la interfaz AvailableDateCommandService.
   - **ReviewCommandServiceImpl**: Implementa la lógica para manejar los comandos relacionados con las reseñas a partir de la interfaz ReviewCommandService.
 
-**Query Services**
+**Query Services**:
   - **AppointmentQueryServiceImpl**: Implementa la lógica para manejar las consultas relacionadas con las asesorías a partir de la interfaz AppointmentQueryService.
   - **AvailableDateQueryServiceImpl**: Implementa la lógica para manejar las consultas relacionadas con las fechas disponibles a partir de la interfaz AvailableDateQueryService.
   - **ReviewQueryServiceImpl**: Implementa la lógica para manejar las consultas relacionadas con las reseñas a partir de la interfaz ReviewQueryService.
 
-**Event Handlers**
+**Event Handlers**:
   - **AppointmentCreatedEventHandler**: maneja la logica del evento AppointmentCreatedEvent para enviar notificaciones al asesor cuando se crea una nueva asesoría.
   - **AppointmentCancelledEventHandler**: maneja la logica del evento AppointmentCancelledEvent para enviar notificaciones al asesor cuando se cancela una asesoría.
 
@@ -2914,12 +2914,12 @@ Este bounded context gestiona el control de recintos y animales para productores
   - **HealthStatus**: estados de salud de animal (HEALTHY, SICK, DEAD, UNKNOWN)
 
 **Commands**: operaciones que modifican el estado de los rescintos y animales
-  - CreateEnclosureCommand, UpdateEnclosureCommand, DeleteEnclosureCommand.
-  - CreateAnimalCommand, UpdateAnimalCommand, DeleteAnimalCommand.
+  - Para **Enclosure**: CreateEnclosureCommand, UpdateEnclosureCommand, DeleteEnclosureCommand.
+  - Para **Animal**: CreateAnimalCommand, UpdateAnimalCommand, DeleteAnimalCommand.
 
 **Queries**: operaciones que recuperan datos relacionados con los rescintos y animales.
-  - GetAllEnclosuresQuery, GetEnclosureByIdQuery, GetAllEnclosuresByFarmerIdQuery.
-  - GetAllAnimalsQuery, GetAnimalByIdQuery, GetAllAnimalsByEnclosureIdQuery.
+  - Para **Enclosure**: GetAllEnclosuresQuery, GetEnclosureByIdQuery, GetAllEnclosuresByFarmerIdQuery.
+  - Para **Animal**: GetAllAnimalsQuery, GetAnimalByIdQuery, GetAllAnimalsByEnclosureIdQuery.
 
 **Exceptions**: excepciones para controlar los errores que pueden cometer los usuarios al utilizar el Management Context.
  - EnclosureNotFoundException
@@ -2927,8 +2927,8 @@ Este bounded context gestiona el control de recintos y animales para productores
  - IncorrectHealthStatusException.
 
 **Services**: Interfaces de los servicios para manejar los commands y queries.
-  - EnclosureCommandService, EnclosureQueryService.
-  - AnimalCommandService, AnimalQueryService.
+  - EnclosureCommandService y EnclosureQueryService.
+  - AnimalCommandService y AnimalQueryService.
 
 ### 5.2.2. Interface Layer
 
@@ -2936,24 +2936,24 @@ Este bounded context gestiona el control de recintos y animales para productores
   - **EnclosuresController**: gestiona las solicitudes relacionadas con los rescintos.
   - **AnimalsController**: gestiona las solicitudes relacionadas con los animales.
 
-**Resources**:
+**Resources**: Son los DTOs que representan los datos de entrada y salida en las APIs REST.
   - **Entrada**: CreateEnclosureResource, UpdateEnclosureResource, CreateAnimalResource, UpdateAnimalResource.
   - **Salida**: EnclosureResource, AnimalResource.
 
-**Assemblers**:
+**Assemblers**: Utilizan el patrón Assembler para transformar los datos entre los recursos, las entidades de dominio y los comandos.
   - **De recurso a comando**: CreateEnclosureCommandFromResourceAssembler, UpdateEnclosureCommandFromResourceAssembler, CreateAnimalCommandFromResourceAssembler, UpdateAnimalCommandFromResourceAssembler.
   - **De entidad a recurso**: EnclosureResourceFromEntityAssembler, AnimalResourceFromEntityAssembler.
 
-**Exception Handlers**
+**Exception Handlers**:
   - **ManagementExceptionsHandler**: centraliza el manejo de errores en el contexto, proporcionando respuestas HTTP adecuadas.
 
 ### 5.2.3. Application Layer
 
-**Command Services**
+**Command Services**:
   - **EnclosureCommandServiceImpl**: Implementa la lógica para manejar los comandos relacionados con los rescintos a partir de la interfaz EnclosureCommandService.
   - **AnimalCommandServiceImpl**: Implementa la lógica para manejar los comandos relacionados con los animales a partir de la interfaz AnimalCommandService.
 
-**Query Services**
+**Query Services**:
   - **EnclosureQueryServiceImpl**: Implementa la lógica para manejar las consultas relacionadas con los rescintos a partir de la interfaz EnclosureQueryService.
   - **AnimalQueryServiceImpl**: Implementa la lógica para manejar las consultas relacionadas con los animales a partir de la interfaz AnimalQueryService.
 
@@ -3003,58 +3003,41 @@ Este bounded context gestiona las publicaciones (posts) que los asesores pueden 
 **Aggregates**:
 - **Post**: representa la publicación realizada por un usuario, con atributos como título, contenido, fecha de creación y estado.
 
-**Entities**:
-- **Post**: entidad principal que modela el contenido de las publicaciones.
-
-**Value Objects**:
-- **PostStatus**: estados de la publicación (DRAFT, PUBLISHED, ARCHIVED).
-
 **Commands**: operaciones que modifican el estado de los posts.
 - CreatePostCommand, UpdatePostCommand, DeletePostCommand.
 
 **Queries**: operaciones que recuperan datos relacionados con los posts.
-- GetAllPostsQuery, GetPostByIdQuery, GetPostsByUserIdQuery.
-
-**Events**:
-- **PostCreatedEvent**: evento que se emite cuando un post es creado.
-- **PostUpdatedEvent**: evento que se emite cuando un post es actualizado.
-- **PostDeletedEvent**: evento que se emite cuando un post es eliminado.
+- GetAllPostsQuery, GetPostByIdQuery, GetPostsByAdvisorIdQuery.
 
 **Exceptions**:
 - **PostNotFoundException**: excepción lanzada cuando no se encuentra un post por su identificador.
 
 **Services**: Interfaces de los servicios para manejar los commands y queries.
-- PostCommandService, PostQueryService.
+- PostCommandService y PostQueryService.
 
 ### 5.3.2. Interface Layer
 
 **Controllers**:
 - **PostsController**: gestiona las solicitudes relacionadas con los posts.
 
-**Resources**:
+**Resources**: Son los DTOs que representan los datos de entrada y salida en las APIs REST.
 - **Entrada**: CreatePostResource, UpdatePostResource.
 - **Salida**: PostResource.
 
-**Assemblers**:
+**Assemblers**: Utilizan el patrón Assembler para transformar los datos entre los recursos, las entidades de dominio y los comandos.
 - **De recurso a comando**: CreatePostCommandFromResourceAssembler, UpdatePostCommandFromResourceAssembler.
 - **De entidad a recurso**: PostResourceFromEntityAssembler.
 
-**Exception Handlers**
-- **PostExceptionsHandler**: centraliza el manejo de errores en el contexto de publicaciones, proporcionando respuestas HTTP adecuadas para errores como `PostNotFoundException`.
+**Exception Handlers**:
+- **PostExceptionsHandler**: centraliza el manejo de errores en el contexto de publicaciones, proporcionando respuestas HTTP adecuadas para errores como PostNotFoundException.
 
 ### 5.3.3. Application Layer
 
+**Command Services**:
+- **PostCommandServiceImpl**: implementa la lógica para manejar los comandos relacionados con las publicaciones a partir de la interfaz PostCommandService.
 
-**Command Services**
-**PostCommandServiceImpl**: implementa la lógica para manejar los comandos relacionados con las publicaciones a partir de la interfaz PostCommandService.
-
-**Query Services**
+**Query Services**:
 - **PostQueryServiceImpl**: implementa la lógica para manejar las consultas relacionadas con los posts a partir de la interfaz PostQueryService.
-
-**Event Handlers**
-- **PostCreatedEventHandler**: maneja la lógica del evento PostCreatedEvent.
-- **PostUpdatedEventHandler**: maneja la lógica del evento PostUpdatedEvent.
-- **PostDeletedEventHandler**: maneja la lógica del evento PostDeletedEvent.
 
 ### 5.3.4. Infrastructure Layer
 
@@ -3066,7 +3049,6 @@ Este bounded context gestiona las publicaciones (posts) que los asesores pueden 
 
 **Mappers**:
 - **PostMapper**: mapea entre la entidad PostEntity y la clase de dominio Post.
-
 
 ### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
 
@@ -3080,7 +3062,7 @@ En el diagrama de componentes del Bounded Context Post se observa cómo se relac
 #### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
 
 <p align="center">
-  <img alt="Post Domain Layer Class Diagram" src="img/class-diagram-post.png" width="600">
+  <img alt="Post Domain Layer Class Diagram" src="img/class-diagram-post-new.png" width="600">
 </p>
 
 #### 5.3.6.2. Bounded Context Database Design Diagram
@@ -3092,77 +3074,110 @@ Para el diseño de la base de datos se consideró la entidad principal del domin
 </p>
 
 ## 5.4. Bounded Context: Profile
-Este bounded context se encarga de la gestión de perfiles de usuario dentro de la plataforma. Incluye información básica de cada persona, además de roles especializados como *advisor* (asesor) y *farmer* (productor). También permite manejar notificaciones asociadas a los usuarios. Se conecta con el contexto IAM para validar la existencia de usuarios y expone una fachada (`ProfilesContextFacade`) para que otros módulos puedan consultar perfiles.
+
+Este bounded context se encarga de la gestión de perfiles de usuario dentro de la plataforma. Incluye información básica de cada persona, además de roles especializados como advisor (asesor) y farmer (productor). También permite manejar notificaciones asociadas a los usuarios. Se conecta con el contexto IAM para validar la existencia de usuarios y expone una fachada ProfilesContextFacade para que otros módulos puedan consultar perfiles.
 
 ### 5.4.1. Domain Layer
 
 **Aggregates**
-- **Profile**: representa el perfil de un usuario con datos personales como nombre, ciudad, país, fecha de nacimiento, descripción, foto, ocupación y experiencia.
+
+* **Profile**: representa el perfil de un usuario con datos personales como nombre, ciudad, país, fecha de nacimiento, descripción, foto, ocupación y experiencia.
 
 **Entities**
-- **Advisor**: datos de un usuario en rol de asesor, con un campo de calificación.
-- **Farmer**: datos de un usuario en rol de productor.
-- **Notification**: mensajes enviados a un usuario con título, contenido y fecha.
 
-**Commands**
-- `CreateProfileCommand`, `UpdateProfileCommand`, `DeleteProfileCommand`.
-- Comandos para advisors, farmers y notificaciones.
+* **Advisor**: datos de un usuario en rol de asesor, con un campo de calificación.
+* **Farmer**: datos de un usuario en rol de productor.
+* **Notification**: mensajes enviados a un usuario con título, contenido y fecha.
 
-**Queries**
-- `GetProfileByIdQuery`, `GetProfileByUserIdQuery`, `GetAllProfilesQuery`, `GetAllAdvisorProfilesQuery`.
+**Commands**: operaciones que modifican el estado de perfiles, advisors, farmers y notificaciones.
+
+* De **Profile**: CreateProfileCommand, UpdateProfileCommand, DeleteProfileCommand
+* De **Advisor**: CreateAdvisorCommand, DeleteAdvisorCommand, UpdateAdvisorCommand
+* De **Farmer**: CreateFarmerCommand, DeleteFarmerCommand
+* De **Notification**: CreateNotificationCommand, DeleteNotificationCommand
+
+**Queries**: operaciones que recuperan datos relacionados con perfiles, advisors, farmers y notificaciones de la base de datos.
+
+* De **Profile**: GetProfileByIdQuery, GetProfileByUserIdQuery, GetAllProfilesQuery
+* De **Advisor**: GetAdvisorByIdQuery, GetAdvisorByUserIdQuery, GetAllAdvisorProfilesQuery, GetAllAdvisorsQuery
+* De **Farmer**: GetFarmerByIdQuery, GetFarmerByUserIdQuery, GetAllFarmersQuery
+* De **Notification**: GetNotificationByIdQuery, GetNotificationsByUserIdQuery, GetAllNotificationsQuery
 
 **Exceptions**
-- Manejo de errores como `ProfileNotFoundException` o `UserAlreadyUsedException`.
 
-**Services (interfaces)**
-- `ProfileCommandService`, `ProfileQueryService`, `NotificationCommandService`, `NotificationQueryService`, `AdvisorCommandService`, `FarmerCommandService`.
+* **ProfileNotFoundException**: se lanza cuando no se encuentra un perfil.
+* **UserAlreadyUsedException**: se lanza cuando se intenta crear un perfil con un usuario ya registrado.
+* **NotificationNotFoundException**: se lanza cuando no se encuentra una notificación.
+
+**Services**: Interfaces de los servicios para manejar los commands y queries.
+
+* ProfileCommandService y ProfileQueryService
+* AdvisorCommandService y AdvisorQueryService
+* FarmerCommandService y FarmerQueryService
+* NotificationCommandService y NotificationQueryService
 
 ### 5.4.2. Interface Layer
 
-**Controllers**
-- **ProfilesController**: expone endpoints REST para crear, editar, eliminar y consultar perfiles.
-- **NotificationsController**: expone endpoints para manejar notificaciones.
+**Controllers**:
 
-**Resources**
-- Objetos de entrada: `CreateProfileResource`, `UpdateProfileResource`, `CreateNotificationResource`.
-- Objetos de salida: `ProfileResource`, `NotificationResource`.
+* **ProfilesController**: expone endpoints REST para crear, editar, eliminar y consultar perfiles
+* **AdvisorsController**: expone endpoints para la gestión de advisors
+* **FarmersController**: expone endpoints para la gestión de farmers
+* **NotificationsController**: expone endpoints para manejar notificaciones
 
-**Assemblers**
-- Conversión entre Resources y Commands.
-- Conversión entre entidades de dominio y Resources.
+**Resources**: Son los DTOs que representan los datos de entrada y salida en las APIs REST.
 
-**Facades**
-- **ProfilesContextFacade**: permite que otros bounded contexts (como Appointment) consulten perfiles y advisors.
+* **Entrada**: CreateProfileResource, UpdateProfileResource, CreateAdvisorCommand, CreateFarmerCommand, CreateNotificationResource
+* **Salida**: ProfileResource, AdvisorResource, FarmerResource, NotificationResource
+
+**Assemblers**: Utilizan el patrón Assembler para transformar los datos entre los recursos, las entidades de dominio y los comandos.
+
+* **De recurso a comando**: CreateProfileCommandFromResourceAssembler, UpdateProfileCommandFromResourceAssembler, CreateAdvisorCommandFromResourceAssembler, CreateFarmerCommandFromResourceAssembler, CreateNotificationCommandFromResourceAssembler
+* **De entidad a recurso**: ProfileResourceFromEntityAssembler, AdvisorResourceFromEntityAssembler, FarmerResourceFromEntityAssembler, NotificationResourceFromEntityAssembler
+
+**Facades**:
+
+* **ProfilesContextFacade**: permite que otros bounded contexts (como Appointment) consulten perfiles y advisors
+* **NotificationsContextFacade**: permite enviar o consultar notificaciones
 
 ### 5.4.3. Application Layer
-**Command Services**
-- **ProfileCommandServiceImpl**: implementa la lógica para crear, actualizar y eliminar perfiles.
-- **NotificationCommandServiceImpl**: maneja la creación y eliminación de notificaciones.
-- Servicios equivalentes para advisors y farmers.
 
-**Query Services**
-- **ProfileQueryServiceImpl**: consultas de perfiles por id, por usuario o listados.
-- Servicios equivalentes para notificaciones, advisors y farmers.
+**Command Services**:
 
-**Outbound Services**
-- **ExternalUserService**: consulta al contexto IAM para validar la existencia de un usuario.
+* **ProfileCommandServiceImpl**: implementa la lógica para crear, actualizar y eliminar perfiles
+* **AdvisorCommandServiceImpl**: maneja la creación, actualización y eliminación de advisors
+* **FarmerCommandServiceImpl**: maneja la creación y eliminación de farmers
+* **NotificationCommandServiceImpl**: maneja la creación y eliminación de notificaciones
 
+**Query Services**:
+
+* **ProfileQueryServiceImpl**: consultas de perfiles por id, por usuario o listados
+* **AdvisorQueryServiceImpl**: consultas de advisors
+* **FarmerQueryServiceImpl**: consultas de farmers
+* **NotificationQueryServiceImpl**: consultas de notificaciones
+
+**Outbound Services**:
+
+* **ExternalUserService**: consulta al contexto IAM para validar la existencia de un usuario
 
 ### 5.4.4. Infrastructure Layer
 
-**Entities (JPA)**
-- **ProfileEntity**: tabla `profile` con los datos básicos del usuario.
-- **AdvisorEntity**: tabla `advisor` con id de usuario y calificación.
-- **FarmerEntity**: tabla `farmer` con id de usuario.
-- **NotificationEntity**: tabla `notification` con título, mensaje, fecha y usuario.
+**Entities (JPA)**:
 
-**Repositories**
-- **ProfileRepository**: acceso a datos de perfiles, incluye métodos como `findByUser_Id` y `findAllAdvisorProfiles`.
-- Repositorios específicos para advisors, farmers y notificaciones.
+* **ProfileEntity***: tabla "profile" con los datos básicos del usuario
+* **AdvisorEntity**: tabla "advisor" con id de usuario y calificación
+* **FarmerEntity**: tabla "farmer" con id de usuario
+* **NotificationEntity**: tabla "notification" con título, mensaje, fecha y usuario
 
-**Mappers**
-- **ProfileMapper**, **AdvisorMapper**, **FarmerMapper**, **NotificationMapper**: convierten entre entidades JPA y objetos de dominio.
-  
+**Repositories**:
+
+* **ProfileRepository**: acceso a datos de perfiles, incluye métodos como findByUser_Id y findAllAdvisorProfiles
+* **AdvisorRepository**, **FarmerRepository**, **NotificationRepository**: repositorios específicos para cada entidad
+
+**Mappers**:
+
+* **ProfileMapper**, **AdvisorMapper**, **FarmerMapper**, **NotificationMapper**: convierten entre entidades JPA y objetos de dominio
+
 ### 5.4.5. Bounded Context Software Architecture Component Level Diagrams
 <p align="center">
   <img alt="Profile Component Diagram" src="img/profile_ComponentLevelDiagrams.png" width="550">
@@ -3179,110 +3194,126 @@ Este bounded context se encarga de la gestión de perfiles de usuario dentro de 
 #### 5.4.6.2. Bounded Context Database Design Diagram
 
 <p align="center">
-  <img alt="Profile Database Diagram" src="img/database-profile.png" width="550">
+  <img alt="Profile Database Diagram" src="img/profile_DatabaseDesignDiagram.png" width="550">
 </p>
 
-## 5.5. Bounded Context: Security
+## 5.5. Bounded Context: Security (IAM)
 
-Este bounded context gestiona la identidad y acceso (Identity and Access Management) de la aplicación, centralizando la creación de usuarios, autenticación, autorización y manejo de roles. A continuación se detallan las clases organizadas en cada capa de la arquitectura.
-
----
+Este bounded context gestiona la identidad y acceso de la aplicación, centralizando la creación de usuarios, autenticación, autorización y manejo de roles. Expone una fachada IamContextFacade para la integración con otros contextos.
 
 ### 5.5.1. Domain Layer
 
-En esta capa se definen las reglas de negocio centrales del contexto IAM.
+**Aggregates**:
 
-- **Aggregates**
-  - `User`: entidad raíz que representa a un usuario de la plataforma (atributos: id, username, passwordHash, roles).  
-    - Métodos relevantes: creación de usuarios, validación de credenciales.
-  
-- **Entities**
-  - `Role`: representa un rol del sistema (ej. ADMIN, ADVISOR, FARMER).  
-    - Relación: un `User` puede tener uno o varios `Role`.
+* **User**: representa a un usuario de la plataforma con atributos id, username, passwordHash y roles.
+  * Métodos relevantes: creación de usuarios, validación de credenciales.
 
-- **Value Objects**
-  - `Roles`: conjunto de roles predefinidos y estáticos usados en el sistema (enum o wrapper).  
+**Entities**:
 
-- **Commands**
-  - `SignUpCommand`, `SignInCommand`, `SeedRolesCommand`: encapsulan operaciones del dominio.
+* **Role**: representa un rol del sistema (ej. USER, ADVISOR, FARMER, ADMIN).
 
-- **Queries**
-  - `GetAllUsersQuery`, `GetUserByIdQuery`, `GetUserByUsernameQuery`.  
-  - `GetAllRolesQuery`, `GetRoleByNameQuery`.
+**Value Objects**:
 
-- **Domain Services**
-  - `UserCommandService`, `UserQueryService`: definen interfaces para manipular usuarios.  
-  - `RoleCommandService`, `RoleQueryService`: definen interfaces para roles.
+* **Roles**: conjunto de roles predefinidos y estáticos usados en el sistema.
 
-- **Exceptions**
-  - `InvalidPasswordException`, `InvalidRoleException`, `UsernameAlreadyExistsException`, `UserNotFoundInSignInException`.
+**Commands**: operaciones para el registro e inicio de sesión de usuarios, y la inicialización de roles.
 
----
+* SignUpCommand, SignInCommand y SeedRolesCommand
+
+**Queries**: operaciones para obtener usuarios y roles desde la base de datos.
+
+* GetAllUsersQuery, GetUserByIdQuery, GetUserByUsernameQuery
+* GetAllRolesQuery, GetRoleByNameQuery
+
+**Services**: Interfaces de los servicios para manejar los commands y queries.
+
+* UserCommandService y UserQueryService
+* RoleCommandService y RoleQueryService
+
+**Exceptions**:
+
+* **InvalidPasswordException**: se lanza cuando la contraseña proporcionada no coincide con la almacenada.
+* **InvalidRoleException**: se lanza cuando se intenta asignar un rol no existente.
+* **UsernameAlreadyExistsException**: se lanza cuando se intenta registrar un usuario con un nombre de usuario ya existente.
+* **UserNotFoundInSignInException**: se lanza cuando no se encuentra un usuario durante el proceso de inicio de sesión.
 
 ### 5.5.2. Interface Layer
 
-Capa que expone el API REST y maneja las interacciones externas.
+**Controllers**:
 
-- **Controllers**
-  - `AuthenticationController`: gestiona login y registro de usuarios.  
-  - `UsersController`: CRUD de usuarios.  
-  - `RolesController`: CRUD de roles.
+* **AuthenticationController**: gestiona login y registro de usuarios
+* **UsersController**: operaciones de lectura de usuarios
+* **RolesController**: operaciones de lectura de roles
 
-- **Resources (DTOs)**
-  - `SignUpResource`, `SignInResource`, `UserResource`, `RoleResource`, `AuthenticatedUserResource`.
+**Resources**: Son los DTOs que representan los datos de entrada y salida en las APIs REST.
 
-- **Assemblers/Transformers**
-  - `SignUpCommandFromResourceAssembler`, `SignInCommandFromResourceAssembler`, `UserResourceFromEntityAssembler`, etc.
+* SignUpResource, SignInResource, UserResource, RoleResource, AuthenticatedUserResource
 
-- **Exceptions**
-  - `IamExceptionsHandler`: maneja errores de autenticación/autorización.
+**Assemblers**: Utilizan el patrón Assembler para transformar los datos entre los recursos, las entidades de dominio y los comandos.
 
-- **ACL**
-  - `IamContextFacade`: punto de integración del bounded context IAM con otros contextos (ej. Profile, Appointment).
+* SignUpCommandFromResourceAssembler, SignInCommandFromResourceAssembler, UserResourceFromEntityAssembler, RoleResourceFromEntityAssembler
 
----
+**Exceptions**:
+
+* **IamExceptionsHandler**: maneja los errores de autenticación y autorización
+
+**Facades**
+
+* **IamContextFacade**: permite que otros bounded contexts (Profile, Appointment) interactúen con información de usuarios
+
 ### 5.5.3. Application Layer
 
-Aquí se orquesta el flujo de procesos del negocio mediante comandos y eventos.
+**Command Services**:
 
-- **Command Handlers**
-  - `UserCommandServiceImpl`: implementa creación de usuarios y registro.  
-  - `RoleCommandServiceImpl`: maneja la creación y asignación de roles.
+* **UserCommandServiceImpl**: implementa creación y registro de usuarios
+* **RoleCommandServiceImpl**: maneja creación y asignación de roles
 
-- **Event Handlers**
-  - `ApplicationReadyEventHandler`: inicializa roles y usuarios al arrancar la aplicación.
+**Event Handlers**:
 
-- **Query Handlers**
-  - `UserQueryServiceImpl`, `RoleQueryServiceImpl`: obtienen información de usuarios y roles.
+* **ApplicationReadyEventHandler**: inicializa roles y usuarios al arrancar la aplicación
 
-- **Outbound Services**
-  - `HashingService`: para hash de contraseñas.  
-  - `TokenService`: generación y validación de JWT.  
-  - `ExternalProfileRoleService`: integración con perfiles en otros contextos.
+**Query Services**:
 
----
+* **UserQueryServiceImpl**: implementa los métodos para la lógica de obtención de usuarios
+* **RoleQueryServiceImpl**: implementa los métodos para la lógica de obtención de roles
+
+**Outbound Services**:
+
+* **HashingService**: hashing de contraseñas
+* **TokenService**: generación y validación de JWT
+* **ExternalProfileRoleService**: generación de farmers y advisors a partir de roles asignados al crear un usuario
 
 ### 5.5.4. Infrastructure Layer
 
-Implementa el acceso a servicios externos y persistencia.
+**Persistence (JPA)**:
 
-- **Persistence (JPA)**
-  - Entities: `UserEntity`, `RoleEntity`.  
-  - Repositories: `UserRepository`, `RoleRepository`.  
-  - Mappers: `UserMapper`, `RoleMapper`.
+* **UserEntity**: representa la tabla "user" en la base de datos.
+* **RoleEntity**: representa la tabla "role" en la base de datos.
 
-- **Authorization/Security**
-  - `WebSecurityConfiguration`: configuración de Spring Security.  
-  - `BearerAuthorizationRequestFilter`: filtro para autorización JWT.  
-  - `UnauthorizedRequestHandlerEntryPoint`: manejo de accesos no autorizados.  
-  - `UserDetailsImpl`, `UserDetailsServiceImpl`: integración con Spring Security.  
-  - `UsernamePasswordAuthenticationTokenBuilder`: construcción de credenciales.
+**Repositories**:
 
-- **Hashing**
-  - `BCryptHashingService`, `HashingServiceImpl`: encriptación de contraseñas.
+* **UserRepository**: interfaz para operaciones CRUD de usuarios.
+* **RoleRepository**: interfaz para operaciones CRUD de roles.
 
-- **Tokens (JWT)**
-  - `BearerTokenService`, `TokenServiceImpl`: servicios para generar y validar tokens JWT.
+**Mappers**: utilizan el patrón Mapper para transformar entidades jpa a objetos de dominio y viceversa.
+
+* UserMapper y RoleMapper
+
+**Authorization & Security Services**
+
+* **WebSecurityConfiguration**: configuración de Spring Security
+* **BearerAuthorizationRequestFilter**: filtro de autorización JWT
+* **UnauthorizedRequestHandlerEntryPoint**: manejo de accesos no autorizados
+* **UserDetailsImpl**, **UserDetailsServiceImpl**: integración con Spring Security
+* **UsernamePasswordAuthenticationTokenBuilder**: construcción de credenciales
+
+**Hashing**
+
+* **BCryptHashingService**, **HashingServiceImpl**: encriptación de contraseñas
+
+**Tokens (JWT)**
+
+* **BearerTokenService**, **TokenServiceImpl**: servicios para generar y validar tokens JWT
 
 ### 5.5.5. Bounded Context Software Architecture Component Level Diagrams
 
