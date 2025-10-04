@@ -3564,8 +3564,75 @@ Tanto la interfaz web como móvil están diseñadas para una navegación eficien
 
 
 ## 6.3. Landing Page UI Design
+
 ### 6.3.1. Landing Page Wireframe
+
+Los wireframes representan el diseño fundamental de la Landing page, destacando la estructura principal y la organización de los elementos. Se especifican las secciones importantes, como el encabezado, los beneficios, las llamadas a la acción y la colocación de imágenes, con un enfoque en la usabilidad y el flujo de la página, sin elementos visuales que distraigan. Siguiendo el diseño responsive, se desarrollaron versiones tanto para la web como para dispositivos móviles.
+
+**Wireframes - inicio**
+
+<p align="center">
+  <img alt="Landing Page Wireframe" src="img/landing-wireframe1.png" width="600">
+</p>
+
+**Wireframes - problemática**
+
+<p align="center">
+  <img alt="Landing Page Wireframe" src="img/landing-wireframe2.png" width="600">
+</p>
+
+**Wireframes - características**
+
+<p align="center">
+  <img alt="Landing Page Wireframe" src="img/landing-wireframe3.png" width="600">
+</p>
+
+**Wireframes - sobre nosotros**
+
+<p align="center">
+  <img alt="Landing Page Wireframe" src="img/landing-wireframe4.png" width="600">
+</p>
+
+**Wireframes - contacto**
+
+<p align="center">
+  <img alt="Landing Page Wireframe" src="img/landing-wireframe5.png" width="600">
+</p>
+
 ### 6.3.2. Landing Page Mock-up
+
+Los mockups son como una versión más detallada de los wireframes, ya que le añaden todos los elementos visuales y de diseño. Muestran cómo se verá la landing page con la paleta de colores, la tipografía y el estilo gráfico que tendrá. Es una representación más realista de la página final, integrando esos detalles visuales que hacen que la experiencia sea más atractiva y, sobre todo, coherente con la identidad de la marca.
+
+**Mockups - inicio**
+
+<p align="center">
+  <img alt="Landing Page Mockup" src="img/landing-mockup1.png" width="600">
+</p>
+
+**Mockups - problemática**
+
+<p align="center">
+  <img alt="Landing Page Mockup" src="img/landing-mockup2.png" width="600">
+</p>
+
+**Mockups - características**
+
+<p align="center">
+  <img alt="Landing Page Mockup" src="img/landing-mockup3.png" width="600">
+</p>
+
+**Mockups - sobre nosotros**
+
+<p align="center">
+  <img alt="Landing Page Mockup" src="img/landing-mockup4.png" width="600">
+</p>
+
+**Mockups - contacto**
+
+<p align="center">
+  <img alt="Landing Page Mockup" src="img/landing-mockup5.png" width="600">
+</p>
+
 ## 6.4. Applications UX/UI Design
 ### 6.4.1. Applications Wireframes
 ### 6.4.2. Applications Wireflow Diagrams
