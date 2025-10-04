@@ -3179,7 +3179,7 @@ Este bounded context se encarga de la gestión de perfiles de usuario dentro de 
 #### 5.4.6.2. Bounded Context Database Design Diagram
 
 <p align="center">
-  <img alt="Profile Database Diagram" src="img/profile_DatabaseDesignDiagram.png" width="550">
+  <img alt="Profile Database Diagram" src="img/database-profile.png" width="550">
 </p>
 
 ## 5.5. Bounded Context: Security
