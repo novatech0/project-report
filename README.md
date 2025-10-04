@@ -1730,12 +1730,12 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
     <tr>
       <td>TS02</td>
       <td>Uso de una API para alojar imágenes</td>
-      <td>Como desarrollador quiero integrar la API de almacenamiento de Firebase para que los usuarios puedan subir y visualizar sus imágenes de foto de perfil y publicaciones.</td>
+      <td>Como desarrollador quiero integrar la API de almacenamiento de Google Cloud para que los usuarios puedan subir y visualizar sus imágenes de foto de perfil y publicaciones.</td>
       <td>
         <p><strong>Escenario 1: Subir imagen en la aplicación</strong></p>
         <p><strong>Given</strong> el usuario desea subir una imagen en nuestra plataforma.</p>
         <p><strong>When</strong> se reciba la imagen en el formato compatible.</p>
-        <p><strong>Then</strong> el sistema sube la imagen usando la API del almacenamiento de Firebase para generar el enlace de visualización.</p>
+        <p><strong>Then</strong> el sistema sube la imagen usando la API del almacenamiento de Google Cloud para generar el enlace de visualización.</p>
       </td>
       <td>E06</td>
     </tr>
@@ -1850,7 +1850,7 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
 |4|TS06|Uso de nuestra API para gestionar recintos de animales|Como desarrollador quiero integrar un API para gestionar la información de los recintos de animales en la base de datos, de manera que pueda realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) a través de solicitudes HTTP.|5|
 |5|TS07|Uso de nuestra API para gestionar autenticación|Como desarrollador quiero integrar un API para gestionar la información de los usuarios en la base de datos, de manera que pueda realizar operaciones CRUD (Crear, Leer, Actualizar, Borrar) a través de solicitudes HTTP.|5|
 |6|TS01|Uso de una API para videollamadas|Como desarrollador quiero integrar la creación de videollamadas utilizando la API de Jitsi Meet para facilitar las asesorías en la aplicación.|3|
-|7|TS02|Uso de una API para alojar imágenes|Como desarrollador quiero integrar la API de almacenamiento de Firebase para que los usuarios puedan subir y visualizar sus imágenes de foto de perfil y publicaciones.|3|
+|7|TS02|Uso de una API para alojar imágenes|Como desarrollador quiero integrar la API de almacenamiento de Google Cloud para que los usuarios puedan subir y visualizar sus imágenes de foto de perfil y publicaciones.|3|
 |8|US13|Visualización de la sección de inicio de la Landing Page|Como potencial usuario quiero acceder a una página de inicio para conocer la idea principal de la plataforma y ver un diseño agradable.|2|
 |9|US14|Visualización de la sección 'Acerca de' de la Landing Page|Como potencial usuario quiero acceder a una página sobre el problema que resuelve para conocer el propósito de la plataforma.|2|
 |10|US15|Visualización de la sección 'Sobre Nosotros' de la Landing Page|Como potencial usuario quiero acceder a una página sobre la startup para conocer el propósito de la empresa detrás de la plataforma.|2|
@@ -2972,14 +2972,27 @@ Este bounded context gestiona el control de recintos y animales para productores
 
 ### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
 
+En el diagrama de componentes del Bounded Context Management se observa cómo se relacionan las capas del sistema. Las solicitudes HTTP son procesadas primero por la Interface Layer, que las envía a la Application Layer para coordinar la lógica de los casos de uso. Desde allí, las operaciones se delegan al Domain Layer o a la Infrastructure Layer.
 
+<p align="center">
+  <img alt="Management Component Diagram" src="img/c4-component-management.png" width="550">
+</p>
 
 ### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
 
 #### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
 
+<p align="center">
+  <img alt="Management Domain Layer Class Diagram" src="img/class-diagram-management.png" width="600">
+</p>
+
 #### 5.2.6.2. Bounded Context Database Design Diagram
 
+Para el diseño de la base de datos se consideró las entidades principales del dominio que son enclosure y animal, junto con la entidad de soporte farmer que representa al productor agrícola, el cual le pertenecen los recintos y animales. Además, se consideró la relación entre enclosure y animal, donde un enclosure puede tener varios animales registrados.
+
+<p align="center">
+  <img alt="Management Database Design Diagram" src="img/database-management.png" width="500">
+</p>
 
 ## 5.3. Bounded Context: Post
 
@@ -3057,7 +3070,7 @@ Este bounded context gestiona las publicaciones (posts) que los asesores pueden 
 
 ### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
 
-En el diagrama de componentes del Bounded Context Post se observa cómo se relacionan las capas del sistema. Las solicitudes HTTP son procesadas primero por la Interface Layer, que las envía a la Application Layer para coordinar la lógica de los casos de uso. Desde allí, las operaciones se delegan al Domain Layer o a la Infrastructure Layer. Esta última cumple un doble rol: gestionar la persistencia en la base de datos y conectarse con Firebase Storage para almacenar y manejar los archivos multimedia de las publicaciones
+En el diagrama de componentes del Bounded Context Post se observa cómo se relacionan las capas del sistema. Las solicitudes HTTP son procesadas primero por la Interface Layer, que las envía a la Application Layer para coordinar la lógica de los casos de uso. Desde allí, las operaciones se delegan al Domain Layer o a la Infrastructure Layer. Esta última cumple un doble rol: gestionar la persistencia en la base de datos y conectarse con Google Cloud Storage para almacenar y manejar los archivos multimedia de las publicaciones
 
 <p align="center">
   <img alt="Post Component Diagram" src="img/c4-component-post.png" width="550">
