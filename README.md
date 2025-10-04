@@ -3178,7 +3178,7 @@ El estilo de nuestro producto jugará un papel fundamental en brindar a nuestros
   <img alt="Paleta de colores" src="img/colors.png" width="600">
 </p>
 
-### 4.1.2. Web Style Guidelines
+### 6.1.2. Web, Mobile & Devices Style Guidelines
 
 <strong>Spacing: </strong> El espaciado adecuado entre elementos es esencial para lograr una apariencia equilibrada y una experiencia de usuario cómoda en AgroTech. Hemos establecido pautas claras de espaciado que garantizan coherencia y claridad en toda la plataforma.
 
@@ -3204,7 +3204,6 @@ El estilo de nuestro producto jugará un papel fundamental en brindar a nuestros
   <img src="img/input-system.png" alt="Input System de AgroTech" width="600">
 </p>
 
-### 6.1.2. Web, Mobile & Devices Style Guidelines
 ## 6.2. Information Architecture
 ### 6.2.1. Labeling Systems
 ### 6.2.2. Searching Systems
