@@ -2897,14 +2897,82 @@ Para el diseño de la base de datos se consideró las entidades principales del 
 </p>
 
 ## 5.2. Bounded Context: Management
+
+Este bounded context gestiona el control de recintos y animales para productores agrícolas. Incluye funcionalidades como la creación, edición y eliminación de recintos, el registro y seguimiento de animales, y la gestión de la información relacionada con ambos.
+
 ### 5.2.1. Domain Layer
+
+- **Aggregates**:
+  - **Enclosure**: representa un recinto dentro de la granja del productor agrícola. Contiene información sobre su tamaño y tipo de animales que puede albergar.
+
+- **Entities**:
+  - **Animal**: representa un animal registrado en un recinto específico. Incluye detalles como especie, edad, estado de salud.
+
+- **Value Objects**:
+  - **HealthStatus**: estados de salud de animal (HEALTHY, SICK, DEAD, UNKNOWN)
+
+- **Commands**: operaciones que modifican el estado de los rescintos y animales
+  - CreateEnclosureCommand, UpdateEnclosureCommand, DeleteEnclosureCommand.
+  - CreateAnimalCommand, UpdateAnimalCommand, DeleteAnimalCommand.
+
+- **Queries**: operaciones que recuperan datos relacionados con los rescintos y animales.
+  - GetAllEnclosuresQuery, GetEnclosureByIdQuery, GetAllEnclosuresByFarmerIdQuery.
+  - GetAllAnimalsQuery, GetAnimalByIdQuery, GetAllAnimalsByEnclosureIdQuery.
+
+- **Exceptions**: excepciones para controlar los errores que pueden cometer los usuarios al utilizar el Management Context. Ejemplos: EnclosureNotFoundException, AnimalNotFoundException, IncorrectHealthStatusException.
+
+- **Services**: Interfaces de los servicios para manejar los commands y queries.
+  - EnclosureCommandService, EnclosureQueryService.
+  - AnimalCommandService, AnimalQueryService.
+
 ### 5.2.2. Interface Layer
+
+- **Controllers**:
+  - **EnclosuresController**: gestiona las solicitudes relacionadas con los rescintos.
+  - **AnimalsController**: gestiona las solicitudes relacionadas con los animales.
+
+- **Resources**:
+  - **Entrada**: CreateEnclosureResource, UpdateEnclosureResource, CreateAnimalResource, UpdateAnimalResource.
+  - **Salida**: EnclosureResource, AnimalResource.
+
+- **Assemblers**:
+  - **De recurso a comando**: CreateEnclosureCommandFromResourceAssembler, UpdateEnclosureCommandFromResourceAssembler, CreateAnimalCommandFromResourceAssembler, UpdateAnimalCommandFromResourceAssembler.
+  - **De entidad a recurso**: EnclosureResourceFromEntityAssembler, AnimalResourceFromEntityAssembler.
+
+- **Exception Handlers**
+  - **ManagementExceptionsHandler**: centraliza el manejo de errores en el contexto, proporcionando respuestas HTTP adecuadas.
+
 ### 5.2.3. Application Layer
+
+- **Command Services**
+  - **EnclosureCommandServiceImpl**: Implementa la lógica para manejar los comandos relacionados con los rescintos a partir de la interfaz EnclosureCommandService.
+  - **AnimalCommandServiceImpl**: Implementa la lógica para manejar los comandos relacionados con los animales a partir de la interfaz AnimalCommandService.
+
+- **Query Services**
+  - **EnclosureQueryServiceImpl**: Implementa la lógica para manejar las consultas relacionadas con los rescintos a partir de la interfaz EnclosureQueryService.
+  - **AnimalQueryServiceImpl**: Implementa la lógica para manejar las consultas relacionadas con los animales a partir de la interfaz AnimalQueryService.
+
 ### 5.2.4. Infrastructure Layer
+- **Entities (JPA)**: 
+  - **EnclosureEntity**: Representa la tabla "enclosure" en la base de datos.
+  - **AnimalEntity**: Representa la tabla "animal" en la base de datos.
+- **Repositories**: 
+  - **EnclosureRepository**: Interfaz para acceder a los datos de los rescintos.
+  - **AnimalRepository**: Interfaz para acceder a los datos de los animales.
+- **Mappers**: 
+  - **EnclosureMapper**: Mapea entre la entidad EnclosureEntity y la clase de dominio Enclosure.
+  - **AnimalMapper**: Mapea entre la entidad AnimalEntity y la clase de dominio Animal.
+
 ### 5.2.5. Bounded Context Software Architecture Component Level Diagrams
+
+
+
 ### 5.2.6. Bounded Context Software Architecture Code Level Diagrams
+
 #### 5.2.6.1. Bounded Context Domain Layer Class Diagrams
+
 #### 5.2.6.2. Bounded Context Database Design Diagram
+
 
 ## 5.3. Bounded Context: Post
 
