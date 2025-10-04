@@ -2902,64 +2902,69 @@ Este bounded context gestiona el control de recintos y animales para productores
 
 ### 5.2.1. Domain Layer
 
-- **Aggregates**:
+**Aggregates**:
   - **Enclosure**: representa un recinto dentro de la granja del productor agrícola. Contiene información sobre su tamaño y tipo de animales que puede albergar.
 
-- **Entities**:
+**Entities**:
   - **Animal**: representa un animal registrado en un recinto específico. Incluye detalles como especie, edad, estado de salud.
 
-- **Value Objects**:
+**Value Objects**:
   - **HealthStatus**: estados de salud de animal (HEALTHY, SICK, DEAD, UNKNOWN)
 
-- **Commands**: operaciones que modifican el estado de los rescintos y animales
+**Commands**: operaciones que modifican el estado de los rescintos y animales
   - CreateEnclosureCommand, UpdateEnclosureCommand, DeleteEnclosureCommand.
   - CreateAnimalCommand, UpdateAnimalCommand, DeleteAnimalCommand.
 
-- **Queries**: operaciones que recuperan datos relacionados con los rescintos y animales.
+**Queries**: operaciones que recuperan datos relacionados con los rescintos y animales.
   - GetAllEnclosuresQuery, GetEnclosureByIdQuery, GetAllEnclosuresByFarmerIdQuery.
   - GetAllAnimalsQuery, GetAnimalByIdQuery, GetAllAnimalsByEnclosureIdQuery.
 
-- **Exceptions**: excepciones para controlar los errores que pueden cometer los usuarios al utilizar el Management Context. Ejemplos: EnclosureNotFoundException, AnimalNotFoundException, IncorrectHealthStatusException.
+**Exceptions**: excepciones para controlar los errores que pueden cometer los usuarios al utilizar el Management Context.
+ - EnclosureNotFoundException
+ - AnimalNotFoundException
+ - IncorrectHealthStatusException.
 
-- **Services**: Interfaces de los servicios para manejar los commands y queries.
+**Services**: Interfaces de los servicios para manejar los commands y queries.
   - EnclosureCommandService, EnclosureQueryService.
   - AnimalCommandService, AnimalQueryService.
 
 ### 5.2.2. Interface Layer
 
-- **Controllers**:
+**Controllers**:
   - **EnclosuresController**: gestiona las solicitudes relacionadas con los rescintos.
   - **AnimalsController**: gestiona las solicitudes relacionadas con los animales.
 
-- **Resources**:
+**Resources**:
   - **Entrada**: CreateEnclosureResource, UpdateEnclosureResource, CreateAnimalResource, UpdateAnimalResource.
   - **Salida**: EnclosureResource, AnimalResource.
 
-- **Assemblers**:
+**Assemblers**:
   - **De recurso a comando**: CreateEnclosureCommandFromResourceAssembler, UpdateEnclosureCommandFromResourceAssembler, CreateAnimalCommandFromResourceAssembler, UpdateAnimalCommandFromResourceAssembler.
   - **De entidad a recurso**: EnclosureResourceFromEntityAssembler, AnimalResourceFromEntityAssembler.
 
-- **Exception Handlers**
+**Exception Handlers**
   - **ManagementExceptionsHandler**: centraliza el manejo de errores en el contexto, proporcionando respuestas HTTP adecuadas.
 
 ### 5.2.3. Application Layer
 
-- **Command Services**
+**Command Services**
   - **EnclosureCommandServiceImpl**: Implementa la lógica para manejar los comandos relacionados con los rescintos a partir de la interfaz EnclosureCommandService.
   - **AnimalCommandServiceImpl**: Implementa la lógica para manejar los comandos relacionados con los animales a partir de la interfaz AnimalCommandService.
 
-- **Query Services**
+**Query Services**
   - **EnclosureQueryServiceImpl**: Implementa la lógica para manejar las consultas relacionadas con los rescintos a partir de la interfaz EnclosureQueryService.
   - **AnimalQueryServiceImpl**: Implementa la lógica para manejar las consultas relacionadas con los animales a partir de la interfaz AnimalQueryService.
 
 ### 5.2.4. Infrastructure Layer
-- **Entities (JPA)**: 
+**Entities (JPA)**: 
   - **EnclosureEntity**: Representa la tabla "enclosure" en la base de datos.
   - **AnimalEntity**: Representa la tabla "animal" en la base de datos.
-- **Repositories**: 
+
+**Repositories**: 
   - **EnclosureRepository**: Interfaz para acceder a los datos de los rescintos.
   - **AnimalRepository**: Interfaz para acceder a los datos de los animales.
-- **Mappers**: 
+
+**Mappers**: 
   - **EnclosureMapper**: Mapea entre la entidad EnclosureEntity y la clase de dominio Enclosure.
   - **AnimalMapper**: Mapea entre la entidad AnimalEntity y la clase de dominio Animal.
 
