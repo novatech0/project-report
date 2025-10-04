@@ -2745,6 +2745,11 @@ Durante la fase de Context Mapping, se identificaron las relaciones entre los di
 <div style="page-break-after: always;"></div>
 
 ## 4.3 Software Architecture
+
+Para la documentación de la arquitectura de software, se utilizó el enfoque C4 (Context, Containers, Components, and Code) desarrollado por Simon Brown. Asimismo, se empleó la herramienta Structurizr para crear y visualizar los diagramas correspondientes a cada nivel de abstracción.
+
+Enlace al workspace de Structurizr: [Structurizr Workspace](https://structurizr.com/share/106222/20fe04a7-86c1-4258-a2d7-87ac6eeacb4c)
+
 ### 4.3.1. Software Architecture System Landscape Diagram
 El diagrama muestra una vista de alto nivel del sistema de software dentro del entorno empresarial más amplio, incluyendo otros sistemas y actores relevantes.
 <p align="center">
@@ -3299,7 +3304,7 @@ Este bounded context gestiona la identidad y acceso de la aplicación, centraliz
 
 * UserMapper y RoleMapper
 
-**Authorization & Security Services**
+**Authorization / Security**
 
 * **WebSecurityConfiguration**: configuración de Spring Security
 * **BearerAuthorizationRequestFilter**: filtro de autorización JWT
@@ -3601,6 +3606,13 @@ W3Schools. (s.f.). _HTML Style Guide_. https://www.w3schools.com/html/html5_synt
 ## Videos de exposiciones
 
 Exposición TB1: [upc-pre-202502-1asi0728-7281-novatech-expo-tb1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EZK3VhD8-9VLiCwwk8LAr7wBf6XjCp8_8v6YKO6zG51Tjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3JJe4Z)
+
+## Enlaces de interés
+Organización en GitHub: [https://github.com/novatech0](https://github.com/novatech0)
+
+Tablero de Miro de Event Storming: [https://miro.com/app/board/uXjVJI929A4=/?share_link_id=208938597156](https://miro.com/app/board/uXjVJI929A4=/?share_link_id=208938597156)
+
+Workspace de Structurizr: [https://structurizr.com/share/106222/20fe04a7-86c1-4258-a2d7-87ac6eeacb4c](https://structurizr.com/share/106222/20fe04a7-86c1-4258-a2d7-87ac6eeacb4c)
 
 <style>
   .custom-table {
