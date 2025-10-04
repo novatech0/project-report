@@ -3137,7 +3137,73 @@ El diagrama representa el modelo relacional que sustenta la persistencia de la i
 
 # Capítulo VI: Product Design
 ## 6.1. Style Guidelines
+El estilo de nuestro producto jugará un papel fundamental en brindar a nuestros usuarios una experiencia visual que sea tanto satisfactoria como atractiva. A continuación, se proporcionará una descripción detallada más detallada de las características de nuestro proyecto.
+
 ### 6.1.1. General Style Guidelines
+
+
+<strong>Consistencia Visual: </strong>Mantener una coherencia visual en todos los aspectos de la aplicación es clave para crear una experiencia intuitiva. Esto incluye el uso de una paleta de colores uniforme que refleje la naturaleza y la vida agrícola, una tipografía legible y tamaños de fuente adecuados para facilitar la lectura en diferentes condiciones de luz.
+
+<p align="center">
+  <img alt="Consistencia visual" src="img/consistencia-visual.jpg" width="600">
+</p>
+
+<strong>Simplicidad y Claridad: </strong>La interfaz debe ser sencilla y fácil de navegar, con un diseño limpio que evite la sobrecarga de información. El uso de un lenguaje claro y directo es fundamental para asegurar que los usuarios, independientemente de su nivel de experiencia con la tecnología, puedan entender rápidamente cómo utilizar la aplicación.
+
+<p align="center">
+  <img alt="Simplicidad y claridad" src="img/simplicidad-y-claridad.jpg" width="600">
+</p>
+
+<strong>Accesibilidad: </strong>Diseñar la aplicación teniendo en cuenta las necesidades de accesibilidad, como texto ampliable, contraste de colores para personas con discapacidades visuales, y compatibilidad con tecnologías de asistencia como lectores de pantalla.
+
+<p align="center">
+  <img alt="necesidades de accesibilidad de usuarios" src="img/accesibilidad.png" width="600">
+</p>
+
+<strong>Tipografía: </strong>La tipografía seleccionada para AgroTech es "Roboto", una fuente sans-serif moderna y altamente legible. Roboto destaca por su estilo limpio y contemporáneo, transmitiendo profesionalismo y actualización. La elección de Roboto garantiza que el texto en las interfaces de usuario sea fácilmente legible y mantenga una apariencia moderna y uniforme. Además, Roboto es una fuente versátil que ofrece una amplia gama de pesos y estilos, permitiendo una adaptación flexible a diferentes contextos y tamaños de texto en la aplicación.
+
+<p align="center">
+  <img alt="Tipografía" src="img/typography.png" width="600">
+</p>
+
+<strong>Branding: </strong>El logotipo de AgroTech tiene un diseño circular, simbolizando la conexión y la unidad que queremos fomentar entre las comunidades agrícolas peruanas. En el corazón del círculo, se encuentra un animal, representando la esencia de la agricultura y la ganadería. Este animal está rodeado por un campo verde, que simboliza la fertilidad y el crecimiento. La combinación de estos elementos refleja nuestro compromiso con el desarrollo sostenible y la mejora de la calidad de vida de los agricultores.
+
+<p align="center">
+  <img alt="Logo" src="img/agrotech-logo.jpg" width="400">
+</p>
+
+<strong>Colors: </strong> AgroTech ha seleccionado cuidadosamente una paleta de colores que refleja los valores y la identidad de la plataforma. Los tonos elegidos comunican confiabilidad y eficiencia en la contratación de asesores especializados y en el uso de herramientas avanzadas.
+
+<p align="center">
+  <img alt="Paleta de colores" src="img/colors.png" width="600">
+</p>
+
+### 4.1.2. Web Style Guidelines
+
+<strong>Spacing: </strong> El espaciado adecuado entre elementos es esencial para lograr una apariencia equilibrada y una experiencia de usuario cómoda en AgroTech. Hemos establecido pautas claras de espaciado que garantizan coherencia y claridad en toda la plataforma.
+
+<p align="center">
+  <img src="img/spacing.png" alt="Spacing de AgroTech" width="600">
+</p>
+
+<strong>Grid System: </strong>El grid system es una herramienta esencial en el diseño y la organización de la interfaz de usuario de AgroTech. Proporciona una estructura visual que ayuda a distribuir y alinear los elementos de la página de manera consistente y armoniosa en diferentes tamaños de pantalla.
+
+<p align="center">
+  <img src="img/grid.png" alt="Grid System de AgroTech" width="600">
+</p>
+
+<strong>Buttons: </strong>Los botones son elementos importantes en la interfaz de usuario de AgroTech, ya que proporcionan una forma clara y visualmente destacada para que los usuarios realicen acciones importantes. Hemos definido un estilo de botón consistente que refleja la identidad visual de la plataforma y promueve una experiencia de usuario intuitiva y coherente.
+
+<p align="center">
+  <img src="img/button.png" alt="Button de AgroTech" width="600">
+</p>
+
+<strong>Input System: </strong>El input system es fundamental en la experiencia del usuario, ya que proporciona formas para que los usuarios ingresen datos y realicen acciones dentro de la plataforma. Hemos definido un sistema de entrada consistente que garantiza una experiencia de usuario intuitiva y coherente en toda la interfaz.
+
+<p align="center">
+  <img src="img/input-system.png" alt="Input System de AgroTech" width="600">
+</p>
+
 ### 6.1.2. Web, Mobile & Devices Style Guidelines
 ## 6.2. Information Architecture
 ### 6.2.1. Labeling Systems
