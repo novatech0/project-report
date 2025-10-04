@@ -2907,14 +2907,101 @@ Para el diseño de la base de datos se consideró las entidades principales del 
 #### 5.2.6.2. Bounded Context Database Design Diagram
 
 ## 5.3. Bounded Context: Post
+
+Este bounded context gestiona las publicaciones (posts) que los asesores pueden crear, editar o elimnar dentro de la plataforma AgroTech. Incluye funcionalidades como listar posts ordenados por actualización, obtener posts por asesor, crear/editar/eliminar un post y validar la existencia del asesor
+
 ### 5.3.1. Domain Layer
+
+**Aggregates**:
+- **Post**: representa la publicación realizada por un usuario, con atributos como título, contenido, fecha de creación y estado.
+
+**Entities**:
+- **Post**: entidad principal que modela el contenido de las publicaciones.
+
+**Value Objects**:
+- **PostStatus**: estados de la publicación (DRAFT, PUBLISHED, ARCHIVED).
+
+**Commands**: operaciones que modifican el estado de los posts.
+- CreatePostCommand, UpdatePostCommand, DeletePostCommand.
+
+**Queries**: operaciones que recuperan datos relacionados con los posts.
+- GetAllPostsQuery, GetPostByIdQuery, GetPostsByUserIdQuery.
+
+**Events**:
+- **PostCreatedEvent**: evento que se emite cuando un post es creado.
+- **PostUpdatedEvent**: evento que se emite cuando un post es actualizado.
+- **PostDeletedEvent**: evento que se emite cuando un post es eliminado.
+
+**Exceptions**:
+- **PostNotFoundException**: excepción lanzada cuando no se encuentra un post por su identificador.
+
+**Services**: Interfaces de los servicios para manejar los commands y queries.
+- PostCommandService, PostQueryService.
+
 ### 5.3.2. Interface Layer
+
+**Controllers**:
+- **PostsController**: gestiona las solicitudes relacionadas con los posts.
+
+**Resources**:
+- **Entrada**: CreatePostResource, UpdatePostResource.
+- **Salida**: PostResource.
+
+**Assemblers**:
+- **De recurso a comando**: CreatePostCommandFromResourceAssembler, UpdatePostCommandFromResourceAssembler.
+- **De entidad a recurso**: PostResourceFromEntityAssembler.
+
+**Exception Handlers**
+- **PostExceptionsHandler**: centraliza el manejo de errores en el contexto de publicaciones, proporcionando respuestas HTTP adecuadas para errores como `PostNotFoundException`.
+
 ### 5.3.3. Application Layer
+
+
+**Command Services**
+**PostCommandServiceImpl**: implementa la lógica para manejar los comandos relacionados con las publicaciones a partir de la interfaz PostCommandService.
+
+**Query Services**
+- **PostQueryServiceImpl**: implementa la lógica para manejar las consultas relacionadas con los posts a partir de la interfaz PostQueryService.
+
+**Event Handlers**
+- **PostCreatedEventHandler**: maneja la lógica del evento PostCreatedEvent.
+- **PostUpdatedEventHandler**: maneja la lógica del evento PostUpdatedEvent.
+- **PostDeletedEventHandler**: maneja la lógica del evento PostDeletedEvent.
+
 ### 5.3.4. Infrastructure Layer
+
+**Entities (JPA)**:
+- **PostEntity**: representa la tabla "post" en la base de datos.
+
+**Repositories**:
+- **PostRepository**: interfaz para acceder a los datos de los posts.
+
+**Mappers**:
+- **PostMapper**: mapea entre la entidad PostEntity y la clase de dominio Post.
+
+
 ### 5.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+En el diagrama de componentes del Bounded Context Post se observa cómo se relacionan las capas del sistema. Las solicitudes HTTP son procesadas primero por la Interface Layer, que las envía a la Application Layer para coordinar la lógica de los casos de uso. Desde allí, las operaciones se delegan al Domain Layer o a la Infrastructure Layer. Esta última cumple un doble rol: gestionar la persistencia en la base de datos y conectarse con Firebase Storage para almacenar y manejar los archivos multimedia de las publicaciones
+
+<p align="center">
+  <img alt="Post Component Diagram" src="img/c4-component-post.png" width="550">
+</p>
+
 ### 5.3.6. Bounded Context Software Architecture Code Level Diagrams
 #### 5.3.6.1. Bounded Context Domain Layer Class Diagrams
+
+<p align="center">
+  <img alt="Post Domain Layer Class Diagram" src="img/class-diagram-post.png" width="600">
+</p>
+
 #### 5.3.6.2. Bounded Context Database Design Diagram
+
+Para el diseño de la base de datos se consideró la entidad principal del dominio que es **post**, junto con la relacion con **advisor**, donde un **advisor** puede tener varias publicaciones en la plataforma
+
+<p align="center">
+  <img alt="Post Database Design Diagram" src="img/database-post.png" width="600">
+</p>
 
 ## 5.4. Bounded Context: Profile
 Este bounded context se encarga de la gestión de perfiles de usuario dentro de la plataforma. Incluye información básica de cada persona, además de roles especializados como *advisor* (asesor) y *farmer* (productor). También permite manejar notificaciones asociadas a los usuarios. Se conecta con el contexto IAM para validar la existencia de usuarios y expone una fachada (`ProfilesContextFacade`) para que otros módulos puedan consultar perfiles.
