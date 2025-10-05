@@ -3335,7 +3335,7 @@ El diagrama de componentes del Bounded Context Security (Identity and Access Man
 El diagrama muestra la estructura principal del dominio encargado de la autenticación, autorización y gestión de roles en el sistema, donde User actúa como Aggregate Root centralizando credenciales y asignación de roles, Role representa la entidad que modela los distintos perfiles del sistema, y Roles es un Value Object que define valores inmutables como ADMIN, FARMER, ADVISOR o USER; además, se incluyen los Domain Services (UserCommandService, UserQueryService, RoleCommandService, RoleQueryService) que encapsulan la lógica de negocio, y los objetos Command y Query que permiten ejecutar casos de uso como registrar usuarios, iniciar sesión o consultar información, reflejando así cómo los servicios interactúan con los agregados y entidades para mantener la separación de responsabilidades y una gestión clara de la identidad y el acceso.
 
 <p align="center">
-  <img alt="SecurityBC Class Diagram" src="img/securityBCClassDiagram.png">
+  <img alt="SecurityBC Class Diagram" src="img/securityBCClassDiagram2.png">
 </p>
 
 #### 5.5.6.2. Bounded Context Database Design Diagram
