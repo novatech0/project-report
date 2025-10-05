@@ -278,6 +278,7 @@
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>Delgado Corrales, Piero Gonzalo</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, en el video de exposición expuse de manera clara los requerimientos a través de las User Stories y Atributos de Calidad.</p>
+        <p><strong>TB2:</strong> En el video de exposición, presenté el bounded context de Appointment, explicando sus componentes, cómo se relacionan entre sí, y su importancia en el desarrollo de la solución.</p>
         <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, en el video de exposición presenté la problemática del sector agropecuario de manera objetiva, resaltando las cifras y limitaciones actuales como base para justificar el desarrollo de la solución.</p>
         <p><strong>Salinas Torres, Salvador Antonio</strong></p>
@@ -296,6 +297,7 @@
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>Delgado Corrales, Piero Gonzalo</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, participé en la elaboración del project report. Apoyé con el desarrollo de los cuatro capítulos donde se abordaron los aspectos clave del proyecto.</p>
+        <p><strong>TB2:</strong> En el informe, contribuí con la redacción del capítulo de Tactical-Level Software Design, detallando la estructura y componentes del bounded context de Appointment.</p>
         <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, participé en la redacción del project report, elaborando los apartados de antecedentes, problemática y domain message flows, con descripciones claras y adecuadas al alcance del proyecto.</p>
         <p><strong>Salinas Torres, Salvador Antonio</strong></p>
