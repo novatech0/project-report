@@ -308,6 +308,7 @@
         <p><strong>TB1:</strong> Realicé una entrevista al primer segmento de usuarios para obtener información directa sobre sus necesidades y expectativas respecto a la solución propuesta. Compartí estos hallazgos con el grupo de manera clara para que sirvieran de   base en el diseño.</p>
         <p><strong>Paredes Puente, Sebastian Roberto</strong></p>
         <p><strong>TB1:</strong> En esta entrega, logré comunicar oralmente el lean UX Canvas con puntos claves para tener más claro la problemática a resolver, junto con la identificación de los segmentos objetivos</p>
+        <p><strong>TB2:</strong> Para esta entrega, logré comunicar acerca del bounded context de Post, describiendo su organización funcional, la forma en que sus partes se vinculan y el papel que desempeña en la implementación de la solución</p>
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, logramos transmitir nuestras ideas con claridad y objetividad para explicar nuestra problemática y solución propuesta.</p>
@@ -328,6 +329,7 @@
         <p><strong>TB1:</strong> Participé en la elaboración del informe desarrollando los diagramas C4 (contexto y contenedores) y sus descripciones correspondientes. Documenté cómo los actores, contenedores y servicios externos se integran en la arquitectura de AgroTech.</p>
         <p><strong>Paredes Puente, Sebastian Roberto</strong></p>
         <p><strong>TB1:</strong> En esta entrega, logré comunicar de forma escrita los domain message flows, asimismo participé en la elaboración del eventstorming</p>
+        <p><strong>TB2:</strong> En esta entrega, participé en la elaboración del capítulo Tactical-Level Software Design, detallando la arquitectura, responsabilidades y relaciones internas del bounded context de Post</strong> sd</p>
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, elaboramos el project report de manera clara y organizada, lo que nos permitió comunicar de forma efectiva tanto los aspectos técnicos como los beneficios prácticos del proyecto.</p>
