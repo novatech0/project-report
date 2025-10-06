@@ -57,28 +57,49 @@
     </tr>
   </thead>
   <tbody>
-  <tr>
-      <td><strong>TB1</strong></td>
-      <td>05/09/25</td>
-      <td>
-        <ul>
-          <li>Delgado Corrales, Piero Gonzalo</li>
-          <li>Paredes Puente, Sebastian Roberto</li>
-          <li>Salinas Torres, Salvador Antonio</li>
-          <li>Elias Sanchez, Harold Miguel</li>
-          <li>Chinchihualpa Saldarriaga, Luis Sebastian</li>
-        </ul>
-      </td>
-      <td>
-        Se realizaron los siguientes puntos:
-        <ul>
-          <li>Capítulo I: Introducción</li>
-          <li>Capítulo II: Requirements Elicitation & Analysis</li>
-          <li>Capítulo III: Requirements Specification</li>
-          <li>Capítulo IV: Strategic-Level Software Design</li>
-        </ul>
-      </td>
-  </tr>
+    <tr>
+        <td><strong>TB1</strong></td>
+        <td>05/09/25</td>
+        <td>
+          <ul>
+            <li>Delgado Corrales, Piero Gonzalo</li>
+            <li>Paredes Puente, Sebastian Roberto</li>
+            <li>Salinas Torres, Salvador Antonio</li>
+            <li>Elias Sanchez, Harold Miguel</li>
+            <li>Chinchihualpa Saldarriaga, Luis Sebastian</li>
+          </ul>
+        </td>
+        <td>
+          Se realizaron los siguientes puntos:
+          <ul>
+            <li>Capítulo I: Introducción</li>
+            <li>Capítulo II: Requirements Elicitation & Analysis</li>
+            <li>Capítulo III: Requirements Specification</li>
+            <li>Capítulo IV: Strategic-Level Software Design</li>
+          </ul>
+        </td>
+    </tr>
+    <tr>
+        <td><strong>TB2</strong></td>
+        <td>07/10/25</td>
+        <td>
+          <ul>
+            <li>Delgado Corrales, Piero Gonzalo</li>
+            <li>Paredes Puente, Sebastian Roberto</li>
+            <li>Salinas Torres, Salvador Antonio</li>
+            <li>Elias Sanchez, Harold Miguel</li>
+            <li>Chinchihualpa Saldarriaga, Luis Sebastian</li>
+          </ul>
+        </td>
+        <td>
+          Se realizaron los siguientes puntos:
+          <ul>
+            <li>Capítulo V: Tactical-Level Software Design</li>
+            <li>Avance de Capítulo VI: Product Design</li>
+            <li>Mejoras a Capítulo I, II, III y IV</li>
+          </ul>
+        </td>
+    </tr>
   </tbody>
 </table>
 
@@ -290,6 +311,7 @@
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, logramos transmitir nuestras ideas con claridad y objetividad para explicar nuestra problemática y solución propuesta.</p>
+        <p><strong>TB2:</strong>.</p>
       </td>
     </tr>
     <tr style="page-break-inside: avoid;">
@@ -309,6 +331,7 @@
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, elaboramos el project report de manera clara y organizada, lo que nos permitió comunicar de forma efectiva tanto los aspectos técnicos como los beneficios prácticos del proyecto.</p>
+        <p><strong>TB2:</strong>.</p>
       </td>
     </tr>
   </tbody>
@@ -518,12 +541,17 @@ AgroTech debe contar con una interfaz intuitiva y atractiva visualmente. Su dese
 
 **1. Productores agropecuarios**
 
-Los productores agropecuarios en Perú enfrentan desafíos para gestionar eficientemente sus fincas debido a la falta de conocimientos y recursos. Esto reduce la productividad y rentabilidad. AgroTech ofrece herramientas avanzadas y asesoría especializada para mejorar la gestión, optimizar recursos y aumentar la rentabilidad, contribuyendo a una agricultura más sostenible.
+Los productores agropecuarios entre 18 y 40 años constituyen un segmento estratégico para la implementación de AgroTech, debido a su disposición para incorporar tecnologías en sus prácticas agrícolas. Según la Encuesta Nacional Agropecuaria realizada por el Instituto Nacional de Estadística e Informática (INEI, 2025), el 73.8 % de los productores se dedica a la actividad agropecuaria, mientras que el 66.3 % de las unidades agropecuarias tienen menos de cinco hectáreas, y el 85.5 % destina su producción al consumo del hogar. Estas cifras muestran que gran parte del sector está compuesto por pequeños productores que podrían beneficiarse de herramientas accesibles y adaptadas a sus necesidades.
+
+En cuanto al nivel educativo, la mayoría de los productores agropecuarios cuenta con educación básica. Según el INEI (2025), aproximadamente el 49% de productores agropecuarios tienen educación primaria, el 30% secundaria y un 11% no tiene nivel educativo.
+
+Además, los departamentos de Cajamarca y Cusco concentran más del 10 % del total de productores agropecuarios, mientras que La Libertad, Arequipa, Amazonas, San Martín, Huánuco, Huancavelica y Puno tienen entre 5.1 % y 10 %, y los 15 departamentos restantes no superan el 5 % (INEI, 2025).
+
 
 |**Segmento objetivo**|Productores agropecuarios|
 | :- | :- |
 |**Edad**|18-40 años|
-|**Ubicación**|Perú|
+|**Ubicación**|Perú en departamentos con alta actividad agropecuaria (Cajamarca, Cusco, La Libertad, Arequipa, etc.)|
 |**Sexo**|Masculino y Femenino|
 |**Formación educativa**|Educación primaria|
 |**Poder adquisitivo**|Bajo y medio|
@@ -532,9 +560,11 @@ Los productores agropecuarios en Perú enfrentan desafíos para gestionar eficie
 
 Los asesores con experiencia son claves en el sector agropecuario, brindando orientación técnica y operativa a los productores. AgroTech les permite ampliar su alcance y gestionar sus asesorías de manera eficiente, mejorando la productividad y sostenibilidad de las granjas. Esto refuerza su rol como facilitadores clave en el desarrollo del sector.
 
+Hemos considerado que estos deberán tener experiencia en el campo y/o estudios universitarios en carreras como ingeniería agrónoma, medicina veterinaria, zootecnia, etc. De este modo, debido a que el plan de estudios de estas carreras es de mínimo 5 años a más, y necesitan cierto grado de experiencia para dar recomendaciones y planes de acción confiables, hemos decidido que el rango de edad será de 25 años hasta 65 años.
+
 |**Segmento objetivo**|Asesores con experiencia|
 | :- | :- |
-|**Edad**|22-60 años|
+|**Edad**|25-65 años|
 |**Ubicación**|Perú|
 |**Sexo**|Masculino y Femenino|
 |**Formación educativa**|Universitaria o superior|
@@ -3649,6 +3679,8 @@ En primer lugar, hemos confirmado la necesidad de contar con una plataforma que 
 
 En el plano técnico, el proyecto cuenta con un sustento sólido gracias a una especificación detallada de requerimientos, que incluye un Product Backlog priorizado y un diseño de software apoyado en Attribute-Driven Design (ADD) y Domain-Driven Design (DDD). Se han definido como atributos de calidad clave la seguridad, la disponibilidad y la usabilidad. Por otro lado, mediante el Event Storming se identificaron los Bounded Contexts que son Security, Profile, Appointment, Management y Post. Con estos elementos, el proyecto se encuentra en una posición sólida para avanzar hacia un desarrollo eficiente, escalable y centrado en el valor real para los usuarios.
 
+Para el diseño de la solución, se ha elaborado una guía de estilo que abarca aspectos visuales y de experiencia de usuario, asegurando una interfaz coherente y atractiva. La arquitectura de la información se ha estructurado cuidadosamente, definiendo sistemas de etiquetado, búsqueda y navegación que facilitan la interacción del usuario con la plataforma. Además, se han desarrollado wireframes tanto para la landing page como para las aplicaciones web y móviles, proporcionando una visión clara del diseño final a través de la herramienta Figma.
+
 <div style="page-break-after: always;"></div>
 
 # Bibliografía
@@ -3660,6 +3692,8 @@ Ames, A. (2022). EVIDENCIA para una Nueva Gestión Pública. _Escuela de Gestió
 Android Developers. (2024). _Guía de estilo de Kotlin_. https://developer.android.com/kotlin/style-guide?hl=es-419
 
 Google. (s.f.). _Google HTML/CSS Style Guide_. https://google.github.io/styleguide/htmlcssguide.html
+
+Instituto Nacional de Estadística e Informática. (2025, 1 de agosto). *Encuesta Nacional Agropecuaria (ENA) 2024*. Recuperado de https://datosabiertos.gob.pe/dataset/encuesta-nacional-agropecuaria-ena-2024-instituto-nacional-de-estadística-e-informática-inei
 
 Ministerio de Desarrollo Agrario y Riego. (2023). _Cadena productiva de cuyes_. https://cdn.www.gob.pe/uploads/document/file/4061856/Cadena%20productiva%20de%20cuy.pdf
 
