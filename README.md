@@ -3603,6 +3603,8 @@ Tanto la interfaz web como móvil están diseñadas para una navegación eficien
 
 ## 6.3. Landing Page UI Design
 
+El diseño de la Landing Page se ha desarrollado utilizando Figma, una herramienta de diseño colaborativa que permite crear prototipos interactivos y visuales de alta calidad. El enlace al proyecto de Figma es el siguiente: [Figma - AgroTech Landing Page](https://www.figma.com/design/9ItIdkKDAZGDecR2umJCHa/Emergentes-prototipo?node-id=3200-1973&t=9S5wnOveSXJ10JTs-1).
+
 ### 6.3.1. Landing Page Wireframe
 
 Los wireframes representan el diseño fundamental de la Landing page, destacando la estructura principal y la organización de los elementos. Se especifican las secciones importantes, como el encabezado, los beneficios, las llamadas a la acción y la colocación de imágenes, con un enfoque en la usabilidad y el flujo de la página, sin elementos visuales que distraigan. Siguiendo el diseño responsive, se desarrollaron versiones tanto para la web como para dispositivos móviles.
@@ -3672,6 +3674,8 @@ Los mockups son como una versión más detallada de los wireframes, ya que le a�
 </p>
 
 ## 6.4. Applications UX/UI Design
+
+El diseño de la aplicación también se desarrolló en Figma. El enlace al proyecto de Figma es el siguiente: [Figma - AgroTech Landing Page](https://www.figma.com/design/9ItIdkKDAZGDecR2umJCHa/Emergentes-prototipo?node-id=3122-13112&t=9S5wnOveSXJ10JTs-1).
 
 ### 6.4.1. Applications Wireframes
 
@@ -3849,6 +3853,8 @@ Organización en GitHub: [https://github.com/novatech0](https://github.com/novat
 Tablero de Miro de Event Storming: [https://miro.com/app/board/uXjVJI929A4=/?share_link_id=208938597156](https://miro.com/app/board/uXjVJI929A4=/?share_link_id=208938597156)
 
 Workspace de Structurizr: [https://structurizr.com/share/106222/20fe04a7-86c1-4258-a2d7-87ac6eeacb4c](https://structurizr.com/share/106222/20fe04a7-86c1-4258-a2d7-87ac6eeacb4c)
+
+Diseño en Figma: [https://www.figma.com/design/9ItIdkKDAZGDecR2umJCHa/Emergentes-prototipo?node-id=3122-13112&t=9S5wnOveSXJ10JTs-1](https://www.figma.com/design/9ItIdkKDAZGDecR2umJCHa/Emergentes-prototipo?node-id=3122-13112&t=9S5wnOveSXJ10JTs-1)
 
 <style>
   .custom-table {
