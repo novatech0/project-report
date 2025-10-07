@@ -3672,8 +3672,135 @@ Los mockups son como una versión más detallada de los wireframes, ya que le a�
 </p>
 
 ## 6.4. Applications UX/UI Design
+
 ### 6.4.1. Applications Wireframes
+
+A continuación, se muestran todos los wireframes necesarios para cumplir las funcionalidades indicadas en las User Stories con sus escenarios relacionados con la aplicación.
+
+**Registro e inicio de sesión**
+
+<p align="center">
+  <img alt="Application Wireframe" src="img/wireframe web login.png" width="600">
+</p>
+
+**Vista de citas (Productor agropecuario)**
+
+<p align="center">
+  <img alt="Application Wireframe" src="img/wireframe web citas (productor).png" width="600">
+</p>
+
+**Vista de asesores (Productor agropecuario)**
+
+<p align="center">
+  <img alt="Application Wireframe" src="img/wireframe web ver asesores (productor).png" width="600">
+</p>
+
+**Vista de Mi Granja (Productor agropecuario)**
+
+<p align="center">
+  <img alt="Application Wireframe" src="img/wireframe web mi granja (productor).png" width="600">
+</p>
+
+**Vista de notificaciones, publicaciones y perfil (Productor agropecuario)**
+
+<p align="center">
+  <img alt="Application Wireframe" src="img/wireframe web otros (productor).png" width="600">
+</p>
+
+**Vista de citas (Asesor)**
+
+<p align="center">
+  <img alt="Application Wireframe" src="img/wireframe web citas (asesores).png" width="600">
+</p>
+
+**Vista de publicaciones (Asesor)**
+
+<p align="center">
+  <img alt="Application Wireframe" src="img/wireframe web publicaciones (asesores).png" width="600">
+</p>
+
+**Vista de horarios (Asesor)**
+
+<p align="center">
+  <img alt="Application Wireframe" src="img/wireframe web horarios (asesores).png" width="600">
+</p>
+
+**Vista de notificaciones y perfil (Asesor)**
+
+<p align="center">
+  <img alt="Application Wireframe" src="img/wireframe web otros (asesores).png" width="600">
+</p>
+
 ### 6.4.2. Applications Wireflow Diagrams
+
+Los wireflows combinan los wireframes con el flujo de navegación, mostrando cómo los usuarios interactúan con la aplicación y cómo se mueven entre diferentes pantallas y funcionalidades. A continuación, se presentan los wireflows para ambos tipos de usuarios: Productor agropecuario y Asesor.
+
+**Wireflow Diagram de registro de usuario**
+
+<p align="center">
+  <img alt="Application Wireflow Diagram" src="img/wireflow 1.png" width="600">
+</p>
+
+**Wireflow Diagram de inicio de sesión**
+
+<p align="center">
+  <img alt="Application Wireflow Diagram" src="img/wireflow 2.png" width="600">
+</p>
+
+**Wireflow Diagram para visualizar información de un asesor**
+
+<p align="center">
+  <img alt="Application Wireflow Diagram" src="img/wireflow 3.png" width="600">
+</p>
+
+**Wireflow Diagram para separar una cita con un asesor**
+
+<p align="center">
+  <img alt="Application Wireflow Diagram" src="img/wireflow 4.png" width="600">
+</p>
+
+**Wireflow Diagram para dejar reseña a un asesor luego de una cita**
+
+<p align="center">
+  <img alt="Application Wireflow Diagram" src="img/wireflow 5.png" width="600">
+</p>
+
+**Wireflow Diagram para visualizar historial de citas**
+
+<p align="center">
+  <img alt="Application Wireflow Diagram" src="img/wireflow 6.png" width="600">
+</p>
+
+**Wireflow Diagram para cancelar una cita programada**
+
+<p align="center">
+  <img alt="Application Wireflow Diagram" src="img/wireflow 7.png" width="600">
+</p>
+
+**Wireflow Diagram para gestionar los recintos de productor agropecuario**
+
+<p align="center">
+  <img alt="Application Wireflow Diagram" src="img/wireflow 8.png" width="600">
+</p>
+
+**Wireflow Diagram para gestionar los animales de un recinto de productor agropecuario**
+
+<p align="center">
+  <img alt="Application Wireflow Diagram" src="img/wireflow 9.png" width="600">
+</p>
+
+**Wireflow Diagram para gestionar horarios de un asesor**
+
+<p align="center">
+  <img alt="Application Wireflow Diagram" src="img/wireflow 10.png" width="600">
+</p>
+
+**Wireflow Diagram para gestionar publicaciones de un asesor**
+
+<p align="center">
+  <img alt="Application Wireflow Diagram" src="img/wireflow 11.png" width="600">
+</p>
+
 ### 6.4.3. Applications Mock-ups
 ### 6.4.4. Applications User Flow Diagrams
 ## 6.5. Applications Prototyping
