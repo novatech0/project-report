@@ -302,6 +302,7 @@
         <p><strong>TB2:</strong> En el video de exposición, presenté el bounded context de Appointment, explicando sus componentes, cómo se relacionan entre sí, y su importancia en el desarrollo de la solución.</p>
         <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, en el video de exposición presenté la problemática del sector agropecuario de manera objetiva, resaltando las cifras y limitaciones actuales como base para justificar el desarrollo de la solución.</p>
+        <p><strong>TB2:</strong>  En esta entrega, elaboré y presenté el video explicativo del bounded context de Security, detallando sus componentes principales, su estructura interna y las interacciones entre sus módulos. Además, expuse los diagramas de componentes, clases y base de datos, explicando su función dentro de la arquitectura general del sistema y su relevancia para garantizar la autenticación y autorización segura de los usuarios.</p>
         <p><strong>Salinas Torres, Salvador Antonio</strong></p>
         <p><strong>TB1:</strong> En este primer entregable, logré comunicar de forma oral los descubrimientos de la investigación de mercado, destacando el análisis competitivo, las necesidades y expectativas de los usuarios finales.</p>
         <p><strong>Elias Sanchez, Harold Miguel</strong></p>
@@ -324,6 +325,7 @@
         <p><strong>TB2:</strong> En el informe, contribuí con la redacción del capítulo de Tactical-Level Software Design, detallando la estructura y componentes del bounded context de Appointment.</p>
         <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, participé en la redacción del project report, elaborando los apartados de antecedentes, problemática y domain message flows, con descripciones claras y adecuadas al alcance del proyecto.</p>
+         <p><strong>TB2:</strong> En el informe, participé en la redacción del capítulo de Tactical-Level Software Design, describiendo la estructura, componentes y modelo de datos del bounded context de Security. Además, documenté los diagramas de clases, componentes y base de datos, explicando su función dentro del sistema y su contribución a los mecanismos de autenticación y autorización del proyecto.</p>
         <p><strong>Salinas Torres, Salvador Antonio</strong></p>
         <p><strong>TB1:</strong> En este primer entregable, participé principalmente en la redacción de la sección de análisis de mercado, donde presenté los hallazgos clave de la investigación y su relevancia para el proyecto, el proceso del eventstorming y los resultados obtenidos.</p>
         <p><strong>Elias Sanchez, Harold Miguel</strong></p>
