@@ -41,7 +41,7 @@
   </tr>
 </table>
 
-<p align="center"><b>Setiembre 2025</b></p>
+<p align="center"><b>Octubre 2025</b></p>
 
 <div style="page-break-after: always;"></div>
 
@@ -80,7 +80,7 @@
         </td>
     </tr>
     <tr>
-        <td><strong>TB2</strong></td>
+        <td><strong>TP1</strong></td>
         <td>07/10/25</td>
         <td>
           <ul>
@@ -299,22 +299,23 @@
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>Delgado Corrales, Piero Gonzalo</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, en el video de exposición expuse de manera clara los requerimientos a través de las User Stories y Atributos de Calidad.</p>
-        <p><strong>TB2:</strong> En el video de exposición, presenté el bounded context de Appointment, explicando sus componentes, cómo se relacionan entre sí, y su importancia en el desarrollo de la solución.</p>
+        <p><strong>TP1:</strong> En el video de exposición, presenté el bounded context de Appointment, explicando sus componentes, cómo se relacionan entre sí, y su importancia en el desarrollo de la solución.</p>
         <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, en el video de exposición presenté la problemática del sector agropecuario de manera objetiva, resaltando las cifras y limitaciones actuales como base para justificar el desarrollo de la solución.</p>
-        <p><strong>TB2:</strong>  En esta entrega, elaboré y presenté el video explicativo del bounded context de Security, detallando sus componentes principales, su estructura interna y las interacciones entre sus módulos. Además, expuse los diagramas de componentes, clases y base de datos, explicando su función dentro de la arquitectura general del sistema y su relevancia para garantizar la autenticación y autorización segura de los usuarios.</p>
+        <p><strong>TP1:</strong>  En esta entrega, elaboré y presenté el video explicativo del bounded context de Security, detallando sus componentes principales, su estructura interna y las interacciones entre sus módulos. Además, expuse los diagramas de componentes, clases y base de datos, explicando su función dentro de la arquitectura general del sistema y su relevancia para garantizar la autenticación y autorización segura de los usuarios.</p>
         <p><strong>Salinas Torres, Salvador Antonio</strong></p>
         <p><strong>TB1:</strong> En este primer entregable, logré comunicar de forma oral los descubrimientos de la investigación de mercado, destacando el análisis competitivo, las necesidades y expectativas de los usuarios finales.</p>
+        <p><strong>TP1:</strong> Para la entrega parcial, participé en el video de exposición, presentando cómo se trabajó el bounded context de Management. Así, expuse sus componentes clave y su importancia en la solución propuesta.</p>
         <p><strong>Elias Sanchez, Harold Miguel</strong></p>
         <p><strong>TB1:</strong> Realicé una entrevista al primer segmento de usuarios para obtener información directa sobre sus necesidades y expectativas respecto a la solución propuesta. Compartí estos hallazgos con el grupo de manera clara para que sirvieran de   base en el diseño.</p>
-        <p><strong>TB2:</strong> Logré comunicar de manera clara el bounded context de Profile, explicando su estructura, responsabilidades y la interacción entre sus componentes. Además, destaqué su relevancia dentro de la arquitectura general del sistema, evidenciando cómo contribuye al manejo de la información de los usuarios y a la integración con los demás módulos del proyecto.</p>
+        <p><strong>TP1:</strong> Logré comunicar de manera clara el bounded context de Profile, explicando su estructura, responsabilidades y la interacción entre sus componentes. Además, destaqué su relevancia dentro de la arquitectura general del sistema, evidenciando cómo contribuye al manejo de la información de los usuarios y a la integración con los demás módulos del proyecto.</p>
         <p><strong>Paredes Puente, Sebastian Roberto</strong></p>
         <p><strong>TB1:</strong> En esta entrega, logré comunicar oralmente el lean UX Canvas con puntos claves para tener más claro la problemática a resolver, junto con la identificación de los segmentos objetivos</p>
-        <p><strong>TB2:</strong> Para esta entrega, logré comunicar acerca del bounded context de Post, describiendo su organización funcional, la forma en que sus partes se vinculan y el papel que desempeña en la implementación de la solución</p>
+        <p><strong>TP1:</strong> Para esta entrega, logré comunicar acerca del bounded context de Post, describiendo su organización funcional, la forma en que sus partes se vinculan y el papel que desempeña en la implementación de la solución</p>
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, logramos transmitir nuestras ideas con claridad y objetividad para explicar nuestra problemática y solución propuesta.</p>
-        <p><strong>TB2:</strong>.</p>
+        <p><strong>TP1:</strong>.</p>
       </td>
     </tr>
     <tr style="page-break-inside: avoid;">
@@ -322,22 +323,23 @@
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>Delgado Corrales, Piero Gonzalo</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, participé en la elaboración del project report. Apoyé con el desarrollo de los cuatro capítulos donde se abordaron los aspectos clave del proyecto.</p>
-        <p><strong>TB2:</strong> En el informe, contribuí con la redacción del capítulo de Tactical-Level Software Design, detallando la estructura y componentes del bounded context de Appointment.</p>
+        <p><strong>TP1:</strong> En el informe, contribuí con la redacción del capítulo de Tactical-Level Software Design, detallando la estructura y componentes del bounded context de Appointment.</p>
         <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, participé en la redacción del project report, elaborando los apartados de antecedentes, problemática y domain message flows, con descripciones claras y adecuadas al alcance del proyecto.</p>
-         <p><strong>TB2:</strong> En el informe, participé en la redacción del capítulo de Tactical-Level Software Design, describiendo la estructura, componentes y modelo de datos del bounded context de Security. Además, documenté los diagramas de clases, componentes y base de datos, explicando su función dentro del sistema y su contribución a los mecanismos de autenticación y autorización del proyecto.</p>
+         <p><strong>TP1:</strong> En el informe, participé en la redacción del capítulo de Tactical-Level Software Design, describiendo la estructura, componentes y modelo de datos del bounded context de Security. Además, documenté los diagramas de clases, componentes y base de datos, explicando su función dentro del sistema y su contribución a los mecanismos de autenticación y autorización del proyecto.</p>
         <p><strong>Salinas Torres, Salvador Antonio</strong></p>
         <p><strong>TB1:</strong> En este primer entregable, participé principalmente en la redacción de la sección de análisis de mercado, donde presenté los hallazgos clave de la investigación y su relevancia para el proyecto, el proceso del eventstorming y los resultados obtenidos.</p>
+        <p><strong>TP1:</strong> Apoyé en la elaboración del capítulo de Tactical-Level Software Design, documentando el bounded context de Management. Describí su arquitectura a nivel de componentes y de código, detallando la organización interna, las relaciones entre entidades y la lógica de implementación que sustentan su funcionalidad dentro de la solución. Además, realicé los prototipos de la aplicación en Figma, los cuales son parte integral de la presentación del diseño.</p>
         <p><strong>Elias Sanchez, Harold Miguel</strong></p>
         <p><strong>TB1:</strong> Participé en la elaboración del informe desarrollando los diagramas C4 (contexto y contenedores) y sus descripciones correspondientes. Documenté cómo los actores, contenedores y servicios externos se integran en la arquitectura de AgroTech.</p>
-        <p><strong>TB2:</strong> Participé en la elaboración del capítulo Tactical-Level Software Design, documentando el bounded context de Profile. Describí su arquitectura a nivel de componentes y de código mediante los diagramas Software Architecture Component Level y Code Level, detallando la organización interna, las relaciones entre entidades y la lógica de implementación que sustentan su funcionalidad dentro de la solución.</p>
+        <p><strong>TP1:</strong> Participé en la elaboración del capítulo Tactical-Level Software Design, documentando el bounded context de Profile. Describí su arquitectura a nivel de componentes y de código mediante los diagramas Software Architecture Component Level y Code Level, detallando la organización interna, las relaciones entre entidades y la lógica de implementación que sustentan su funcionalidad dentro de la solución.</p>
         <p><strong>Paredes Puente, Sebastian Roberto</strong></p>
         <p><strong>TB1:</strong> En esta entrega, logré comunicar de forma escrita los domain message flows, asimismo participé en la elaboración del eventstorming</p>
-        <p><strong>TB2:</strong> En esta entrega, participé en la elaboración del capítulo Tactical-Level Software Design, detallando la arquitectura, responsabilidades y relaciones internas del bounded context de Post</strong> sd</p>
+        <p><strong>TP1:</strong> En esta entrega, participé en la elaboración del capítulo Tactical-Level Software Design, detallando la arquitectura, responsabilidades y relaciones internas del bounded context de Post.</p>
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, elaboramos el project report de manera clara y organizada, lo que nos permitió comunicar de forma efectiva tanto los aspectos técnicos como los beneficios prácticos del proyecto.</p>
-        <p><strong>TB2:</strong>.</p>
+        <p><strong>TP1:</strong>.</p>
       </td>
     </tr>
   </tbody>
