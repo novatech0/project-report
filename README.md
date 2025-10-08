@@ -112,6 +112,12 @@
   <img alt="TB1 Collaboration Insights" src="img/collaboration-insights-tb1.png" width="600">
 </p>
 
+## TP1
+
+<p align="center">
+  <img alt="TP1 Collaboration Insights" src="img/collaboration-insights-tp1.png" width="600">
+</p>
+
 <div style="page-break-after: always;"></div>
 
 # Tabla de Contenido
@@ -311,11 +317,11 @@
         <p><strong>TP1:</strong> Logré comunicar de manera clara el bounded context de Profile, explicando su estructura, responsabilidades y la interacción entre sus componentes. Además, destaqué su relevancia dentro de la arquitectura general del sistema, evidenciando cómo contribuye al manejo de la información de los usuarios y a la integración con los demás módulos del proyecto.</p>
         <p><strong>Paredes Puente, Sebastian Roberto</strong></p>
         <p><strong>TB1:</strong> En esta entrega, logré comunicar oralmente el lean UX Canvas con puntos claves para tener más claro la problemática a resolver, junto con la identificación de los segmentos objetivos</p>
-        <p><strong>TP1:</strong> Para esta entrega, logré comunicar acerca del bounded context de Post, describiendo su organización funcional, la forma en que sus partes se vinculan y el papel que desempeña en la implementación de la solución</p>
+        <p><strong>TP1:</strong> Para esta entrega, logré comunicar acerca del bounded context de Post, describiendo su organización funcional, la forma en que sus partes se vinculan y el papel que desempeña en la implementación de la solución.</p>
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, logramos transmitir nuestras ideas con claridad y objetividad para explicar nuestra problemática y solución propuesta.</p>
-        <p><strong>TP1:</strong>.</p>
+        <p><strong>TP1:</strong>Logramos exponer claramente los bounded contexts de Appointment, Security, Management, Profile y Post, destacando su estructura, componentes e interacciones, evidenciando su importancia dentro de la solución propuesta. Asimismo, explicamos las secciones de la landing page y los wireflows de la aplicación.</p>
       </td>
     </tr>
     <tr style="page-break-inside: avoid;">
@@ -339,7 +345,7 @@
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, elaboramos el project report de manera clara y organizada, lo que nos permitió comunicar de forma efectiva tanto los aspectos técnicos como los beneficios prácticos del proyecto.</p>
-        <p><strong>TP1:</strong>.</p>
+        <p><strong>TP1:</strong> Se documentaron los bounded contexts de manera detallada en el capítulo de Tactical-Level Software Design, describiendo arquitectura, componentes, relaciones y diagramas correspondientes, garantizando comprensión clara y objetiva del diseño del sistema. Además, se incluyeron los mockups de la landing page y wireframes de la aplicación.</p>
       </td>
     </tr>
   </tbody>
@@ -3848,6 +3854,8 @@ W3Schools. (s.f.). _HTML Style Guide_. https://www.w3schools.com/html/html5_synt
 ## Videos de exposiciones
 
 Exposición TB1: [upc-pre-202502-1asi0728-7281-novatech-expo-tb1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EZK3VhD8-9VLiCwwk8LAr7wBf6XjCp8_8v6YKO6zG51Tjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=3JJe4Z)
+
+Exposición TP1: [upc-pre-202502-1asi0728-7281-novatech-expo-tp1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EZAKJoZ4qb5MgGijjeR_EkcBrjmJCtpGrCNzCDAZjnIE2w?e=EJrJfU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ## Enlaces de interés
 Organización en GitHub: [https://github.com/novatech0](https://github.com/novatech0)
