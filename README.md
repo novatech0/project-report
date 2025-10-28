@@ -3817,6 +3817,612 @@ Los wireflows combinan los wireframes con el flujo de navegación, mostrando có
 ### 6.4.4. Applications User Flow Diagrams
 ## 6.5. Applications Prototyping
 
+# Capítulo VII: Product Implementation, Validation & Deployment
+
+## 7.1. Software Configuration Management
+### 7.1.1. Software Development Environment Configuration
+
+**Documentation**: Para la documentación del proyecto, se utilizó Markdown. Además, se empleó la herramienta PlantUML para la elaboración de los diagramas UML, lo cual facilitó la visualización de la arquitectura del software y sus componentes. Para la gestión de versiones, se utilizó GitHub, que permitió un control eficiente del código fuente y la colaboración entre los miembros del equipo.
+
+**Product UX/UI Design:** Se realizaron los productos de UX con la herramienta UXPressia, así como el User Persona, Empathy Mapping, Impact Mapping, entre otras. Gracias a esto pudimos modelar bien los diseños de la experiencia de usuario, lo cual nos sirve para poder ponernos en una mejor perspectiva para nuestros segmentos objetivo. Por otro lado, hicimos los prototipos de la aplicación móvil utilizando la herramienta Figma, la cual nos permitió crear los Wireframes y Mock-ups para tener un diseño previo al desarrollo de la aplicación.
+
+**Software Development:** Como principales IDEs, utilizamos WebStorm, Intelli J IDEA Ultimate, y Android Studio, con los cuales estamos más familiarizados por ser de Jetbrains. Por otro lado, para el desarrollo usamos los lenguajes aprendidos previamente, como HTML, CSS y JavaScript para la landing page, TypeScript para el frontend web, y Kotlin para la aplicación móvil.
+
+**Software Testing:** Las pruebas de aceptación son importantes a realizar para comprobar que los criterios de aceptación planteados están favoreciendo a las necesidades del negocio y cumplir con los requerimientos, para lo cual utilizamos el lenguaje Gherkin. Este consiste en trabajar el escenario con Given When Then, y lograr identificar las variables de input y output, lo cual es sencillo de entender para todos ya que utiliza lenguaje natural. Gracias a este, es que se logra garantizar la calidad del software, por ello cumple un papel esencial en los proyectos de desarrollo. Por otro lado, para las pruebas unitarias se utilizó JUnit y Mockito.
+
+### 7.1.2. Source Code Management
+
+Usuarios de GitHub
+<table>
+  <thead>
+    <tr>
+        <th>Integrante</th>
+        <th>Usuario de GitHub</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>Delgado Corrales, Piero Gonzalo</td>
+        <td>PieroD04</td>
+    </tr>
+    <tr>
+        <td>Paredes Puente, Sebastián Roberto</td>
+        <td>sebastian123gonzalo</td>
+    </tr>
+    <tr>
+        <td>Salinas Torres, Salvador Antonio</td>
+        <td>salvadoorssalinas</td>
+    </tr>
+    <tr>
+        <td>Elias Sanchez, Harold Miguel</td>
+        <td>HamesEl</td>
+    </tr>
+    <tr>
+        <td>Chinchihualpa Saldarriaga, Luis Sebastian</td>
+        <td>u202212112</td>
+    </tr>
+  </tbody>
+</table>
+
+**URL de la organización en GitHub:** [https://github.com/novatech0](https://github.com/novatech0)
+
+Para el desarrollo del trabajo se hará uso de GitFlow, el cual es un modelo de flujo de trabajo para la gestión de control de versiones Git. Está compuesta por ramas y cada una cumple un propósito distinto. Las ramas que utilizamos son: Feature, Develop, Release y Main.
+
+### 7.1.3. Source Code Style Guide & Conventions
+
+En el desarrollo de este trabajo, se utilizará una gran variedad de lenguajes para trabajar en el Landing Page, Frontend Web y Mobile Application. Para ello, se utilizará la siguiente guía de estilos y convenciones.
+
+**HTML**
+
+Es el lenguaje utilizado para estructurar el contenido de una página web, brindando una variedad de elementos posibles como texto, imágenes, formularios, etc.
+https://www.w3schools.com/html/html5_syntax.asp
+
+- Declarar el tipo de documento en la primera línea con \<!DOCTYPE html>.
+- Respetar la estructura básica del HTML: \<html>, \<head>, \<body>.
+- Declarar el título de la página para dar a conocer al usuario en qué página se encuentra. (Usar el elemento \<title> en \<head>)
+- Se usará la indentación coherente para lograr una lectura sencilla del código, por lo que es importante tener la tabulación correcta para cada nivel de anidamiento.
+- Siempre cerrar los elementos que lo requieran, ya sea una división, párrafo, título. (Si se declara una \<div>, siempre cerrarlo con \</div>)
+- Declarar el atributo “alt” para las imágenes.
+
+
+**CSS**
+
+Es el lenguaje utilizado para definir el diseño de la página web, así como los estilos, fuentes, colores, contenedores, etc.
+https://google.github.io/styleguide/htmlcssguide.html
+- Usar indentación de forma correcta.
+- Los nombres para elementos deben ser cortos y en minúsculas.
+- Declarar los colores en código hexadecimal. (Ejemplo: #024A86)
+- Dejar comentarios para conocer el propósito del estilo y su uso.
+- El diseño debe ser responsive para que los usuarios lo puedan visualizar cómodamente desde el dispositivo en qué se encuentren.
+
+
+**TypeScript**
+Es un superset de JavaScript ampliamente utilizado en el desarrollo con Angular, ya que añade tipado estático y otras funcionalidades que mejoran la escalabilidad y mantenibilidad del código.
+
+- Declarar nombres coherentes y descriptivos para variables, funciones y clases.
+- Incluir comentarios que expliquen claramente el propósito de cada bloque de código.
+- Finalizar cada línea con punto y coma para mantener consistencia.
+- Usar const y let de forma adecuada: const para valores que no cambian y let para aquellos que sí.
+- Emplear comparaciones estrictas (=== y !==) para evitar errores de tipo.
+- Aprovechar el tipado de TypeScript para declarar tipos explícitos y prevenir errores en tiempo de compilación.
+
+**Kotlin**
+
+Es un lenguaje de programación moderno que se utiliza para el desarrollo de aplicaciones móviles en Android.
+https://developer.android.com/kotlin/style-guide
+- Nombrar las variables, funciones y clases con CamelCase, además de ser significativos y cortos.
+- Utilizar HTTPS para establecer una conexión segura.
+- Usar indentación correctamente para un código coherente y ordenado.
+- Usar comillas dobles (“) para las cadenas de texto.
+- Dejar comentarios en cada bloque de código para explicar su funcionalidad.
+- Declarar constantes cuando sean variables que no cambiarán su valor a lo largo de todo el código.
+
+### 7.1.4. Software Deployment Configuration
+
+Para el despliegue de la solución, se han seleccionado plataformas para cada componente del sistema: backend, frontend y landing page:
+
+**1. Backend**
+
+**Plataforma**: Google Cloud Storage. Se consideró esta plataforma debido a su escalabilidad, seguridad y facilidad de integración con otros servicios de Google Cloud, lo que facilita la gestión y el almacenamiento eficiente de los datos del backend.
+
+**Procedimiento**:
+  1. Clonar el repositorio del backend.
+  2. Configurar las credenciales de Google Cloud en el entorno local.
+  3. Construir el proyecto y subir los artefactos al bucket en GCS.
+  4. Configurar permisos y reglas de acceso para asegurar la comunicación con el frontend y otros servicios.
+
+**2. Frontend y Landing Page**
+
+**Plataforma**: Vercel. Esta plataforma fue elegida por su facilidad de uso, integración continua y despliegue automático desde repositorios de GitHub, lo que permite una gestión eficiente del frontend y la landing page.
+
+**Procedimiento**:
+  1. Clonar el repositorio del frontend (que contiene también la landing page).
+  2. Configurar variables de entorno necesarias.
+  3. Conectar el repositorio a Vercel para despliegues automáticos.
+  4. Verificar que el build y deployment se ejecuten correctamente desde la plataforma.
+
+**Diagramas de Despliegue**: Se presenta a continuación el diagrama de despliegue que ilustra la arquitectura de la solución y cómo los diferentes componentes interactúan entre sí en el entorno de producción.
+
+<p align="center">
+  <img alt="Deployment_Diagram" src="img/structurizr-deployment.png" width="550">
+</p>
+
+## 7.2. Solution Implementation
+### 7.2.1. Sprint 1
+#### 7.2.1.1. Sprint Planning
+
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <td>Sprint 1</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Planning Background</strong></th>
+  </tr>
+  <tr>
+    <th>Date</th>
+    <td>2025-10-15</td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td>10:00 PM</td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td>Virtual (Google Meet)</td>
+  </tr>
+  <tr>
+    <th>Prepared by</th>
+    <td>Delgado Corrales, Piero Gonzalo</td>
+  </tr>
+  <tr>
+    <th>Attendees (to planning meeting)</th>
+    <td>
+      <p>Delgado Corrales, Piero Gonzalo</p>
+      <p>Paredes Puente, Sebastian Roberto</p>
+      <p>Salinas Torres, Salvador Antonio</p>
+      <p>Elias Sanchez, Harold Miguel</p>
+      <p>Chinchihualpa Saldarriaga, Luis Sebastian</p>
+    </td>
+  </tr>
+  <tr>
+    <th>Sprint n - 1 Review Summary</th>
+    <td>No se ha trabajado un sprint anterior de implementación del producto.</td>
+  </tr>
+  <tr>
+    <th>Sprint n - 1 Retrospective Summary</th>
+    <td>No se ha trabajado un sprint anterior de implementación del producto.</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Goal & User Stories</strong></th>
+  </tr>
+  <tr>
+    <th>Sprint 1 Goal</th>
+    <td>Nuestro objetivo es implementar la primera versión de los artefactos del proyecto. Para ello, nos enfocaremos en desarrollar el backend, la landing page, el frontend web y la aplicación móvil. Considerando que cada componente cumpla con los requisitos establecidos en las user stories y escenarios definidos.</td>
+  </tr>
+  <tr>
+    <th>Sprint 1 Velocity</th>
+    <td>94</td>
+  </tr>
+  <tr>
+    <th>Sum of Story Points</th>
+    <td>94</td>
+  </tr>
+</table>
+
+#### 7.2.1.2. Sprint Backlog 1
+
+<table>
+  <tr>
+    <th colspan="1" valign="top">Sprint #</th>
+    <th colspan="7" valign="top">Sprint 1</th>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">User Story</td>
+    <td colspan="6" valign="top">Work-Item / Task</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Id</td>
+    <td colspan="1" valign="top">Title</td>
+    <td colspan="1" valign="top">Id</td>
+    <td colspan="1" valign="top">Title</td>
+    <td colspan="1" valign="top">Description</td>
+    <td colspan="1" valign="top">Estimation </td>
+    <td colspan="1" valign="top">Assigned To</td>
+    <td colspan="1" valign="top">Status (To-Do / In-Process / Review / Done)</td>
+  </tr>
+    <tr>
+    <td colspan="1" valign="top">TS01</td>
+    <td colspan="1" valign="top">Uso de una API para videollamadas</td>
+    <td colspan="1" valign="top">WI01</td>
+    <td colspan="1" valign="top">Integración de API para videollamadas</td>
+    <td colspan="1" valign="top">Se integra el sistema de Jitsi Meet para la creación de videollamadas para las asesorías.</td>
+    <td colspan="1" valign="top">3</td>
+    <td colspan="1" valign="top">Piero Delgado</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">TS02</td>
+    <td colspan="1" valign="top">Uso de una API para alojar imágenes</td>
+    <td colspan="1" valign="top">WI02</td>
+    <td colspan="1" valign="top">Integración de API para alojamiento</td>
+    <td colspan="1" valign="top">Se integra el sistema de Firebase Storage para el alojamiento de imágenes.</td>
+    <td colspan="1" valign="top">3</td>
+    <td colspan="1" valign="top">Salvador Salinas</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="2" valign="top">TS03</td>
+    <td colspan="1" rowspan="2" valign="top">Uso de nuestra API para gestionar perfiles</td>
+    <td colspan="1" valign="top">WI03</td>
+    <td colspan="1" valign="top">Implementación de protocolos HTTP para perfiles</td>
+    <td colspan="1" valign="top">Se implementan los protocolos HTTP para los perfiles de los usuarios (granjeros y asesores) dentro de nuestra API.</td>
+    <td colspan="1" rowspan="2" valign="top">5</td>
+    <td colspan="1" valign="top">Harold Elias</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">WI04</td>
+    <td colspan="1" valign="top">Implementación de protocolos HTTP para notificaciones</td>
+    <td colspan="1" valign="top">Se implementan los protocolos HTTP para las notificaciones dentro de nuestra API.</td>
+    <td colspan="1" valign="top">Harold Elias</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="3" valign="top">TS04</td>
+    <td colspan="1" rowspan="3" valign="top">Uso de nuestra API para gestionar citas de asesoría</td>
+    <td colspan="1" valign="top">WI05</td>
+    <td colspan="1" valign="top">Implementación de protocolos HTTP para citas</td>
+    <td colspan="1" valign="top">Se implementan los protocolos HTTP para las citas de asesorías dentro de nuestra API.</td>
+    <td colspan="1" rowspan="3" valign="top">5</td>
+    <td colspan="1" valign="top">Piero Delgado</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">WI06</td>
+    <td colspan="1" valign="top">Implementación de protocolos HTTP para horarios disponibles</td>
+    <td colspan="1" valign="top">Se implementan los protocolos HTTP para los horarios disponibles de los asesores dentro de nuestra API.</td>
+    <td colspan="1" valign="top">Piero Delgado</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">WI07</td>
+    <td colspan="1" valign="top">Implementación de protocolos HTTP para reseñas</td>
+    <td colspan="1" valign="top">Se implementan los protocolos HTTP para las reseñas sobre los asesores dentro de nuestra API.</td>
+    <td colspan="1" valign="top">Piero Delgado</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">TS05</td>
+    <td colspan="1" valign="top">Uso de nuestra API para gestionar publicaciones</td>
+    <td colspan="1" valign="top">WI08</td>
+    <td colspan="1" valign="top">Implementación de protocolos HTTP para publicaciones</td>
+    <td colspan="1" valign="top">Se implementan los protocolos HTTP para las publicaciones dentro de nuestra API.</td>
+    <td colspan="1" valign="top">5</td>
+    <td colspan="1" valign="top">Sebastian Paredes</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="2" valign="top">TS06</td>
+    <td colspan="1" rowspan="2" valign="top">Uso de nuestra API para gestionar recinto de animales</td>
+    <td colspan="1" valign="top">WI09</td>
+    <td colspan="1" valign="top">Implementación de protocolos HTTP para recintos</td>
+    <td colspan="1" valign="top">Se implementan los protocolos HTTP para las recintos de los granjeros dentro de nuestra API.</td>
+    <td colspan="1" rowspan="2" valign="top">5</td>
+    <td colspan="1" valign="top">Salvador Salinas</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">WI10</td>
+    <td colspan="1" valign="top">Implementación de protocolos HTTP para animales</td>
+    <td colspan="1" valign="top">Se implementan los protocolos HTTP para los animales de los recintos dentro de nuestra API.</td>
+    <td colspan="1" valign="top">Salvador Salinas</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">TS07</td>
+    <td colspan="1" valign="top">Uso de nuestra API para gestionar autenticación</td>
+    <td colspan="1" valign="top">WI11</td>
+    <td colspan="1" valign="top">Implementación de autenticación IAM</td>
+    <td colspan="1" valign="top">Se implementan los protocolos HTTP para la autenticación de los usuarios (granjeros y asesores) dentro de nuestra API.</td>
+    <td colspan="1" valign="top">5</td>
+    <td colspan="1" valign="top">Luis Chinchihualpa</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" rowspan="2" valign="top">US13</td>
+    <td colspan="1" rowspan="2" valign="top">Visualización de la sección de inicio de la Landing Page</td>
+    <td colspan="1" valign="top">WI12</td>
+    <td colspan="1" valign="top">Implementación de navbar y footer</td>
+    <td colspan="1" valign="top">Se implementa el navbar para navegar por la Landing Page y el footer en la parte inferior.</td>
+    <td colspan="1" rowspan="2" valign="top">2</td>
+    <td colspan="1" valign="top">Salvador Salinas</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">WI13</td>
+    <td colspan="1" valign="top">Implementación de página de inicio</td>
+    <td colspan="1" valign="top">Se implementa la página de inicio de forma responsive y con su archivo css correspondiente.</td>
+    <td colspan="1" valign="top">Salvador Salinas</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">US14</td>
+    <td colspan="1" valign="top">Visualización de la sección 'Acerca de' de la Landing Page</td>
+    <td colspan="1" valign="top">WI14</td>
+    <td colspan="1" valign="top">Implementación de página 'Acerca de'</td>
+    <td colspan="1" valign="top">Se implementa la página sobre la Problemática, de forma responsive y con su archivo css correspondiente.</td>
+    <td colspan="1" valign="top">2</td>
+    <td colspan="1" valign="top">Luis Chinchihualpa</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">US15</td>
+    <td colspan="1" valign="top">Visualización de la sección 'Sobre Nosotros' de la Landing Page</td>
+    <td colspan="1" valign="top">WI15</td>
+    <td colspan="1" valign="top">Implementación de página 'Sobre Nosotros'</td>
+    <td colspan="1" valign="top">Se implementa la página Sobre Nosotros, de forma responsive y con su archivo css correspondiente.</td>
+    <td colspan="1" valign="top">2</td>
+    <td colspan="1" valign="top">Piero Delgado</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">US16</td>
+    <td colspan="1" valign="top">Visualización de la sección 'Características' de la Landing Page</td>
+    <td colspan="1" valign="top">WI16</td>
+    <td colspan="1" valign="top">Implementación de página 'Características'</td>
+    <td colspan="1" valign="top">Se implementa la página Características, de forma responsive y con su archivo css correspondiente.</td>
+    <td colspan="1" valign="top">2</td>
+    <td colspan="1" valign="top">Harold Elias</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">US17</td>
+    <td colspan="1" valign="top">Visualización de la sección 'Contacto' de la Landing Page</td>
+    <td colspan="1" valign="top">WI17</td>
+    <td colspan="1" valign="top">Implementación de página 'Contacto'</td>
+    <td colspan="1" valign="top">Se implementa la página Contacto, de forma responsive y con su archivo css correspondiente.</td>
+    <td colspan="1" valign="top">2</td>
+    <td colspan="1" valign="top">Sebastian Paredes</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">US01</td>
+    <td colspan="1" valign="top">Visualización del catálogo de asesores</td>
+    <td colspan="1" valign="top">WI18</td>
+    <td colspan="1" valign="top">Implementación de vista del catálogo de asesores</td>
+    <td colspan="1" valign="top">Se implementa la interfaz para que los productores agropecuarios puedan explorar el catálogo de asesores.</td>
+    <td colspan="1" valign="top">2</td>
+    <td colspan="1" valign="top">Piero Delgado</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US02</td>
+      <td colspan="1" valign="top">Visualización de información de un asesor</td>
+      <td colspan="1" valign="top">WI19</td>
+      <td colspan="1" valign="top">Implementación de detalle de asesor</td>
+      <td colspan="1" valign="top">Se implementa la vista de detalle de cada asesor mostrando información relevante para la toma de decisiones.</td>
+      <td colspan="1" valign="top">2</td>
+      <td colspan="1" valign="top">Piero Delgado</td>
+      <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US06</td>
+      <td colspan="1" valign="top">Separación de horarios de disponibilidad para asesorías</td>
+      <td colspan="1" valign="top">WI20</td>
+      <td colspan="1" valign="top">Implementación de gestión de disponibilidad</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que los asesores definan sus horarios disponibles.</td>
+      <td colspan="1" valign="top">5</td>
+      <td colspan="1" valign="top">Sebastian Paredes</td>
+      <td colspan="1" valign="top">In Progress</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US03</td>
+      <td colspan="1" valign="top">Visualización de horarios de asesores</td>
+      <td colspan="1" valign="top">WI21</td>
+      <td colspan="1" valign="top">Implementación de vista de horarios</td>
+      <td colspan="1" valign="top">Se implementa la visualización de los horarios disponibles de los asesores para los usuarios.</td>
+      <td colspan="1" valign="top">3</td>
+      <td colspan="1" valign="top">Piero Delgado</td>
+      <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US04</td>
+      <td colspan="1" valign="top">Programación de citas con asesores</td>
+      <td colspan="1" valign="top">WI22</td>
+      <td colspan="1" valign="top">Implementación de agendamiento de citas</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que los usuarios programen citas con asesores.</td>
+      <td colspan="1" valign="top">5</td>
+      <td colspan="1" valign="top">Piero Delgado</td>
+      <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US05</td>
+      <td colspan="1" valign="top">Calificación del asesor luego de una cita</td>
+      <td colspan="1" valign="top">WI23</td>
+      <td colspan="1" valign="top">Implementación de calificación de asesores</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que los usuarios califiquen a los asesores después de la cita.</td>
+      <td colspan="1" valign="top">3</td>
+      <td colspan="1" valign="top">Harold Elias</td>
+      <td colspan="1" valign="top">In Progress</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US19</td>
+      <td colspan="1" valign="top">Visualización de historial de citas</td>
+      <td colspan="1" valign="top">WI24</td>
+      <td colspan="1" valign="top">Implementación de historial de citas</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que los usuarios puedan consultar un historial de sus citas anteriores.</td>
+      <td colspan="1" valign="top">3</td>
+      <td colspan="1" valign="top">Harold Elias</td>
+      <td colspan="1" valign="top">In Progress</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US20</td>
+      <td colspan="1" valign="top">Cancelación de citas</td>
+      <td colspan="1" valign="top">WI25</td>
+      <td colspan="1" valign="top">Implementación de cancelación de citas</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que los usuarios puedan cancelar sus citas existentes.</td>
+      <td colspan="1" valign="top">2</td>
+      <td colspan="1" valign="top">Harold Elias</td>
+      <td colspan="1" valign="top">In Progress</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US21</td>
+      <td colspan="1" valign="top">Búsqueda y filtrado de citas</td>
+      <td colspan="1" valign="top">WI26</td>
+      <td colspan="1" valign="top">Implementación de búsqueda y filtro de citas</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que los usuarios puedan buscar y filtrar sus citas programadas.</td>
+      <td colspan="1" valign="top">3</td>
+      <td colspan="1" valign="top">Harold Elias</td>
+      <td colspan="1" valign="top">In Progress</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US22</td>
+      <td colspan="1" valign="top">Gestión de recintos</td>
+      <td colspan="1" valign="top">WI27</td>
+      <td colspan="1" valign="top">Implementación de gestión de recintos</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que los productores puedan registrar, editar y eliminar recintos de animales.</td>
+      <td colspan="1" valign="top">5</td>
+      <td colspan="1" valign="top">Luis Chinchihualpa</td>
+      <td colspan="1" valign="top">In Progress</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US23</td>
+      <td colspan="1" valign="top">Gestión de animales</td>
+      <td colspan="1" valign="top">WI28</td>
+      <td colspan="1" valign="top">Implementación de gestión de animales</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que los productores puedan registrar, editar y eliminar animales y asignarlos a recintos específicos.</td>
+      <td colspan="1" valign="top">5</td>
+      <td colspan="1" valign="top">Luis Chinchihualpa</td>
+      <td colspan="1" valign="top">In Progress</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US07</td>
+      <td colspan="1" valign="top">Gestión de publicaciones de asesores</td>
+      <td colspan="1" valign="top">WI29</td>
+      <td colspan="1" valign="top">Implementación de publicaciones de asesores</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que los asesores puedan crear y gestionar publicaciones.</td>
+      <td colspan="1" valign="top">5</td>
+      <td colspan="1" valign="top">Sebastian Paredes</td>
+      <td colspan="1" valign="top">In Progress</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US08</td>
+      <td colspan="1" valign="top">Visualización de publicaciones de los asesores</td>
+      <td colspan="1" valign="top">WI30</td>
+      <td colspan="1" valign="top">Implementación de vista de publicaciones</td>
+      <td colspan="1" valign="top">Se implementa la vista para que los productores puedan consultar las publicaciones de los asesores.</td>
+      <td colspan="1" valign="top">2</td>
+      <td colspan="1" valign="top">Sebastian Paredes</td>
+      <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US09</td>
+      <td colspan="1" valign="top">Registro de un usuario nuevo</td>
+      <td colspan="1" valign="top">WI31</td>
+      <td colspan="1" valign="top">Implementación de registro de usuarios</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que nuevos usuarios puedan registrarse en la aplicación.</td>
+      <td colspan="1" valign="top">3</td>
+      <td colspan="1" valign="top">Salvador Salinas</td>
+      <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US10</td>
+      <td colspan="1" valign="top">Inicio de sesión</td>
+      <td colspan="1" valign="top">WI32</td>
+      <td colspan="1" valign="top">Implementación de inicio de sesión</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que los usuarios inicien sesión con su cuenta registrada.</td>
+      <td colspan="1" valign="top">2</td>
+      <td colspan="1" valign="top">Salvador Salinas</td>
+      <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US11</td>
+      <td colspan="1" valign="top">Visualización de notificaciones del usuario</td>
+      <td colspan="1" valign="top">WI33</td>
+      <td colspan="1" valign="top">Implementación de notificaciones de usuarios</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que los usuarios reciban notificaciones relacionadas a sus asesorías.</td>
+      <td colspan="1" valign="top">2</td>
+      <td colspan="1" valign="top">Luis Chinchihualpa</td>
+      <td colspan="1" valign="top">In Progress</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">US12</td>
+      <td colspan="1" valign="top">Modificar perfil de usuario</td>
+      <td colspan="1" valign="top">WI34</td>
+      <td colspan="1" valign="top">Implementación de modificación de perfil</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que los usuarios puedan actualizar su perfil de manera segura.</td>
+      <td colspan="1" valign="top">3</td>
+      <td colspan="1" valign="top">Salvador Salinas</td>
+      <td colspan="1" valign="top">In Progress</td>
+  </tr>
+</table>
+
+#### 7.2.1.3. Development Evidence for Sprint Review
+
+A continuación, se detallan los commits realizados, los cuales se trabajaron a partir de las tareas asignadas a cada miembro como se muestra en el Sprint Backlog 1. De este modo, se trabajó en el Backend y Frontend.
+
+**Repositorio Backend**: <https://github.com/novatech0/backend>
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
+| --- | --- | --- | --- | --- | --- |
+| novatech0/frontend | main | 7eeae72 | initial commit | - | 19/10/2025 |
+| novatech0/backend | main | 8d2440d | feat: add base project | Co-authored by multiple contributors | 20/10/2025 |
+| novatech0/backend | feature/jwt | 69db68e | feat: add claim roles to jwt | - | 22/10/2025 |
+| novatech0/backend | develop | dbd6636 | Merge pull request #1 from novatech0/feature/jwt | - | 22/10/2025 |
+| novatech0/frontend | feature/auth | 3e64c63 | feat: add basic config service, interceptors, etc. | - | 22/10/2025 |
+| novatech0/frontend | feature/auth | 9e0abb0 | feat: remove unused login pages | - | 22/10/2025 |
+| novatech0/frontend | feature/auth | 224cf55 | feat: add login logic | - | 22/10/2025 |
+| novatech0/frontend | feature/auth | ad6d1aa | fix: get roles correctly from payload | - | 22/10/2025 |
+| novatech0/frontend | feature/auth | 0177073 | feat: add register logic | - | 22/10/2025 |
+| novatech0/frontend | develop | 1e5f5fc | Merge pull request #1 from novatech0/feature/auth | - | 22/10/2025 |
+| novatech0/frontend | feature/catalog | cc7b911 | feat: add catalog | - | 22/10/2025 |
+| novatech0/frontend | feature/auth | 62e8107 | feat: add auth guard | - | 22/10/2025 |
+| novatech0/frontend | feature/auth | 4ff598b | feat: change error page | - | 22/10/2025 |
+| novatech0/frontend | feature/auth | 246bcbc | feat: add error messages in auth | - | 22/10/2025 |
+| novatech0/frontend | feature/catalog | 4289e46 | feat: remove unnecessary items | - | 22/10/2025 |
+| novatech0/frontend | develop | ac7a51b | Merge pull request #2 from novatech0/feature/catalog | - | 22/10/2025 |
+| novatech0/frontend | feature/catalog | 90ec2d9 | registro de usuario con datos personales | - | 23/10/2025 |
+| novatech0/frontend | feature/post | 7c08972 | feat: post page updated | - | 25/10/2025 |
+| novatech0/frontend | feature/post | b96eeb4 | feat: post details updated | - | 25/10/2025 |
+| novatech0/frontend | feature/profile | a9bd4c1 | feat: register (sign up) for users functional | - | 27/10/2025 |
+| novatech0/frontend | develop | 4722274 | Merge pull request #3 from novatech0/feature/sign-up | - | 27/10/2025 |
+| novatech0/frontend | feature/profile | 0912113 | feat: profile image for post publication added | - | 27/10/2025 |
+| novatech0/frontend | feature/post | 50d1707 | feat: add route add no post message | - | 27/10/2025 |
+| novatech0/frontend | feature/profile | 60d40f2 | feat: change attr for profile & advisor | - | 27/10/2025 |
+| novatech0/frontend | feature/advisor-detail | e90321d | feat: add advisor detail | - | 27/10/2025 |
+| novatech0/frontend | develop | 3af15b0 | Merge pull request #5 from novatech0/feature/post | - | 27/10/2025 |
+| novatech0/frontend | develop | 46710ac | Merge branch 'develop' into feature/advisor-detail | - | 27/10/2025 |
+| novatech0/frontend | feature/advisor-detail | 9cba06c | fix: update attr names | - | 27/10/2025 |
+| novatech0/frontend | develop | 5db618a | Merge pull request #6 from novatech0/feature/advisor-detail | - | 27/10/2025 |
+| novatech0/frontend | feature/book-appointments | 81fdb46 | feat: add book appointment view & logic | - | 28/10/2025 |
+| novatech0/frontend | develop | 7157522 | Merge pull request #7 from novatech0/feature/book-appointments | - | 28/10/2025 |
+
+#### 7.2.1.4. Testing Suite Evidence for Sprint Review
+
+| Repository   | Branch  | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| --- | --- | --- | --- | --- | --- |
+| novatech0/backend | main | 8d2440d | feat: add base project | - | 22/10/2025 |
+| novatech0/acceptance-tests | main | c2cebe5 | feat: add us08 tests | - | 27/10/2025 |
+
+#### 7.2.1.5. Execution Evidence for Sprint Review
+#### 7.2.1.6. Services Documentation Evidence for Sprint Review
+#### 7.2.1.7. Software Deployment Evidence for Sprint Review
+#### 7.2.1.8. Team Collaboration Insights during Sprint
+
+## 7.3. Validation Interviews
+### 7.3.1. Diseño de Entrevistas
+### 7.3.2. Registro de Entrevistas
+### 7.3.3. Evaluaciones según heurísticas
+
+## 7.4. Video About-the-Product
+
+El siguiente video subido a Youtube tiene como objetivo presentar AgroTech, una plataforma que conecta asesores especializados con productores agropecuarios, promoviendo el acceso a asesoramiento técnico para mejorar las prácticas agrícolas. Este contenido destaca cómo AgroTech impulsa el desarrollo sostenible en comunidades rurales, fomentando el crecimiento económico y la productividad en el sector agrícola.
+
+[AgroTech - Video About The Product](https://youtu.be/-GcZP90W_kk)
+
+<img src="img/video-about-the-product.png" alt="AgroTech Intro Video" style="width: 100%; height: auto;">
+
 # Conclusiones
 ## Conclusiones y Recomendaciones
 
@@ -3825,6 +4431,14 @@ En primer lugar, hemos confirmado la necesidad de contar con una plataforma que 
 En el plano técnico, el proyecto cuenta con un sustento sólido gracias a una especificación detallada de requerimientos, que incluye un Product Backlog priorizado y un diseño de software apoyado en Attribute-Driven Design (ADD) y Domain-Driven Design (DDD). Se han definido como atributos de calidad clave la seguridad, la disponibilidad y la usabilidad. Por otro lado, mediante el Event Storming se identificaron los Bounded Contexts que son Security, Profile, Appointment, Management y Post. Con estos elementos, el proyecto se encuentra en una posición sólida para avanzar hacia un desarrollo eficiente, escalable y centrado en el valor real para los usuarios.
 
 Para el diseño de la solución, se ha elaborado una guía de estilo que abarca aspectos visuales y de experiencia de usuario, asegurando una interfaz coherente y atractiva. La arquitectura de la información se ha estructurado cuidadosamente, definiendo sistemas de etiquetado, búsqueda y navegación que facilitan la interacción del usuario con la plataforma. Además, se han desarrollado wireframes tanto para la landing page como para las aplicaciones web y móviles, proporcionando una visión clara del diseño final a través de la herramienta Figma.
+
+## Video About-The-Team
+
+El siguiente video subido a Youtube tiene como objetivo presentar al equipo de NovaTech, quienes han trabajado arduamente en el desarrollo de AgroTech, una plataforma que conecta asesores especializados con productores agropecuarios, promoviendo el acceso a asesoramiento técnico para mejorar las prácticas agrícolas.
+
+[NovaTech - Video About The Team](enlace)
+
+<img src="img/video-about-the-team.png" alt="NovaTech Team Video" style="width: 100%; height: auto;">
 
 <div style="page-break-after: always;"></div>
 
