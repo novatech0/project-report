@@ -3814,7 +3814,135 @@ Los wireflows combinan los wireframes con el flujo de navegación, mostrando có
 </p>
 
 ### 6.4.3. Applications Mock-ups
+
+Se realizaron mock-ups de las diferentes pantallas de la aplicación igualmente con la herramienta Figma. Estos siguen la estructura planteada en los wireframes, pero con un diseño visual más detallado y atractivo, incorporando la paleta de colores, tipografía y elementos gráficos definidos en las guías de estilo.
+
+**Registro e inicio de sesión**
+
+<p align="center">
+  <img alt="Application Mockup" src="img/mockup web login.png" width="600">
+</p>
+
+**Vista de citas (Productor agropecuario)**
+
+<p align="center">
+  <img alt="Application Mockup" src="img/mockup web citas (productor).png" width="600">
+</p>
+
+**Vista de asesores (Productor agropecuario)**
+
+<p align="center">
+  <img alt="Application Mockup" src="img/mockup web ver asesores (productor).png" width="600">
+</p>
+
+**Vista de Mi Granja (Productor agropecuario)**
+
+<p align="center">
+  <img alt="Application Mockup" src="img/mockup web mi granja (productor).png" width="600">
+</p>
+
+**Vista de notificaciones, publicaciones y perfil (Productor agropecuario)**
+
+<p align="center">
+  <img alt="Application Mockup" src="img/mockup web otros (productor).png" width="600">
+</p>
+
+**Vista de citas (Asesor)**
+
+<p align="center">
+  <img alt="Application Mockup" src="img/mockup web citas (asesores).png" width="600">
+</p>
+
+**Vista de publicaciones (Asesor)**
+
+<p align="center">
+  <img alt="Application Mockup" src="img/mockup web publicaciones (asesores).png" width="600">
+</p>
+
+**Vista de horarios (Asesor)**
+
+<p align="center">
+  <img alt="Application Mockup" src="img/mockup web horarios (asesores).png" width="600">
+</p>
+
+**Vista de notificaciones y perfil (Asesor)**
+
+<p align="center">
+  <img alt="Application Mockup" src="img/mockup web otros (asesores).png" width="600">
+</p>
+
+
 ### 6.4.4. Applications User Flow Diagrams
+
+Al igual que los wireflows, los user flows muestran cómo los usuarios interactúan con la aplicación y cómo navegan entre diferentes pantallas y funcionalidades. A continuación, se presentan los user flows para ambos tipos de usuarios: Productor agropecuario y Asesor.
+
+**Userflow Diagram de registro de usuario**
+
+<p align="center">
+  <img alt="Application Userflow Diagram" src="img/userflow 1.png" width="600">
+</p>
+
+**Userflow Diagram de inicio de sesión**
+
+<p align="center">
+  <img alt="Application Userflow Diagram" src="img/userflow 2.png" width="600">
+</p>
+
+**Userflow Diagram para visualizar información de un asesor**
+
+<p align="center">
+  <img alt="Application Userflow Diagram" src="img/userflow 3.png" width="600">
+</p>
+
+**Userflow Diagram para separar una cita con un asesor**
+
+<p align="center">
+  <img alt="Application Userflow Diagram" src="img/userflow 4.png" width="600">
+</p>
+
+**Userflow Diagram para dejar reseña a un asesor luego de una cita**
+
+<p align="center">
+  <img alt="Application Userflow Diagram" src="img/userflow 5.png" width="600">
+</p>
+
+**Userflow Diagram para visualizar historial de citas**
+
+<p align="center">
+  <img alt="Application Userflow Diagram" src="img/userflow 6.png" width="600">
+</p>
+
+**Userflow Diagram para cancelar una cita programada**
+
+<p align="center">
+  <img alt="Application Userflow Diagram" src="img/userflow 7.png" width="600">
+</p>
+
+**Userflow Diagram para gestionar los recintos de productor agropecuario**
+
+<p align="center">
+  <img alt="Application Userflow Diagram" src="img/userflow 8.png" width="600">
+</p>
+
+**Userflow Diagram para gestionar los animales de un recinto de productor agropecuario**
+
+<p align="center">
+  <img alt="Application Userflow Diagram" src="img/userflow 9.png" width="600">
+</p>
+
+**Userflow Diagram para gestionar horarios de un asesor**
+
+<p align="center">
+  <img alt="Application Userflow Diagram" src="img/userflow 10.png" width="600">
+</p>
+
+**Userflow Diagram para gestionar publicaciones de un asesor**
+
+<p align="center">
+  <img alt="Application Userflow Diagram" src="img/userflow 11.png" width="600">
+</p>
+
+
 ## 6.5. Applications Prototyping
 
 # Capítulo VII: Product Implementation, Validation & Deployment
