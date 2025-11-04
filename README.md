@@ -4536,6 +4536,33 @@ A continuación, se detallan los commits realizados, los cuales se trabajaron a 
 #### 7.2.1.5. Execution Evidence for Sprint Review
 #### 7.2.1.6. Services Documentation Evidence for Sprint Review
 #### 7.2.1.7. Software Deployment Evidence for Sprint Review
+
+Para el caso del backend, se utilizó Google Cloud Platform (GCP) para el despliegue de la API RESTful desarrollada con Spring Boot. Se configuró una instancia de Google Compute Engine (GCE) para alojar la aplicación, asegurando que estuviera accesible a través de una dirección IP pública. Además, se implementaron medidas de seguridad, como firewalls y certificados SSL, para proteger la comunicación entre los clientes y el servidor.
+
+Para iniciar, se creó una máquina virtual en GCP con las especificaciones necesarias para ejecutar la aplicación. Instalando en ella, las dependencias requeridas, como MySQL, Java 22, Nginx, entre otros.
+
+<img src="img/deployment-evidence-0.png" alt="Backend Deployment on GCP" style="width: 600px">
+
+Se genera el jar ejecutable del proyecto Spring Boot utilizando Maven.
+
+<img src="img/deployment-evidence-1.png" alt="Backend Deployment on GCP" style="width: 600px">
+
+Se realiza la configuración del servidor Nginx para que actúe como un proxy inverso, redirigiendo las solicitudes entrantes a la aplicación Spring Boot que se ejecuta en la máquina virtual. Para ello, se crea un archivo de configuración específico para Nginx. Utilizamos el dominio agrotech.ddns.net (creado con No-IP) para acceder a la API.
+
+<img src="img/deployment-evidence-2.png" alt="Backend Deployment on GCP" style="width: 600px">
+
+Se configura Nginx para servir la aplicación y manejar las solicitudes. Se asegura que esté corriendo correctamente y que las reglas de firewall permitan el tráfico HTTP/HTTPS hacia la instancia.
+
+<img src="img/deployment-evidence-3.png" alt="Backend Deployment on GCP" style="width: 600px">
+
+Finalmente, se inicia la aplicación Spring Boot en la máquina virtual, asegurándose de que esté escuchando en el puerto configurado en Nginx.
+
+<img src="img/deployment-evidence-4.png" alt="Backend Deployment on GCP" style="width: 600px">
+
+Se verifica que la API esté accesible desde el exterior mediante el dominio. Enlace: https://agrotech.ddns.net/swagger-ui/index.html
+
+<img src="img/deployment-evidence-5.png" alt="Backend Deployment on GCP" style="width: 600px">
+
 #### 7.2.1.8. Team Collaboration Insights during Sprint
 
 ## 7.3. Validation Interviews
