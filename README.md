@@ -3945,6 +3945,14 @@ Al igual que los wireflows, los user flows muestran cómo los usuarios interact�
 
 ## 6.5. Applications Prototyping
 
+Se desarrollaron prototipos interactivos tanto para la aplicación web como para la aplicación móvil utilizando Figma. Estos prototipos permiten simular la experiencia del usuario al navegar por la aplicación, interactuar con diferentes elementos y funcionalidades, y obtener una visión clara de cómo será la aplicación final.
+
+[Prototipo interactivo de la aplicación web](https://www.figma.com/proto/9ItIdkKDAZGDecR2umJCHa/Emergentes-prototipo?node-id=3122-2189&p=f&t=eYFebs52udsrDQCh-0&scaling=contain&content-scaling=fixed&page-id=3122%3A648&starting-point-node-id=3122%3A2189&show-proto-sidebar=1)
+
+[Video de explicación](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b127_upc_edu_pe/Ef-0mFHv2nRDjtOhTFdZ_1MB6XjsvXE_xpwjtPJR2Y_RUQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=GfnBOb)
+
+<img src="img/applications-prototyping.png" alt="Applications Prototyping" width="600">
+
 # Capítulo VII: Product Implementation, Validation & Deployment
 
 ## 7.1. Software Configuration Management
@@ -4535,6 +4543,31 @@ A continuación, se detallan los commits realizados, los cuales se trabajaron a 
 
 #### 7.2.1.5. Execution Evidence for Sprint Review
 #### 7.2.1.6. Services Documentation Evidence for Sprint Review
+
+Se utilizó Swagger para documentar los servicios RESTful desarrollados en el backend con Spring Boot. Swagger proporciona una interfaz interactiva que permite a los desarrolladores y usuarios explorar y probar los endpoints de la API de manera sencilla.
+
+[Swagger](https://agrotech.ddns.net/swagger-ui/index.html#/)
+
+<img src="img/sprint1-services-documentation.png" alt="Services Documentation Evidence" style="width: 600px">
+
+Todos los endpoints cuentan con los métodos HTTP correspondientes (GET, POST, PUT, DELETE) y están organizados según los recursos que manejan. A continuación, se presenta una lista de los principales endpoints documentados en Swagger:
+
+|Endpoint|Descripción|
+|---|---|
+|/api/v1/authentication|Autenticación de usuarios (registro e inicio de sesión)|
+|/api/v1/users|Gestión de usuarios|
+|/api/v1/profiles|Gestión de perfiles (visualización y edición)|
+|/api/v1/advisors|Gestión de asesores|
+|/api/v1/farmers|Gestión de productores agropecuarios|
+|/api/v1/roles|Gestión de roles|
+|/api/v1/notifications|Gestión de notificaciones|
+|/api/v1/appointments|Gestión de citas|
+|/api/v1/available_dates|Gestión de horarios disponibles|
+|/api/v1/reviews|Gestión de reseñas|
+|/api/v1/enclosures|Gestión de recintos|
+|/api/v1/animals|Gestión de animales|
+|/api/v1/posts|Gestión de publicaciones|
+
 #### 7.2.1.7. Software Deployment Evidence for Sprint Review
 
 Para el caso del backend, se utilizó Google Cloud Platform (GCP) para el despliegue de la API RESTful desarrollada con Spring Boot. Se configuró una instancia de Google Compute Engine (GCE) para alojar la aplicación, asegurando que estuviera accesible a través de una dirección IP pública. Además, se implementaron medidas de seguridad, como firewalls y certificados SSL, para proteger la comunicación entre los clientes y el servidor.
