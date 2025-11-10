@@ -330,6 +330,7 @@
         <p><strong>Delgado Corrales, Piero Gonzalo</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, en el video de exposición expuse de manera clara los requerimientos a través de las User Stories y Atributos de Calidad.</p>
         <p><strong>TP1:</strong> En el video de exposición, presenté el bounded context de Appointment, explicando sus componentes, cómo se relacionan entre sí, y su importancia en el desarrollo de la solución.</p>
+        <p><strong>TB2:</strong> En esta entrega, participé en el video de exposición, presentando la introducción al producto a través de la problemática.</p>
         <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, en el video de exposición presenté la problemática del sector agropecuario de manera objetiva, resaltando las cifras y limitaciones actuales como base para justificar el desarrollo de la solución.</p>
         <p><strong>TP1:</strong>  En esta entrega, elaboré y presenté el video explicativo del bounded context de Security, detallando sus componentes principales, su estructura interna y las interacciones entre sus módulos. Además, expuse los diagramas de componentes, clases y base de datos, explicando su función dentro de la arquitectura general del sistema y su relevancia para garantizar la autenticación y autorización segura de los usuarios.</p>
@@ -346,6 +347,7 @@
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, logramos transmitir nuestras ideas con claridad y objetividad para explicar nuestra problemática y solución propuesta.</p>
         <p><strong>TP1:</strong>Logramos exponer claramente los bounded contexts de Appointment, Security, Management, Profile y Post, destacando su estructura, componentes e interacciones, evidenciando su importancia dentro de la solución propuesta. Asimismo, explicamos las secciones de la landing page y los wireflows de la aplicación.</p>
+        <p><strong>TB2:</strong> Como grupo, logramos comunicar de manera efectiva los resultados del primer sprint explicando a través del video de exposición los productos digitales desarrollados como el Backend, Frontend Web, Frontend Móvil y la Landing Page.</p>
       </td>
     </tr>
     <tr style="page-break-inside: avoid;">
@@ -354,6 +356,7 @@
         <p><strong>Delgado Corrales, Piero Gonzalo</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, participé en la elaboración del project report. Apoyé con el desarrollo de los cuatro capítulos donde se abordaron los aspectos clave del proyecto.</p>
         <p><strong>TP1:</strong> En el informe, contribuí con la redacción del capítulo de Tactical-Level Software Design, detallando la estructura y componentes del bounded context de Appointment.</p>
+        <p><strong>TB2:</strong> En esta entrega, participé en la redacción del project report, elaborando los apartados de solución propuesta y segmentos objetivo, asegurando que las descripciones fueran claras y adecuadas al alcance del proyecto.</p>
         <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, participé en la redacción del project report, elaborando los apartados de antecedentes, problemática y domain message flows, con descripciones claras y adecuadas al alcance del proyecto.</p>
          <p><strong>TP1:</strong> En el informe, participé en la redacción del capítulo de Tactical-Level Software Design, describiendo la estructura, componentes y modelo de datos del bounded context de Security. Además, documenté los diagramas de clases, componentes y base de datos, explicando su función dentro del sistema y su contribución a los mecanismos de autenticación y autorización del proyecto.</p>
@@ -370,6 +373,7 @@
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, elaboramos el project report de manera clara y organizada, lo que nos permitió comunicar de forma efectiva tanto los aspectos técnicos como los beneficios prácticos del proyecto.</p>
         <p><strong>TP1:</strong> Se documentaron los bounded contexts de manera detallada en el capítulo de Tactical-Level Software Design, describiendo arquitectura, componentes, relaciones y diagramas correspondientes, garantizando comprensión clara y objetiva del diseño del sistema. Además, se incluyeron los mockups de la landing page y wireframes de la aplicación.</p>
+        <p><strong>TB2:</strong> Como grupo, logramos comunicar de manera escrita los avances del primer sprint, describiendo claramente los productos digitales desarrollados y sus funcionalidades principales en el project report desde el Sprint Planning hasta el Team Collaboration Insights.</p>
       </td>
     </tr>
   </tbody>
@@ -4598,6 +4602,28 @@ Todos los endpoints cuentan con los métodos HTTP correspondientes (GET, POST, P
 
 #### 7.2.1.7. Software Deployment Evidence for Sprint Review
 
+Primero, para el frontend de la aplicación web, se utilizó Netlify para el despliegue de la aplicación desarrollada con Angular. 
+
+Primero, se seleccionó el repositorio de GitHub donde se encuentra el código fuente del proyecto. Luego, se configuró Netlify para que se conectara a dicho repositorio.
+
+<p align="center">
+  <img src="img/frontend-deployment-1.png" alt="Frontend Deployment 1" style="width: 300px">
+</p>
+
+Luego, se especificaron los comandos de construcción y el directorio de salida. En este caso, se utilizó el comando `ng build --prod` para construir la aplicación en modo producción y se indicó que el directorio de salida era `dist/`.
+
+<p align="center">
+  <img src="img/frontend-deployment-2.png" alt="Frontend Deployment 2" style="width: 300px">
+</p>
+
+Finalmente, se inició el proceso de despliegue y se verificó que la aplicación estuviera funcionando correctamente en la URL proporcionada por Netlify.
+
+Enlace: https://agrotech.netlify.app/
+
+<p align="center">
+  <img src="img/frontend-deployment-3.png" alt="Frontend Deployment 3" style="width: 600px">
+</p>
+
 Para el caso de la aplicación móvil, se utilizó testapp.io para el despliegue de la aplicación desarrollada con Kotlin. 
 
 Primero, se exportó el APK de la aplicación desde Android Studio, asegurándose de que estuviera firmado correctamente para su distribución.
@@ -4625,7 +4651,7 @@ A continuación, se creó una cuenta en testapp.io, se inició sesión en la pla
 </p>
 
 Se completaron la subida del archivo y se generó un enlace de descarga para compartir la aplicación con los usuarios y un QR. 
-Enlace: https://portal.testapp.io/apps/install/G0BA6qj4pPXGy
+Enlace: https://portal.testapp.io/apps/install/LqWkmgv9qk51m
 
 <p align="center">
   <img src="img/mobile-deployment-5.png" alt="Mobile Deployment 5" style="width: 400px">
@@ -4671,7 +4697,15 @@ Se verifica que la API esté accesible desde el exterior mediante el dominio. En
 
 #### 7.2.1.8. Team Collaboration Insights during Sprint
 
+El equipo de desarrollo utilizó GitHub para la gestión del código y la colaboración. Se realizaron reuniones semanales para revisar el progreso y resolver problemas de compatibilidad. Además, se implementaron revisiones de código para asegurar la calidad del software. Asimismo, para la gestión de ramas se utilizó el modelo GitFlow donde la rama develop se utilizó como la rama principal de desarrollo, mientras que las ramas feature se crearon para cada nueva funcionalidad o mejora. Una vez que una característica estaba completa y probada, se fusionaba de nuevo en develop.
 
+<p align="center">
+  <img src="img/sprint-1-insights.png" alt="Sprint 1 Insights: Commits" style="width: 600px">
+</p>
+
+<p align="center">
+  <img src="img/sprint-2-insights.png" alt="Sprint 2 Insights: Analytics" style="width: 600px">
+</p>
 
 ## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas
@@ -4694,6 +4728,8 @@ En primer lugar, hemos confirmado la necesidad de contar con una plataforma que 
 En el plano técnico, el proyecto cuenta con un sustento sólido gracias a una especificación detallada de requerimientos, que incluye un Product Backlog priorizado y un diseño de software apoyado en Attribute-Driven Design (ADD) y Domain-Driven Design (DDD). Se han definido como atributos de calidad clave la seguridad, la disponibilidad y la usabilidad. Por otro lado, mediante el Event Storming se identificaron los Bounded Contexts que son Security, Profile, Appointment, Management y Post. Con estos elementos, el proyecto se encuentra en una posición sólida para avanzar hacia un desarrollo eficiente, escalable y centrado en el valor real para los usuarios.
 
 Para el diseño de la solución, se ha elaborado una guía de estilo que abarca aspectos visuales y de experiencia de usuario, asegurando una interfaz coherente y atractiva. La arquitectura de la información se ha estructurado cuidadosamente, definiendo sistemas de etiquetado, búsqueda y navegación que facilitan la interacción del usuario con la plataforma. Además, se han desarrollado wireframes tanto para la landing page como para las aplicaciones web y móviles, proporcionando una visión clara del diseño final a través de la herramienta Figma.
+
+Para el primer sprint de desarrollo, se decidió elaborar el backend, la landing page, el backend, el frontend de la aplicación web y el frontend de la aplicación móvil. Se utilizó la metodología Scrum, con reuniones semanales y revisiones periódicas para asegurar el progreso continuo y la calidad del producto. Durante este sprint, se implementaron todas las funcionalidades para el funcionamiento de la plataforma. Se documentaron los servicios RESTful utilizando Swagger, lo que facilitó la comprensión y el uso de la API. Además, se desplegaron las aplicaciones en plataformas adecuadas: Netlify para el frontend web, testapp io para la aplicación móvil y Google Cloud Platform para el backend. Este enfoque integral permitió validar la viabilidad técnica del proyecto y sentar las bases para futuros desarrollos.
 
 ## Video About-The-Team
 
