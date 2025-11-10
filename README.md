@@ -100,6 +100,30 @@
           </ul>
         </td>
     </tr>
+    <tr>
+        <td><strong>TB3</strong></td>
+        <td>13/10/25</td>
+        <td>
+          <ul>
+            <li>Delgado Corrales, Piero Gonzalo</li>
+            <li>Paredes Puente, Sebastian Roberto</li>
+            <li>Salinas Torres, Salvador Antonio</li>
+            <li>Elias Sanchez, Harold Miguel</li>
+            <li>Chinchihualpa Saldarriaga, Luis Sebastian</li>
+          </ul>
+        </td>
+        <td>
+          Se realizaron los siguientes puntos:
+          <ul>
+            <li>Capítulo VI: Product Design</li>
+            <li>Capítulo VII: Product Implementation, Validation & Deployment</li>
+            <li>Avance del Video About the Team</li>
+            <li>Avance del Video About the Product</li>
+            <li>Avance de conclusiones y recomendaciones</li>
+            <li>Mejoras a capítulos previos</li>
+          </ul>
+        </td>
+    </tr>
   </tbody>
 </table>
 
@@ -4542,13 +4566,17 @@ A continuación, se detallan los commits realizados, los cuales se trabajaron a 
 | novatech0/acceptance-tests | main | c2cebe5 | feat: add us08 tests | - | 27/10/2025 |
 
 #### 7.2.1.5. Execution Evidence for Sprint Review
+
+
+
 #### 7.2.1.6. Services Documentation Evidence for Sprint Review
 
 Se utilizó Swagger para documentar los servicios RESTful desarrollados en el backend con Spring Boot. Swagger proporciona una interfaz interactiva que permite a los desarrolladores y usuarios explorar y probar los endpoints de la API de manera sencilla.
 
-[Swagger](https://agrotech.ddns.net/swagger-ui/index.html#/)
-
-<img src="img/sprint1-services-documentation.png" alt="Services Documentation Evidence" style="width: 600px">
+[Enlace al Swagger](https://agrotech.ddns.net/swagger-ui/index.html#/)
+<p align="center">
+  <img src="img/sprint1-services-documentation.png" alt="Services Documentation Evidence" style="width: 600px">
+</p>
 
 Todos los endpoints cuentan con los métodos HTTP correspondientes (GET, POST, PUT, DELETE) y están organizados según los recursos que manejan. A continuación, se presenta una lista de los principales endpoints documentados en Swagger:
 
@@ -4570,33 +4598,80 @@ Todos los endpoints cuentan con los métodos HTTP correspondientes (GET, POST, P
 
 #### 7.2.1.7. Software Deployment Evidence for Sprint Review
 
+Para el caso de la aplicación móvil, se utilizó testapp.io para el despliegue de la aplicación desarrollada con Kotlin. 
+
+Primero, se exportó el APK de la aplicación desde Android Studio, asegurándose de que estuviera firmado correctamente para su distribución.
+
+<p align="center">
+  <img src="img/mobile-deployment-1.png" alt="Mobile Deployment 1" style="width: 300px">
+</p>
+
+Para ello, se creo un keystore y se configuraron los parámetros necesarios para la firma del APK.
+
+<p align="center">
+  <img src="img/mobile-deployment-2.png" alt="Mobile Deployment 2" style="width: 300px">
+</p>
+
+Luego, se exporto como un release APK, optimizado para su distribución.
+
+<p align="center">
+  <img src="img/mobile-deployment-3.png" alt="Mobile Deployment 3" style="width: 300px">
+</p>
+
+A continuación, se creó una cuenta en testapp.io, se inició sesión en la plataforma y se subió el APK.
+
+<p align="center">
+  <img src="img/mobile-deployment-4.png" alt="Mobile Deployment 4" style="width: 600px">
+</p>
+
+Se completaron la subida del archivo y se generó un enlace de descarga para compartir la aplicación con los usuarios y un QR. 
+Enlace: https://portal.testapp.io/apps/install/G0BA6qj4pPXGy
+
+<p align="center">
+  <img src="img/mobile-deployment-5.png" alt="Mobile Deployment 5" style="width: 400px">
+</p>
+
 Para el caso del backend, se utilizó Google Cloud Platform (GCP) para el despliegue de la API RESTful desarrollada con Spring Boot. Se configuró una instancia de Google Compute Engine (GCE) para alojar la aplicación, asegurando que estuviera accesible a través de una dirección IP pública. Además, se implementaron medidas de seguridad, como firewalls y certificados SSL, para proteger la comunicación entre los clientes y el servidor.
 
 Para iniciar, se creó una máquina virtual en GCP con las especificaciones necesarias para ejecutar la aplicación. Instalando en ella, las dependencias requeridas, como MySQL, Java 22, Nginx, entre otros.
 
-<img src="img/deployment-evidence-0.png" alt="Backend Deployment on GCP" style="width: 600px">
+<p align="center">
+  <img src="img/deployment-evidence-0.png" alt="Backend Deployment on GCP" style="width: 600px">
+</p>
 
 Se genera el jar ejecutable del proyecto Spring Boot utilizando Maven.
 
-<img src="img/deployment-evidence-1.png" alt="Backend Deployment on GCP" style="width: 600px">
+<p align="center">
+  <img src="img/deployment-evidence-1.png" alt="Backend Deployment on GCP" style="width: 600px">
+</p>
 
 Se realiza la configuración del servidor Nginx para que actúe como un proxy inverso, redirigiendo las solicitudes entrantes a la aplicación Spring Boot que se ejecuta en la máquina virtual. Para ello, se crea un archivo de configuración específico para Nginx. Utilizamos el dominio agrotech.ddns.net (creado con No-IP) para acceder a la API.
 
-<img src="img/deployment-evidence-2.png" alt="Backend Deployment on GCP" style="width: 600px">
+<p align="center">
+  <img src="img/deployment-evidence-2.png" alt="Backend Deployment on GCP" style="width: 600px">
+</p>
 
 Se configura Nginx para servir la aplicación y manejar las solicitudes. Se asegura que esté corriendo correctamente y que las reglas de firewall permitan el tráfico HTTP/HTTPS hacia la instancia.
 
-<img src="img/deployment-evidence-3.png" alt="Backend Deployment on GCP" style="width: 600px">
+<p align="center">
+  <img src="img/deployment-evidence-3.png" alt="Backend Deployment on GCP" style="width: 600px">
+</p>
 
 Finalmente, se inicia la aplicación Spring Boot en la máquina virtual, asegurándose de que esté escuchando en el puerto configurado en Nginx.
 
-<img src="img/deployment-evidence-4.png" alt="Backend Deployment on GCP" style="width: 600px">
+<p align="center">
+  <img src="img/deployment-evidence-4.png" alt="Backend Deployment on GCP" style="width: 600px">
+</p>
 
 Se verifica que la API esté accesible desde el exterior mediante el dominio. Enlace: https://agrotech.ddns.net/swagger-ui/index.html
 
-<img src="img/deployment-evidence-5.png" alt="Backend Deployment on GCP" style="width: 600px">
+<p align="center">
+  <img src="img/deployment-evidence-5.png" alt="Backend Deployment on GCP" style="width: 600px">
+</p>
 
 #### 7.2.1.8. Team Collaboration Insights during Sprint
+
+
 
 ## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas
