@@ -4707,6 +4707,55 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
 
 ## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas
+
+Con el desarrollo de las vistas para Productores Agropecuarios y Asesores en las versiones web y móvil de AgroTech, se realizarán entrevistas de validación con el objetivo de evaluar la facilidad de uso, comprensión, organización e impacto de las funcionalidades principales.
+
+Las entrevistas estarán dirigidas a los productores agropecuarios entre 18 y 40 años y asesores con experiencia entre 25 y 65 años, ambos segmentos identificados como prioritarios para la adopción de la plataforma.
+
+Durante estas entrevistas se mostrará la Landing Page, la aplicación web y la aplicación móvil para recopilar percepciones y sugerencias de mejora sobre su funcionamiento.
+
+**Preguntas sobre Landing Page**
+
+1. ¿La información en la sección de inicio te permite comprender fácilmente el propósito de AgroTech?
+2. ¿Qué tan confiable te parece la información presentada en las secciones “Acerca de” y “Sobre Nosotros”?
+3. ¿La descripción de las características del producto te ayuda a entender los beneficios de usar la plataforma?
+4. ¿Cómo calificarías la claridad y organización del contenido en las distintas secciones de la página?
+5. ¿Los colores, imágenes e íconos te transmiten una imagen profesional y relacionada con el sector agropecuario?
+6. ¿Consideras que la sección de contacto facilita la comunicación con el equipo de AgroTech o la solicitud de soporte?
+
+**Preguntas sobre la Aplicación Web y Móvil**
+
+**Segmento Objetivo: Productor Agropecuario**
+
+**Objetivo:** Conocer la opinión de los productores sobre la utilidad y facilidad de uso de la aplicación.
+
+1. ¿Te resulta fácil buscar y filtrar asesores según su disponibilidad?
+2. ¿La información que se muestra en el perfil de cada asesor (experiencia, calificaciones y reseñas) te ayuda a tomar una mejor decisión?
+3. ¿El proceso para agendar una cita con un asesor te parece sencillo y comprensible?
+4. ¿Consideras útil poder visualizar tus citas programadas y el historial de asesorías anteriores?
+5. ¿Te resulta clara y práctica la opción para calificar a los asesores luego de una cita?
+6. ¿Qué tan útil encuentras la sección de publicaciones de los asesores para obtener consejos o información técnica?
+7. ¿El registro y acceso a tu cuenta fue fácil de completar y entender?
+8. ¿Te resulta sencillo modificar la información de tu perfil (por ejemplo, datos personales o de tu granja)?
+9. ¿Consideras que la navegación entre secciones (asesores, citas, publicaciones, granja, perfil) es fluida y fácil de usar?
+10. En general, ¿la aplicación satisface tus necesidades como productor agropecuario que busca orientación y apoyo técnico?
+
+**Segmento Objetivo: Asesor con Experiencia**
+
+**Objetivo:** Identificar la percepción de los asesores sobre la funcionalidad y efectividad de la aplicación para ofrecer sus servicios.
+
+1. ¿El proceso de registro e inicio de sesión te resultó simple y sin complicaciones?
+2. ¿La opción para configurar tus horarios disponibles para asesorías te resulta clara y fácil de gestionar?
+3. ¿Qué tan práctica te parece la visualización de tus citas programadas y pasadas dentro de la aplicación?
+4. ¿La opción para cancelar citas está bien implementada y fácil de usar?
+5. ¿Te resulta sencillo acceder a las calificaciones o comentarios que dejan los productores sobre tus asesorías?
+6. ¿La sección de publicaciones te facilita compartir información con los productores?
+7. ¿Consideras útil poder administrar tus publicaciones (crear, editar o eliminar) desde la plataforma?
+8. ¿La interfaz general de la aplicación (web y móvil) te parece ordenada y adaptada a tus necesidades como asesor?
+9. ¿Qué tan clara te resulta la información que presenta el sistema sobre los productores que te contactan o reservan asesorías?
+10. En general, ¿sientes que la aplicación contribuye a ampliar tu alcance profesional y mejorar la gestión de tus asesorías?
+
+
 ### 7.3.2. Registro de Entrevistas
 ### 7.3.3. Evaluaciones según heurísticas
 
