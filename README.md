@@ -4602,26 +4602,24 @@ Todos los endpoints cuentan con los métodos HTTP correspondientes (GET, POST, P
 
 #### 7.2.1.7. Software Deployment Evidence for Sprint Review
 
-Primero, para el frontend de la aplicación web, se utilizó Netlify para el despliegue de la aplicación desarrollada con Angular. 
+Primero, para el frontend de la aplicación web, se utilizó Netlify para el despliegue de la aplicación desarrollada con Angular. Para ello, en el proyecto se creó un archivo `_redirects` en la carpeta `src/` con el siguiente contenido para manejar las rutas correctamente:
 
-Primero, se seleccionó el repositorio de GitHub donde se encuentra el código fuente del proyecto. Luego, se configuró Netlify para que se conectara a dicho repositorio.
+```
+/*    /index.html   200
+```
 
-<p align="center">
-  <img src="img/frontend-deployment-1.png" alt="Frontend Deployment 1" style="width: 300px">
-</p>
-
-Luego, se especificaron los comandos de construcción y el directorio de salida. En este caso, se utilizó el comando `ng build --prod` para construir la aplicación en modo producción y se indicó que el directorio de salida era `dist/`.
+Segundo, dentro de Netlify, se seleccionó el repositorio de GitHub donde se encuentra el código fuente del proyecto. Luego, se configuró Netlify para que se conectara a dicho repositorio y se especificaron los comandos de construcción y el directorio de salida. En este caso, se utilizó el comando `ng build` para construir la aplicación y se indicó que el directorio de salida era `dist/`.
 
 <p align="center">
-  <img src="img/frontend-deployment-2.png" alt="Frontend Deployment 2" style="width: 300px">
+  <img src="img/frontend-deployment-1.png" alt="Frontend Deployment 1" style="width: 600px">
 </p>
 
 Finalmente, se inició el proceso de despliegue y se verificó que la aplicación estuviera funcionando correctamente en la URL proporcionada por Netlify.
 
-Enlace: https://agrotech.netlify.app/
+Enlace: https://upcagrotech.netlify.app
 
 <p align="center">
-  <img src="img/frontend-deployment-3.png" alt="Frontend Deployment 3" style="width: 600px">
+  <img src="img/frontend-deployment-2.png" alt="Frontend Deployment 2" style="width: 600px">
 </p>
 
 Para el caso de la aplicación móvil, se utilizó testapp.io para el despliegue de la aplicación desarrollada con Kotlin. 
