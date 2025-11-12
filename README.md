@@ -4757,6 +4757,22 @@ Durante estas entrevistas se mostrará la Landing Page, la aplicación web y la 
 
 
 ### 7.3.2. Registro de Entrevistas
+
+**Segmento: Productor agropecuario**
+
+**Entrevista 1**
+
+**Entrevistador:** Piero Delgado
+
+**Entrevistado:** Mardy Ruiz
+
+**Enlace a entrevista:** [Enlace a entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/IQBiVi0tc6EARJl387StPGAaAdk2nac2EH4KR6QfQ9FIQgI?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=yd9zjG)
+
+<img alt="Entrevista con Mardy Ruiz" src="img/entrevista-validacion-farmer-1.png">
+
+**Resumen:**
+En esta entrevista, Mardy Ruiz menciona que la información de la Landing Page le pareció profesional, bien organizada y clara, y resaltó que muestra apropiadamente el enfoque agrícola del producto y genera confianza en los desarrolladores. Calificó la estructura general con un 10 sobre 10. Sobre la aplicación, mencionó que es fácil buscar y filtrar asesores, y que la información presentada es útil; sin embargo, propuso añadir ejemplos del trabajo de los asesores. La función para reservar, cancelar y calificar citas le pareció intuitiva; también resaltó lo útil que era la sección de publicaciones para saber las recomendaciones y la experiencia de los asesores. Agregó que la navegación entre las secciones es fluida y concluyó que la aplicación satisface sus necesidades como productor agropecuario.
+
 ### 7.3.3. Evaluaciones según heurísticas
 
 ## 7.4. Video About-the-Product
