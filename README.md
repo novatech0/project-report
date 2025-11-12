@@ -4771,6 +4771,21 @@ Durante estas entrevistas se mostrará la Landing Page, la aplicación web y la 
 **Resumen:**
 En esta entrevista, Mardy Ruiz menciona que la información de la Landing Page le pareció profesional, bien organizada y clara, y resaltó que muestra apropiadamente el enfoque agrícola del producto y genera confianza en los desarrolladores. Calificó la estructura general con un 10 sobre 10. Sobre la aplicación, mencionó que es fácil buscar y filtrar asesores, y que la información presentada es útil; sin embargo, propuso añadir ejemplos del trabajo de los asesores. La función para reservar, cancelar y calificar citas le pareció intuitiva; también resaltó lo útil que era la sección de publicaciones para saber las recomendaciones y la experiencia de los asesores. Agregó que la navegación entre las secciones es fluida y concluyó que la aplicación satisface sus necesidades como productor agropecuario.
 
+**Segmento: Asesores con experiencia**
+
+**Entrevista 1**
+
+**Entrevistador:** Nicolás Guzmán
+
+**Entrevistado:** Harold Elias
+
+**Enlace a entrevista:** [Enlace a entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212684_upc_edu_pe/IQAKxO6f8Ps_Sr_X3XYUBnzUAWqeFgP7widqiwJONRuTvAs?e=EaRnIa)
+
+<img alt="Entrevista con Nicolas Guzman" src="img/entrevista-validacion-advisor-1.png">
+
+**Resumen:**
+En esta entrevista, Nicolás Guzmán, asesor agrónomo con experiencia, comentó que la aplicación web le pareció muy completa y funcional. Destacó que el diseño y las animaciones son agradables, y que la interfaz es intuitiva y fácil de usar. Mencionó que todas las funciones se encontraban bien organizadas y operativas. En particular, resaltó la opción de agregar horarios para citas, valorando que la información se guarde correctamente. En general, expresó una opinión muy positiva sobre la aplicación y afirmó que cumplía totalmente con sus expectativas como asesor agrónomo.
+
 ### 7.3.3. Evaluaciones según heurísticas
 
 ## 7.4. Video About-the-Product
