@@ -4717,8 +4717,8 @@ Durante estas entrevistas se mostrará la Landing Page, la aplicación web y la 
 **Preguntas sobre Landing Page**
 
 1. ¿La información en la sección de inicio te permite comprender fácilmente el propósito de AgroTech?
-2. ¿Qué tan confiable te parece la información presentada en las secciones “Acerca de” y “Sobre Nosotros”?
-3. ¿La descripción de las características del producto te ayuda a entender los beneficios de usar la plataforma?
+2. ¿Qué tan confiable te parece la información presentada en las secciones de la página?
+3. ¿La descripción de los problema que se quiere abordar con nuestro producto te ayuda a entender los beneficios de usar la plataforma?
 4. ¿Cómo calificarías la claridad y organización del contenido en las distintas secciones de la página?
 5. ¿Los colores, imágenes e íconos te transmiten una imagen profesional y relacionada con el sector agropecuario?
 6. ¿Consideras que la sección de contacto facilita la comunicación con el equipo de AgroTech o la solicitud de soporte?
@@ -4733,12 +4733,11 @@ Durante estas entrevistas se mostrará la Landing Page, la aplicación web y la 
 2. ¿La información que se muestra en el perfil de cada asesor (experiencia, calificaciones y reseñas) te ayuda a tomar una mejor decisión?
 3. ¿El proceso para agendar una cita con un asesor te parece sencillo y comprensible?
 4. ¿Consideras útil poder visualizar tus citas programadas y el historial de asesorías anteriores?
-5. ¿Te resulta clara y práctica la opción para calificar a los asesores luego de una cita?
-6. ¿Qué tan útil encuentras la sección de publicaciones de los asesores para obtener consejos o información técnica?
-7. ¿El registro y acceso a tu cuenta fue fácil de completar y entender?
-8. ¿Te resulta sencillo modificar la información de tu perfil (por ejemplo, datos personales o de tu granja)?
-9. ¿Consideras que la navegación entre secciones (asesores, citas, publicaciones, granja, perfil) es fluida y fácil de usar?
-10. En general, ¿la aplicación satisface tus necesidades como productor agropecuario que busca orientación y apoyo técnico?
+5. ¿Qué tan útil encuentras la sección de publicaciones de los asesores para obtener consejos o información técnica?
+6. ¿El registro y acceso a tu cuenta fue fácil de completar y entender?
+7. ¿Te resulta sencillo modificar la información de tu perfil (por ejemplo, datos personales o de tu granja)?
+8. ¿Consideras que la navegación entre secciones (asesores, citas, publicaciones, granja, perfil) es fluida y fácil de usar?
+9. En general, ¿la aplicación satisface tus necesidades como productor agropecuario que busca orientación y apoyo técnico?
 
 **Segmento Objetivo: Asesor con Experiencia**
 
@@ -4748,12 +4747,11 @@ Durante estas entrevistas se mostrará la Landing Page, la aplicación web y la 
 2. ¿La opción para configurar tus horarios disponibles para asesorías te resulta clara y fácil de gestionar?
 3. ¿Qué tan práctica te parece la visualización de tus citas programadas y pasadas dentro de la aplicación?
 4. ¿La opción para cancelar citas está bien implementada y fácil de usar?
-5. ¿Te resulta sencillo acceder a las calificaciones o comentarios que dejan los productores sobre tus asesorías?
-6. ¿La sección de publicaciones te facilita compartir información con los productores?
-7. ¿Consideras útil poder administrar tus publicaciones (crear, editar o eliminar) desde la plataforma?
-8. ¿La interfaz general de la aplicación (web y móvil) te parece ordenada y adaptada a tus necesidades como asesor?
-9. ¿Qué tan clara te resulta la información que presenta el sistema sobre los productores que te contactan o reservan asesorías?
-10. En general, ¿sientes que la aplicación contribuye a ampliar tu alcance profesional y mejorar la gestión de tus asesorías?
+5. ¿La sección de publicaciones te facilita compartir información con los productores?
+6. ¿Consideras útil poder administrar tus publicaciones (crear, editar o eliminar) desde la plataforma?
+7. ¿La interfaz general de la aplicación (web y móvil) te parece ordenada y adaptada a tus necesidades como asesor?
+8. ¿Qué tan clara te resulta la información que presenta el sistema sobre los productores que te contactan o reservan asesorías?
+9. En general, ¿sientes que la aplicación contribuye a ampliar tu alcance profesional y mejorar la gestión de tus asesorías?
 
 
 ### 7.3.2. Registro de Entrevistas
