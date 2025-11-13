@@ -5153,7 +5153,7 @@ No obstante, hizo observaciones relacionadas con el diseño visual tanto de la l
 
 ### 7.3.3. Evaluaciones según heurísticas
 
-# Evaluaciones según heurísticas – AgroTech
+**Evaluaciones según heurísticas – AgroTech**
 
 **Carrera:** Ingeniería de Software  
 **Curso:** Arquitecturas de Software Emergentes  
@@ -5163,9 +5163,7 @@ No obstante, hizo observaciones relacionadas con el diseño visual tanto de la l
 **Cliente(s):** Productores agropecuarios y asesores entrevistados  
 **Sitio o App a Evaluar:** AgroTech (web y móvil)  
 
----
-
-## Escala de Severidad
+**Escala de Severidad**
 
 | Nivel | Descripción |
 |-------|-------------|
@@ -5174,9 +5172,7 @@ No obstante, hizo observaciones relacionadas con el diseño visual tanto de la l
 | 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo por sí mismos. Es importante corregirlo y asignarle una prioridad alta. |
 | 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo corregirlo antes del lanzamiento. |
 
----
-
-## Tabla Resumen de Problemas
+**Tabla Resumen de Problemas**
 
 | # | Problema | Escala de severidad | Heurística/Principio violado |
 |---|----------|----------------------|-------------------------------|
@@ -5185,11 +5181,9 @@ No obstante, hizo observaciones relacionadas con el diseño visual tanto de la l
 | 3 | No hay opción para recuperar contraseña olvidada | 3 | Usabilidad: Flexibilidad y eficiencia de uso |
 | 4 | No hay mensaje de error cuando falla la carga de publicaciones | 2 | Usabilidad: Retroalimentación del sistema |
 
----
+**Descripción de Problemas**
 
-## Descripción de Problemas
-
-### Problema #1: El botón “Calificar asesor” no aparece inmediatamente después de una cita  
+**Problema #1: El botón “Calificar asesor” no aparece inmediatamente después de una cita**  
 **Severidad:** 3  
 **Heurística violada:** Usabilidad – Retroalimentación del sistema  
 **Descripción:** Tras finalizar una asesoría, el usuario no ve la opción de calificar al asesor de forma inmediata. Debe navegar al historial manualmente, lo que genera confusión y reduce la tasa de retroalimentación.  
@@ -5197,10 +5191,7 @@ No obstante, hizo observaciones relacionadas con el diseño visual tanto de la l
 
 <img alt="Problema 1 heuristica" src="img/heuristic_evaluation_1.png">
 
-
----
-
-### Problema #2: El formulario de registro no indica qué campos son obligatorios  
+**Problema #2: El formulario de registro no indica qué campos son obligatorios**  
 **Severidad:** 3  
 **Heurística violada:** Usabilidad – Prevención de errores  
 **Descripción:** El formulario permite enviar sin llenar campos clave como “rol” o “ciudad”, generando errores genéricos.  
@@ -5208,9 +5199,7 @@ No obstante, hizo observaciones relacionadas con el diseño visual tanto de la l
 
 <img alt="Problema 2 heuristica" src="img/heuristic_evaluation_2.png">
 
----
-
-### Problema #3: No hay opción para recuperar contraseña olvidada  
+**Problema #3: No hay opción para recuperar contraseña olvidada**  
 **Severidad:** 3  
 **Heurística violada:** Usabilidad – Flexibilidad y eficiencia de uso  
 **Descripción:** Si un usuario olvida su contraseña, no hay enlace ni formulario para restablecerla.  
@@ -5218,9 +5207,7 @@ No obstante, hizo observaciones relacionadas con el diseño visual tanto de la l
 
 <img alt="Problema 3 heuristica" src="img/heuristic_evaluation_3.png">
 
----
-
-### Problema #4: No hay mensaje de error cuando falla la carga de publicaciones  
+**Problema #4: No hay mensaje de error cuando falla la carga de publicaciones**  
 **Severidad:** 2  
 **Heurística violada:** Usabilidad – Retroalimentación del sistema  
 **Descripción:** Si la conexión es lenta o falla, la pantalla de publicaciones queda en blanco sin avisar.  
