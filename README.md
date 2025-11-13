@@ -4788,6 +4788,19 @@ En esta entrevista, Mardy Ruiz menciona que la información de la Landing Page l
 **Resumen:**
 En esta entrevista, Nicolás Guzmán, asesor agrónomo con experiencia, comentó que la aplicación web le pareció muy completa y funcional. Destacó que el diseño y las animaciones son agradables, y que la interfaz es intuitiva y fácil de usar. Mencionó que todas las funciones se encontraban bien organizadas y operativas. En particular, resaltó la opción de agregar horarios para citas, valorando que la información se guarde correctamente. En general, expresó una opinión muy positiva sobre la aplicación y afirmó que cumplía totalmente con sus expectativas como asesor agrónomo.
 
+**Entrevista 2**
+
+**Entrevistador:** Luis Chinchihualpa
+
+**Entrevistado:** Sandro Quispesivana
+
+**Enlace a entrevista:** [Enlace a entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212112_upc_edu_pe/IQDQ9ctIZAl7SJRxBbaJHj_kAann8aqVKZ24LHyfG0gdNkA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=qDfMl9)
+
+<img alt="Entrevista con Sandro Quispesivana" src="img/entrevista-validacion-advisor-2.png">
+
+**Resumen:** 
+Durante la entrevista de validación con Sandro, quien participó como asesor dentro de la aplicación, se presentaron la landing page y las principales funcionalidades del sistema, incluyendo la versión web y móvil. Sandro destacó que la información de la página es clara, confiable y fácil de comprender, con un diseño minimalista y bien organizado que transmite profesionalismo, aunque recomendó reforzar la relación visual con el sector agropecuario. Respecto a la aplicación, valoró la funcionalidad para gestionar publicaciones, citas y perfiles, sugiriendo optimizar la disposición de botones y el uso del espacio para mejorar la experiencia visual. En general, consideró que la interfaz es ordenada, se adapta bien tanto a la web como al entorno móvil, y contribuye positivamente a su labor profesional al facilitar la gestión de asesorías y el contacto con productores.
+
 ### 7.3.3. Evaluaciones según heurísticas
 
 ## 7.4. Video About-the-Product
