@@ -4855,6 +4855,19 @@ Durante estas entrevistas se mostrará la Landing Page, la aplicación web y la 
 **Resumen:**
 En esta entrevista, Mardy Ruiz menciona que la información de la Landing Page le pareció profesional, bien organizada y clara, y resaltó que muestra apropiadamente el enfoque agrícola del producto y genera confianza en los desarrolladores. Calificó la estructura general con un 10 sobre 10. Sobre la aplicación, mencionó que es fácil buscar y filtrar asesores, y que la información presentada es útil; sin embargo, propuso añadir ejemplos del trabajo de los asesores. La función para reservar, cancelar y calificar citas le pareció intuitiva; también resaltó lo útil que era la sección de publicaciones para saber las recomendaciones y la experiencia de los asesores. Agregó que la navegación entre las secciones es fluida y concluyó que la aplicación satisface sus necesidades como productor agropecuario.
 
+**Entrevista 2**
+
+**Entrevistador:** Sebastian Paredes
+
+**Entrevistado:** Marcelo Neyra
+
+**Enlace a entrevista:** [Enlace a entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217239_upc_edu_pe/IQB_PE37mmyYQr1M4YlmjmYUAWSA19iN_9GTw29gowfw75w?e=HB8FEU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+<img alt="Entrevista con Marcelo Neyra" src="img/entrevista-validacion-farmer-2.png">
+
+**Resumen:**
+Al finalizar la presentacion de la landing page y la aplicacion, Marcelo consideró que la navegación de la plataforma es fluida e intuitiva, y en general percibe una buena organización del contenido tanto en la landing page como en la aplicación. Sin embargo, realizó algunas observaciones de mejora: mencionó que los colores actuales no reflejan suficientemente la identidad del sector agrícola, por lo que sugiere emplear tonos verdes y marrones para generar una conexión más clara con el rubro. Además, señaló que algunos elementos animados de la landing page resultan innecesarios, ya que pueden distraer al usuario.
+
 **Segmento: Asesores con experiencia**
 
 **Entrevista 1**
@@ -4882,6 +4895,21 @@ En esta entrevista, Nicolás Guzmán, asesor agrónomo con experiencia, comentó
 
 **Resumen:** 
 Durante la entrevista de validación con Sandro, quien participó como asesor dentro de la aplicación, se presentaron la landing page y las principales funcionalidades del sistema, incluyendo la versión web y móvil. Sandro destacó que la información de la página es clara, confiable y fácil de comprender, con un diseño minimalista y bien organizado que transmite profesionalismo, aunque recomendó reforzar la relación visual con el sector agropecuario. Respecto a la aplicación, valoró la funcionalidad para gestionar publicaciones, citas y perfiles, sugiriendo optimizar la disposición de botones y el uso del espacio para mejorar la experiencia visual. En general, consideró que la interfaz es ordenada, se adapta bien tanto a la web como al entorno móvil, y contribuye positivamente a su labor profesional al facilitar la gestión de asesorías y el contacto con productores.
+
+**Entrevista 3**
+
+**Entrevistador:** Sebastian Paredes
+
+**Entrevistado:** Belen Ramos
+
+**Enlace a entrevista:** [Enlace a entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217239_upc_edu_pe/IQByKoLthOibS4q7RQfkywDVAWOT9EbevVtmRDOtH_Uyotc?e=Zs5HHH&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+<img alt="Entrevista con Belen Ramos" src="img/entrevista-validacion-advisor-3.png">
+
+**Resumen:** 
+Durante la entrevista, Belen consideró que la aplicación es funcional y cumple con su propósito de facilitar la gestión de asesorías. Destacó que las opciones de registro, inicio de sesión y configuración de horarios son claras y fáciles de utilizar, al igual que la visualización de citas programadas y pasadas, lo cual le resulta práctico para organizar su trabajo. También valora la posibilidad de administrar publicaciones directamente desde la plataforma.
+No obstante, hizo observaciones relacionadas con el diseño visual tanto de la landing page como de la aplicación. Mencionó que los colores actuales no reflejan adecuadamente la identidad agrícola. Además, percibe que en la landing page existen espacios en blanco que podrían aprovecharse mejor, ya que la página “se siente vacía” en algunas secciones.
+
 
 ### 7.3.3. Evaluaciones según heurísticas
 
