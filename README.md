@@ -4573,7 +4573,89 @@ A continuación, se detallan los commits realizados, los cuales se trabajaron a 
 
 #### 7.2.1.5. Execution Evidence for Sprint Review
 
+A continuación se muestran las vistas principales implementadas en este sprint:
 
+## AGRICULTOR:
+
+**Vista del Catálogo de Asesores**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-farmer-1.jpg" alt="Execution Evidence Farmer 1" style="width: 600px">
+</p>
+
+**Vista del Detalle del Asesor**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-farmer-2.jpg" alt="Execution Evidence Farmer 2" style="width: 600px">
+</p>
+
+**Vista de Mis Citas**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-farmer-3.jpg" alt="Execution Evidence Farmer 3" style="width: 600px">
+</p>
+
+**Vista del Detalle de la Cita**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-farmer-4.jpg" alt="Execution Evidence Farmer 4" style="width: 600px">
+</p>
+
+**Vista de Mis Recintos**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-farmer-5.jpg" alt="Execution Evidence Farmer 5" style="width: 600px">
+</p>
+
+**Vista de Publicaciones**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-farmer-6.jpg" alt="Execution Evidence Farmer 6" style="width: 600px">
+</p>
+
+**Vista de Mi Perfil**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-farmer-7.jpg" alt="Execution Evidence Farmer 7" style="width: 600px">
+</p>
+
+**Vista de Mis Notificaciones**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-farmer-8.jpg" alt="Execution Evidence Farmer 8" style="width: 600px">
+</p>
+
+---
+
+## ADVISOR:
+
+**Vista de Mis Citas**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-advisor-1.jpg" alt="Execution Evidence Advisor 1" style="width: 600px">
+</p>
+
+**Vista del Detalle de la Cita**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-advisor-2.jpg" alt="Execution Evidence Advisor 2" style="width: 600px">
+</p>
+
+**Vista de Mis Horarios**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-advisor-3.jpg" alt="Execution Evidence Advisor 3" style="width: 600px">
+</p>
+
+**Vista de Mis Publicaciones**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-advisor-4.jpg" alt="Execution Evidence Advisor 4" style="width: 600px">
+</p>
+
+**Vista de Mi Perfil**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-advisor-5.jpg" alt="Execution Evidence Advisor 5" style="width: 600px">
+</p>
+
+**Vista de Mis Notificaciones**
+<p align="center">
+  <img src="img/sprint1-execution-evidence-advisor-6.jpg" alt="Execution Evidence Advisor 6" style="width: 600px">
+</p>
+
+
+Los modales de operaciones, como **edición**, **eliminación** o **creación**, han sido creados y validados correctamente.  
+Sin embargo, no se listan en este documento al no ser considerados como vistas principales.
+
+**VIDEO DE DEMOSTRACIÓN:** [Enlace al video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212112_upc_edu_pe/IQDHrmv1ucSxRb_s-oUqPdprAcbPox8cw-yuF2_gpwqHmbw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=Aa5Rzx)  
 
 #### 7.2.1.6. Services Documentation Evidence for Sprint Review
 
