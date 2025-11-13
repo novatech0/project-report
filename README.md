@@ -41,7 +41,7 @@
   </tr>
 </table>
 
-<p align="center"><b>Octubre 2025</b></p>
+<p align="center"><b>Noviembre 2025</b></p>
 
 <div style="page-break-after: always;"></div>
 
@@ -140,6 +140,12 @@
 
 <p align="center">
   <img alt="TP1 Collaboration Insights" src="img/collaboration-insights-tp1.png" width="600">
+</p>
+
+## TB2
+
+<p align="center">
+  <img alt="TB2 Collaboration Insights" src="img/collaboration-insights-tb2.png" width="600">
 </p>
 
 <div style="page-break-after: always;"></div>
