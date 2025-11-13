@@ -5294,6 +5294,9 @@ Exposición TB1: [upc-pre-202502-1asi0728-7281-novatech-expo-tb1](https://upcedu
 
 Exposición TP1: [upc-pre-202502-1asi0728-7281-novatech-expo-tp1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EZAKJoZ4qb5MgGijjeR_EkcBrjmJCtpGrCNzCDAZjnIE2w?e=EJrJfU&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
+Exposición TB2:
+[upc-pre-202502-1asi0728-7281-novatech-expo-tb2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/IQAAgTUZNAeUSIm82iFtSiTVAQILQTxF8AdApItBtGuS5sk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=kN4d0C)
+
 ## Enlaces de interés
 Organización en GitHub: [https://github.com/novatech0](https://github.com/novatech0)
 
@@ -5302,6 +5305,14 @@ Tablero de Miro de Event Storming: [https://miro.com/app/board/uXjVJI929A4=/?sha
 Workspace de Structurizr: [https://structurizr.com/share/106222/20fe04a7-86c1-4258-a2d7-87ac6eeacb4c](https://structurizr.com/share/106222/20fe04a7-86c1-4258-a2d7-87ac6eeacb4c)
 
 Diseño en Figma: [https://www.figma.com/design/9ItIdkKDAZGDecR2umJCHa/Emergentes-prototipo?node-id=3122-13112&t=9S5wnOveSXJ10JTs-1](https://www.figma.com/design/9ItIdkKDAZGDecR2umJCHa/Emergentes-prototipo?node-id=3122-13112&t=9S5wnOveSXJ10JTs-1)
+
+Landing Page: [https://upcagrotech.netlify.app/landingpage](https://upcagrotech.netlify.app/landingpage)
+
+Frontend web: [https://upcagrotech.netlify.app/](https://upcagrotech.netlify.app/)
+
+Frontend movil: [https://portal.testapp.io/apps/install/LqWkmgv9qk51m](https://portal.testapp.io/apps/install/LqWkmgv9qk51m)
+
+Backend: [https://agrotech.ddns.net/swagger-ui/index.html](https://agrotech.ddns.net/swagger-ui/index.html)
 
 <style>
   .custom-table {
