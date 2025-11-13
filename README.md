@@ -5252,9 +5252,9 @@ Para el primer sprint de desarrollo, se decidió elaborar el backend, la landing
 
 ## Video About-The-Team
 
-El siguiente video subido a Youtube tiene como objetivo presentar al equipo de NovaTech, quienes han trabajado arduamente en el desarrollo de AgroTech, una plataforma que conecta asesores especializados con productores agropecuarios, promoviendo el acceso a asesoramiento técnico para mejorar las prácticas agrícolas.
+El siguiente video subido a OneDrive tiene como objetivo presentar al equipo de NovaTech, quienes han trabajado arduamente en el desarrollo de AgroTech, una plataforma que conecta asesores especializados con productores agropecuarios, promoviendo el acceso a asesoramiento técnico para mejorar las prácticas agrícolas.
 
-[NovaTech - Video About The Team](enlace)
+[NovaTech - Video About The Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/IQAeTqWUbEQIQJmq0J_C1V_xAT1zCQk-XLcOqFEXe9SU8C8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=7htv0a)
 
 <img src="img/video-about-the-team.png" alt="NovaTech Team Video" style="width: 100%; height: auto;">
 
