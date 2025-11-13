@@ -344,6 +344,7 @@
         <p><strong>Salinas Torres, Salvador Antonio</strong></p>
         <p><strong>TB1:</strong> En este primer entregable, logré comunicar de forma oral los descubrimientos de la investigación de mercado, destacando el análisis competitivo, las necesidades y expectativas de los usuarios finales.</p>
         <p><strong>TP1:</strong> Para la entrega parcial, participé en el video de exposición, presentando cómo se trabajó el bounded context de Management. Así, expuse sus componentes clave y su importancia en la solución propuesta.</p>
+        <p><strong>TB2:</strong> En este entregable, logré comunicar mis ideas efectivamente con el equipo para la realización del despliegue de backend y frontend en la nube con Google Cloud. Además, participé en la entrevista al segmento de productor agropecuario, formulando preguntas claras y precisas para obtener información relevante sobre las necesidades y una retroalimentación valiosa sobre el producto.</p>
         <p><strong>Elias Sanchez, Harold Miguel</strong></p>
         <p><strong>TB1:</strong> Realicé una entrevista al primer segmento de usuarios para obtener información directa sobre sus necesidades y expectativas respecto a la solución propuesta. Compartí estos hallazgos con el grupo de manera clara para que sirvieran de   base en el diseño.</p>
         <p><strong>TP1:</strong> Logré comunicar de manera clara el bounded context de Profile, explicando su estructura, responsabilidades y la interacción entre sus componentes. Además, destaqué su relevancia dentro de la arquitectura general del sistema, evidenciando cómo contribuye al manejo de la información de los usuarios y a la integración con los demás módulos del proyecto.</p>
@@ -373,6 +374,7 @@
         <p><strong>Salinas Torres, Salvador Antonio</strong></p>
         <p><strong>TB1:</strong> En este primer entregable, participé principalmente en la redacción de la sección de análisis de mercado, donde presenté los hallazgos clave de la investigación y su relevancia para el proyecto, el proceso del eventstorming y los resultados obtenidos.</p>
         <p><strong>TP1:</strong> Apoyé en la elaboración del capítulo de Tactical-Level Software Design, documentando el bounded context de Management. Describí su arquitectura a nivel de componentes y de código, detallando la organización interna, las relaciones entre entidades y la lógica de implementación que sustentan su funcionalidad dentro de la solución. Además, realicé los prototipos de la aplicación en Figma, los cuales son parte integral de la presentación del diseño.</p>
+        <p><strong>TB2:</strong> Logré realizar la documentación sobre los mock-ups, user flows y prototipo interactivo que se trabajó en Figma, endpoints trabajados en el Backend, y cómo se realizó el despliegue del Backend utilizando una instancia VM con Google Cloud.</p>
         <p><strong>Elias Sanchez, Harold Miguel</strong></p>
         <p><strong>TB1:</strong> Participé en la elaboración del informe desarrollando los diagramas C4 (contexto y contenedores) y sus descripciones correspondientes. Documenté cómo los actores, contenedores y servicios externos se integran en la arquitectura de AgroTech.</p>
         <p><strong>TP1:</strong> Participé en la elaboración del capítulo Tactical-Level Software Design, documentando el bounded context de Profile. Describí su arquitectura a nivel de componentes y de código mediante los diagramas Software Architecture Component Level y Code Level, detallando la organización interna, las relaciones entre entidades y la lógica de implementación que sustentan su funcionalidad dentro de la solución.</p>
@@ -5107,6 +5109,19 @@ En esta entrevista, Mardy Ruiz menciona que la información de la Landing Page l
 
 **Resumen:**
 Al finalizar la presentacion de la landing page y la aplicacion, Marcelo consideró que la navegación de la plataforma es fluida e intuitiva, y en general percibe una buena organización del contenido tanto en la landing page como en la aplicación. Sin embargo, realizó algunas observaciones de mejora: mencionó que los colores actuales no reflejan suficientemente la identidad del sector agrícola, por lo que sugiere emplear tonos verdes y marrones para generar una conexión más clara con el rubro. Además, señaló que algunos elementos animados de la landing page resultan innecesarios, ya que pueden distraer al usuario.
+
+**Entrevista 3**
+
+**Entrevistador:** Salvador Salinas
+
+**Entrevistado:** Ariana Vargas
+
+**Enlace a entrevista:** [Enlace a entrevista](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b127_upc_edu_pe/IQB2Xlz43jq0SodsWCrHE4elAa_B5_NtQ2-b3ZpXgm3znIE?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NCXpGh)
+
+<img alt="Entrevista con Ariana Vargas" src="img/entrevista-validacion-farmer-3.png">
+
+**Resumen:**
+En esta entrevista de validación, Ariana Vargas expresó que la landing page le pareció profesional, clara y bien organizada, destacando que transmite adecuadamente el enfoque agrícola del producto y genera confianza. En cuanto a la aplicación, mencionó que le resulta fácil buscar y filtrar asesores, y que la información presentada es útil para tomar decisiones informadas. La funcionalidad para separar una cita le pareció intuitiva; también resaltó lo útil que era la sección de publicaciones para conocer las recomendaciones y experiencias de los asesores. Agregó que la navegación entre las secciones es fluida y concluyó que la aplicación satisface sus necesidades como productora agropecuaria.
 
 **Segmento: Asesores con experiencia**
 
