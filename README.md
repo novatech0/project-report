@@ -101,7 +101,7 @@
         </td>
     </tr>
     <tr>
-        <td><strong>TB3</strong></td>
+        <td><strong>TB2</strong></td>
         <td>13/10/25</td>
         <td>
           <ul>
@@ -3995,6 +3995,8 @@ Se desarrollaron prototipos interactivos tanto para la aplicación web como para
 
 <img src="img/applications-prototyping.png" alt="Applications Prototyping" width="600">
 
+<div style="page-break-after: always;"></div>
+
 # Capítulo VII: Product Implementation, Validation & Deployment
 
 ## 7.1. Software Configuration Management
@@ -5230,6 +5232,7 @@ No obstante, hizo observaciones relacionadas con el diseño visual tanto de la l
 
 <img alt="Problema 4 heuristica" src="img/heuristic_evaluation_4.png">
 
+<div style="page-break-after: always;"></div>
 
 ## 7.4. Video About-the-Product
 
@@ -5238,6 +5241,8 @@ El siguiente video subido a Youtube tiene como objetivo presentar AgroTech, una 
 [AgroTech - Video About The Product](https://youtu.be/-GcZP90W_kk)
 
 <img src="img/video-about-the-product.png" alt="AgroTech Intro Video" style="width: 100%; height: auto;">
+
+<div style="page-break-after: always;"></div>
 
 # Conclusiones
 ## Conclusiones y Recomendaciones
@@ -5249,6 +5254,8 @@ En el plano técnico, el proyecto cuenta con un sustento sólido gracias a una e
 Para el diseño de la solución, se ha elaborado una guía de estilo que abarca aspectos visuales y de experiencia de usuario, asegurando una interfaz coherente y atractiva. La arquitectura de la información se ha estructurado cuidadosamente, definiendo sistemas de etiquetado, búsqueda y navegación que facilitan la interacción del usuario con la plataforma. Además, se han desarrollado wireframes tanto para la landing page como para las aplicaciones web y móviles, proporcionando una visión clara del diseño final a través de la herramienta Figma.
 
 Para el primer sprint de desarrollo, se decidió elaborar el backend, la landing page, el backend, el frontend de la aplicación web y el frontend de la aplicación móvil. Se utilizó la metodología Scrum, con reuniones semanales y revisiones periódicas para asegurar el progreso continuo y la calidad del producto. Durante este sprint, se implementaron todas las funcionalidades para el funcionamiento de la plataforma. Se documentaron los servicios RESTful utilizando Swagger, lo que facilitó la comprensión y el uso de la API. Además, se desplegaron las aplicaciones en plataformas adecuadas: Netlify para el frontend web, testapp io para la aplicación móvil y Google Cloud Platform para el backend. Este enfoque integral permitió validar la viabilidad técnica del proyecto y sentar las bases para futuros desarrollos.
+
+<div style="page-break-after: always;"></div>
 
 ## Video About-The-Team
 
