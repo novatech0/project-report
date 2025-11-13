@@ -4530,39 +4530,162 @@ A continuación, se detallan los commits realizados, los cuales se trabajaron a 
 
 **Repositorio Backend**: <https://github.com/novatech0/backend>
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Committed on (Date) |
-| --- | --- | --- | --- | --- | --- |
-| novatech0/frontend | main | 7eeae72 | initial commit | - | 19/10/2025 |
-| novatech0/backend | main | 8d2440d | feat: add base project | Co-authored by multiple contributors | 20/10/2025 |
-| novatech0/backend | feature/jwt | 69db68e | feat: add claim roles to jwt | - | 22/10/2025 |
-| novatech0/backend | develop | dbd6636 | Merge pull request #1 from novatech0/feature/jwt | - | 22/10/2025 |
-| novatech0/frontend | feature/auth | 3e64c63 | feat: add basic config service, interceptors, etc. | - | 22/10/2025 |
-| novatech0/frontend | feature/auth | 9e0abb0 | feat: remove unused login pages | - | 22/10/2025 |
-| novatech0/frontend | feature/auth | 224cf55 | feat: add login logic | - | 22/10/2025 |
-| novatech0/frontend | feature/auth | ad6d1aa | fix: get roles correctly from payload | - | 22/10/2025 |
-| novatech0/frontend | feature/auth | 0177073 | feat: add register logic | - | 22/10/2025 |
-| novatech0/frontend | develop | 1e5f5fc | Merge pull request #1 from novatech0/feature/auth | - | 22/10/2025 |
-| novatech0/frontend | feature/catalog | cc7b911 | feat: add catalog | - | 22/10/2025 |
-| novatech0/frontend | feature/auth | 62e8107 | feat: add auth guard | - | 22/10/2025 |
-| novatech0/frontend | feature/auth | 4ff598b | feat: change error page | - | 22/10/2025 |
-| novatech0/frontend | feature/auth | 246bcbc | feat: add error messages in auth | - | 22/10/2025 |
-| novatech0/frontend | feature/catalog | 4289e46 | feat: remove unnecessary items | - | 22/10/2025 |
-| novatech0/frontend | develop | ac7a51b | Merge pull request #2 from novatech0/feature/catalog | - | 22/10/2025 |
-| novatech0/frontend | feature/catalog | 90ec2d9 | registro de usuario con datos personales | - | 23/10/2025 |
-| novatech0/frontend | feature/post | 7c08972 | feat: post page updated | - | 25/10/2025 |
-| novatech0/frontend | feature/post | b96eeb4 | feat: post details updated | - | 25/10/2025 |
-| novatech0/frontend | feature/profile | a9bd4c1 | feat: register (sign up) for users functional | - | 27/10/2025 |
-| novatech0/frontend | develop | 4722274 | Merge pull request #3 from novatech0/feature/sign-up | - | 27/10/2025 |
-| novatech0/frontend | feature/profile | 0912113 | feat: profile image for post publication added | - | 27/10/2025 |
-| novatech0/frontend | feature/post | 50d1707 | feat: add route add no post message | - | 27/10/2025 |
-| novatech0/frontend | feature/profile | 60d40f2 | feat: change attr for profile & advisor | - | 27/10/2025 |
-| novatech0/frontend | feature/advisor-detail | e90321d | feat: add advisor detail | - | 27/10/2025 |
-| novatech0/frontend | develop | 3af15b0 | Merge pull request #5 from novatech0/feature/post | - | 27/10/2025 |
-| novatech0/frontend | develop | 46710ac | Merge branch 'develop' into feature/advisor-detail | - | 27/10/2025 |
-| novatech0/frontend | feature/advisor-detail | 9cba06c | fix: update attr names | - | 27/10/2025 |
-| novatech0/frontend | develop | 5db618a | Merge pull request #6 from novatech0/feature/advisor-detail | - | 27/10/2025 |
-| novatech0/frontend | feature/book-appointments | 81fdb46 | feat: add book appointment view & logic | - | 28/10/2025 |
-| novatech0/frontend | develop | 7157522 | Merge pull request #7 from novatech0/feature/book-appointments | - | 28/10/2025 |
+|Repository|Branch|Commit Id|Commit Message|Commit Message Body|Commited on (Date)|
+|---|---|---|---|---|---|
+|novatech0/frontend|develop|7eeae72|initial commit|-|19/10/2025|
+|novatech0/backend|develop|8d2440d|feat: add base project|Co-Authored-By: Multiple Authors|20/10/2025|
+|novatech0/frontend|develop|3e64c63|feat: add basic config service|-|22/10/2025|
+|novatech0/frontend|feature/auth|9e0abb0|feat: remove unused login pages|-|22/10/2025|
+|novatech0/frontend|feature/auth|224cf55|feat: add login logic|-|22/10/2025|
+|novatech0/backend|feature/jwt|69db68e|feat: add claim roles to jwt|-|22/10/2025|
+|novatech0/frontend|feature/auth|ad6d1aa|fix: get roles correctly from payload|-|22/10/2025|
+|novatech0/frontend|feature/auth|0177073|feat: add register logic|TODO: Profile logic|22/10/2025|
+|novatech0/frontend|feature/auth|1e5f5fc|Merge pull request #1 from feature/auth|Feature/auth|22/10/2025|
+|novatech0/backend|feature/jwt|dbd6636|Merge pull request #1 from feature/jwt|feat: add claim roles to jwt|22/10/2025|
+|novatech0/frontend|feature/catalog|cc7b911|feat: add catalog|-|22/10/2025|
+|novatech0/frontend|feature/auth|62e8107|feat: add auth guard|-|22/10/2025|
+|novatech0/frontend|develop|4ff598b|feat: change error page|-|22/10/2025|
+|novatech0/frontend|feature/auth|246bcbc|feat: add error messages in auth|-|22/10/2025|
+|novatech0/frontend|develop|4289e46|feat: remove unnecesary items|-|22/10/2025|
+|novatech0/frontend|feature/catalog|ac7a51b|Merge pull request #2 from feature/catalog|Feature/catalog|22/10/2025|
+|novatech0/frontend|develop|90ec2d9|registro de usuario con datos personales|-|23/10/2025|
+|novatech0/frontend|feature/post|7c08972|feat: post page updated|-|25/10/2025|
+|novatech0/frontend|feature/post|b96eeb4|feat: post details updated|-|25/10/2025|
+|novatech0/frontend|feature/sign-up|a9bd4c1|feat: register (sign up) functional|-|27/10/2025|
+|novatech0/frontend|feature/sign-up|4722274|Merge pull request #3 from feature/sign-up|Feature/sign up
+|27/10/2025|
+|novatech0/frontend|feature/post|0912113|feat: profile image for post publication added|-|27/10/2025|
+|novatech0/frontend|feature/post|50d1707|feat: add route add no post message|-|27/10/2025|
+|novatech0/frontend|feature/profile|60d40f2|feat: change attr for profile & advisor|-|27/10/2025|
+|novatech0/frontend|feature/advisor-detail|e90321d|feat: add advisor detail|-|27/10/2025|
+|novatech0/frontend|feature/post|3af15b0|Merge pull request #5 from feature/post|Feature/post|27/10/2025|
+|novatech0/frontend|feature/advisor-detail|46710ac|Merge branch 'develop' into feature/advisor-detail|-|27/10/2025|
+|novatech0/frontend|feature/advisor-detail|9cba06c|fix: update attr names|-|27/10/2025|
+|novatech0/frontend|feature/advisor-detail|5db618a|Merge pull request #6 from feature/advisor-detail|Feature/advisor detail |27/10/2025|
+|novatech0/backend|feature/google-storage|548bc4e|feat: google storage service for uploading images|-|28/10/2025|
+|novatech0/frontend|feature/book-appointments|81fdb46|feat: add book appointment view & logic|-|28/10/2025|
+|novatech0/frontend|feature/book-appointments|7157522|Merge pull request #7 from feature/book-appointments|feat: add book appointment view & logic|28/10/2025|
+|novatech0/backend|develop|332e1bc|feat: update (put) image, add for posts|-|28/10/2025|
+|novatech0/frontend|feature/profile|33e562a|feat: photo upload on register (create profile)|-|28/10/2025|
+|novatech0/frontend|feature/enclosures|e428c5f|feat (Enclosures): Add enclosures feature|Introduces the enclosures page, including routing, component, and service for managing enclosures. Adds the Enclosure model and prepares UI for listing and adding enclosures, with filtering functionality and farmer identity resolution.|28/10/2025|
+|novatech0/frontend|feature/enclosures|9a61600|feat (Enclosures): Add enclosures table component|Introduces AppEnclosuresTableComponent to display enclosures with sorting, filtering, pagination, and actions. Integrates the table into enclosures.component.html and updates enclosures.component.ts to load and manage enclosure data, including edit and delete event handlers.|29/10/2025|
+|novatech0/frontend|feature/enclosures|fb83b50|feat: improve table styles|-|29/10/2025|
+|novatech0/frontend|feature/enclosures|83bc7ec|Merge pull request #8 from feature/enclosures|Feature/enclosures|29/10/2025|
+|novatech0/frontend|feature/appointments|0abc633|feat: implement appointment detail view|-|30/10/2025|
+|novatech0/frontend|feature/appointments|9953817|feat: improve appointments history|-|30/10/2025|
+|novatech0/frontend|feature/appointments|fc0494a|feat: improve appointments list UI|-|30/10/2025|
+|novatech0/frontend|feature/appointments|37706ea|feat: add review view and service for appointments|-|30/10/2025|
+|novatech0/frontend|develop|1394e80|chore: update routes, pipes and minor configs|-|30/10/2025|
+|novatech0/frontend|feature/appointments|0e1a732|feat: enhance appointment detail view|-|30/10/2025|
+|novatech0/frontend|feature/appointments|e892cef|fix: sync appointment list and detail with backend data|-|30/10/2025|
+|novatech0/frontend|feature/appointments|c5c18f1|Merge pull request #9 from feature/appointments|Feature/appointments|30/10/2025|
+|novatech0/frontend|develop|d0649a5|styles: show better comment from review|-|30/10/2025|
+|novatech0/frontend|develop|9128f0e|refactor: rename and move files|-|30/10/2025|
+|novatech0/backend|feature/google-storage|f8bd86a|Merge pull request #2 from feature/google-storage|Feature google storage|30/10/2025|
+|novatech0/frontend|develop|f28dd57|styles: improve appointment styles|-|30/10/2025|
+|novatech0/frontend|develop|1dc4040|feat: sidebar/header profile, photo on register|-|30/10/2025|
+|novatech0/frontend|develop|8c8ef76|feat: update tab icon|-|30/10/2025|
+|novatech0/frontend|feature/appointments|264c8c4|refactor: redesign appointments list with grid layout|-|02/11/2025|
+|novatech0/frontend|feature/appointments|5ef3bf2|feat: improve appointments UX|-|02/11/2025|
+|novatech0/frontend|feature/appointments|b865478|refactor: restructure appointment detail view layout|-|02/11/2025|
+|novatech0/frontend|feature/appointments|9194565|feat(routing/appointments): register review route|-|03/11/2025|
+|novatech0/frontend|feature/appointments|b6a89a3|feat(history): redesign history UI and update styles|-|03/11/2025|
+|novatech0/frontend|feature/appointments|4a157b0|feat(history/review): enrich history data|-|03/11/2025|
+|novatech0/frontend|feature/appointments|36c951a|fix(review): correct star color logic and review edit flow|-|03/11/2025|
+|novatech0/frontend|feature/appointments|b309ebc|feat(review): add query by advisor and farmer for review lookup|-|03/11/2025|
+|novatech0/frontend|feature/enclosures|d467881|feat (enclosure): Add CRUD dialogs and autocomplete|Introduces create, edit, delete, and info dialog components for enclosures. Updates the enclosures list UI to support autocomplete search and suggestion selection. Implements corresponding service methods for enclosure CRUD operations and integrates dialogs with Toastr notifications for user feedback.|03/11/2025|
+|novatech0/frontend|feature/profile|48c1028|feat (profile): Add user profile page and route|Introduces a new profile page with its component and template, displaying user information and actions. Updates routing to include the profile path and adjusts header navigation to link to the new profile page.|03/11/2025|
+|novatech0/frontend|develop|8d82f65|refactor: update review component to use consolidated service|-|04/11/2025|
+|novatech0/frontend|develop|74dfdda|refactor: consolidate review services and remove duplicate class|-|04/11/2025|
+|novatech0/frontend|feature/appointments|a1f4212|feat: add advisor appointment routes|-|04/11/2025|
+|novatech0/frontend|feature/appointments|7dbfc70|feat: add advisor appointments list and history views|-|04/11/2025|
+|novatech0/frontend|feature/appointments|4e54cd8|feat: add advisor appointment detail and review views|-|04/11/2025|
+|novatech0/frontend|develop|a12ea66|feat: add time format pipe for 12-hour time display|-|04/11/2025|
+|novatech0/frontend|develop|bc2d5b5|refactor: add date formatting helper to farmer appointment views|-|04/11/2025|
+|novatech0/frontend|feature/book-appointments|16fa6af|refactor: update book-appointment to use consolidated service|-|04/11/2025|
+|novatech0/frontend|feature/appointments|6e0f9e9|feat: enhance appointment and review services|-|04/11/2025|
+|novatech0/frontend|develop|29aa918|refactor: remove duplicate appointment service|-|04/11/2025|
+|novatech0/frontend|develop|e4f7604|refactor: update auth and models for advisor support|-|04/11/2025|
+|novatech0/frontend|feature/profile|7bccdd5|Merge pull request #10 from feature/profile|Feature/profile|04/11/2025|
+|novatech0/frontend|develop|90462ba|feat: improve project structure & enclosure styles|-|04/11/2025|
+|novatech0/frontend|develop|8d50222|chore: change static to env variables|-|04/11/2025|
+|novatech0/frontend|develop|9f03d65|refactor: change routing and apps structure|-|04/11/2025|
+|novatech0/frontend|feature/enclosures|38a6e95|Merge pull request #11 from feature/enclosures|Feature/enclosures|04/11/2025|
+|novatech0/frontend|develop|f25f1a9|fix: routes missing prefix|-|04/11/2025|
+|novatech0/frontend|develop|f369fbb|feat: add route role validation|-|04/11/2025|
+|novatech0/frontend|feature/appointments|0e17b69|Merge branch 'develop' into feature/appointments|-|05/11/2025|
+|novatech0/frontend|develop|85d8e4b|fix: errors with imports|-|05/11/2025|
+|novatech0/frontend|feature/appointments|aa7804c|Merge pull request #12 from feature/appointments|Feature/appointments|05/11/2025|
+|novatech0/frontend|develop|4bc5300|feat: add template routes|-|05/11/2025|
+|novatech0/frontend|feature/profile|07fd54b|Merge pull request #13 from feature/profile|feat (profile): Add user profile page and route|05/11/2025|
+|novatech0/frontend|develop|96c9489|Merge pull request #14 from develop|Develop|05/11/2025|
+|novatech0/frontend|feature/notifications|771a3cd|feat: add notifications|-|05/11/2025|
+|novatech0/frontend|feature/post|f774a05|feat: list posts for advisor added|-|05/11/2025|
+|novatech0/frontend|feature/post|93b1867|feat: improve card style & move post folders|-|05/11/2025|
+|novatech0/frontend|feature/post|e5b2119|Merge pull request #15 from feature/post|Feature/post|05/11/2025|
+|novatech0/frontend|feature/notifications|07baa21|Merge pull request #16 from feature/notifications|feat: add notifications|05/11/2025|
+|novatech0/frontend|develop|e096933|feat: style and content improvements|Co-Authored-By: Multiple authors|05/11/2025|
+|novatech0/frontend|feature/catalog|ce63d7f|feat: add catalog filter|-|05/11/2025|
+|novatech0/frontend|develop|c1cac68|styles: improve appointment|-|05/11/2025|
+|novatech0/frontend|feature/appointments|7e7e0e9|feat: improve appointment history|-|05/11/2025|
+|novatech0/frontend|feature/appointments|41c22e8|style: update advisor appointments and history|-|05/11/2025|
+|novatech0/frontend|feature/appointments|a3d29d5|Merge pull request #17 from feature/appointments|Feature/appointments|05/11/2025|
+|novatech0/frontend|feature/schedule-dates|be2eb7a|feat: available dates model, service, route|-|05/11/2025|
+|novatech0/frontend|feature/schedule-dates|0db8cde|Merge branch 'develop' into feature/schedule-dates|-|05/11/2025|
+|novatech0/frontend|develop|157dfe0|Merge pull request #18 from develop|Develop|06/11/2025|
+|novatech0/frontend|feature/schedule-dates|8ed25b0|feat: available date CRUD implemented|Co-Authored-By: Piero Delgado|06/11/2025|
+|novatech0/frontend|feature/schedule-dates|dfc5f85|Merge pull request #19 from feature/schedule-dates|Feature/schedule dates|06/11/2025|
+|novatech0/frontend|feature/post|b96d008|feat: update post view added|-|06/11/2025|
+|novatech0/frontend|feature/post|e459d89|feat: create post view added|-|06/11/2025|
+|novatech0/frontend|feature/post|abfb95a|feat: deletePost function updated|-|06/11/2025|
+|novatech0/mobile|develop|3b7119b|feat: add base project|Co-Authored-By: Multiple authors|06/11/2025|
+|novatech0/mobile|develop|d8cf1bb|chore: update dependencies|-|07/11/2025|
+|novatech0/mobile|develop|6fb7279|fix: update images to use only coil|-|07/11/2025|
+|novatech0/frontend|feature/post|c519a4e|feat: delete post dialog added|-|07/11/2025|
+|novatech0/frontend|feature/post|cbe5693|Merge branch 'develop' into feature/post|-|07/11/2025|
+|novatech0/frontend|feature/advisor-detail|461f2ac|feat: advisor.routes.ts updated|-|07/11/2025|
+|novatech0/frontend|feature/post|174cd86|Merge pull request #20 from feature/post|Feature/post|07/11/2025|
+|novatech0/mobile|feature/di|a2f97ce|refactor: change upload photo management|-|08/11/2025|
+|novatech0/mobile|develop|8116743|chore: change deprecated elements|-|08/11/2025|
+|novatech0/mobile|feature/di|db9d3b0|refactor: appointment logic and add di with dagger|-|08/11/2025|
+|novatech0/frontend|feature/post|8085a4a|feat: update posts component (delete dialog, styles)|-|08/11/2025|
+|novatech0/frontend|feature/post|21046d0|Merge pull request #21 from feature/post|feat: update posts component (delete dialog, styles)|08/11/2025|
+|novatech0/frontend|feature/animals|e9f21a9|feat: add animal list and detail|-|08/11/2025|
+|novatech0/frontend|develop|69bcf8a|fix: remove manual authorization headers from ReviewService|-|08/11/2025|
+|novatech0/frontend|feature/animals|1cc1578|feat: add advisor review dialog component|-|08/11/2025|
+|novatech0/frontend|feature/animals|d09b580|feat: create review dialog component for farmers|-|08/11/2025|
+|novatech0/frontend|feature/appointments|3b96661|refactor: integrate delete dialog in farmer appointment detail|-|08/11/2025|
+|novatech0/frontend|develop|bbdb6e3|style: remove custom CSS from advisor appointment detail|-|08/11/2025|
+|novatech0/frontend|develop|eadae47|refactor: replace review navigation with modal dialogs in farmer history|-|08/11/2025|
+|novatech0/frontend|develop|1cd502b|refactor: replace review navigation with modal dialogs in advisor history|-|08/11/2025|
+|novatech0/frontend|develop|2af691c|refactor: remove obsolete farmer review page routes|-|08/11/2025|
+|novatech0/frontend|develop|a9e80d7|refactor: remove obsolete advisor review page routes|-|08/11/2025|
+|novatech0/frontend|develop|837a67e|refactor: delete unused review page components|-|08/11/2025|
+|novatech0/frontend|develop|26ecfe2|fix: add missing login method alias in AuthService|-|08/11/2025|
+|novatech0/frontend|develop|c6058c2|fix: convert appointment detail pages to use Material Design templates|-|08/11/2025|
+|novatech0/frontend|feature/animals|85c082f|feat: create and edit animal pages|-|08/11/2025|
+|novatech0/frontend|feature/animals|ff6df91|Merge pull request #22 from feature/animals|Feature/animals|08/11/2025|
+|novatech0/frontend|feature/profile|061cdaa|feature (profile): Add profile editing and update functionality|Introduces form-based editing for user profiles, allowing users to update their information directly from the profile page. Adds edit, save, and cancel UI states, integrates form validation, and connects the form to a new updateProfile method in ProfileService. Also adds a SweetAlertService method for save notifications and error handling.|09/11/2025|
+|novatech0/frontend|feature/profile|b3bf2cf|Merge branch 'develop' into feature/profile|-|09/11/2025|
+|novatech0/frontend|feature/profile|dec1818|feat (profile): Improve profile date handling and advisor fields|Updated the profile form to use a Material datepicker with consistent yyyy-MM-dd formatting, including a custom date adapter. Experience and occupation fields are now shown and editable only for advisors. Enhanced date parsing in ProfileService to robustly handle 'YYYY-MM-DD' strings as local dates, preventing timezone issues.|09/11/2025|
+|novatech0/frontend|feature/profile|9cfe4bc|feat (profile): Update profile update method to use FormData|Refactored the profile update method to send data as FormData instead of JSON, preparing for future support of file uploads. The 'photo' field is now ignored unless a file is provided, and all other fields are appended to FormData.|09/11/2025|
+|novatech0/frontend|feature/profile|d9480e8|feature (Profile): Add profile photo upload and preview functionality|upload and preview functionality
+Enables users to select and preview a new profile photo when editing their profile. Updates the profile service to accept and upload a photo file, and updates the component to handle file selection, preview, and reset after saving.|09/11/2025|
+|novatech0/mobile|feature/di|b3d268b|Merge pull request #1 from feature/di|Feature/di|09/11/2025|
+|novatech0/mobile|main|ae228a1|RELEASE V1.0.0|-|09/11/2025|
+|novatech0/mobile|main|fefc32f|fix: log out not working|-|10/11/2025|
+|novatech0/mobile|main|5cc0641|Release v1.0.1|RELEASE V1.0.0|10/11/2025|
+|novatech0/frontend|feature/appointments|35d868d|Merge pull request #23 from feature/appointments|Feature/appointments|10/11/2025|
+|novatech0/frontend|feature/profile|b32454f|Merge pull request #24 from feature/profile|Feature/profile|10/11/2025|
+|novatech0/frontend|feature/post|344946c|styles: improve post create & edit|-|10/11/2025|
+|novatech0/frontend|feature/animals|d2f3ff6|styles: improve animals|-|10/11/2025|
+|novatech0/frontend|develop|7b5d068|chore: add _redirects for netlify deployment|-|11/11/2025|
+|novatech0/frontend|feature/animals|a7586bb|feat: missing goBack button in animals pages|-|11/11/2025|
+|novatech0/frontend|feature/appointments|bd99bbe|feat: no dates dialog when trying book..|-|11/11/2025|
+|novatech0/frontend|feature/landing|0e2791c|feat: landing page component|-|11/11/2025|
+|novatech0/frontend|hotfix|ee710ac|Merge pull request #26 from hotfix|Hotfix|11/11/2025|
+|novatech0/frontend|develop|1dd322f|Merge pull request #25 from feature/landing|feat: landing page component|11/11/2025|
+|novatech0/frontend|main|23c2b3a|Merge pull request #27 from novatech0/develop|Develop|12/11/2025|
 
 #### 7.2.1.4. Testing Suite Evidence for Sprint Review
 
