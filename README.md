@@ -5153,7 +5153,7 @@ No obstante, hizo observaciones relacionadas con el diseño visual tanto de la l
 
 ### 7.3.3. Evaluaciones según heurísticas
 
-**Evaluaciones según heurísticas – AgroTech**
+# Evaluaciones según heurísticas – AgroTech
 
 **Carrera:** Ingeniería de Software  
 **Curso:** Arquitecturas de Software Emergentes  
@@ -5163,7 +5163,9 @@ No obstante, hizo observaciones relacionadas con el diseño visual tanto de la l
 **Cliente(s):** Productores agropecuarios y asesores entrevistados  
 **Sitio o App a Evaluar:** AgroTech (web y móvil)  
 
-**Escala de Severidad**
+---
+
+## Escala de Severidad
 
 | Nivel | Descripción |
 |-------|-------------|
@@ -5172,68 +5174,59 @@ No obstante, hizo observaciones relacionadas con el diseño visual tanto de la l
 | 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo por sí mismos. Es importante corregirlo y asignarle una prioridad alta. |
 | 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo corregirlo antes del lanzamiento. |
 
-**Tabla Resumen de Problemas**
+---
+
+## Tabla Resumen de Problemas
 
 | # | Problema | Escala de severidad | Heurística/Principio violado |
 |---|----------|----------------------|-------------------------------|
 | 1 | El botón “Calificar asesor” no aparece inmediatamente después de una cita | 3 | Usabilidad: Retroalimentación del sistema |
-| 2 | No hay confirmación visual tras registrar un animal o recinto | 2 | Usabilidad: Retroalimentación del sistema |
-| 3 | La barra de búsqueda de asesores no tiene filtros visibles en móvil | 3 | Arquitectura de Información: ¿Es fácil de usar? |
-| 4 | El formulario de registro no indica qué campos son obligatorios | 3 | Usabilidad: Prevención de errores |
-| 5 | No hay opción para recuperar contraseña olvidada | 3 | Usabilidad: Flexibilidad y eficiencia de uso |
-| 6 | Los colores de fondo y texto en “Mi Granja” tienen bajo contraste | 2 | Inclusive Design: Proporciona experiencias comparables |
-| 7 | No hay mensaje de error cuando falla la carga de publicaciones | 2 | Usabilidad: Retroalimentación del sistema |
-| 8 | El botón “Cancelar cita” no pide confirmación antes de ejecutar | 2 | Usabilidad: Prevención de errores |
+| 2 | El formulario de registro no indica qué campos son obligatorios | 3 | Usabilidad: Prevención de errores |
+| 3 | No hay opción para recuperar contraseña olvidada | 3 | Usabilidad: Flexibilidad y eficiencia de uso |
+| 4 | No hay mensaje de error cuando falla la carga de publicaciones | 2 | Usabilidad: Retroalimentación del sistema |
 
-**Descripción de Problemas**
+---
 
-**Problema #1: El botón “Calificar asesor” no aparece inmediatamente después de una cita**
+## Descripción de Problemas
+
+### Problema #1: El botón “Calificar asesor” no aparece inmediatamente después de una cita  
 **Severidad:** 3  
 **Heurística violada:** Usabilidad – Retroalimentación del sistema  
 **Descripción:** Tras finalizar una asesoría, el usuario no ve la opción de calificar al asesor de forma inmediata. Debe navegar al historial manualmente, lo que genera confusión y reduce la tasa de retroalimentación.  
 **Recomendación:** Mostrar un mensaje o modal al finalizar la cita con un botón directo “Calificar ahora”.
 
-**Problema #2: No hay confirmación visual tras registrar un animal o recinto**
-**Severidad:** 2  
-**Heurística violada:** Usabilidad – Retroalimentación del sistema  
-**Descripción:** Al registrar un animal o recinto, el sistema no muestra mensaje de éxito ni cambio visual claro. El usuario no sabe si la acción se completó.  
-**Recomendación:** Agregar un mensaje tipo toast o check verde que diga “Animal registrado con éxito”.
+<img alt="Problema 1 heuristica" src="img/heuristic_evaluation_1.png">
 
-**Problema #3: La barra de búsqueda de asesores no tiene filtros visibles en móvil**
-**Severidad:** 3  
-**Heurística violada:** Arquitectura de Información – ¿Es fácil de usar?  
-**Descripción:** En la versión móvil, los filtros por experiencia o calificación están ocultos tras un ícono poco visible. Los usuarios no los encuentran fácilmente.  
-**Recomendación:** Hacer visible al menos un filtro desplegable o etiquetas claras como “Filtrar por calificación”.
 
-**Problema #4: El formulario de registro no indica qué campos son obligatorios**
+---
+
+### Problema #2: El formulario de registro no indica qué campos son obligatorios  
 **Severidad:** 3  
 **Heurística violada:** Usabilidad – Prevención de errores  
 **Descripción:** El formulario permite enviar sin llenar campos clave como “rol” o “ciudad”, generando errores genéricos.  
 **Recomendación:** Marcar campos obligatorios con asterisco y validar antes de enviar.
 
-**Problema #5: No hay opción para recuperar contraseña olvidada**
-***Severidad:** 3  
+<img alt="Problema 2 heuristica" src="img/heuristic_evaluation_2.png">
+
+---
+
+### Problema #3: No hay opción para recuperar contraseña olvidada  
+**Severidad:** 3  
 **Heurística violada:** Usabilidad – Flexibilidad y eficiencia de uso  
 **Descripción:** Si un usuario olvida su contraseña, no hay enlace ni formulario para restablecerla.  
 **Recomendación:** Agregar enlace “¿Olvidaste tu contraseña?” en la pantalla de login.
 
-**Problema #6: Los colores de fondo y texto en “Mi Granja” tienen bajo contraste** 
-**Severidad:** 2  
-**Heurística violada:** Inclusive Design – Proporciona experiencias comparables  
-**Descripción:** En la vista móvil, el fondo verde claro con texto blanco dificulta la lectura en luz solar.  
-**Recomendación:** Aumentar contraste usando verde oscuro (#024A86) con texto blanco o agregar sombra de texto.
+<img alt="Problema 3 heuristica" src="img/heuristic_evaluation_3.png">
 
-**Problema #7: No hay mensaje de error cuando falla la carga de publicaciones**
+---
+
+### Problema #4: No hay mensaje de error cuando falla la carga de publicaciones  
 **Severidad:** 2  
 **Heurística violada:** Usabilidad – Retroalimentación del sistema  
 **Descripción:** Si la conexión es lenta o falla, la pantalla de publicaciones queda en blanco sin avisar.  
 **Recomendación:** Mostrar mensaje: “No se pudieron cargar las publicaciones. Intenta nuevamente.”
 
-**Problema #8: El botón “Cancelar cita” no pide confirmación antes de ejecutar**
-**Severidad:** 2  
-**Heurística violada:** Usabilidad – Prevención de errores  
-**Descripción:** Al presionar “Cancelar”, la cita se elimina de inmediato sin confirmar.  
-**Recomendación:** Agregar modal: “¿Estás seguro de cancelar esta cita?” con opciones “Sí, cancelar” o “No, volver”.
+<img alt="Problema 4 heuristica" src="img/heuristic_evaluation_4.png">
 
 
 ## 7.4. Video About-the-Product
