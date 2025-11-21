@@ -299,6 +299,15 @@
       - [7.2.1.6. Services Documentation Evidence for Sprint Review](#7216-services-documentation-evidence-for-sprint-review)
       - [7.2.1.7. Software Deployment Evidence for Sprint Review](#7217-software-deployment-evidence-for-sprint-review)
       - [7.2.1.8. Team Collaboration Insights during Sprint](#7218-team-collaboration-insights-during-sprint)
+      - [7.2.2. Sprint 2](#721-sprint-1)
+      - [7.2.2.1. Sprint Planning](#7211-sprint-planning)
+      - [7.2.2.2. Sprint Backlog 2](#7212-sprint-backlog-1)
+      - [7.2.2.3. Development Evidence for Sprint Review](#7213-development-evidence-for-sprint-review)
+      - [7.2.2.4. Testing Suite Evidence for Sprint Review](#7214-testing-suite-evidence-for-sprint-review)
+      - [7.2.2.5. Execution Evidence for Sprint Review](#7215-execution-evidence-for-sprint-review)
+      - [7.2.2.6. Services Documentation Evidence for Sprint Review](#7216-services-documentation-evidence-for-sprint-review)
+      - [7.2.2.7. Software Deployment Evidence for Sprint Review](#7217-software-deployment-evidence-for-sprint-review)
+      - [7.2.2.8. Team Collaboration Insights during Sprint](#7218-team-collaboration-insights-during-sprint)
   - [7.3. Validation Interviews](#73-validation-interviews)
     - [7.3.1. Diseño de Entrevistas](#731-diseño-de-entrevistas)
     - [7.3.2. Registro de Entrevistas](#732-registro-de-entrevistas)
@@ -5032,6 +5041,164 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
 <p align="center">
   <img src="img/sprint-1-analytics.png" alt="Sprint 1 Insights: Analytics" style="width: 600px">
 </p>
+
+### 7.2.2. Sprint 2
+#### 7.2.2.1. Sprint Planning
+
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <td>Sprint 2</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Planning Background</strong></th>
+  </tr>
+  <tr>
+    <th>Date</th>
+    <td>2025-11-17</td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td>10:00 PM</td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td>Virtual (Google Meet)</td>
+  </tr>
+  <tr>
+    <th>Prepared by</th>
+    <td>Delgado Corrales, Piero Gonzalo</td>
+  </tr>
+  <tr>
+    <th>Attendees (to planning meeting)</th>
+    <td>
+      <p>Delgado Corrales, Piero Gonzalo</p>
+      <p>Paredes Puente, Sebastian Roberto</p>
+      <p>Salinas Torres, Salvador Antonio</p>
+      <p>Elias Sanchez, Harold Miguel</p>
+      <p>Chinchihualpa Saldarriaga, Luis Sebastian</p>
+    </td>
+  </tr>
+  <tr>
+    <th>Sprint n - 1 Review Summary</th>
+    <td>Se implementaron con éxito las funcionalidades principales del backend, la landing page, el frontend web y la aplicación móvil.</td>
+  </tr>
+  <tr>
+    <th>Sprint n - 1 Retrospective Summary</th>
+    <td>El equipo identificó áreas de mejora en la comunicación y la gestión del tiempo, implementando reuniones diarias más efectivas y estableciendo prioridades claras para las tareas.</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Goal & User Stories</strong></th>
+  </tr>
+  <tr>
+    <th>Sprint 2 Goal</th>
+    <td>Nuestro objetivo es implementar funcionalidades avanzadas en la plataforma AgroTech enfocandonos en tecnologías emergentes. Esto incluye la integración de un chatbot impulsado por IA para recomendación de asesores y un sistema IOT para automatizar el riego de cultivos, mejorando la experiencia de los productores agrícolas y automatizando sus operaciones.</td>
+  </tr>
+  <tr>
+    <th>Sprint 2 Velocity</th>
+    <td>X</td>
+  </tr>
+  <tr>
+    <th>Sum of Story Points</th>
+    <td>X</td>
+  </tr>
+</table>
+
+#### 7.2.2.2. Sprint Backlog 2
+
+<table>
+  <tr>
+    <th colspan="1" valign="top">Sprint #</th>
+    <th colspan="7" valign="top">Sprint 2</th>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top">User Story</td>
+    <td colspan="6" valign="top">Work-Item / Task</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">Id</td>
+    <td colspan="1" valign="top">Title</td>
+    <td colspan="1" valign="top">Id</td>
+    <td colspan="1" valign="top">Title</td>
+    <td colspan="1" valign="top">Description</td>
+    <td colspan="1" valign="top">Estimation </td>
+    <td colspan="1" valign="top">Assigned To</td>
+    <td colspan="1" valign="top">Status (To-Do / In-Process / Review / Done)</td>
+  </tr>
+    <tr>
+    <td colspan="1" valign="top">TSXX</td>
+    <td colspan="1" valign="top">Uso de un LLM para recomendación de asesores</td>
+    <td colspan="1" valign="top">WI01</td>
+    <td colspan="1" valign="top">Integración de Chatbot IA</td>
+    <td colspan="1" valign="top">Se integra un endpoint para hacer consultas a un modelo de lenguaje grande (LLM) para recomendar asesores basados en las necesidades del productor agropecuario.</td>
+    <td colspan="1" valign="top">5</td>
+    <td colspan="1" valign="top">Salvador Salinas</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">USXX</td>
+    <td colspan="1" valign="top">Recomendaciones de asesores con IA</td>
+    <td colspan="1" valign="top">WI02</td>
+    <td colspan="1" valign="top">Chatbot en catálogo de asesores</td>
+    <td colspan="1" valign="top">Se integra un chatbot en la vista de catálogo de asesores que permite a los productores agropecuarios recibir recomendaciones personalizadas basadas en sus necesidades específicas.</td>
+    <td colspan="1" valign="top">3</td>
+    <td colspan="1" valign="top">Piero Delgado</td>
+    <td colspan="1" valign="top">Done</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">TSXX</td>
+    <td colspan="1" valign="top">Uso de nuestra API para gestionar cultivos</td>
+    <td colspan="1" valign="top">WI03</td>
+    <td colspan="1" valign="top">Implementación de protocolos HTTP para cultivos</td>
+    <td colspan="1" valign="top">Se implementan los protocolos HTTP para los cultivos de los productores agrícolas dentro de nuestra API.</td>
+    <td colspan="1" valign="top">5</td>
+    <td colspan="1" valign="top">X</td>
+    <td colspan="1" valign="top">In Progress</td>
+  </tr>
+  <tr>
+    <td colspan="1" valign="top">TSXX</td>
+    <td colspan="1" valign="top">Creación de Edge API para cultivos</td>
+    <td colspan="1" valign="top">WI04</td>
+    <td colspan="1" valign="top">Implementación de protocolos MQTT y HTTP para conectar backend con dispositivos IoT</td>
+    <td colspan="1" valign="top"> Se implementa el Edge API que utiliza protocolos MQTT y HTTP para conectar el backend con los dispositivos IoT instalados en los cultivos de los productores agrícolas.</td>
+    <td colspan="1" valign="top">5</td>
+    <td colspan="1" valign="top">X</td>
+    <td colspan="1" valign="top">In Progress</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">USXX</td>
+      <td colspan="1" valign="top">Gestión de cultivos</td>
+      <td colspan="1" valign="top">WI05</td>
+      <td colspan="1" valign="top">Implementación de creación y visualización de cultivos</td>
+      <td colspan="1" valign="top">Se implementa la funcionalidad para que los productores agrícolas puedan crear y visualizar sus cultivos.</td>
+      <td colspan="1" valign="top">3</td>
+      <td colspan="1" valign="top">X</td>
+      <td colspan="1" valign="top">In Progress</td>
+  </tr>
+  <tr>
+      <td colspan="1" valign="top">USXX</td>
+      <td colspan="1" valign="top">Regado automático con IoT</td>
+      <td colspan="1" valign="top">WI06</td>
+      <td colspan="1" valign="top">Implementación de sistema IoT para riego</td>
+      <td colspan="1" valign="top">Se implementa un sistema IoT que permite a los productores agrícolas automatizar el riego de sus cultivos basado en datos de humedad y temperatura del suelo junto con capacidad del tanque.</td>
+      <td colspan="1" valign="top">5</td>
+      <td colspan="1" valign="top">X</td>
+      <td colspan="1" valign="top">In Progress</td>
+  </tr>
+</table>
+
+#### 7.2.2.3. Development Evidence for Sprint Review
+
+#### 7.2.2.4. Testing Suite Evidence for Sprint Review
+
+#### 7.2.2.5. Execution Evidence for Sprint Review
+
+#### 7.2.2.6. Services Documentation Evidence for Sprint Review
+
+#### 7.2.2.7. Software Deployment Evidence for Sprint Review
+
+#### 7.2.2.8. Team Collaboration Insights during Sprint
+
 
 ## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas
