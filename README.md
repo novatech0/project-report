@@ -1,47 +1,30 @@
 <p align="center">
-  <img src="img/upc.png" alt="Logo de UPC" width="100%">
+  <img src="img/logo_upc.png" alt="Logo de UPC" width="100%">
 </p>
 
 <div align="center">
-  <h1>Universidad Peruana de Ciencias Aplicadas</h1>
-  <p><strong>Carrera:</strong> Ingeniería de Software</p>
-  <p><strong>Ciclo:</strong> 2025 - 2</p>
-  <p><strong>Curso:</strong> Arquitecturas De Software Emergentes</p>
-  <p><strong>Sección:</strong> 7281</p>
+  <p><strong>Universidad Peruana de Ciencias Aplicadas</strong></p>
+  <p><strong>Ingeniería de Software</strong></p>
+  <p><strong>1ASI0728 Arquitecturas de Software Emergentes</strong></p>
+  <p><strong>202520</strong></p>
+  <p><strong>NRC: 7281</strong></p>
+
   <p><strong>Profesor:</strong> Richard Leonardo Berrocal Navarro</p>
-  <p><strong>"Informe de Trabajo Final"</strong></p>
-  <p><strong>Startup:</strong> NovaTech</p>
-  <p><strong>Producto:</strong> AgroTech</p>
+  <p><strong>Informe de Trabajo Final</strong></p>
+  <p><strong>Nombre del producto:</strong> AgroTech</p>
 </div>
 
-<table align="center">
-  <tr>
-    <th>Integrantes</th>
-    <th>Código</th>
-  </tr>
-  <tr>
-    <td>Delgado Corrales, Piero Gonzalo</td>
-    <td>U202210749</td>
-  </tr>
-  <tr>
-    <td>Paredes Puente, Sebastián Roberto</td>
-    <td>U202217239</td>
-  </tr>
-  <tr>
-    <td>Salinas Torres, Salvador Antonio</td>
-    <td>U20221B127</td>
-  </tr>
-  <tr>
-    <td>Elias Sanchez, Harold Miguel</td>
-    <td>U202212684</td>
-  </tr>
-  <tr>
-    <td>Chinchihualpa Saldarriaga, Luis Sebastian</td>
-    <td>U202212112</td>
-  </tr>
-</table>
+<p><strong>Integrantes:</strong></p>
 
-<p align="center"><b>Noviembre 2025</b></p>
+<ul>
+  <li>Delgado Corrales, Piero Gonzalo (U202210749)</li>
+  <li>Paredes Puente, Sebastián Roberto (U202217239)</li>
+  <li>Salinas Torres, Salvador Antonio (U20221B127)</li>
+  <li>Elias Sanchez, Harold Miguel (U202212684)</li>
+  <li>Chinchihualpa Saldarriaga, Luis Sebastian (U202212112)</li>
+</ul>
+
+<p align="center"><b>Diciembre 2025</b></p>
 
 <div style="page-break-after: always;"></div>
 
@@ -124,6 +107,28 @@
           </ul>
         </td>
     </tr>
+    <tr>
+        <td><strong>TF1</strong></td>
+        <td>02/12/25</td>
+        <td>
+          <ul>
+            <li>Delgado Corrales, Piero Gonzalo</li>
+            <li>Paredes Puente, Sebastian Roberto</li>
+            <li>Salinas Torres, Salvador Antonio</li>
+            <li>Elias Sanchez, Harold Miguel</li>
+            <li>Chinchihualpa Saldarriaga, Luis Sebastian</li>
+          </ul>
+        </td>
+        <td>
+          Se realizaron los siguientes puntos:
+          <ul>
+            <li>Capítulo VII: Product Implementation, Validation & Deployment</li>
+            <li>Conclusiones y recomendaciones</li>
+            <li>Bibliografía</li>
+            <li>Mejoras a capítulos previos</li>
+          </ul>
+        </td>
+    </tr>
   </tbody>
 </table>
 
@@ -148,6 +153,11 @@
   <img alt="TB2 Collaboration Insights" src="img/collaboration-insights-tb2.png" width="600">
 </p>
 
+## TF1
+
+<p align="center">
+  <img alt="TF1 Collaboration Insights" src="img/collaboration-insights-tf1.png" width="600">
+</p>
 <div style="page-break-after: always;"></div>
 
 # Tabla de Contenido
@@ -346,27 +356,33 @@
         <p><strong>TB1:</strong> Para esta entrega, en el video de exposición expuse de manera clara los requerimientos a través de las User Stories y Atributos de Calidad.</p>
         <p><strong>TP1:</strong> En el video de exposición, presenté el bounded context de Appointment, explicando sus componentes, cómo se relacionan entre sí, y su importancia en el desarrollo de la solución.</p>
         <p><strong>TB2:</strong> En esta entrega, participé en el video de exposición, presentando la introducción al producto a través de la problemática.</p>
+        <p><strong>TF1:</strong> TBD.</p>
         <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, en el video de exposición presenté la problemática del sector agropecuario de manera objetiva, resaltando las cifras y limitaciones actuales como base para justificar el desarrollo de la solución.</p>
         <p><strong>TP1:</strong>  En esta entrega, elaboré y presenté el video explicativo del bounded context de Security, detallando sus componentes principales, su estructura interna y las interacciones entre sus módulos. Además, expuse los diagramas de componentes, clases y base de datos, explicando su función dentro de la arquitectura general del sistema y su relevancia para garantizar la autenticación y autorización segura de los usuarios.</p>
         <p><strong>TB2:</strong> En esta entrega, participé en el video de exposición y en la elaboración de las execution evidences del sprint, comunicando de manera clara y objetiva los avances del proyecto. Realicé además las entrevistas de validación con el segmento de usuarios “asesor”, presentando los resultados en video para contrastar los requerimientos del sistema con las necesidades reales del usuario. Asimismo, expuse las funcionalidades implementadas relacionadas con la gestión de perfiles, el listado de granjas y los métodos de creación, edición y eliminación, junto con la administración de roles y permisos dentro del sistema, destacando su aporte en la arquitectura general de la solución.</p>
+        <p><strong>TF1:</strong> TBD.</p>
         <p><strong>Salinas Torres, Salvador Antonio</strong></p>
         <p><strong>TB1:</strong> En este primer entregable, logré comunicar de forma oral los descubrimientos de la investigación de mercado, destacando el análisis competitivo, las necesidades y expectativas de los usuarios finales.</p>
         <p><strong>TP1:</strong> Para la entrega parcial, participé en el video de exposición, presentando cómo se trabajó el bounded context de Management. Así, expuse sus componentes clave y su importancia en la solución propuesta.</p>
         <p><strong>TB2:</strong> En este entregable, logré comunicar mis ideas efectivamente con el equipo para la realización del despliegue de backend y frontend en la nube con Google Cloud. Además, participé en la entrevista al segmento de productor agropecuario, formulando preguntas claras y precisas para obtener información relevante sobre las necesidades y una retroalimentación valiosa sobre el producto.</p>
+        <p><strong>TF1:</strong> TBD.</p>
         <p><strong>Elias Sanchez, Harold Miguel</strong></p>
         <p><strong>TB1:</strong> Realicé una entrevista al primer segmento de usuarios para obtener información directa sobre sus necesidades y expectativas respecto a la solución propuesta. Compartí estos hallazgos con el grupo de manera clara para que sirvieran de   base en el diseño.</p>
         <p><strong>TP1:</strong> Logré comunicar de manera clara el bounded context de Profile, explicando su estructura, responsabilidades y la interacción entre sus componentes. Además, destaqué su relevancia dentro de la arquitectura general del sistema, evidenciando cómo contribuye al manejo de la información de los usuarios y a la integración con los demás módulos del proyecto.</p>
         <p><strong>TB2:</strong> En esta entrega, participé en la entrevista al segmento advisor, donde comuniqué de manera efectiva las preguntas y el propósito de la investigación para obtener información relevante sobre las necesidades del usuario. Además, compartí con el equipo los hallazgos obtenidos, expresando con claridad los puntos clave que sirvieron de base para las mejoras del producto.</p>
+        <p><strong>TF1:</strong> TBD.</p>
         <p><strong>Paredes Puente, Sebastian Roberto</strong></p>
         <p><strong>TB1:</strong> En esta entrega, logré comunicar oralmente el lean UX Canvas con puntos claves para tener más claro la problemática a resolver, junto con la identificación de los segmentos objetivos</p>
         <p><strong>TP1:</strong> Para esta entrega, logré comunicar acerca del bounded context de Post, describiendo su organización funcional, la forma en que sus partes se vinculan y el papel que desempeña en la implementación de la solución.</p>
         <p><strong>TB2:</strong> En esta entrega, participé en la entrevista del segmento advisor y farmer, donde les realicé preguntas para obtener información relevante sobre sus necesidades Al final, compartí el equipo los resultados obtenidos de las entrevistas, que se usarían com base para las mejoras del producto.</p>
+        <p><strong>TF1:</strong> TBD.</p>
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, logramos transmitir nuestras ideas con claridad y objetividad para explicar nuestra problemática y solución propuesta.</p>
         <p><strong>TP1:</strong>Logramos exponer claramente los bounded contexts de Appointment, Security, Management, Profile y Post, destacando su estructura, componentes e interacciones, evidenciando su importancia dentro de la solución propuesta. Asimismo, explicamos las secciones de la landing page y los wireflows de la aplicación.</p>
         <p><strong>TB2:</strong> Como grupo, logramos comunicar de manera efectiva los resultados del primer sprint explicando a través del video de exposición los productos digitales desarrollados como el Backend, Frontend Web, Frontend Móvil y la Landing Page.</p>
+        <p><strong>TF1:</strong> TBD.</p>
       </td>
     </tr>
     <tr style="page-break-inside: avoid;">
@@ -376,10 +392,12 @@
         <p><strong>TB1:</strong> Para esta entrega, participé en la elaboración del project report. Apoyé con el desarrollo de los cuatro capítulos donde se abordaron los aspectos clave del proyecto.</p>
         <p><strong>TP1:</strong> En el informe, contribuí con la redacción del capítulo de Tactical-Level Software Design, detallando la estructura y componentes del bounded context de Appointment.</p>
         <p><strong>TB2:</strong> En esta entrega, participé en la redacción del project report, elaborando los apartados de solución propuesta y segmentos objetivo, asegurando que las descripciones fueran claras y adecuadas al alcance del proyecto.</p>
+        <p><strong>TF1:</strong> TBD.</p>
         <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, participé en la redacción del project report, elaborando los apartados de antecedentes, problemática y domain message flows, con descripciones claras y adecuadas al alcance del proyecto.</p>
-         <p><strong>TP1:</strong> En el informe, participé en la redacción del capítulo de Tactical-Level Software Design, describiendo la estructura, componentes y modelo de datos del bounded context de Security. Además, documenté los diagramas de clases, componentes y base de datos, explicando su función dentro del sistema y su contribución a los mecanismos de autenticación y autorización del proyecto.</p>
+        <p><strong>TP1:</strong> En el informe, participé en la redacción del capítulo de Tactical-Level Software Design, describiendo la estructura, componentes y modelo de datos del bounded context de Security. Además, documenté los diagramas de clases, componentes y base de datos, explicando su función dentro del sistema y su contribución a los mecanismos de autenticación y autorización del proyecto.</p>
         <p><strong>TB2:</strong> Para esta entrega, elaboré documentación técnica y de validación en formato escrito, presentando de manera objetiva los resultados de las entrevistas con el segmento asesor y el registro de evidencias de ejecución del sprint. Además, detallé la implementación de los componentes de perfil, gestión de granjas y manejo de roles del sistema, explicando sus funciones, métodos y relación con los requerimientos del proyecto. Todo ello permitió comunicar con claridad los avances y resultados del desarrollo a públicos de distintas especialidades dentro del equipo de ingeniería.</p>
+        <p><strong>TF1:</strong> TBD.</p>
         <p><strong>Salinas Torres, Salvador Antonio</strong></p>
         <p><strong>TB1:</strong> En este primer entregable, participé principalmente en la redacción de la sección de análisis de mercado, donde presenté los hallazgos clave de la investigación y su relevancia para el proyecto, el proceso del eventstorming y los resultados obtenidos.</p>
         <p><strong>TP1:</strong> Apoyé en la elaboración del capítulo de Tactical-Level Software Design, documentando el bounded context de Management. Describí su arquitectura a nivel de componentes y de código, detallando la organización interna, las relaciones entre entidades y la lógica de implementación que sustentan su funcionalidad dentro de la solución. Además, realicé los prototipos de la aplicación en Figma, los cuales son parte integral de la presentación del diseño.</p>
@@ -388,15 +406,18 @@
         <p><strong>TB1:</strong> Participé en la elaboración del informe desarrollando los diagramas C4 (contexto y contenedores) y sus descripciones correspondientes. Documenté cómo los actores, contenedores y servicios externos se integran en la arquitectura de AgroTech.</p>
         <p><strong>TP1:</strong> Participé en la elaboración del capítulo Tactical-Level Software Design, documentando el bounded context de Profile. Describí su arquitectura a nivel de componentes y de código mediante los diagramas Software Architecture Component Level y Code Level, detallando la organización interna, las relaciones entre entidades y la lógica de implementación que sustentan su funcionalidad dentro de la solución.</p>
         <p><strong>TB2:</strong> Contribuí en la documentación del project report mediante la descripción técnica de la vista Appointment en el frontend, explicando su funcionalidad, componentes principales y la interacción con el backend. Asimismo, registré los resultados obtenidos de la entrevista al segmento advisor, integrando las conclusiones en los apartados correspondientes al análisis de usuarios.</p>
+        <p><strong>TF1:</strong> TBD.</p>
         <p><strong>Paredes Puente, Sebastian Roberto</strong></p>
         <p><strong>TB1:</strong> En esta entrega, logré comunicar de forma escrita los domain message flows, asimismo participé en la elaboración del eventstorming</p>
         <p><strong>TP1:</strong> En esta entrega, participé en la elaboración del capítulo Tactical-Level Software Design, detallando la arquitectura, responsabilidades y relaciones internas del bounded context de Post.</p>
         <p><strong>TB2:</strong> Para esta entrega, ayude en ciertas partes de la documentación del project report., apoye en la creación de una vista de una funcionalidad principal de asesores en la aplicación, para el primer sprint. También, registré los resultados que obtuve de las entrevistas que realicé.</p>
+        <p><strong>TF1:</strong> TBD.</p>
       </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, elaboramos el project report de manera clara y organizada, lo que nos permitió comunicar de forma efectiva tanto los aspectos técnicos como los beneficios prácticos del proyecto.</p>
         <p><strong>TP1:</strong> Se documentaron los bounded contexts de manera detallada en el capítulo de Tactical-Level Software Design, describiendo arquitectura, componentes, relaciones y diagramas correspondientes, garantizando comprensión clara y objetiva del diseño del sistema. Además, se incluyeron los mockups de la landing page y wireframes de la aplicación.</p>
         <p><strong>TB2:</strong> Como grupo, logramos comunicar de manera escrita los avances del primer sprint, describiendo claramente los productos digitales desarrollados y sus funcionalidades principales en el project report desde el Sprint Planning hasta el Team Collaboration Insights.</p>
+        <p><strong>TF1:</strong> TBD.</p>
       </td>
     </tr>
   </tbody>
@@ -5096,11 +5117,11 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
   </tr>
   <tr>
     <th>Sprint 2 Velocity</th>
-    <td>X</td>
+    <td>26</td>
   </tr>
   <tr>
     <th>Sum of Story Points</th>
-    <td>X</td>
+    <td>26</td>
   </tr>
 </table>
 
@@ -5189,11 +5210,40 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
 
 #### 7.2.2.3. Development Evidence for Sprint Review
 
+
+
 #### 7.2.2.4. Testing Suite Evidence for Sprint Review
 
 #### 7.2.2.5. Execution Evidence for Sprint Review
 
+A continuación se muestran las vistas principales implementadas en este sprint:
+
+**Productor agropecuario:**
+
+Vista del Chatbot de Recomendación de Asesores
+
+<p align="center">
+  <img src="img/sprint2-development-evidence-1.png" alt="Development Evidence Farmer 1" style="width: 600px">
+</p>
+
+Vista de Gestión de Cultivos con IoT
+
+<p align="center">
+  <img src="img/sprint2-development-evidence-2.png" alt="Development Evidence Farmer 2" style="width: 600px">
+</p>
+
+<p align="center">
+  <img src="img/sprint2-development-evidence-3.png" alt="Development Evidence Farmer 3" style="width: 600px">
+</p>
+
 #### 7.2.2.6. Services Documentation Evidence for Sprint Review
+
+Se utilizó Swagger para documentar los servicios RESTful desarrollados en el backend con Spring Boot. Se incluyeron nuevos endpoints para la integración del chatbot de recomendación de asesores y la gestión de cultivos con IoT.
+
+[Enlace al Swagger](https://agrotech.ddns.net/swagger-ui/index.html#/)
+<p align="center">
+  <img src="img/sprint2-services-documentation.png" alt="Services Documentation Evidence" style="width: 600px">
+</p>
 
 #### 7.2.2.7. Software Deployment Evidence for Sprint Review
 
