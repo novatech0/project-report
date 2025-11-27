@@ -5210,7 +5210,29 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
 
 #### 7.2.2.3. Development Evidence for Sprint Review
 
+A continuación, se detallan los commits realizados, los cuales se trabajaron a partir de las tareas asignadas a cada miembro como se muestra en el Sprint Backlog 2. De este modo, se trabajó en el Backend, Edge API, Frontend e IoT Device.
 
+**Repositorio Backend**: <https://github.com/novatech0/backend/commits/feature/iot/>
+
+**Repositorio Edge API**: <https://github.com/novatech0/edge-api/commits/main/>
+
+**Repositorio Frontend**: <https://github.com/novatech0/frontend/commits/feature/crops>
+
+**Repositorio IoT Device**: <https://github.com/novatech0/iot-device/commits/main/>
+
+|Repository|Branch|Commit Id|Commit Message|Commit Message Body|Commited on (Date)|
+|---|---|---|---|---|---|
+|novatech0/backend|feature/iot|9769840|ai chat controller|-|17/11/2025|
+|novatech0/iot-device|main|d67ea59|add first version|-|21/11/2025|
+|novatech0/iot-device|main|4ebda33|add folder organization|-|21/11/2025|
+|novatech0/iot-device|main|c847f9b|add tankheight|-|21/11/2025|
+|novatech0/edge-api|main|7bf7c8b|getThresholdsFromBackend function updated|-|23/11/2025|
+|novatech0/backend|feature/iot|959a25f|iot endpoint to update data|-|24/11/2025|
+|novatech0/backend|feature/iot|e3e1246|crops endpoints|-|24/11/2025|
+|novatech0/frontend|feature/crops|8180e00|change irrigation from attr to method|-|24/11/2025|
+|novatech0/edge-api|main|5e85a71|update backend.ts|-|25/11/2025|
+|novatech0/backend|feature/iot|fb054bc|update get, put crop. add threshold endpoint|-|26/11/2025|
+|novatech0/edge-api|main|dfee595|update backendService.ts|-|26/11/2025|
 
 #### 7.2.2.4. Testing Suite Evidence for Sprint Review
 
