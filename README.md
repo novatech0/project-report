@@ -2108,6 +2108,13 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
 |28|US10|Inicio de sesión|Como usuario quiero acceder a mi cuenta registrada para acceder a las funciones de usuario.|2|
 |29|US11|Visualización de notificaciones del usuario|Como usuario de la aplicación, quiero recibir notificaciones referentes al estado de las asesorías u otra información relevante para mantenerme informado.|2|
 |30|US12|Modificar perfil de usuario|Como usuario, quiero poder modificar mi perfil para actualizar los datos que desee.|3|
+|31|TS08|Uso de un LLM para recomendación de asesores | Como desarrollador, quiero integrar un endpoint para hacer consultas a un modelo de lenguaje grande (LLM) para recomendar asesores basados en las necesidades del productor agropecuario.|5|
+|32|US24|Recomendaciones de asesores con IA|Como productor agropecuario, quiero interactuar con un chatbot en el catálogo de asesores que me permita recibir recomendaciones personalizadas basadas en mis necesidades específicas.|3|
+|33|TS09| Uso de nuestra API para gestionar cultivos| Como desarrollador, quiero implementar protocolos HTTP para los cultivos de los productores agrícolas dentro de nuestra API.| 5|
+|34|TS10| Creación de Edge API para cultivos| Como desarrollador, quiero implementar el Edge API que utiliza protocolos MQTT y HTTP para conectar el backend con los dispositivos IoT instalados en los cultivos de los productores agrícolas.|5|
+|35|US25| Gestión de cultivos| Como productor agropecuario, quiero implementar la funcionalidad para crear y visualizar mis cultivos.|3|
+|36|US26| Regado automático con IoT| Como productor agropecuario, quiero implementar un sistema IoT que permita automatizar el riego de mis cultivos basado en datos de humedad y temperatura del suelo junto con capacidad del tanque.|5|
+
 
 ## 3.4 Impact Mapping
 El Impact Mapping es una técnica estratégica que se utiliza para planificar y comunicar cómo un proyecto o producto contribuirá a alcanzar los objetivos de negocio. A través de esta herramienta, se identifican los Business Goals que se desean lograr, las Personas clave que influirán en estos objetivos, los Impacts que se espera de estas personas, y los Deliverables que se desarrollarán para generar esos impactos. Además, se detallan las User Stories que describen cómo los usuarios interactuarán con los entregables para lograr el impacto deseado. De esta manera, el Impact Mapping ayuda a alinear el desarrollo de productos con los objetivos estratégicos, asegurando que cada esfuerzo contribuya directamente al éxito del proyecto.
