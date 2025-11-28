@@ -1430,6 +1430,27 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
   <tr><td>TS05</td><td>Uso de nuestra API para gestionar publicaciones</td></tr>
   <tr><td>TS06</td><td>Uso de nuestra API para gestionar recintos de animales</td></tr>
   <tr><td>TS07</td><td>Uso de nuestra API para gestionar autenticación</td></tr>
+    <tr>
+    <td>E07</td>
+    <td>Sistema de Asistencia Inteligente</td>
+    <td>US24</td>
+    <td>Recomendaciones de asesores con IA</td>
+  </tr>
+  <tr>
+    <td rowspan="2">E08</td>
+    <td rowspan="2">Gestión Inteligente de Cultivos</td>
+    <td>US25</td>
+    <td>Gestión de cultivos</td>
+  </tr>
+  <tr><td>US26</td><td>Regado automático con IoT</td></tr>
+  <tr>
+    <td rowspan="3">E09</td>
+    <td rowspan="3">Integración de Tecnologías Emergentes</td>
+    <td>TS08</td>
+    <td>Uso de un LLM para recomendación de asesores</td>
+  </tr>
+  <tr><td>TS09</td><td>Uso de nuestra API para gestionar cultivos</td></tr>
+  <tr><td>TS10</td><td>Creación de Edge API para cultivos</td></tr>
 </table>
 
 <table class="custom-table">
@@ -1956,6 +1977,101 @@ Se identificaron las siguientes épicas que se componen de las historias de usua
       </td>
       <td>E06</td>
     </tr>
+    <tr>
+  <td>US24</td>
+  <td>Recomendaciones de asesores con IA</td>
+  <td>Como productor agropecuario, quiero interactuar con un chatbot en el catálogo de asesores que me permita recibir recomendaciones personalizadas basadas en mis necesidades específicas.</td>
+  <td>
+    <p><strong>Escenario 1: Chatbot entiende necesidad y recomienda</strong></p>
+    <p><strong>Given</strong> el productor está en el catálogo de asesores.</p>
+    <p><strong>And</strong> el chatbot está activo.</p>
+    <p><strong>When</strong> escribe "Necesito asesor en ganado lechero con experiencia en alimentación".</p>
+    <p><strong>Then</strong> el sistema muestra 3-5 asesores filtrados por especialidad, experiencia y calificación.</p>
+  </td>
+  <td>E07</td>
+</tr>
+<tr>
+  <td>US25</td>
+  <td>Gestión de cultivos</td>
+  <td>Como productor agropecuario, quiero implementar la funcionalidad para crear y visualizar mis cultivos.</td>
+  <td>
+    <p><strong>Escenario 1: Registrar cultivo</strong></p>
+    <p><strong>Given</strong> el productor accede a la sección "Mis cultivos".</p>
+    <p><strong>When</strong> completa el formulario con tipo (maíz, arroz, etc.), ubicación, hectáreas y etapa.</p>
+    <p><strong>Then</strong> el sistema guarda el cultivo y lo muestra en el dashboard.</p>
+    <p><strong>Escenario 2: Editar cultivo</strong></p>
+    <p><strong>Given</strong> el productor visualiza un cultivo existente.</p>
+    <p><strong>When</strong> modifica la etapa de crecimiento o la fecha de cosecha estimada.</p>
+    <p><strong>Then</strong> el sistema actualiza la información y muestra confirmación.</p>
+  </td>
+  <td>E08</td>
+</tr>
+<tr>
+  <td>US26</td>
+  <td>Regado automático con IoT</td>
+  <td>Como productor agropecuario, quiero implementar un sistema IoT que permita automatizar el riego de mis cultivos basado en datos de humedad y temperatura del suelo junto con capacidad del tanque.</td>
+  <td>
+    <p><strong>Escenario 1: Visualizar datos de sensores en tiempo real</strong></p>
+    <p><strong>Given</strong> el productor accede al detalle de un cultivo.</p>
+    <p><strong>When</strong> el sistema recibe datos de los sensores IoT.</p>
+    <p><strong>Then</strong> muestra: humedad 55%, temperatura 28°C, tanque 120L (60%), estado del riego: Inactivo.</p>
+    <p><strong>Escenario 2: Riego automático activado</strong></p>
+    <p><strong>Given</strong> el sistema detecta humedad <40% y tanque >20%.</p>
+    <p><strong>When</strong> se cumplen ambas condiciones.</p>
+    <p><strong>Then</strong> el sistema activa automáticamente el riego y actualiza estado a "Riego en progreso".</p>
+  </td>
+  <td>E08</td>
+</tr>
+<tr>
+  <td>TS08</td>
+  <td>Uso de un LLM para recomendación de asesores</td>
+  <td>Como desarrollador, quiero integrar un endpoint para hacer consultas a un modelo de lenguaje grande (LLM) para recomendar asesores basados en las necesidades del productor agropecuario.</td>
+  <td>
+    <p><strong>Escenario 1: LLM devuelve recomendación válida</strong></p>
+    <p><strong>Given</strong> la API recibe prompt: "productor necesita asesor en pesticidas para arroz en Lambayeque".</p>
+    <p><strong>When</strong> el LLM procesa la solicitud.</p>
+    <p><strong>Then</strong> responde con top 3 asesores IDs y justificación en <2 segundos.</p>
+    <p><strong>Escenario 2: LLM no responde</strong></p>
+    <p><strong>Given</strong> el servicio de LLM está caído.</p>
+    <p><strong>When</strong> la API intenta consultar.</p>
+    <p><strong>Then</strong> responde con fallback: búsqueda por keywords en base de datos.</p>
+  </td>
+  <td>E09</td>
+</tr>
+<tr>
+  <td>TS09</td>
+  <td>Uso de nuestra API para gestionar cultivos</td>
+  <td>Como desarrollador, quiero implementar protocolos HTTP para los cultivos de los productores agrícolas dentro de nuestra API.</td>
+  <td>
+    <p><strong>Escenario 1: CRUD cultivo exitoso</strong></p>
+    <p><strong>Given</strong> productor autenticado envía POST /api/cultivos con datos válidos.</p>
+    <p><strong>When</strong> la API procesa la solicitud.</p>
+    <p><strong>Then</strong> responde 201 Created y cultivo ID.</p>
+    <p><strong>Escenario 2: Intento de acceso no autorizado</strong></p>
+    <p><strong>Given</strong> productor A intenta GET /api/cultivos/123 de productor B.</p>
+    <p><strong>When</strong> el sistema valida permisos.</p>
+    <p><strong>Then</strong> responde 403 Forbidden.</p>
+  </td>
+  <td>E09</td>
+</tr>
+<tr>
+  <td>TS10</td>
+  <td>Creación de Edge API para cultivos</td>
+  <td>Como desarrollador, quiero implementar el Edge API que utiliza protocolos MQTT y HTTP para conectar el backend con los dispositivos IoT instalados en los cultivos de los productores agrícolas.</td>
+  <td>
+    <p><strong>Escenario 1: Recepción de datos MQTT</strong></p>
+    <p><strong>Given</strong> sensor publica en topic "agrotech/sensores/123/humedad" con payload JSON.</p>
+    <p><strong>When</strong> el broker MQTT recibe mensaje.</p>
+    <p><strong>Then</strong> el Edge API lo procesa y guarda en base de datos en <100ms.</p>
+    <p><strong>Escenario 2: Envío de comando de riego</strong></p>
+    <p><strong>Given</strong> productor activa riego desde app.</p>
+    <p><strong>When</strong> se envía POST a /api/edge/riego con comando "ON".</p>
+    <p><strong>Then</strong> el Edge API publica en MQTT topic "agrotech/riego/123/comando" y confirma 200 OK.</p>
+  </td>
+  <td>E09</td>
+</tr>
+  </tbody>
+</table>
   </tbody>
 </table>
 
