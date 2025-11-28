@@ -5270,7 +5270,7 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
     <td colspan="1" valign="top">Status (To-Do / In-Process / Review / Done)</td>
   </tr>
     <tr>
-    <td colspan="1" valign="top">TSXX</td>
+    <td colspan="1" valign="top">TS08</td>
     <td colspan="1" valign="top">Uso de un LLM para recomendación de asesores</td>
     <td colspan="1" valign="top">WI01</td>
     <td colspan="1" valign="top">Integración de Chatbot IA</td>
@@ -5280,7 +5280,7 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
     <td colspan="1" valign="top">Done</td>
   </tr>
   <tr>
-    <td colspan="1" valign="top">USXX</td>
+    <td colspan="1" valign="top">US24</td>
     <td colspan="1" valign="top">Recomendaciones de asesores con IA</td>
     <td colspan="1" valign="top">WI02</td>
     <td colspan="1" valign="top">Chatbot en catálogo de asesores</td>
@@ -5290,7 +5290,7 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
     <td colspan="1" valign="top">Done</td>
   </tr>
   <tr>
-    <td colspan="1" valign="top">TSXX</td>
+    <td colspan="1" valign="top">TS09</td>
     <td colspan="1" valign="top">Uso de nuestra API para gestionar cultivos</td>
     <td colspan="1" valign="top">WI03</td>
     <td colspan="1" valign="top">Implementación de protocolos HTTP para cultivos</td>
@@ -5300,7 +5300,7 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
     <td colspan="1" valign="top">In Progress</td>
   </tr>
   <tr>
-    <td colspan="1" valign="top">TSXX</td>
+    <td colspan="1" valign="top">TS10</td>
     <td colspan="1" valign="top">Creación de Edge API para cultivos</td>
     <td colspan="1" valign="top">WI04</td>
     <td colspan="1" valign="top">Implementación de protocolos MQTT y HTTP para conectar backend con dispositivos IoT</td>
@@ -5310,7 +5310,7 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
     <td colspan="1" valign="top">In Progress</td>
   </tr>
   <tr>
-      <td colspan="1" valign="top">USXX</td>
+      <td colspan="1" valign="top">US25</td>
       <td colspan="1" valign="top">Gestión de cultivos</td>
       <td colspan="1" valign="top">WI05</td>
       <td colspan="1" valign="top">Implementación de creación y visualización de cultivos</td>
@@ -5320,7 +5320,7 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
       <td colspan="1" valign="top">In Progress</td>
   </tr>
   <tr>
-      <td colspan="1" valign="top">USXX</td>
+      <td colspan="1" valign="top">US26</td>
       <td colspan="1" valign="top">Regado automático con IoT</td>
       <td colspan="1" valign="top">WI06</td>
       <td colspan="1" valign="top">Implementación de sistema IoT para riego</td>
