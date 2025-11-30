@@ -5392,8 +5392,17 @@ Se utilizó Swagger para documentar los servicios RESTful desarrollados en el ba
 
 #### 7.2.2.7. Software Deployment Evidence for Sprint Review
 
+
+
 #### 7.2.2.8. Team Collaboration Insights during Sprint
 
+<p align="center">
+  <img src="img/sprint-2-commits.png" alt="Sprint 2 Insights: Commits" style="width: 600px">
+</p>
+
+<p align="center">
+  <img src="img/sprint-2-analytics.png" alt="Sprint 2 Insights: Analytics" style="width: 600px">
+</p>
 
 ## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas
