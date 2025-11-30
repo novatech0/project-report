@@ -356,7 +356,7 @@
         <p><strong>TB1:</strong> Para esta entrega, en el video de exposición expuse de manera clara los requerimientos a través de las User Stories y Atributos de Calidad.</p>
         <p><strong>TP1:</strong> En el video de exposición, presenté el bounded context de Appointment, explicando sus componentes, cómo se relacionan entre sí, y su importancia en el desarrollo de la solución.</p>
         <p><strong>TB2:</strong> En esta entrega, participé en el video de exposición, presentando la introducción al producto a través de la problemática.</p>
-        <p><strong>TF1:</strong> TBD.</p>
+        <p><strong>TF1:</strong> Para esta entrega, comunique mis ideas a través del video de exposición donde mencione la implementación de IoT y su aporte para mejorar la experiencia de los productores agrícolas.</p>
         <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, en el video de exposición presenté la problemática del sector agropecuario de manera objetiva, resaltando las cifras y limitaciones actuales como base para justificar el desarrollo de la solución.</p>
         <p><strong>TP1:</strong>  En esta entrega, elaboré y presenté el video explicativo del bounded context de Security, detallando sus componentes principales, su estructura interna y las interacciones entre sus módulos. Además, expuse los diagramas de componentes, clases y base de datos, explicando su función dentro de la arquitectura general del sistema y su relevancia para garantizar la autenticación y autorización segura de los usuarios.</p>
@@ -382,7 +382,7 @@
         <p><strong>TB1:</strong> Como grupo, logramos transmitir nuestras ideas con claridad y objetividad para explicar nuestra problemática y solución propuesta.</p>
         <p><strong>TP1:</strong>Logramos exponer claramente los bounded contexts de Appointment, Security, Management, Profile y Post, destacando su estructura, componentes e interacciones, evidenciando su importancia dentro de la solución propuesta. Asimismo, explicamos las secciones de la landing page y los wireflows de la aplicación.</p>
         <p><strong>TB2:</strong> Como grupo, logramos comunicar de manera efectiva los resultados del primer sprint explicando a través del video de exposición los productos digitales desarrollados como el Backend, Frontend Web, Frontend Móvil y la Landing Page.</p>
-        <p><strong>TF1:</strong> TBD.</p>
+        <p><strong>TF1:</strong> Como grupo, pudimos comunicar de manera efectiva los logros del segundo sprint al explicar a través del video de exposición las mejoras realizadas a los productos, poniendo especial énfasis en el uso de tecnologías emergentes para ofrecer un mejor producto a los productores agropecuarios.</p>
       </td>
     </tr>
     <tr style="page-break-inside: avoid;">
@@ -392,7 +392,7 @@
         <p><strong>TB1:</strong> Para esta entrega, participé en la elaboración del project report. Apoyé con el desarrollo de los cuatro capítulos donde se abordaron los aspectos clave del proyecto.</p>
         <p><strong>TP1:</strong> En el informe, contribuí con la redacción del capítulo de Tactical-Level Software Design, detallando la estructura y componentes del bounded context de Appointment.</p>
         <p><strong>TB2:</strong> En esta entrega, participé en la redacción del project report, elaborando los apartados de solución propuesta y segmentos objetivo, asegurando que las descripciones fueran claras y adecuadas al alcance del proyecto.</p>
-        <p><strong>TF1:</strong> TBD.</p>
+        <p><strong>TF1:</strong> En esta entrega partipé en la redacción del report y realize mejoras al Lean Ux Canvas para comunicar de mejor manera nuestras ideas de la solución para solucionar la problemática planteada en el capítulo. Además, apoye con la documentación del Sprint 2 mencionados las mejoras con respecto al anterior Sprint y el uso de tecnologías emergentes.</p>
         <p><strong>Chinchihualpa Saldarriaga, Luis Sebastian</strong></p>
         <p><strong>TB1:</strong> Para esta entrega, participé en la redacción del project report, elaborando los apartados de antecedentes, problemática y domain message flows, con descripciones claras y adecuadas al alcance del proyecto.</p>
         <p><strong>TP1:</strong> En el informe, participé en la redacción del capítulo de Tactical-Level Software Design, describiendo la estructura, componentes y modelo de datos del bounded context de Security. Además, documenté los diagramas de clases, componentes y base de datos, explicando su función dentro del sistema y su contribución a los mecanismos de autenticación y autorización del proyecto.</p>
@@ -417,7 +417,7 @@
         <p><strong>TB1:</strong> Como grupo, elaboramos el project report de manera clara y organizada, lo que nos permitió comunicar de forma efectiva tanto los aspectos técnicos como los beneficios prácticos del proyecto.</p>
         <p><strong>TP1:</strong> Se documentaron los bounded contexts de manera detallada en el capítulo de Tactical-Level Software Design, describiendo arquitectura, componentes, relaciones y diagramas correspondientes, garantizando comprensión clara y objetiva del diseño del sistema. Además, se incluyeron los mockups de la landing page y wireframes de la aplicación.</p>
         <p><strong>TB2:</strong> Como grupo, logramos comunicar de manera escrita los avances del primer sprint, describiendo claramente los productos digitales desarrollados y sus funcionalidades principales en el project report desde el Sprint Planning hasta el Team Collaboration Insights.</p>
-        <p><strong>TF1:</strong> TBD.</p>
+        <p><strong>TF1:</strong> Como grupo, pudimos comunicar de manera escrita los logros y mejoras implementadas durante el segundo sprint, destacando el uso de tecnologías emergentes en las cobnclusiones y dejando en evidencia todo el proceso de desarrollo a través del Development, Execution, Services, Testing y Deployment Evidence.</p>
       </td>
     </tr>
   </tbody>
