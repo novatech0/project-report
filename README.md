@@ -5670,6 +5670,9 @@ Exposición TP1: [upc-pre-202502-1asi0728-7281-novatech-expo-tp1](https://upcedu
 Exposición TB2:
 [upc-pre-202502-1asi0728-7281-novatech-expo-tb2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/IQAAgTUZNAeUSIm82iFtSiTVAQILQTxF8AdApItBtGuS5sk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=kN4d0C)
 
+Exposición TF1:
+[upc-pre-202502-1asi0728-7281-novatech-expo-tf1](TBD)
+
 ## Enlaces de interés
 Organización en GitHub: [https://github.com/novatech0](https://github.com/novatech0)
 
@@ -5686,6 +5689,8 @@ Frontend web: [https://upcagrotech.netlify.app/](https://upcagrotech.netlify.app
 Frontend movil: [https://portal.testapp.io/apps/install/LqWkmgv9qk51m](https://portal.testapp.io/apps/install/LqWkmgv9qk51m)
 
 Backend: [https://agrotech.ddns.net/swagger-ui/index.html](https://agrotech.ddns.net/swagger-ui/index.html)
+
+Wokwi IoT Device Simulator: [https://wokwi.com/projects/448196268290824193](https://wokwi.com/projects/448196268290824193)
 
 <style>
   .custom-table {
