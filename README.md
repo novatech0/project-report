@@ -5356,6 +5356,11 @@ A continuación, se detallan los commits realizados, los cuales se trabajaron a 
 |novatech0/edge-api|main|5e85a71|update backend.ts|-|25/11/2025|
 |novatech0/backend|feature/iot|fb054bc|update get, put crop. add threshold endpoint|-|26/11/2025|
 |novatech0/edge-api|main|dfee595|update backendService.ts|-|26/11/2025|
+|novatech0/edge-api|main|b2101e7|thresholdsEndpoint added|-|27/11/2025|
+|novatech0/edge-api|main|269d963|fix: mqtt protocol errors|-|27/11/2025|
+|novatech0/frontend|feature/crops|17ee4b6|update crop with farmer id|-|27/11/2025|
+|novatech0/iot-device|main|89304f0|recieve data from edge|-|27/11/2025|
+|novatech0/edge-api|main|98c163e|fix: sending in wrong format|-|29/11/2025|
 
 #### 7.2.2.4. Testing Suite Evidence for Sprint Review
 
