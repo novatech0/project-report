@@ -5386,6 +5386,14 @@ Vista de Gestión de Cultivos con IoT
   <img src="img/sprint2-development-evidence-3.png" alt="Development Evidence Farmer 3" style="width: 600px">
 </p>
 
+<p align="center">
+  <img src="img/sprint2-development-evidence-4.png" alt="Development Evidence Farmer 4" style="width: 600px">
+</p>
+
+<p align="center">
+  <img src="img/sprint2-development-evidence-5.png" alt="Development Evidence Farmer 5" style="width: 600px">
+</p>
+
 #### 7.2.2.6. Services Documentation Evidence for Sprint Review
 
 Se utilizó Swagger para documentar los servicios RESTful desarrollados en el backend con Spring Boot. Se incluyeron nuevos endpoints para la integración del chatbot de recomendación de asesores y la gestión de cultivos con IoT.
