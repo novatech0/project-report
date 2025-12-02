@@ -5403,7 +5403,17 @@ Se utilizó Swagger para documentar los servicios RESTful desarrollados en el ba
 </p>
 
 #### 7.2.2.7. Software Deployment Evidence for Sprint Review
+En esta entrega se realizó un nuevo despliegue de la aplicación web, con el objetivo de incorporar las nuevas funcionalidades desarrolladas relacionadas con Inteligencia Artificial (IA) e Internet de las Cosas (IoT).
 
+Para este despliegue, se actualizó el repositorio de GitHub con los cambios implementados y Netlify detectó automáticamente las nuevas modificaciones, ejecutando nuevamente el proceso de construcción y publicación del sitio web.
+
+Luego de finalizar el proceso, se validó que las nuevas características estuvieran correctamente integradas y operativas, manteniendo el mismo enlace de acceso al sistema:
+
+<p align="center">
+  <img src="img/frontend-deployment-sprint2.png" alt="software deployment sprint2" style="width: 600px">
+</p>
+
+Enlace de acceso: https://upcagrotech.netlify.app
 
 
 #### 7.2.2.8. Team Collaboration Insights during Sprint
