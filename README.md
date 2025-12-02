@@ -376,8 +376,8 @@
         <p><strong>TB1:</strong> En esta entrega, logré comunicar oralmente el lean UX Canvas con puntos claves para tener más claro la problemática a resolver, junto con la identificación de los segmentos objetivos</p>
         <p><strong>TP1:</strong> Para esta entrega, logré comunicar acerca del bounded context de Post, describiendo su organización funcional, la forma en que sus partes se vinculan y el papel que desempeña en la implementación de la solución.</p>
         <p><strong>TB2:</strong> En esta entrega, participé en la entrevista del segmento advisor y farmer, donde les realicé preguntas para obtener información relevante sobre sus necesidades Al final, compartí el equipo los resultados obtenidos de las entrevistas, que se usarían com base para las mejoras del producto.</p>
-        <p><strong>TF1:</strong> TBD.</p>
-      </td>
+        <p><strong>TF1:</strong> Para esta entrega, a través del video de exposición del tf comuniqué mis ideas donde mencione la problemática que queremos abarcar con nuestro producto.</p>
+            </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, logramos transmitir nuestras ideas con claridad y objetividad para explicar nuestra problemática y solución propuesta.</p>
         <p><strong>TP1:</strong>Logramos exponer claramente los bounded contexts de Appointment, Security, Management, Profile y Post, destacando su estructura, componentes e interacciones, evidenciando su importancia dentro de la solución propuesta. Asimismo, explicamos las secciones de la landing page y los wireflows de la aplicación.</p>
@@ -411,8 +411,7 @@
         <p><strong>TB1:</strong> En esta entrega, logré comunicar de forma escrita los domain message flows, asimismo participé en la elaboración del eventstorming</p>
         <p><strong>TP1:</strong> En esta entrega, participé en la elaboración del capítulo Tactical-Level Software Design, detallando la arquitectura, responsabilidades y relaciones internas del bounded context de Post.</p>
         <p><strong>TB2:</strong> Para esta entrega, ayude en ciertas partes de la documentación del project report., apoye en la creación de una vista de una funcionalidad principal de asesores en la aplicación, para el primer sprint. También, registré los resultados que obtuve de las entrevistas que realicé.</p>
-        <p><strong>TF1:</strong> TBD.</p>
-      </td>
+        <p><strong>TF1:</strong> En esta entrega partipé principalmente en la creación de un edge api para implementar una característica de una tecnología emergente como lo sería IoT.</p>      </td>
       <td style="border: 1px solid #000; padding: 8px;">
         <p><strong>TB1:</strong> Como grupo, elaboramos el project report de manera clara y organizada, lo que nos permitió comunicar de forma efectiva tanto los aspectos técnicos como los beneficios prácticos del proyecto.</p>
         <p><strong>TP1:</strong> Se documentaron los bounded contexts de manera detallada en el capítulo de Tactical-Level Software Design, describiendo arquitectura, componentes, relaciones y diagramas correspondientes, garantizando comprensión clara y objetiva del diseño del sistema. Además, se incluyeron los mockups de la landing page y wireframes de la aplicación.</p>
