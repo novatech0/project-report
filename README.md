@@ -5393,6 +5393,9 @@ Vista de Gestión de Cultivos con IoT
   <img src="img/sprint2-development-evidence-5.png" alt="Development Evidence Farmer 5" style="width: 600px">
 </p>
 
+**Video del execution evidence:** [Enlace al video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212684_upc_edu_pe/IQArKOqWZTOiTZSjiG8fWY69AVcp5HGtL_lqVlgsI9Ex0mA?e=N4c651&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+
 #### 7.2.2.6. Services Documentation Evidence for Sprint Review
 
 Se utilizó Swagger para documentar los servicios RESTful desarrollados en el backend con Spring Boot. Se incluyeron nuevos endpoints para la integración del chatbot de recomendación de asesores y la gestión de cultivos con IoT.
