@@ -5295,7 +5295,7 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
     <td colspan="1" valign="top">Implementación de protocolos HTTP para cultivos</td>
     <td colspan="1" valign="top">Se implementan los protocolos HTTP para los cultivos de los productores agrícolas dentro de nuestra API.</td>
     <td colspan="1" valign="top">5</td>
-    <td colspan="1" valign="top">X</td>
+    <td colspan="1" valign="top">Sebastián Paredes</td>
     <td colspan="1" valign="top">In Progress</td>
   </tr>
   <tr>
@@ -5305,7 +5305,7 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
     <td colspan="1" valign="top">Implementación de protocolos MQTT y HTTP para conectar backend con dispositivos IoT</td>
     <td colspan="1" valign="top"> Se implementa el Edge API que utiliza protocolos MQTT y HTTP para conectar el backend con los dispositivos IoT instalados en los cultivos de los productores agrícolas.</td>
     <td colspan="1" valign="top">5</td>
-    <td colspan="1" valign="top">X</td>
+    <td colspan="1" valign="top">Luis Chinchihualpa</td>
     <td colspan="1" valign="top">In Progress</td>
   </tr>
   <tr>
@@ -5315,7 +5315,7 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
       <td colspan="1" valign="top">Implementación de creación y visualización de cultivos</td>
       <td colspan="1" valign="top">Se implementa la funcionalidad para que los productores agrícolas puedan crear y visualizar sus cultivos.</td>
       <td colspan="1" valign="top">3</td>
-      <td colspan="1" valign="top">X</td>
+      <td colspan="1" valign="top">Harold Elias</td>
       <td colspan="1" valign="top">In Progress</td>
   </tr>
   <tr>
@@ -5325,7 +5325,7 @@ El equipo de desarrollo utilizó GitHub para la gestión del código y la colabo
       <td colspan="1" valign="top">Implementación de sistema IoT para riego</td>
       <td colspan="1" valign="top">Se implementa un sistema IoT que permite a los productores agrícolas automatizar el riego de sus cultivos basado en datos de humedad y temperatura del suelo junto con capacidad del tanque.</td>
       <td colspan="1" valign="top">5</td>
-      <td colspan="1" valign="top">X</td>
+      <td colspan="1" valign="top">Piero Delgado</td>
       <td colspan="1" valign="top">In Progress</td>
   </tr>
 </table>
