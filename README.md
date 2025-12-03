@@ -623,7 +623,7 @@ AgroTech debe contar con una interfaz intuitiva y atractiva visualmente. Su dese
 
 #### 1.2.2.4. Lean UX Canvas. 
 
-<img src="img/lean_ux_canva.png" alt="Lean UX Canvas" width="100%" />
+<img src="img/lean_ux_canvas.png" alt="Lean UX Canvas" width="100%" />
 
 ## 1.3. Segmentos objetivo
 
@@ -5826,7 +5826,7 @@ Exposición TB2:
 [upc-pre-202502-1asi0728-7281-novatech-expo-tb2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/IQAAgTUZNAeUSIm82iFtSiTVAQILQTxF8AdApItBtGuS5sk?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=kN4d0C)
 
 Exposición TF1:
-[upc-pre-202502-1asi0728-7281-novatech-expo-tf1](TBD)
+[upc-pre-202502-1asi0728-7281-novatech-expo-tf1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/IQBP9gLXH6gfTbNK2todFLPnAfjIejYwqvdqtJMZdMRwims?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=5vkSyP)
 
 ## Enlaces de interés
 Organización en GitHub: [https://github.com/novatech0](https://github.com/novatech0)
