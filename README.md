@@ -4276,7 +4276,7 @@ Para el despliegue de la solución, se han seleccionado plataformas para cada co
 **Diagramas de Despliegue**: Se presenta a continuación el diagrama de despliegue que ilustra la arquitectura de la solución y cómo los diferentes componentes interactúan entre sí en el entorno de producción.
 
 <p align="center">
-  <img alt="Deployment_Diagram" src="img/structurizr-deployment.png" width="550">
+  <img alt="Deployment_Diagram" src="img/structurizr-deployment2.jpg" width="550">
 </p>
 
 ## 7.2. Solution Implementation
