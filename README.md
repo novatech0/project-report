@@ -5402,6 +5402,25 @@ Se utilizó Swagger para documentar los servicios RESTful desarrollados en el ba
   <img src="img/sprint2-services-documentation.png" alt="Services Documentation Evidence" style="width: 600px">
 </p>
 
+**Crops**
+
+| Endpoint | Método | Descripción |
+| :--- | :---: | :--- |
+| `/api/v1/crops` | POST | Registra un nuevo cultivo con sus umbrales y dimensiones del tanque. |
+| `/api/v1/crops` | GET | Lista los cultivos existentes filtrando por el ID del productor (`farmerId`). |
+| `/api/v1/crops/{id}` | GET | Obtiene la información detallada de un cultivo específico por su ID. |
+| `/api/v1/crops/{id}` | PUT | Actualiza la información general y configuración de un cultivo. |
+| `/api/v1/crops/{id}` | DELETE | Elimina el registro de un cultivo del sistema. |
+| `/api/v1/crops/{id}/iot` | PUT | Endpoint para dispositivos IoT: Actualiza telemetría (temp, humedad, volumen). |
+| `/api/v1/crops/{id}/thresholds` | GET | Consulta los umbrales configurados para el monitoreo de alertas. |
+
+**AI**
+
+| Endpoint | Método | Descripción |
+| :--- | :---: | :--- |
+| `/api/v1/ai/chat` | POST | Envía un mensaje de texto a la API de Gemini y retorna una respuesta inteligente. |
+
+
 #### 7.2.2.7. Software Deployment Evidence for Sprint Review
 En esta entrega se realizó un nuevo despliegue de la aplicación web, con el objetivo de incorporar las nuevas funcionalidades desarrolladas relacionadas con Inteligencia Artificial (IA) e Internet de las Cosas (IoT).
 
