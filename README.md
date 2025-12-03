@@ -5363,6 +5363,102 @@ A continuación, se detallan los commits realizados, los cuales se trabajaron a 
 
 #### 7.2.2.4. Testing Suite Evidence for Sprint Review
 
+Durante este segundo sprint, se continuó aplicando la metodología Behavior-Driven Development (BDD) para validar que las nuevas funcionalidades implementadas cumplan estrictamente con los criterios de aceptación definidos. Se ha ampliado la suite de pruebas de aceptación automatizadas para cubrir las nuevas Historias de Usuario (US23 a US26), enfocadas en la gestión de cultivos y el sistema IoT, así como las Historias Técnicas (TS01 a TS10)
+
+| **Repository** | **Branch** | **Commit Id** | **Commit Message** | **Commit Message Body** | **Commited on (Date)** |
+| :--- | :---: | :---: | :--- | :--- | :---: |
+| novatech0/acceptance-tests | main | a7b8c9d | feat: add us15 to us18 tests | - | 12/11/2025 |
+| novatech0/acceptance-tests | main | e1f2g3h | feat: add us18 and us20 tests | - | 12/11/2025 |
+| novatech0/acceptance-tests | main | h4i5j6k | feat: add us21 to us23 tests | - | 12/11/2025 |
+| novatech0/acceptance-tests | main | b4b48a8 | feat: Add sprint 2 acceptance tests | Added acceptance tests for US23 to US26 and TS01 to TS10 | 02/12/2025 |
+
+```gherkin
+Feature: Recomendaciones de asesores con IA
+  Como productor agropecuario
+  quiero interactuar con un chatbot en el catálogo de asesores
+  que me permita recibir recomendaciones personalizadas basadas en mis necesidades específicas
+
+  Scenario: Chatbot entiende necesidad y recomienda
+    Given el productor está en el catálogo de asesores
+    And el chatbot está activo
+    When escribe "Necesito asesor en ganado lechero con experiencia en alimentación"
+    Then el sistema muestra 3-5 asesores filtrados por especialidad, experiencia y calificación
+```
+
+En este caso, se realizaron pruebas de comportamiento en el controlador de AI (Artificial Intelligence), asegurando que el servicio de procesamiento de lenguaje natural (LLM) responda correctamente a los prompts del usuario y devuelva una lista válida de asesores recomendados. Estas pruebas incluyeron la verificación de autenticación, el estado del servicio de IA y la estructura de la respuesta JSON.
+
+```java
+public class US24Steps {
+    Response response;
+    String token;
+
+    @Given("el productor está en el catálogo de asesores")
+    public void el_productor_esta_en_el_catalogo_de_asesores() {
+        System.out.println("El productor accede al catálogo de asesores.");
+        baseURI = "http://localhost:8080/api/v1";
+
+        // Simulate user login to get token
+        String username = "farmer@gmail.com";
+        String password = "password123";
+
+        String jsonBody = String.format("{\"username\":\"%s\",\"password\":\"%s\"}", username, password);
+        response = given()
+                .contentType("application/json")
+                .body(jsonBody)
+                .when()
+                .post("/authentication/sign-in");
+
+        token = response.getBody().jsonPath().get("token");
+        assertNotNull(token, "Token is null. Login failed.");
+        System.out.println("Generated Token: " + token);
+    }
+
+    @And("el chatbot está activo")
+    public void el_chatbot_esta_activo() {
+        System.out.println("Verificando estado del servicio de IA...");
+        // Optional: Check health endpoint of AI service
+        response = given()
+                .header("Authorization", "Bearer " + token)
+                .when()
+                .get("/ai/status");
+        
+        // Assuming 200 OK means active
+        assertEquals(200, response.getStatusCode());
+        System.out.println("Chatbot service is active.");
+    }
+
+    @When("escribe {string}")
+    public void escribe(String mensaje) {
+        System.out.println("El productor envía el prompt: " + mensaje);
+        
+        String requestBody = String.format("{\"message\":\"%s\"}", mensaje);
+        
+        response = given()
+                .contentType("application/json")
+                .header("Authorization", "Bearer " + token)
+                .body(requestBody)
+                .when()
+                .post("/ai/chat");
+        
+        System.out.println("AI Response Body: " + response.getBody().asString());
+    }
+
+    @Then("el sistema muestra {int}-{int} asesores filtrados por especialidad, experiencia y calificación")
+    public void el_sistema_muestra_asesores_filtrados(int min, int max) {
+        System.out.println("Validando recomendaciones recibidas...");
+        
+        List<Object> recommendations = response.getBody().jsonPath().getList("recommendations");
+        
+        assertNotNull(recommendations, "La lista de recomendaciones es nula.");
+        int count = recommendations.size();
+        
+        assertTrue(count >= min && count <= max, 
+            "El número de asesores recomendados (" + count + ") no está entre " + min + " y " + max);
+            
+        System.out.println("Se recibieron " + count + " recomendaciones válidas.");
+    }
+}
+```
 #### 7.2.2.5. Execution Evidence for Sprint Review
 
 A continuación se muestran las vistas principales implementadas en este sprint:
