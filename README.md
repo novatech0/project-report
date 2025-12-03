@@ -366,7 +366,7 @@
         <p><strong>TB1:</strong> En este primer entregable, logré comunicar de forma oral los descubrimientos de la investigación de mercado, destacando el análisis competitivo, las necesidades y expectativas de los usuarios finales.</p>
         <p><strong>TP1:</strong> Para la entrega parcial, participé en el video de exposición, presentando cómo se trabajó el bounded context de Management. Así, expuse sus componentes clave y su importancia en la solución propuesta.</p>
         <p><strong>TB2:</strong> En este entregable, logré comunicar mis ideas efectivamente con el equipo para la realización del despliegue de backend y frontend en la nube con Google Cloud. Además, participé en la entrevista al segmento de productor agropecuario, formulando preguntas claras y precisas para obtener información relevante sobre las necesidades y una retroalimentación valiosa sobre el producto.</p>
-        <p><strong>TF1:</strong> TBD.</p>
+        <p><strong>TF1:</strong> En esta entrega final, participé de forma oral en las reuniones con mis compañeros para dar ideas sobre cómo integrar las tecnologías emergentes como la IA y el dispositivo IoT dentro de nuestra aplicación.</p>
         <p><strong>Elias Sanchez, Harold Miguel</strong></p>
         <p><strong>TB1:</strong> Realicé una entrevista al primer segmento de usuarios para obtener información directa sobre sus necesidades y expectativas respecto a la solución propuesta. Compartí estos hallazgos con el grupo de manera clara para que sirvieran de   base en el diseño.</p>
         <p><strong>TP1:</strong> Logré comunicar de manera clara el bounded context de Profile, explicando su estructura, responsabilidades y la interacción entre sus componentes. Además, destaqué su relevancia dentro de la arquitectura general del sistema, evidenciando cómo contribuye al manejo de la información de los usuarios y a la integración con los demás módulos del proyecto.</p>
@@ -403,6 +403,7 @@
         <p><strong>TB1:</strong> En este primer entregable, participé principalmente en la redacción de la sección de análisis de mercado, donde presenté los hallazgos clave de la investigación y su relevancia para el proyecto, el proceso del eventstorming y los resultados obtenidos.</p>
         <p><strong>TP1:</strong> Apoyé en la elaboración del capítulo de Tactical-Level Software Design, documentando el bounded context de Management. Describí su arquitectura a nivel de componentes y de código, detallando la organización interna, las relaciones entre entidades y la lógica de implementación que sustentan su funcionalidad dentro de la solución. Además, realicé los prototipos de la aplicación en Figma, los cuales son parte integral de la presentación del diseño.</p>
         <p><strong>TB2:</strong> Logré realizar la documentación sobre los mock-ups, user flows y prototipo interactivo que se trabajó en Figma, endpoints trabajados en el Backend, y cómo se realizó el despliegue del Backend utilizando una instancia VM con Google Cloud.</p>
+        <p><strong>TF1:</strong> Apoyé en la redacción de los puntos del Sprint, así como el desarrollo de los endpoints nuevos en el Backend como la gestión de cultivos y el nuevo chat con IA. Al igual que en la anterior entrega, me encargué de desplegar el servicio con Google Cloud.</p>
         <p><strong>Elias Sanchez, Harold Miguel</strong></p>
         <p><strong>TB1:</strong> Participé en la elaboración del informe desarrollando los diagramas C4 (contexto y contenedores) y sus descripciones correspondientes. Documenté cómo los actores, contenedores y servicios externos se integran en la arquitectura de AgroTech.</p>
         <p><strong>TP1:</strong> Participé en la elaboración del capítulo Tactical-Level Software Design, documentando el bounded context de Profile. Describí su arquitectura a nivel de componentes y de código mediante los diagramas Software Architecture Component Level y Code Level, detallando la organización interna, las relaciones entre entidades y la lógica de implementación que sustentan su funcionalidad dentro de la solución.</p>
@@ -5528,6 +5529,10 @@ En esta entrega se realizó un nuevo despliegue de la aplicación web, con el ob
 Para este despliegue, se actualizó el repositorio de GitHub con los cambios implementados y Netlify detectó automáticamente las nuevas modificaciones, ejecutando nuevamente el proceso de construcción y publicación del sitio web.
 
 Luego de finalizar el proceso, se validó que las nuevas características estuvieran correctamente integradas y operativas, manteniendo el mismo enlace de acceso al sistema:
+
+<p align="center">
+  <img src="img/sprint-2-deployment-service.png" alt="software deployment sprint2" style="width: 600px">
+</p>
 
 <p align="center">
   <img src="img/frontend-deployment-sprint2.png" alt="software deployment sprint2" style="width: 600px">
